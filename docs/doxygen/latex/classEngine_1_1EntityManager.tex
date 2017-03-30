@@ -1,0 +1,89 @@
+\hypertarget{classEngine_1_1EntityManager}{}\section{Engine\+:\+:Entity\+Manager Class Reference}
+\label{classEngine_1_1EntityManager}\index{Engine\+::\+Entity\+Manager@{Engine\+::\+Entity\+Manager}}
+
+
+The \hyperlink{classEngine_1_1EntityManager}{Entity\+Manager} controlled Entitys ( only 3\+D Entitys )  
+
+
+
+
+{\ttfamily \#include $<$entitymanager.\+h$>$}
+
+Inheritance diagram for Engine\+:\+:Entity\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classEngine_1_1EntityManager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classEngine_1_1Entity}{Entity} $\ast$ \hyperlink{classEngine_1_1EntityManager_aaa426b2acc175d41bb4845e09012c45d}{create\+Entity} (void)
+\begin{DoxyCompactList}\small\item\em create\+Entity \end{DoxyCompactList}\item 
+\hyperlink{classEngine_1_1Entity}{Entity} $\ast$ \hyperlink{classEngine_1_1EntityManager_a5941c75f3772e78bc2ebb052787b9db4}{get\+Entity} (uint container\+\_\+id)
+\begin{DoxyCompactList}\small\item\em get\+Entity \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1EntityManager_acc5cdfa18e05d93f0e5c96449383f7fd}{destroy} (uint container\+\_\+id)
+\begin{DoxyCompactList}\small\item\em destroy \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classEngine_1_1EntityManager}{Entity\+Manager} controlled Entitys ( only 3\+D Entitys ) 
+
+Componentv2 Database ( \hyperlink{classEngine_1_1EntityManager}{Entity\+Manager} ) 
+
+\subsection{Member Function Documentation}
+\hypertarget{classEngine_1_1EntityManager_aaa426b2acc175d41bb4845e09012c45d}{}\index{Engine\+::\+Entity\+Manager@{Engine\+::\+Entity\+Manager}!create\+Entity@{create\+Entity}}
+\index{create\+Entity@{create\+Entity}!Engine\+::\+Entity\+Manager@{Engine\+::\+Entity\+Manager}}
+\subsubsection[{create\+Entity(void)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entity} $\ast$ Entity\+Manager\+::create\+Entity (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1EntityManager_aaa426b2acc175d41bb4845e09012c45d}
+
+
+create\+Entity 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classEngine_1_1Entity}{Entity} Ptr 
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1EntityManager_acc5cdfa18e05d93f0e5c96449383f7fd}{}\index{Engine\+::\+Entity\+Manager@{Engine\+::\+Entity\+Manager}!destroy@{destroy}}
+\index{destroy@{destroy}!Engine\+::\+Entity\+Manager@{Engine\+::\+Entity\+Manager}}
+\subsubsection[{destroy(uint container\+\_\+id)}]{\setlength{\rightskip}{0pt plus 5cm}void Entity\+Manager\+::destroy (
+\begin{DoxyParamCaption}
+\item[{uint}]{container\+\_\+id}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1EntityManager_acc5cdfa18e05d93f0e5c96449383f7fd}
+
+
+destroy 
+
+Destroy a \hyperlink{classEngine_1_1Entity}{Entity} 
+\begin{DoxyParams}{Parameters}
+{\em container\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1EntityManager_a5941c75f3772e78bc2ebb052787b9db4}{}\index{Engine\+::\+Entity\+Manager@{Engine\+::\+Entity\+Manager}!get\+Entity@{get\+Entity}}
+\index{get\+Entity@{get\+Entity}!Engine\+::\+Entity\+Manager@{Engine\+::\+Entity\+Manager}}
+\subsubsection[{get\+Entity(uint container\+\_\+id)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entity} $\ast$ Entity\+Manager\+::get\+Entity (
+\begin{DoxyParamCaption}
+\item[{uint}]{container\+\_\+id}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1EntityManager_a5941c75f3772e78bc2ebb052787b9db4}
+
+
+get\+Entity 
+
+Return a \hyperlink{classEngine_1_1Entity}{Entity} Ptr 
+\begin{DoxyParams}{Parameters}
+{\em container\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classEngine_1_1Entity}{Entity} Ptr 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Manager/entitymanager.\+h\item 
+Engine/\+Manager/Entity\+Manager.\+cpp\end{DoxyCompactItemize}

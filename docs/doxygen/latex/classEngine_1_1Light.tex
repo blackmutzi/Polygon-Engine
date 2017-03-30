@@ -1,0 +1,218 @@
+\hypertarget{classEngine_1_1Light}{}\section{Engine\+:\+:Light Class Reference}
+\label{classEngine_1_1Light}\index{Engine\+::\+Light@{Engine\+::\+Light}}
+
+
+The \hyperlink{classEngine_1_1Light}{Light} class.  
+
+
+
+
+{\ttfamily \#include $<$light.\+h$>$}
+
+Inheritance diagram for Engine\+:\+:Light\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classEngine_1_1Light}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classEngine_1_1Light_a7ac5fa5177a3abf2114a4e513e1c3bc4}{Light} (void)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classEngine_1_1Light}{Light}. \end{DoxyCompactList}\item 
+\hyperlink{classEngine_1_1Light_ae0cdf2a9d051a17d1ef0a8f4377be2d4}{Light} (const std\+::string \&light\+\_\+name)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classEngine_1_1Light}{Light}. \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1Light_ae9fa0c29a7e422f6ac9227916c9392fb}{set\+Ambient} (const \hyperlink{classVector3}{Vector3f} \&ambient)
+\begin{DoxyCompactList}\small\item\em set\+Ambient \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1Light_a640cc033be739f52fd7675e76ee32208}{set\+Diffuse} (const \hyperlink{classVector3}{Vector3f} \&diffuse)
+\begin{DoxyCompactList}\small\item\em set\+Diffuse \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1Light_a95d38c9dae170c43334f2706391eab26}{set\+Specular} (const \hyperlink{classVector3}{Vector3f} \&specular)
+\begin{DoxyCompactList}\small\item\em set\+Specular \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1Light_ad0467c8eb3d393597fab68f4842100ec}{set\+Prefix} (const std\+::string \&prefix)
+\begin{DoxyCompactList}\small\item\em set\+Prefix \end{DoxyCompactList}\item 
+const \hyperlink{classVector3}{Vector3f} \& \hyperlink{classEngine_1_1Light_aa2ac9bcc2a394867c487a37f911ae1cb}{get\+Ambient} (void)
+\begin{DoxyCompactList}\small\item\em get\+Ambient \end{DoxyCompactList}\item 
+const \hyperlink{classVector3}{Vector3f} \& \hyperlink{classEngine_1_1Light_af7fb6a05515cee4f2b69e8c67fc665d6}{get\+Diffuse} (void)
+\begin{DoxyCompactList}\small\item\em get\+Diffuse \end{DoxyCompactList}\item 
+const \hyperlink{classVector3}{Vector3f} \& \hyperlink{classEngine_1_1Light_a79cf67acee1d7df1ccfd4a8e5147ce76}{get\+Specular} (void)
+\begin{DoxyCompactList}\small\item\em get\+Specular \end{DoxyCompactList}\item 
+virtual void \hyperlink{classEngine_1_1Light_a25c1173c8877e6900f508791cb98217a}{Shader\+Update} (int number, \hyperlink{classEngine_1_1IShader}{I\+Shader} $\ast$shader)
+\begin{DoxyCompactList}\small\item\em Shader\+Update. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEngine_1_1Light_ac679f82de845df19724535ddaf913aba}{}std\+::string {\bfseries m\+Prefix}\label{classEngine_1_1Light_ac679f82de845df19724535ddaf913aba}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classEngine_1_1Light}{Light} class. 
+
+Save \hyperlink{classEngine_1_1Light}{Light} data 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classEngine_1_1Light_a7ac5fa5177a3abf2114a4e513e1c3bc4}{}\index{Engine\+::\+Light@{Engine\+::\+Light}!Light@{Light}}
+\index{Light@{Light}!Engine\+::\+Light@{Engine\+::\+Light}}
+\subsubsection[{Light(void)}]{\setlength{\rightskip}{0pt plus 5cm}Light\+::\+Light (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\label{classEngine_1_1Light_a7ac5fa5177a3abf2114a4e513e1c3bc4}
+
+
+\hyperlink{classEngine_1_1Light}{Light}. 
+
+Default Constructor \hypertarget{classEngine_1_1Light_ae0cdf2a9d051a17d1ef0a8f4377be2d4}{}\index{Engine\+::\+Light@{Engine\+::\+Light}!Light@{Light}}
+\index{Light@{Light}!Engine\+::\+Light@{Engine\+::\+Light}}
+\subsubsection[{Light(const std\+::string \&light\+\_\+name)}]{\setlength{\rightskip}{0pt plus 5cm}Engine\+::\+Light\+::\+Light (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{light\+\_\+name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\label{classEngine_1_1Light_ae0cdf2a9d051a17d1ef0a8f4377be2d4}
+
+
+\hyperlink{classEngine_1_1Light}{Light}. 
+
+Constructor with \hyperlink{classEngine_1_1Light}{Light} name 
+\begin{DoxyParams}{Parameters}
+{\em light\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classEngine_1_1Light_aa2ac9bcc2a394867c487a37f911ae1cb}{}\index{Engine\+::\+Light@{Engine\+::\+Light}!get\+Ambient@{get\+Ambient}}
+\index{get\+Ambient@{get\+Ambient}!Engine\+::\+Light@{Engine\+::\+Light}}
+\subsubsection[{get\+Ambient(void)}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Vector3f} \& Light\+::get\+Ambient (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Light_aa2ac9bcc2a394867c487a37f911ae1cb}
+
+
+get\+Ambient 
+
+Return Ambient Color Vector \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1Light_af7fb6a05515cee4f2b69e8c67fc665d6}{}\index{Engine\+::\+Light@{Engine\+::\+Light}!get\+Diffuse@{get\+Diffuse}}
+\index{get\+Diffuse@{get\+Diffuse}!Engine\+::\+Light@{Engine\+::\+Light}}
+\subsubsection[{get\+Diffuse(void)}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Vector3f} \& Light\+::get\+Diffuse (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Light_af7fb6a05515cee4f2b69e8c67fc665d6}
+
+
+get\+Diffuse 
+
+Return Diffuse Color Vector \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1Light_a79cf67acee1d7df1ccfd4a8e5147ce76}{}\index{Engine\+::\+Light@{Engine\+::\+Light}!get\+Specular@{get\+Specular}}
+\index{get\+Specular@{get\+Specular}!Engine\+::\+Light@{Engine\+::\+Light}}
+\subsubsection[{get\+Specular(void)}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Vector3f} \& Light\+::get\+Specular (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Light_a79cf67acee1d7df1ccfd4a8e5147ce76}
+
+
+get\+Specular 
+
+Return Sepcular Color Vector \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1Light_ae9fa0c29a7e422f6ac9227916c9392fb}{}\index{Engine\+::\+Light@{Engine\+::\+Light}!set\+Ambient@{set\+Ambient}}
+\index{set\+Ambient@{set\+Ambient}!Engine\+::\+Light@{Engine\+::\+Light}}
+\subsubsection[{set\+Ambient(const Vector3f \&ambient)}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+::set\+Ambient (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3f} \&}]{ambient}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Light_ae9fa0c29a7e422f6ac9227916c9392fb}
+
+
+set\+Ambient 
+
+Set Ambient Color Vector 
+\begin{DoxyParams}{Parameters}
+{\em ambient} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1Light_a640cc033be739f52fd7675e76ee32208}{}\index{Engine\+::\+Light@{Engine\+::\+Light}!set\+Diffuse@{set\+Diffuse}}
+\index{set\+Diffuse@{set\+Diffuse}!Engine\+::\+Light@{Engine\+::\+Light}}
+\subsubsection[{set\+Diffuse(const Vector3f \&diffuse)}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+::set\+Diffuse (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3f} \&}]{diffuse}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Light_a640cc033be739f52fd7675e76ee32208}
+
+
+set\+Diffuse 
+
+Set Diffuse Color Vector 
+\begin{DoxyParams}{Parameters}
+{\em diffuse} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1Light_ad0467c8eb3d393597fab68f4842100ec}{}\index{Engine\+::\+Light@{Engine\+::\+Light}!set\+Prefix@{set\+Prefix}}
+\index{set\+Prefix@{set\+Prefix}!Engine\+::\+Light@{Engine\+::\+Light}}
+\subsubsection[{set\+Prefix(const std\+::string \&prefix)}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+::set\+Prefix (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{prefix}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Light_ad0467c8eb3d393597fab68f4842100ec}
+
+
+set\+Prefix 
+
+Set Prefix for \hyperlink{classEngine_1_1Shader}{Shader} 
+\begin{DoxyParams}{Parameters}
+{\em prefix} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1Light_a95d38c9dae170c43334f2706391eab26}{}\index{Engine\+::\+Light@{Engine\+::\+Light}!set\+Specular@{set\+Specular}}
+\index{set\+Specular@{set\+Specular}!Engine\+::\+Light@{Engine\+::\+Light}}
+\subsubsection[{set\+Specular(const Vector3f \&specular)}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+::set\+Specular (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3f} \&}]{specular}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Light_a95d38c9dae170c43334f2706391eab26}
+
+
+set\+Specular 
+
+Set Specular Color Vector 
+\begin{DoxyParams}{Parameters}
+{\em specular} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1Light_a25c1173c8877e6900f508791cb98217a}{}\index{Engine\+::\+Light@{Engine\+::\+Light}!Shader\+Update@{Shader\+Update}}
+\index{Shader\+Update@{Shader\+Update}!Engine\+::\+Light@{Engine\+::\+Light}}
+\subsubsection[{Shader\+Update(int number, I\+Shader $\ast$shader)}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+::\+Shader\+Update (
+\begin{DoxyParamCaption}
+\item[{int}]{number, }
+\item[{{\bf I\+Shader} $\ast$}]{shader}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classEngine_1_1Light_a25c1173c8877e6900f508791cb98217a}
+
+
+Shader\+Update. 
+
+\hyperlink{classEngine_1_1Shader}{Shader} Update 
+\begin{DoxyParams}{Parameters}
+{\em shader} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classEngine_1_1SpotLight_aa6f5b9024c2cab0fab556e4f66611fa4}{Engine\+::\+Spot\+Light}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Container/light.\+h\item 
+Container/Light.\+cpp\end{DoxyCompactItemize}

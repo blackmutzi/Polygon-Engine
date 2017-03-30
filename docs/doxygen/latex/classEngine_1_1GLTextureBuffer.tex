@@ -1,0 +1,121 @@
+\hypertarget{classEngine_1_1GLTextureBuffer}{}\section{Engine\+:\+:G\+L\+Texture\+Buffer Class Reference}
+\label{classEngine_1_1GLTextureBuffer}\index{Engine\+::\+G\+L\+Texture\+Buffer@{Engine\+::\+G\+L\+Texture\+Buffer}}
+
+
+The \hyperlink{classEngine_1_1GLTextureBuffer}{G\+L\+Texture\+Buffer} class.  
+
+
+
+
+{\ttfamily \#include $<$gltexturebuffer.\+h$>$}
+
+Inheritance diagram for Engine\+:\+:G\+L\+Texture\+Buffer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classEngine_1_1GLTextureBuffer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint \hyperlink{classEngine_1_1GLTextureBuffer_aac493af54205e536a3ae7df812710f78}{create} (int size\+\_\+data, void $\ast$data)
+\begin{DoxyCompactList}\small\item\em create \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1GLTextureBuffer_a6b060dc1c33a9df000c011170daa46e2}{attach} (uint vao\+\_\+id)
+\begin{DoxyCompactList}\small\item\em attach \end{DoxyCompactList}\item 
+\hypertarget{classEngine_1_1GLTextureBuffer_abcda46bee777984efc9f6c485b6cb1ed}{}void {\bfseries update} (int offset, int size\+\_\+data, void $\ast$data)\label{classEngine_1_1GLTextureBuffer_abcda46bee777984efc9f6c485b6cb1ed}
+
+\item 
+void \hyperlink{classEngine_1_1GLTextureBuffer_a20a3044796531245f0c0926fdda52872}{get\+Data} (int offset, void $\ast$data)
+\begin{DoxyCompactList}\small\item\em get\+Data \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1GLTextureBuffer_ab64ccc1b8646be8d288b0781267fd909}{close} (void)
+\begin{DoxyCompactList}\small\item\em close \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classEngine_1_1GLTextureBuffer}{G\+L\+Texture\+Buffer} class. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classEngine_1_1GLTextureBuffer_a6b060dc1c33a9df000c011170daa46e2}{}\index{Engine\+::\+G\+L\+Texture\+Buffer@{Engine\+::\+G\+L\+Texture\+Buffer}!attach@{attach}}
+\index{attach@{attach}!Engine\+::\+G\+L\+Texture\+Buffer@{Engine\+::\+G\+L\+Texture\+Buffer}}
+\subsubsection[{attach(uint vao\+\_\+id)}]{\setlength{\rightskip}{0pt plus 5cm}void G\+L\+Texture\+Buffer\+::attach (
+\begin{DoxyParamCaption}
+\item[{uint}]{vao\+\_\+id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classEngine_1_1GLTextureBuffer_a6b060dc1c33a9df000c011170daa46e2}
+
+
+attach 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vao\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classEngine_1_1IGBuffer_a4d4186068930b5d161a52d2fa8afad02}{Engine\+::\+I\+G\+Buffer}.
+
+\hypertarget{classEngine_1_1GLTextureBuffer_ab64ccc1b8646be8d288b0781267fd909}{}\index{Engine\+::\+G\+L\+Texture\+Buffer@{Engine\+::\+G\+L\+Texture\+Buffer}!close@{close}}
+\index{close@{close}!Engine\+::\+G\+L\+Texture\+Buffer@{Engine\+::\+G\+L\+Texture\+Buffer}}
+\subsubsection[{close(void)}]{\setlength{\rightskip}{0pt plus 5cm}void G\+L\+Texture\+Buffer\+::close (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classEngine_1_1GLTextureBuffer_ab64ccc1b8646be8d288b0781267fd909}
+
+
+close 
+
+Unbind G\+P\+U Buffer 
+
+Implements \hyperlink{classEngine_1_1IGBuffer_a8473523f8cf850708f54859848f4234e}{Engine\+::\+I\+G\+Buffer}.
+
+\hypertarget{classEngine_1_1GLTextureBuffer_aac493af54205e536a3ae7df812710f78}{}\index{Engine\+::\+G\+L\+Texture\+Buffer@{Engine\+::\+G\+L\+Texture\+Buffer}!create@{create}}
+\index{create@{create}!Engine\+::\+G\+L\+Texture\+Buffer@{Engine\+::\+G\+L\+Texture\+Buffer}}
+\subsubsection[{create(int size\+\_\+data, void $\ast$data)}]{\setlength{\rightskip}{0pt plus 5cm}uint G\+L\+Texture\+Buffer\+::create (
+\begin{DoxyParamCaption}
+\item[{int}]{size\+\_\+data, }
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classEngine_1_1GLTextureBuffer_aac493af54205e536a3ae7df812710f78}
+
+
+create 
+
+Create a new G\+P\+U Buffer 
+
+Implements \hyperlink{classEngine_1_1IGBuffer_a6afbd1651d2c92fcec584e8d3ef1c32b}{Engine\+::\+I\+G\+Buffer}.
+
+\hypertarget{classEngine_1_1GLTextureBuffer_a20a3044796531245f0c0926fdda52872}{}\index{Engine\+::\+G\+L\+Texture\+Buffer@{Engine\+::\+G\+L\+Texture\+Buffer}!get\+Data@{get\+Data}}
+\index{get\+Data@{get\+Data}!Engine\+::\+G\+L\+Texture\+Buffer@{Engine\+::\+G\+L\+Texture\+Buffer}}
+\subsubsection[{get\+Data(int offset, void $\ast$data)}]{\setlength{\rightskip}{0pt plus 5cm}void G\+L\+Texture\+Buffer\+::get\+Data (
+\begin{DoxyParamCaption}
+\item[{int}]{offset, }
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classEngine_1_1GLTextureBuffer_a20a3044796531245f0c0926fdda52872}
+
+
+get\+Data 
+
+Get Data from Buffer 
+\begin{DoxyParams}{Parameters}
+{\em offset} & \\
+\hline
+{\em size\+\_\+data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classEngine_1_1IGBuffer_a8ad52dc670797d72aabf99033d20b220}{Engine\+::\+I\+G\+Buffer}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+G\+P\+U/gltexturebuffer.\+h\item 
+Engine/\+G\+P\+U/G\+L\+Texture\+Buffer.\+cpp\end{DoxyCompactItemize}

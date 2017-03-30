@@ -1,0 +1,149 @@
+\hypertarget{classEngine_1_1ConfigFrameListener}{}\section{Engine\+:\+:Config\+Frame\+Listener Class Reference}
+\label{classEngine_1_1ConfigFrameListener}\index{Engine\+::\+Config\+Frame\+Listener@{Engine\+::\+Config\+Frame\+Listener}}
+
+
+The \hyperlink{classEngine_1_1ConfigFrameListener}{Config\+Frame\+Listener} class.  
+
+
+
+
+{\ttfamily \#include $<$configframelistener.\+h$>$}
+
+Inheritance diagram for Engine\+:\+:Config\+Frame\+Listener\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classEngine_1_1ConfigFrameListener}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEngine_1_1ConfigFrameListener_a71f1b03339aeb75dfd45fcc4ca11f92f}{}{\bfseries Config\+Frame\+Listener} (const std\+::string \&config\+\_\+file)\label{classEngine_1_1ConfigFrameListener_a71f1b03339aeb75dfd45fcc4ca11f92f}
+
+\item 
+void \hyperlink{classEngine_1_1ConfigFrameListener_a792fe9af553206a358bc888fdc43f2be}{initialize} (\hyperlink{classEngine_1_1OpenPolygonDisplay}{Open\+Polygon\+Display} $\ast$display)
+\begin{DoxyCompactList}\small\item\em initialize \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1ConfigFrameListener_addb569607e5f870efda08a1a7de41544}{Render\+Logic} (float time)
+\begin{DoxyCompactList}\small\item\em Render\+Logic. \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1ConfigFrameListener_a2e412a7541868de93953c7cd818a6968}{on\+Key\+Event} (const \hyperlink{classEngine_1_1KeyEvent}{Key\+Event} \&event)
+\begin{DoxyCompactList}\small\item\em on\+Key\+Event \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1ConfigFrameListener_ac293a2b4c841a19e39d5e3d74eeb6ec3}{on\+Mouse\+Event} (const \hyperlink{classEngine_1_1MouseEvent}{Mouse\+Event} \&event)
+\begin{DoxyCompactList}\small\item\em on\+Mouse\+Event \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEngine_1_1ConfigFrameListener_ae8c208fbe77a97c8d9a7a82ff080e92e}{}void {\bfseries create\+Overlay} (void)\label{classEngine_1_1ConfigFrameListener_ae8c208fbe77a97c8d9a7a82ff080e92e}
+
+\item 
+\hypertarget{classEngine_1_1ConfigFrameListener_ae33859ce089cb5f4bc55d3b77bafc125}{}void {\bfseries create\+System} (\hyperlink{classEngine_1_1OpenPolygonDisplay}{Open\+Polygon\+Display} $\ast$display)\label{classEngine_1_1ConfigFrameListener_ae33859ce089cb5f4bc55d3b77bafc125}
+
+\item 
+\hypertarget{classEngine_1_1ConfigFrameListener_a52771ab4b5de16c06ce8f98b144308b7}{}void {\bfseries Show\+F\+P\+S} (float time)\label{classEngine_1_1ConfigFrameListener_a52771ab4b5de16c06ce8f98b144308b7}
+
+\item 
+\hypertarget{classEngine_1_1ConfigFrameListener_ac60e760b67dbff85a529bb86d3debc15}{}void {\bfseries Destroy\+Window} (const \hyperlink{classEngine_1_1KeyEvent}{Key\+Event} \&event)\label{classEngine_1_1ConfigFrameListener_ac60e760b67dbff85a529bb86d3debc15}
+
+\item 
+\hypertarget{classEngine_1_1ConfigFrameListener_a2511ac77cfa18011d978f3223cb2a59a}{}void {\bfseries Mouse\+Panel\+Collision} (void)\label{classEngine_1_1ConfigFrameListener_a2511ac77cfa18011d978f3223cb2a59a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classEngine_1_1ConfigFrameListener}{Config\+Frame\+Listener} class. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classEngine_1_1ConfigFrameListener_a792fe9af553206a358bc888fdc43f2be}{}\index{Engine\+::\+Config\+Frame\+Listener@{Engine\+::\+Config\+Frame\+Listener}!initialize@{initialize}}
+\index{initialize@{initialize}!Engine\+::\+Config\+Frame\+Listener@{Engine\+::\+Config\+Frame\+Listener}}
+\subsubsection[{initialize(\+Open\+Polygon\+Display $\ast$display)}]{\setlength{\rightskip}{0pt plus 5cm}void Config\+Frame\+Listener\+::initialize (
+\begin{DoxyParamCaption}
+\item[{{\bf Open\+Polygon\+Display} $\ast$}]{display}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classEngine_1_1ConfigFrameListener_a792fe9af553206a358bc888fdc43f2be}
+
+
+initialize 
+
+Initialize Part
+
+
+\begin{DoxyItemize}
+\item create Elements or \hyperlink{classEngine_1_1Entity}{Entity} Objects
+\item create a Scene 
+\end{DoxyItemize}
+
+Implements \hyperlink{classEngine_1_1FrameListener_abbe0d745faf156e01d2317b52f29bb48}{Engine\+::\+Frame\+Listener}.
+
+\hypertarget{classEngine_1_1ConfigFrameListener_a2e412a7541868de93953c7cd818a6968}{}\index{Engine\+::\+Config\+Frame\+Listener@{Engine\+::\+Config\+Frame\+Listener}!on\+Key\+Event@{on\+Key\+Event}}
+\index{on\+Key\+Event@{on\+Key\+Event}!Engine\+::\+Config\+Frame\+Listener@{Engine\+::\+Config\+Frame\+Listener}}
+\subsubsection[{on\+Key\+Event(const Key\+Event \&event)}]{\setlength{\rightskip}{0pt plus 5cm}void Config\+Frame\+Listener\+::on\+Key\+Event (
+\begin{DoxyParamCaption}
+\item[{const {\bf Key\+Event} \&}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classEngine_1_1ConfigFrameListener_a2e412a7541868de93953c7cd818a6968}
+
+
+on\+Key\+Event 
+
+Catch a Keyboard Event 
+\begin{DoxyParams}{Parameters}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classEngine_1_1InputListener_abcd5e74a03230108bf29f68f74c1a878}{Engine\+::\+Input\+Listener}.
+
+\hypertarget{classEngine_1_1ConfigFrameListener_ac293a2b4c841a19e39d5e3d74eeb6ec3}{}\index{Engine\+::\+Config\+Frame\+Listener@{Engine\+::\+Config\+Frame\+Listener}!on\+Mouse\+Event@{on\+Mouse\+Event}}
+\index{on\+Mouse\+Event@{on\+Mouse\+Event}!Engine\+::\+Config\+Frame\+Listener@{Engine\+::\+Config\+Frame\+Listener}}
+\subsubsection[{on\+Mouse\+Event(const Mouse\+Event \&event)}]{\setlength{\rightskip}{0pt plus 5cm}void Config\+Frame\+Listener\+::on\+Mouse\+Event (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mouse\+Event} \&}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classEngine_1_1ConfigFrameListener_ac293a2b4c841a19e39d5e3d74eeb6ec3}
+
+
+on\+Mouse\+Event 
+
+Catch a Mouse Event 
+\begin{DoxyParams}{Parameters}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classEngine_1_1InputListener_aeee4d9f56950838b71d17ece61656736}{Engine\+::\+Input\+Listener}.
+
+\hypertarget{classEngine_1_1ConfigFrameListener_addb569607e5f870efda08a1a7de41544}{}\index{Engine\+::\+Config\+Frame\+Listener@{Engine\+::\+Config\+Frame\+Listener}!Render\+Logic@{Render\+Logic}}
+\index{Render\+Logic@{Render\+Logic}!Engine\+::\+Config\+Frame\+Listener@{Engine\+::\+Config\+Frame\+Listener}}
+\subsubsection[{Render\+Logic(float time)}]{\setlength{\rightskip}{0pt plus 5cm}void Config\+Frame\+Listener\+::\+Render\+Logic (
+\begin{DoxyParamCaption}
+\item[{float}]{time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classEngine_1_1ConfigFrameListener_addb569607e5f870efda08a1a7de41544}
+
+
+Render\+Logic. 
+
+Logic Part
+
+
+\begin{DoxyItemize}
+\item modifier Elements or Entitys
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classEngine_1_1FrameListener_a3e111a872dd6592c14e11d3280ce14c4}{Engine\+::\+Frame\+Listener}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Config/configframelistener.\+h\item 
+Container/\+Config/Config\+Frame\+Listener.\+cpp\end{DoxyCompactItemize}

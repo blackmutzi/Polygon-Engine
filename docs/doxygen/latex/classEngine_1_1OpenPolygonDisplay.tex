@@ -1,0 +1,89 @@
+\hypertarget{classEngine_1_1OpenPolygonDisplay}{}\section{Engine\+:\+:Open\+Polygon\+Display Class Reference}
+\label{classEngine_1_1OpenPolygonDisplay}\index{Engine\+::\+Open\+Polygon\+Display@{Engine\+::\+Open\+Polygon\+Display}}
+
+
+The \hyperlink{classEngine_1_1OpenPolygonDisplay}{Open\+Polygon\+Display} -\/ display abstract class.  
+
+
+
+
+{\ttfamily \#include $<$display.\+h$>$}
+
+Inheritance diagram for Engine\+:\+:Open\+Polygon\+Display\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classEngine_1_1OpenPolygonDisplay}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEngine_1_1OpenPolygonDisplay_a1ba8c36a77b37f480b3f48e59d81b7d2}{}{\bfseries Open\+Polygon\+Display} (const std\+::string \&display\+\_\+name)\label{classEngine_1_1OpenPolygonDisplay_a1ba8c36a77b37f480b3f48e59d81b7d2}
+
+\item 
+\hypertarget{classEngine_1_1OpenPolygonDisplay_ae948a2f2522ab508915786e2793cbf99}{}virtual void {\bfseries Close} (void)=0\label{classEngine_1_1OpenPolygonDisplay_ae948a2f2522ab508915786e2793cbf99}
+
+\item 
+\hypertarget{classEngine_1_1OpenPolygonDisplay_a5f46947a434abca0ed0013e5b635a950}{}virtual bool {\bfseries is\+Closed} (void)=0\label{classEngine_1_1OpenPolygonDisplay_a5f46947a434abca0ed0013e5b635a950}
+
+\item 
+\hypertarget{classEngine_1_1OpenPolygonDisplay_a6d73e3c06fc6ea13b505a4f9d3b075e1}{}virtual void {\bfseries Update} (void)=0\label{classEngine_1_1OpenPolygonDisplay_a6d73e3c06fc6ea13b505a4f9d3b075e1}
+
+\item 
+\hypertarget{classEngine_1_1OpenPolygonDisplay_adf1b620cf55e181280bb36d5cd1eda04}{}virtual void {\bfseries set\+Title} (const char $\ast$title)=0\label{classEngine_1_1OpenPolygonDisplay_adf1b620cf55e181280bb36d5cd1eda04}
+
+\item 
+\hypertarget{classEngine_1_1OpenPolygonDisplay_aae3bd963682f94241d31d580338f8d0c}{}void {\bfseries set\+Camera} (\hyperlink{classEngine_1_1Camera}{Camera} $\ast$camera)\label{classEngine_1_1OpenPolygonDisplay_aae3bd963682f94241d31d580338f8d0c}
+
+\item 
+\hypertarget{classEngine_1_1OpenPolygonDisplay_a8172ae674320280531082c0eb8df5001}{}void {\bfseries set\+View\+Port} (int x, int y, int width, int height)\label{classEngine_1_1OpenPolygonDisplay_a8172ae674320280531082c0eb8df5001}
+
+\item 
+\hypertarget{classEngine_1_1OpenPolygonDisplay_a3c4ed33ec18d81d0e5ffe1a4cadb376b}{}void {\bfseries set\+Perspective} (glm\+::mat4 matrix)\label{classEngine_1_1OpenPolygonDisplay_a3c4ed33ec18d81d0e5ffe1a4cadb376b}
+
+\item 
+\hypertarget{classEngine_1_1OpenPolygonDisplay_a28c69d28bec97bc043825095d8de13eb}{}void {\bfseries set\+Perspective} (float fovy, float aspect, float near, float far)\label{classEngine_1_1OpenPolygonDisplay_a28c69d28bec97bc043825095d8de13eb}
+
+\item 
+\hypertarget{classEngine_1_1OpenPolygonDisplay_ab0487fc26b1ca14425500991502eeb40}{}\hyperlink{classEngine_1_1Camera}{Camera} $\ast$ {\bfseries get\+Camera} (void)\label{classEngine_1_1OpenPolygonDisplay_ab0487fc26b1ca14425500991502eeb40}
+
+\item 
+\hypertarget{classEngine_1_1OpenPolygonDisplay_ad6a8931e89242a78ce14a9f2b3056813}{}int {\bfseries get\+Render\+Height} (void)\label{classEngine_1_1OpenPolygonDisplay_ad6a8931e89242a78ce14a9f2b3056813}
+
+\item 
+\hypertarget{classEngine_1_1OpenPolygonDisplay_a218d172912b295115b9d59184e4bde91}{}int {\bfseries get\+Render\+Width} (void)\label{classEngine_1_1OpenPolygonDisplay_a218d172912b295115b9d59184e4bde91}
+
+\item 
+\hypertarget{classEngine_1_1OpenPolygonDisplay_a0b81459f4aa0397147c3e6431bc68326}{}int {\bfseries get\+View\+Port\+X} (void)\label{classEngine_1_1OpenPolygonDisplay_a0b81459f4aa0397147c3e6431bc68326}
+
+\item 
+\hypertarget{classEngine_1_1OpenPolygonDisplay_a416ea86d55883718ede5f1796f5be1c5}{}int {\bfseries get\+View\+Port\+Y} (void)\label{classEngine_1_1OpenPolygonDisplay_a416ea86d55883718ede5f1796f5be1c5}
+
+\item 
+\hypertarget{classEngine_1_1OpenPolygonDisplay_af44b37c7fc64d58eb3ee4afc41fabef7}{}const std\+::string \& {\bfseries get\+Name} (void)\label{classEngine_1_1OpenPolygonDisplay_af44b37c7fc64d58eb3ee4afc41fabef7}
+
+\item 
+\hypertarget{classEngine_1_1OpenPolygonDisplay_ac66d54b60c7c2ccac4482d2af84ca05b}{}const char $\ast$ {\bfseries get\+Title} (void)\label{classEngine_1_1OpenPolygonDisplay_ac66d54b60c7c2ccac4482d2af84ca05b}
+
+\item 
+\hypertarget{classEngine_1_1OpenPolygonDisplay_a1364aa54d94fd6549beac09b03fe13c7}{}glm\+::mat4 {\bfseries get\+Perspective} (void)\label{classEngine_1_1OpenPolygonDisplay_a1364aa54d94fd6549beac09b03fe13c7}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEngine_1_1OpenPolygonDisplay_a01757c9ac3a6a7154bcbce0554f073d4}{}\hyperlink{classEngine_1_1Camera}{Camera} $\ast$ {\bfseries m\+\_\+camera}\label{classEngine_1_1OpenPolygonDisplay_a01757c9ac3a6a7154bcbce0554f073d4}
+
+\item 
+\hypertarget{classEngine_1_1OpenPolygonDisplay_a57815602663a8c4a3614eb1e92753a7e}{}\hyperlink{structEngine_1_1DisplayData}{Display\+Data} {\bfseries m\+\_\+display\+\_\+data}\label{classEngine_1_1OpenPolygonDisplay_a57815602663a8c4a3614eb1e92753a7e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classEngine_1_1OpenPolygonDisplay}{Open\+Polygon\+Display} -\/ display abstract class. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Container/display.\+h\item 
+Container/Display.\+cpp\end{DoxyCompactItemize}

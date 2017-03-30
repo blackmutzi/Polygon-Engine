@@ -1,0 +1,78 @@
+\hypertarget{classEngine_1_1AnimationLoader}{}\section{Engine\+:\+:Animation\+Loader Class Reference}
+\label{classEngine_1_1AnimationLoader}\index{Engine\+::\+Animation\+Loader@{Engine\+::\+Animation\+Loader}}
+
+
+The \hyperlink{classEngine_1_1AnimationLoader}{Animation\+Loader} is a interface class for custom Loader specifically for Animations.  
+
+
+
+
+{\ttfamily \#include $<$animationmanager.\+h$>$}
+
+Inheritance diagram for Engine\+:\+:Animation\+Loader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classEngine_1_1AnimationLoader}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEngine_1_1AnimationLoader_a063c535a3cecc06caaae1833325bde07}{}{\bfseries Animation\+Loader} (const std\+::string \&extension)\label{classEngine_1_1AnimationLoader_a063c535a3cecc06caaae1833325bde07}
+
+\item 
+virtual void \hyperlink{classEngine_1_1AnimationLoader_ac077ab98aa64ab4eae5e7ca47d7d48f1}{Read\+File} (const std\+::string \&motion\+\_\+file, \hyperlink{classEngine_1_1NodeAnimScene}{Node\+Anim\+Scene} $\ast$node\+\_\+anim\+\_\+scene)=0
+\begin{DoxyCompactList}\small\item\em Read\+File. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{classEngine_1_1AnimationLoader_ae6851f3980f517aa5eb62b9bb9f16ed0}{m\+Flags}
+\item 
+std\+::string \hyperlink{classEngine_1_1AnimationLoader_a0507d3a76b6f33f05be9fc789138c508}{m\+Extension}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEngine_1_1AnimationLoader_a00b7f00c1e25e81e518e5faa334dbe66}{}class {\bfseries Animation\+Manager}\label{classEngine_1_1AnimationLoader_a00b7f00c1e25e81e518e5faa334dbe66}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classEngine_1_1AnimationLoader}{Animation\+Loader} is a interface class for custom Loader specifically for Animations. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classEngine_1_1AnimationLoader_ac077ab98aa64ab4eae5e7ca47d7d48f1}{}\index{Engine\+::\+Animation\+Loader@{Engine\+::\+Animation\+Loader}!Read\+File@{Read\+File}}
+\index{Read\+File@{Read\+File}!Engine\+::\+Animation\+Loader@{Engine\+::\+Animation\+Loader}}
+\subsubsection[{Read\+File(const std\+::string \&motion\+\_\+file, Node\+Anim\+Scene $\ast$node\+\_\+anim\+\_\+scene)=0}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Engine\+::\+Animation\+Loader\+::\+Read\+File (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{motion\+\_\+file, }
+\item[{{\bf Node\+Anim\+Scene} $\ast$}]{node\+\_\+anim\+\_\+scene}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classEngine_1_1AnimationLoader_ac077ab98aa64ab4eae5e7ca47d7d48f1}
+
+
+Read\+File. 
+
+Read Motion\+File and Save data into anim\+\_\+scene 
+\begin{DoxyParams}{Parameters}
+{\em motion\+\_\+file} & \\
+\hline
+{\em node\+\_\+anim\+\_\+scene} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classEngine_1_1AnimationLoader_a0507d3a76b6f33f05be9fc789138c508}{}\index{Engine\+::\+Animation\+Loader@{Engine\+::\+Animation\+Loader}!m\+Extension@{m\+Extension}}
+\index{m\+Extension@{m\+Extension}!Engine\+::\+Animation\+Loader@{Engine\+::\+Animation\+Loader}}
+\subsubsection[{m\+Extension}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Engine\+::\+Animation\+Loader\+::m\+Extension\hspace{0.3cm}{\ttfamily [protected]}}\label{classEngine_1_1AnimationLoader_a0507d3a76b6f33f05be9fc789138c508}
+actually Loader extension \hypertarget{classEngine_1_1AnimationLoader_ae6851f3980f517aa5eb62b9bb9f16ed0}{}\index{Engine\+::\+Animation\+Loader@{Engine\+::\+Animation\+Loader}!m\+Flags@{m\+Flags}}
+\index{m\+Flags@{m\+Flags}!Engine\+::\+Animation\+Loader@{Engine\+::\+Animation\+Loader}}
+\subsubsection[{m\+Flags}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Engine\+::\+Animation\+Loader\+::m\+Flags\hspace{0.3cm}{\ttfamily [protected]}}\label{classEngine_1_1AnimationLoader_ae6851f3980f517aa5eb62b9bb9f16ed0}
+actually Loader flags 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Manager/animationmanager.\+h\item 
+Engine/\+Manager/Animation\+Manager.\+cpp\end{DoxyCompactItemize}

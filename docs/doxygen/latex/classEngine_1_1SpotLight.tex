@@ -1,0 +1,160 @@
+\hypertarget{classEngine_1_1SpotLight}{}\section{Engine\+:\+:Spot\+Light Class Reference}
+\label{classEngine_1_1SpotLight}\index{Engine\+::\+Spot\+Light@{Engine\+::\+Spot\+Light}}
+
+
+The \hyperlink{classEngine_1_1SpotLight}{Spot\+Light} class.  
+
+
+
+
+{\ttfamily \#include $<$light.\+h$>$}
+
+Inheritance diagram for Engine\+:\+:Spot\+Light\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classEngine_1_1SpotLight}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classEngine_1_1SpotLight_ae4045cd7c8c6d18af39b57c9cf6f9ce6}{Spot\+Light} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classEngine_1_1Light}{Light}. \end{DoxyCompactList}\item 
+\hyperlink{classEngine_1_1SpotLight_a49e6754dba77f5e52733229cda7c69a2}{Spot\+Light} (const std\+::string \&light\+\_\+name)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classEngine_1_1Light}{Light}. \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1SpotLight_a2ab172c5ed395ec07e1ec22845750234}{set\+Spot\+Direction} (const \hyperlink{classVector3}{Vector3f} \&spotdirection)
+\begin{DoxyCompactList}\small\item\em set\+Spot\+Direction \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1SpotLight_ad3b7d45db0447681d5aa694c8782a949}{set\+Spot\+Cos\+Cutoff} (float angle)
+\begin{DoxyCompactList}\small\item\em set\+Spot\+Cos\+Cutoff \end{DoxyCompactList}\item 
+const \hyperlink{classVector3}{Vector3f} \& \hyperlink{classEngine_1_1SpotLight_aed7aa01d556fca73d03b8cb4612cb67b}{get\+Spot\+Direction} (void) const 
+\begin{DoxyCompactList}\small\item\em get\+Spot\+Direction \end{DoxyCompactList}\item 
+float \hyperlink{classEngine_1_1SpotLight_a66cc5159ef4efa4f6d479147615da039}{get\+Spot\+Cos\+Cutoff} (void) const 
+\begin{DoxyCompactList}\small\item\em get\+Spot\+Cos\+Cutoff \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1SpotLight_aa6f5b9024c2cab0fab556e4f66611fa4}{Shader\+Update} (int number, \hyperlink{classEngine_1_1IShader}{I\+Shader} $\ast$shader) override
+\begin{DoxyCompactList}\small\item\em Shader\+Update. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classEngine_1_1SpotLight}{Spot\+Light} class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classEngine_1_1SpotLight_ae4045cd7c8c6d18af39b57c9cf6f9ce6}{}\index{Engine\+::\+Spot\+Light@{Engine\+::\+Spot\+Light}!Spot\+Light@{Spot\+Light}}
+\index{Spot\+Light@{Spot\+Light}!Engine\+::\+Spot\+Light@{Engine\+::\+Spot\+Light}}
+\subsubsection[{Spot\+Light()}]{\setlength{\rightskip}{0pt plus 5cm}Spot\+Light\+::\+Spot\+Light (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\label{classEngine_1_1SpotLight_ae4045cd7c8c6d18af39b57c9cf6f9ce6}
+
+
+\hyperlink{classEngine_1_1Light}{Light}. 
+
+Default Constructor \hypertarget{classEngine_1_1SpotLight_a49e6754dba77f5e52733229cda7c69a2}{}\index{Engine\+::\+Spot\+Light@{Engine\+::\+Spot\+Light}!Spot\+Light@{Spot\+Light}}
+\index{Spot\+Light@{Spot\+Light}!Engine\+::\+Spot\+Light@{Engine\+::\+Spot\+Light}}
+\subsubsection[{Spot\+Light(const std\+::string \&light\+\_\+name)}]{\setlength{\rightskip}{0pt plus 5cm}Engine\+::\+Spot\+Light\+::\+Spot\+Light (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{light\+\_\+name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\label{classEngine_1_1SpotLight_a49e6754dba77f5e52733229cda7c69a2}
+
+
+\hyperlink{classEngine_1_1Light}{Light}. 
+
+Constructor with \hyperlink{classEngine_1_1Light}{Light} name 
+\begin{DoxyParams}{Parameters}
+{\em light\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classEngine_1_1SpotLight_a66cc5159ef4efa4f6d479147615da039}{}\index{Engine\+::\+Spot\+Light@{Engine\+::\+Spot\+Light}!get\+Spot\+Cos\+Cutoff@{get\+Spot\+Cos\+Cutoff}}
+\index{get\+Spot\+Cos\+Cutoff@{get\+Spot\+Cos\+Cutoff}!Engine\+::\+Spot\+Light@{Engine\+::\+Spot\+Light}}
+\subsubsection[{get\+Spot\+Cos\+Cutoff(void) const }]{\setlength{\rightskip}{0pt plus 5cm}float Spot\+Light\+::get\+Spot\+Cos\+Cutoff (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classEngine_1_1SpotLight_a66cc5159ef4efa4f6d479147615da039}
+
+
+get\+Spot\+Cos\+Cutoff 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1SpotLight_aed7aa01d556fca73d03b8cb4612cb67b}{}\index{Engine\+::\+Spot\+Light@{Engine\+::\+Spot\+Light}!get\+Spot\+Direction@{get\+Spot\+Direction}}
+\index{get\+Spot\+Direction@{get\+Spot\+Direction}!Engine\+::\+Spot\+Light@{Engine\+::\+Spot\+Light}}
+\subsubsection[{get\+Spot\+Direction(void) const }]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Vector3f} \& Spot\+Light\+::get\+Spot\+Direction (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classEngine_1_1SpotLight_aed7aa01d556fca73d03b8cb4612cb67b}
+
+
+get\+Spot\+Direction 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1SpotLight_ad3b7d45db0447681d5aa694c8782a949}{}\index{Engine\+::\+Spot\+Light@{Engine\+::\+Spot\+Light}!set\+Spot\+Cos\+Cutoff@{set\+Spot\+Cos\+Cutoff}}
+\index{set\+Spot\+Cos\+Cutoff@{set\+Spot\+Cos\+Cutoff}!Engine\+::\+Spot\+Light@{Engine\+::\+Spot\+Light}}
+\subsubsection[{set\+Spot\+Cos\+Cutoff(float angle)}]{\setlength{\rightskip}{0pt plus 5cm}void Spot\+Light\+::set\+Spot\+Cos\+Cutoff (
+\begin{DoxyParamCaption}
+\item[{float}]{angle}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1SpotLight_ad3b7d45db0447681d5aa694c8782a949}
+
+
+set\+Spot\+Cos\+Cutoff 
+
+Spot Cutoff 
+\begin{DoxyParams}{Parameters}
+{\em angle} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1SpotLight_a2ab172c5ed395ec07e1ec22845750234}{}\index{Engine\+::\+Spot\+Light@{Engine\+::\+Spot\+Light}!set\+Spot\+Direction@{set\+Spot\+Direction}}
+\index{set\+Spot\+Direction@{set\+Spot\+Direction}!Engine\+::\+Spot\+Light@{Engine\+::\+Spot\+Light}}
+\subsubsection[{set\+Spot\+Direction(const Vector3f \&spotdirection)}]{\setlength{\rightskip}{0pt plus 5cm}void Spot\+Light\+::set\+Spot\+Direction (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3f} \&}]{spotdirection}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1SpotLight_a2ab172c5ed395ec07e1ec22845750234}
+
+
+set\+Spot\+Direction 
+
+Sport Direction 
+\begin{DoxyParams}{Parameters}
+{\em spotdirection} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1SpotLight_aa6f5b9024c2cab0fab556e4f66611fa4}{}\index{Engine\+::\+Spot\+Light@{Engine\+::\+Spot\+Light}!Shader\+Update@{Shader\+Update}}
+\index{Shader\+Update@{Shader\+Update}!Engine\+::\+Spot\+Light@{Engine\+::\+Spot\+Light}}
+\subsubsection[{Shader\+Update(int number, I\+Shader $\ast$shader) override}]{\setlength{\rightskip}{0pt plus 5cm}void Spot\+Light\+::\+Shader\+Update (
+\begin{DoxyParamCaption}
+\item[{int}]{number, }
+\item[{{\bf I\+Shader} $\ast$}]{shader}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{classEngine_1_1SpotLight_aa6f5b9024c2cab0fab556e4f66611fa4}
+
+
+Shader\+Update. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em number} & \\
+\hline
+{\em shader} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classEngine_1_1Light_a25c1173c8877e6900f508791cb98217a}{Engine\+::\+Light}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Container/light.\+h\item 
+Container/Light.\+cpp\end{DoxyCompactItemize}

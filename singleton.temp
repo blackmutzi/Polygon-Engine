@@ -1,0 +1,22 @@
+#ifndef SINGLETON_TEMP
+#define SINGLETON_TEMP
+
+template < class Manager >
+Manager * Singleton< Manager >::ptrInstance = nullptr;
+
+template < class Manager >
+Singleton<Manager>::Singleton(){}
+
+template < class Manager >
+Manager * Singleton< Manager >::getSingletonPtr(void)
+{
+    if( ptrInstance == nullptr )
+    {
+        ptrInstance = new Manager();
+    }
+
+    return ptrInstance;
+}
+
+
+#endif // SINGLETON_TEMP

@@ -1,0 +1,302 @@
+\hypertarget{classEngine_1_1BvhLoader}{}\section{Engine\+:\+:Bvh\+Loader Class Reference}
+\label{classEngine_1_1BvhLoader}\index{Engine\+::\+Bvh\+Loader@{Engine\+::\+Bvh\+Loader}}
+
+
+The \hyperlink{classEngine_1_1BvhLoader}{Bvh\+Loader} -\/ B\+V\+H File Loader ( .bvh )  
+
+
+
+
+{\ttfamily \#include $<$bvhloader.\+h$>$}
+
+Inheritance diagram for Engine\+:\+:Bvh\+Loader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classEngine_1_1BvhLoader}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structEngine_1_1BvhLoader_1_1StoreState}{Store\+State}
+\begin{DoxyCompactList}\small\item\em The \hyperlink{structEngine_1_1BvhLoader_1_1StoreState}{Store\+State} struct. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEngine_1_1BvhLoader_aec0215c1beb225aee94b6f57ad13adaf}{}using {\bfseries H\+M\+State\+Store} = struct \hyperlink{structEngine_1_1BvhLoader_1_1StoreState}{Store\+State}\label{classEngine_1_1BvhLoader_aec0215c1beb225aee94b6f57ad13adaf}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classEngine_1_1BvhLoader_a6ce825c92ae428a0366410eab5d990aa}{Bvh\+Loader} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classEngine_1_1BvhLoader}{Bvh\+Loader}. \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1BvhLoader_abd58f0b7f498fcb4f25bfe7f15a310d4}{Read\+File} (const string \&motion\+\_\+file, \hyperlink{classEngine_1_1NodeAnimScene}{Node\+Anim\+Scene} $\ast$node\+\_\+anim\+\_\+scene)
+\begin{DoxyCompactList}\small\item\em Read\+File. \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1BvhLoader_a599ca8a71e770128f27769e13f12aa63}{Read\+Hierachy} (\hyperlink{classEngine_1_1NodeAnimScene}{Node\+Anim\+Scene} $\ast$node\+\_\+anim\+\_\+scene)
+\begin{DoxyCompactList}\small\item\em Read\+Hierachy. \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1BvhLoader_ac22c70132e353ef1a91135911e8c1382}{Read\+Motion} (\hyperlink{classEngine_1_1NodeAnimScene}{Node\+Anim\+Scene} $\ast$node\+\_\+anim\+\_\+scene)
+\begin{DoxyCompactList}\small\item\em Read\+Motion. \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1BvhLoader_af97fd5b3c463a2d7cb83b091173a2d2e}{prepare\+By\+Flags} (\hyperlink{classEngine_1_1NodeAnimScene}{Node\+Anim\+Scene} $\ast$node\+\_\+anim\+\_\+scene)
+\begin{DoxyCompactList}\small\item\em prepare\+By\+Flags \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1BvhLoader_a4840a1a13d575617171caa923de7a494}{bvh\+\_\+string\+\_\+split} (const std\+::string \&line, char delim, Strings \&items)
+\begin{DoxyCompactList}\small\item\em bvh\+\_\+string\+\_\+split \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classEngine_1_1BvhLoader_a7130a9d03688b504b3b6bbe27010ddad}{get\+Node\+Name} (const std\+::string \&line)
+\begin{DoxyCompactList}\small\item\em get\+Node\+Name \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classEngine_1_1BvhLoader_afefebc57a1204d9244b097664e223f35}{get\+First} (const std\+::string \&line)
+\begin{DoxyCompactList}\small\item\em get\+First \end{DoxyCompactList}\item 
+\hyperlink{classVector3}{Vector3f} \hyperlink{classEngine_1_1BvhLoader_a9a79af2338a7c428076b212823d3d714}{get\+Offset} (const std\+::string \&line)
+\begin{DoxyCompactList}\small\item\em get\+Offset \end{DoxyCompactList}\item 
+int \hyperlink{classEngine_1_1BvhLoader_a8704cf6e1c413be669d2322ee8db9fb5}{get\+Frames} (const std\+::string \&line)
+\begin{DoxyCompactList}\small\item\em get\+Frames \end{DoxyCompactList}\item 
+\hyperlink{classEngine_1_1NodeAnim}{Node\+Anim} $\ast$ \hyperlink{classEngine_1_1BvhLoader_ad4528687a88e9e6fceff3d8de2f571a2}{get\+Node} (const \hyperlink{classVector3}{Vector3f} \&offset, \hyperlink{classEngine_1_1NodeAnimScene}{Node\+Anim\+Scene} $\ast$scene)
+\begin{DoxyCompactList}\small\item\em get\+Node \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1BvhLoader_af328fc4f00cb017298b5a979f27a0f63}{Print\+Error} (const \hyperlink{classVector3}{Vector3f} \&offset)  throw ( std\+::runtime\+\_\+error )
+\begin{DoxyCompactList}\small\item\em Print\+Error. \end{DoxyCompactList}\item 
+float \hyperlink{classEngine_1_1BvhLoader_a57670cf4d7d33cf1f45c6643f940b271}{get\+Number} (const std\+::string \&item)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classEngine_1_1BvhLoader}{Bvh\+Loader} -\/ B\+V\+H File Loader ( .bvh ) 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classEngine_1_1BvhLoader_a6ce825c92ae428a0366410eab5d990aa}{}\index{Engine\+::\+Bvh\+Loader@{Engine\+::\+Bvh\+Loader}!Bvh\+Loader@{Bvh\+Loader}}
+\index{Bvh\+Loader@{Bvh\+Loader}!Engine\+::\+Bvh\+Loader@{Engine\+::\+Bvh\+Loader}}
+\subsubsection[{Bvh\+Loader()}]{\setlength{\rightskip}{0pt plus 5cm}Bvh\+Loader\+::\+Bvh\+Loader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1BvhLoader_a6ce825c92ae428a0366410eab5d990aa}
+
+
+\hyperlink{classEngine_1_1BvhLoader}{Bvh\+Loader}. 
+
+Default Constructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classEngine_1_1BvhLoader_a4840a1a13d575617171caa923de7a494}{}\index{Engine\+::\+Bvh\+Loader@{Engine\+::\+Bvh\+Loader}!bvh\+\_\+string\+\_\+split@{bvh\+\_\+string\+\_\+split}}
+\index{bvh\+\_\+string\+\_\+split@{bvh\+\_\+string\+\_\+split}!Engine\+::\+Bvh\+Loader@{Engine\+::\+Bvh\+Loader}}
+\subsubsection[{bvh\+\_\+string\+\_\+split(const std\+::string \&line, char delim, Strings \&items)}]{\setlength{\rightskip}{0pt plus 5cm}void Bvh\+Loader\+::bvh\+\_\+string\+\_\+split (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{line, }
+\item[{char}]{delim, }
+\item[{Strings \&}]{items}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1BvhLoader_a4840a1a13d575617171caa923de7a494}
+
+
+bvh\+\_\+string\+\_\+split 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & \\
+\hline
+{\em delim} & \\
+\hline
+{\em items} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1BvhLoader_afefebc57a1204d9244b097664e223f35}{}\index{Engine\+::\+Bvh\+Loader@{Engine\+::\+Bvh\+Loader}!get\+First@{get\+First}}
+\index{get\+First@{get\+First}!Engine\+::\+Bvh\+Loader@{Engine\+::\+Bvh\+Loader}}
+\subsubsection[{get\+First(const std\+::string \&line)}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Bvh\+Loader\+::get\+First (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{line}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1BvhLoader_afefebc57a1204d9244b097664e223f35}
+
+
+get\+First 
+
+Return first \hyperlink{classEngine_1_1Element}{Element} from current line 
+\begin{DoxyParams}{Parameters}
+{\em line} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1BvhLoader_a8704cf6e1c413be669d2322ee8db9fb5}{}\index{Engine\+::\+Bvh\+Loader@{Engine\+::\+Bvh\+Loader}!get\+Frames@{get\+Frames}}
+\index{get\+Frames@{get\+Frames}!Engine\+::\+Bvh\+Loader@{Engine\+::\+Bvh\+Loader}}
+\subsubsection[{get\+Frames(const std\+::string \&line)}]{\setlength{\rightskip}{0pt plus 5cm}int Bvh\+Loader\+::get\+Frames (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{line}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1BvhLoader_a8704cf6e1c413be669d2322ee8db9fb5}
+
+
+get\+Frames 
+
+Return max. frames from current line 
+\begin{DoxyParams}{Parameters}
+{\em line} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1BvhLoader_ad4528687a88e9e6fceff3d8de2f571a2}{}\index{Engine\+::\+Bvh\+Loader@{Engine\+::\+Bvh\+Loader}!get\+Node@{get\+Node}}
+\index{get\+Node@{get\+Node}!Engine\+::\+Bvh\+Loader@{Engine\+::\+Bvh\+Loader}}
+\subsubsection[{get\+Node(const Vector3f \&offset, Node\+Anim\+Scene $\ast$scene)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Anim} $\ast$ Bvh\+Loader\+::get\+Node (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3f} \&}]{offset, }
+\item[{{\bf Node\+Anim\+Scene} $\ast$}]{scene}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1BvhLoader_ad4528687a88e9e6fceff3d8de2f571a2}
+
+
+get\+Node 
+
+Return Node by offset position from \hyperlink{classEngine_1_1NodeAnimScene}{Node\+Anim\+Scene} 
+\begin{DoxyParams}{Parameters}
+{\em offset} & \\
+\hline
+{\em scene} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1BvhLoader_a7130a9d03688b504b3b6bbe27010ddad}{}\index{Engine\+::\+Bvh\+Loader@{Engine\+::\+Bvh\+Loader}!get\+Node\+Name@{get\+Node\+Name}}
+\index{get\+Node\+Name@{get\+Node\+Name}!Engine\+::\+Bvh\+Loader@{Engine\+::\+Bvh\+Loader}}
+\subsubsection[{get\+Node\+Name(const std\+::string \&line)}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Bvh\+Loader\+::get\+Node\+Name (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{line}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1BvhLoader_a7130a9d03688b504b3b6bbe27010ddad}
+
+
+get\+Node\+Name 
+
+Return Node\+Name from current line 
+\begin{DoxyParams}{Parameters}
+{\em line} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1BvhLoader_a57670cf4d7d33cf1f45c6643f940b271}{}\index{Engine\+::\+Bvh\+Loader@{Engine\+::\+Bvh\+Loader}!get\+Number@{get\+Number}}
+\index{get\+Number@{get\+Number}!Engine\+::\+Bvh\+Loader@{Engine\+::\+Bvh\+Loader}}
+\subsubsection[{get\+Number(const std\+::string \&item)}]{\setlength{\rightskip}{0pt plus 5cm}float Bvh\+Loader\+::get\+Number (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{item}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1BvhLoader_a57670cf4d7d33cf1f45c6643f940b271}
+
+\begin{DoxyParams}{Parameters}
+{\em item} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1BvhLoader_a9a79af2338a7c428076b212823d3d714}{}\index{Engine\+::\+Bvh\+Loader@{Engine\+::\+Bvh\+Loader}!get\+Offset@{get\+Offset}}
+\index{get\+Offset@{get\+Offset}!Engine\+::\+Bvh\+Loader@{Engine\+::\+Bvh\+Loader}}
+\subsubsection[{get\+Offset(const std\+::string \&line)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3f} Bvh\+Loader\+::get\+Offset (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{line}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1BvhLoader_a9a79af2338a7c428076b212823d3d714}
+
+
+get\+Offset 
+
+Return Offset \hyperlink{classEngine_1_1Position}{Position} from current line 
+\begin{DoxyParams}{Parameters}
+{\em line} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1BvhLoader_af97fd5b3c463a2d7cb83b091173a2d2e}{}\index{Engine\+::\+Bvh\+Loader@{Engine\+::\+Bvh\+Loader}!prepare\+By\+Flags@{prepare\+By\+Flags}}
+\index{prepare\+By\+Flags@{prepare\+By\+Flags}!Engine\+::\+Bvh\+Loader@{Engine\+::\+Bvh\+Loader}}
+\subsubsection[{prepare\+By\+Flags(\+Node\+Anim\+Scene $\ast$node\+\_\+anim\+\_\+scene)}]{\setlength{\rightskip}{0pt plus 5cm}void Bvh\+Loader\+::prepare\+By\+Flags (
+\begin{DoxyParamCaption}
+\item[{{\bf Node\+Anim\+Scene} $\ast$}]{node\+\_\+anim\+\_\+scene}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1BvhLoader_af97fd5b3c463a2d7cb83b091173a2d2e}
+
+
+prepare\+By\+Flags 
+
+Modifier anim scene by flags 
+\begin{DoxyParams}{Parameters}
+{\em node\+\_\+anim\+\_\+scene} & \\
+\hline
+\end{DoxyParams}
+Information\+: Blender Z Negative is Open\+G\+L Y Positive\hypertarget{classEngine_1_1BvhLoader_af328fc4f00cb017298b5a979f27a0f63}{}\index{Engine\+::\+Bvh\+Loader@{Engine\+::\+Bvh\+Loader}!Print\+Error@{Print\+Error}}
+\index{Print\+Error@{Print\+Error}!Engine\+::\+Bvh\+Loader@{Engine\+::\+Bvh\+Loader}}
+\subsubsection[{Print\+Error(const Vector3f \&offset)}]{\setlength{\rightskip}{0pt plus 5cm}void Bvh\+Loader\+::\+Print\+Error (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3f} \&}]{offset}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) }\label{classEngine_1_1BvhLoader_af328fc4f00cb017298b5a979f27a0f63}
+
+
+Print\+Error. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em offset} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1BvhLoader_abd58f0b7f498fcb4f25bfe7f15a310d4}{}\index{Engine\+::\+Bvh\+Loader@{Engine\+::\+Bvh\+Loader}!Read\+File@{Read\+File}}
+\index{Read\+File@{Read\+File}!Engine\+::\+Bvh\+Loader@{Engine\+::\+Bvh\+Loader}}
+\subsubsection[{Read\+File(const string \&motion\+\_\+file, Node\+Anim\+Scene $\ast$node\+\_\+anim\+\_\+scene)}]{\setlength{\rightskip}{0pt plus 5cm}void Bvh\+Loader\+::\+Read\+File (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{motion\+\_\+file, }
+\item[{{\bf Node\+Anim\+Scene} $\ast$}]{node\+\_\+anim\+\_\+scene}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1BvhLoader_abd58f0b7f498fcb4f25bfe7f15a310d4}
+
+
+Read\+File. 
+
+Read B\+V\+H File 
+\begin{DoxyParams}{Parameters}
+{\em motion\+\_\+file} & \\
+\hline
+{\em node\+\_\+anim\+\_\+scene} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1BvhLoader_a599ca8a71e770128f27769e13f12aa63}{}\index{Engine\+::\+Bvh\+Loader@{Engine\+::\+Bvh\+Loader}!Read\+Hierachy@{Read\+Hierachy}}
+\index{Read\+Hierachy@{Read\+Hierachy}!Engine\+::\+Bvh\+Loader@{Engine\+::\+Bvh\+Loader}}
+\subsubsection[{Read\+Hierachy(\+Node\+Anim\+Scene $\ast$node\+\_\+anim\+\_\+scene)}]{\setlength{\rightskip}{0pt plus 5cm}void Bvh\+Loader\+::\+Read\+Hierachy (
+\begin{DoxyParamCaption}
+\item[{{\bf Node\+Anim\+Scene} $\ast$}]{node\+\_\+anim\+\_\+scene}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1BvhLoader_a599ca8a71e770128f27769e13f12aa63}
+
+
+Read\+Hierachy. 
+
+Read Hierachy Part and save data into node\+\_\+anim\+\_\+scene 
+\begin{DoxyParams}{Parameters}
+{\em node\+\_\+anim\+\_\+scene} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1BvhLoader_ac22c70132e353ef1a91135911e8c1382}{}\index{Engine\+::\+Bvh\+Loader@{Engine\+::\+Bvh\+Loader}!Read\+Motion@{Read\+Motion}}
+\index{Read\+Motion@{Read\+Motion}!Engine\+::\+Bvh\+Loader@{Engine\+::\+Bvh\+Loader}}
+\subsubsection[{Read\+Motion(\+Node\+Anim\+Scene $\ast$node\+\_\+anim\+\_\+scene)}]{\setlength{\rightskip}{0pt plus 5cm}void Bvh\+Loader\+::\+Read\+Motion (
+\begin{DoxyParamCaption}
+\item[{{\bf Node\+Anim\+Scene} $\ast$}]{node\+\_\+anim\+\_\+scene}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1BvhLoader_ac22c70132e353ef1a91135911e8c1382}
+
+
+Read\+Motion. 
+
+Read Motion Part and save data into node\+\_\+anim\+\_\+scene 
+\begin{DoxyParams}{Parameters}
+{\em node\+\_\+anim\+\_\+scene} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+File\+Loader/bvhloader.\+h\item 
+Engine/\+File\+Loader/Bvh\+Loader.\+cpp\end{DoxyCompactItemize}

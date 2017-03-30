@@ -1,0 +1,265 @@
+\hypertarget{classEngine_1_1WaveFrontLoader}{}\section{Engine\+:\+:Wave\+Front\+Loader Class Reference}
+\label{classEngine_1_1WaveFrontLoader}\index{Engine\+::\+Wave\+Front\+Loader@{Engine\+::\+Wave\+Front\+Loader}}
+
+
+The \hyperlink{classEngine_1_1WaveFrontLoader}{Wave\+Front\+Loader} -\/ Wave Front File Loader ( .obj )  
+
+
+
+
+{\ttfamily \#include $<$wavefrontloader.\+h$>$}
+
+Inheritance diagram for Engine\+:\+:Wave\+Front\+Loader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classEngine_1_1WaveFrontLoader}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structEngine_1_1WaveFrontLoader_1_1WFL__StateStore}{W\+F\+L\+\_\+\+State\+Store}
+\begin{DoxyCompactList}\small\item\em The \hyperlink{structEngine_1_1WaveFrontLoader_1_1WFL__StateStore}{W\+F\+L\+\_\+\+State\+Store} struct. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEngine_1_1WaveFrontLoader_a8abea744668c99829a7a16a6ac9f38af}{}enum {\bfseries Indices\+Version} \{ \\*
+{\bfseries V\+E\+R\+S\+I\+O\+N\+\_\+1}, 
+{\bfseries V\+E\+R\+S\+I\+O\+N\+\_\+2}, 
+{\bfseries V\+E\+R\+S\+I\+O\+N\+\_\+3}, 
+{\bfseries V\+E\+R\+S\+I\+O\+N\+\_\+4}, 
+\\*
+{\bfseries U\+N\+K\+N\+O\+W\+N}
+ \}\label{classEngine_1_1WaveFrontLoader_a8abea744668c99829a7a16a6ac9f38af}
+
+\item 
+\hypertarget{classEngine_1_1WaveFrontLoader_a6db5399202044369d5c11bd10eb9fd4c}{}using {\bfseries Wave\+Front\+State\+Store} = struct \hyperlink{structEngine_1_1WaveFrontLoader_1_1WFL__StateStore}{W\+F\+L\+\_\+\+State\+Store}\label{classEngine_1_1WaveFrontLoader_a6db5399202044369d5c11bd10eb9fd4c}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classEngine_1_1WaveFrontLoader_a987536381fc68235f7d8d9ebe9b357f6}{Wave\+Front\+Loader} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classEngine_1_1WaveFrontLoader}{Wave\+Front\+Loader}. \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1WaveFrontLoader_aa7a0ffee4fb69d51efa24707ffb03575}{load} (const std\+::string \&obj\+\_\+file\+\_\+name)
+\begin{DoxyCompactList}\small\item\em load \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1WaveFrontLoader_a2b952f66cfe5d54b5527ea73c63c1e76}{write\+Vertex} (\hyperlink{structEngine_1_1WaveFrontLoader_1_1WFL__StateStore}{Wave\+Front\+State\+Store} $\ast$store)
+\begin{DoxyCompactList}\small\item\em write\+Vertex \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1WaveFrontLoader_a95f58f1842a414419901c5bf289ee791}{write\+Normal} (\hyperlink{structEngine_1_1WaveFrontLoader_1_1WFL__StateStore}{Wave\+Front\+State\+Store} $\ast$store)
+\begin{DoxyCompactList}\small\item\em write\+Normal \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1WaveFrontLoader_a5a59f02df20d15946a61e9cc54fee9f4}{write\+Tex\+Coord} (\hyperlink{structEngine_1_1WaveFrontLoader_1_1WFL__StateStore}{Wave\+Front\+State\+Store} $\ast$store)
+\begin{DoxyCompactList}\small\item\em write\+Tex\+Coord \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1WaveFrontLoader_a81d3b794a294a4411324b2a07e328daa}{write\+Index} (\hyperlink{structEngine_1_1WaveFrontLoader_1_1WFL__StateStore}{Wave\+Front\+State\+Store} $\ast$store)
+\begin{DoxyCompactList}\small\item\em write\+Index \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1WaveFrontLoader_a3f0c1139817746f9b2a605a034791424}{create\+Group} (\hyperlink{structEngine_1_1WaveFrontLoader_1_1WFL__StateStore}{Wave\+Front\+State\+Store} $\ast$store)
+\begin{DoxyCompactList}\small\item\em create\+Group \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1WaveFrontLoader_aff1ab01b494c7b13527dc6845ea40fcf}{add\+Group\+Data} (\hyperlink{classEngine_1_1VertexGroup}{Vertex\+Group} $\ast$group, int index)
+\begin{DoxyCompactList}\small\item\em add\+Group\+Data \end{DoxyCompactList}\item 
+const \hyperlink{classVector3}{Vector3f} \& \hyperlink{classEngine_1_1WaveFrontLoader_a6d8d035daf23c5878a81523e165a041d}{get\+Vertex\+By\+Index} (int index)
+\begin{DoxyCompactList}\small\item\em get\+Vertex\+By\+Index \end{DoxyCompactList}\item 
+Indices\+Version \hyperlink{classEngine_1_1WaveFrontLoader_a992b0ee9d5caec0df001219b3289c17e}{get\+Version} (const std\+::string \&line)
+\begin{DoxyCompactList}\small\item\em get\+Version \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classEngine_1_1WaveFrontLoader_a0fdf66ccfc017383b0260e6e9afcc2f2}{get\+String} (std\+::string \&data, int index)
+\begin{DoxyCompactList}\small\item\em get\+String \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classEngine_1_1WaveFrontLoader}{Wave\+Front\+Loader} -\/ Wave Front File Loader ( .obj ) 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classEngine_1_1WaveFrontLoader_a987536381fc68235f7d8d9ebe9b357f6}{}\index{Engine\+::\+Wave\+Front\+Loader@{Engine\+::\+Wave\+Front\+Loader}!Wave\+Front\+Loader@{Wave\+Front\+Loader}}
+\index{Wave\+Front\+Loader@{Wave\+Front\+Loader}!Engine\+::\+Wave\+Front\+Loader@{Engine\+::\+Wave\+Front\+Loader}}
+\subsubsection[{Wave\+Front\+Loader()}]{\setlength{\rightskip}{0pt plus 5cm}Wave\+Front\+Loader\+::\+Wave\+Front\+Loader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1WaveFrontLoader_a987536381fc68235f7d8d9ebe9b357f6}
+
+
+\hyperlink{classEngine_1_1WaveFrontLoader}{Wave\+Front\+Loader}. 
+
+Default Constructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classEngine_1_1WaveFrontLoader_aff1ab01b494c7b13527dc6845ea40fcf}{}\index{Engine\+::\+Wave\+Front\+Loader@{Engine\+::\+Wave\+Front\+Loader}!add\+Group\+Data@{add\+Group\+Data}}
+\index{add\+Group\+Data@{add\+Group\+Data}!Engine\+::\+Wave\+Front\+Loader@{Engine\+::\+Wave\+Front\+Loader}}
+\subsubsection[{add\+Group\+Data(\+Vertex\+Group $\ast$group, int index)}]{\setlength{\rightskip}{0pt plus 5cm}void Wave\+Front\+Loader\+::add\+Group\+Data (
+\begin{DoxyParamCaption}
+\item[{{\bf Vertex\+Group} $\ast$}]{group, }
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1WaveFrontLoader_aff1ab01b494c7b13527dc6845ea40fcf}
+
+
+add\+Group\+Data 
+
+Add Group Data -\/ index \& vertex 
+\begin{DoxyParams}{Parameters}
+{\em group} & \\
+\hline
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1WaveFrontLoader_a3f0c1139817746f9b2a605a034791424}{}\index{Engine\+::\+Wave\+Front\+Loader@{Engine\+::\+Wave\+Front\+Loader}!create\+Group@{create\+Group}}
+\index{create\+Group@{create\+Group}!Engine\+::\+Wave\+Front\+Loader@{Engine\+::\+Wave\+Front\+Loader}}
+\subsubsection[{create\+Group(\+Wave\+Front\+State\+Store $\ast$store)}]{\setlength{\rightskip}{0pt plus 5cm}void Wave\+Front\+Loader\+::create\+Group (
+\begin{DoxyParamCaption}
+\item[{{\bf Wave\+Front\+State\+Store} $\ast$}]{store}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1WaveFrontLoader_a3f0c1139817746f9b2a605a034791424}
+
+
+create\+Group 
+
+Create a Group or not 
+\begin{DoxyParams}{Parameters}
+{\em store} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1WaveFrontLoader_a0fdf66ccfc017383b0260e6e9afcc2f2}{}\index{Engine\+::\+Wave\+Front\+Loader@{Engine\+::\+Wave\+Front\+Loader}!get\+String@{get\+String}}
+\index{get\+String@{get\+String}!Engine\+::\+Wave\+Front\+Loader@{Engine\+::\+Wave\+Front\+Loader}}
+\subsubsection[{get\+String(std\+::string \&data, int index)}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Wave\+Front\+Loader\+::get\+String (
+\begin{DoxyParamCaption}
+\item[{std\+::string \&}]{data, }
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1WaveFrontLoader_a0fdf66ccfc017383b0260e6e9afcc2f2}
+
+
+get\+String 
+
+Split Index Data 
+\begin{DoxyParams}{Parameters}
+{\em data} & \\
+\hline
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1WaveFrontLoader_a992b0ee9d5caec0df001219b3289c17e}{}\index{Engine\+::\+Wave\+Front\+Loader@{Engine\+::\+Wave\+Front\+Loader}!get\+Version@{get\+Version}}
+\index{get\+Version@{get\+Version}!Engine\+::\+Wave\+Front\+Loader@{Engine\+::\+Wave\+Front\+Loader}}
+\subsubsection[{get\+Version(const std\+::string \&line)}]{\setlength{\rightskip}{0pt plus 5cm}Wave\+Front\+Loader\+::\+Indices\+Version Wave\+Front\+Loader\+::get\+Version (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{line}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1WaveFrontLoader_a992b0ee9d5caec0df001219b3289c17e}
+
+
+get\+Version 
+
+Return Index Version 
+\begin{DoxyParams}{Parameters}
+{\em line} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1WaveFrontLoader_a6d8d035daf23c5878a81523e165a041d}{}\index{Engine\+::\+Wave\+Front\+Loader@{Engine\+::\+Wave\+Front\+Loader}!get\+Vertex\+By\+Index@{get\+Vertex\+By\+Index}}
+\index{get\+Vertex\+By\+Index@{get\+Vertex\+By\+Index}!Engine\+::\+Wave\+Front\+Loader@{Engine\+::\+Wave\+Front\+Loader}}
+\subsubsection[{get\+Vertex\+By\+Index(int index)}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Vector3f} \& Wave\+Front\+Loader\+::get\+Vertex\+By\+Index (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1WaveFrontLoader_a6d8d035daf23c5878a81523e165a041d}
+
+
+get\+Vertex\+By\+Index 
+
+Return Vertex By Index Number 
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1WaveFrontLoader_aa7a0ffee4fb69d51efa24707ffb03575}{}\index{Engine\+::\+Wave\+Front\+Loader@{Engine\+::\+Wave\+Front\+Loader}!load@{load}}
+\index{load@{load}!Engine\+::\+Wave\+Front\+Loader@{Engine\+::\+Wave\+Front\+Loader}}
+\subsubsection[{load(const std\+::string \&obj\+\_\+file\+\_\+name)}]{\setlength{\rightskip}{0pt plus 5cm}void Wave\+Front\+Loader\+::load (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{obj\+\_\+file\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1WaveFrontLoader_aa7a0ffee4fb69d51efa24707ffb03575}
+
+
+load 
+
+Load Wave\+Front (.obj) File 
+\begin{DoxyParams}{Parameters}
+{\em obj\+\_\+file\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1WaveFrontLoader_a81d3b794a294a4411324b2a07e328daa}{}\index{Engine\+::\+Wave\+Front\+Loader@{Engine\+::\+Wave\+Front\+Loader}!write\+Index@{write\+Index}}
+\index{write\+Index@{write\+Index}!Engine\+::\+Wave\+Front\+Loader@{Engine\+::\+Wave\+Front\+Loader}}
+\subsubsection[{write\+Index(\+Wave\+Front\+State\+Store $\ast$store)}]{\setlength{\rightskip}{0pt plus 5cm}void Wave\+Front\+Loader\+::write\+Index (
+\begin{DoxyParamCaption}
+\item[{{\bf Wave\+Front\+State\+Store} $\ast$}]{store}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1WaveFrontLoader_a81d3b794a294a4411324b2a07e328daa}
+
+
+write\+Index 
+
+Write Index Data 
+\begin{DoxyParams}{Parameters}
+{\em store} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1WaveFrontLoader_a95f58f1842a414419901c5bf289ee791}{}\index{Engine\+::\+Wave\+Front\+Loader@{Engine\+::\+Wave\+Front\+Loader}!write\+Normal@{write\+Normal}}
+\index{write\+Normal@{write\+Normal}!Engine\+::\+Wave\+Front\+Loader@{Engine\+::\+Wave\+Front\+Loader}}
+\subsubsection[{write\+Normal(\+Wave\+Front\+State\+Store $\ast$store)}]{\setlength{\rightskip}{0pt plus 5cm}void Wave\+Front\+Loader\+::write\+Normal (
+\begin{DoxyParamCaption}
+\item[{{\bf Wave\+Front\+State\+Store} $\ast$}]{store}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1WaveFrontLoader_a95f58f1842a414419901c5bf289ee791}
+
+
+write\+Normal 
+
+Write Normal Data 
+\begin{DoxyParams}{Parameters}
+{\em store} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1WaveFrontLoader_a5a59f02df20d15946a61e9cc54fee9f4}{}\index{Engine\+::\+Wave\+Front\+Loader@{Engine\+::\+Wave\+Front\+Loader}!write\+Tex\+Coord@{write\+Tex\+Coord}}
+\index{write\+Tex\+Coord@{write\+Tex\+Coord}!Engine\+::\+Wave\+Front\+Loader@{Engine\+::\+Wave\+Front\+Loader}}
+\subsubsection[{write\+Tex\+Coord(\+Wave\+Front\+State\+Store $\ast$store)}]{\setlength{\rightskip}{0pt plus 5cm}void Wave\+Front\+Loader\+::write\+Tex\+Coord (
+\begin{DoxyParamCaption}
+\item[{{\bf Wave\+Front\+State\+Store} $\ast$}]{store}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1WaveFrontLoader_a5a59f02df20d15946a61e9cc54fee9f4}
+
+
+write\+Tex\+Coord 
+
+Write Tex\+Coord Data 
+\begin{DoxyParams}{Parameters}
+{\em store} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1WaveFrontLoader_a2b952f66cfe5d54b5527ea73c63c1e76}{}\index{Engine\+::\+Wave\+Front\+Loader@{Engine\+::\+Wave\+Front\+Loader}!write\+Vertex@{write\+Vertex}}
+\index{write\+Vertex@{write\+Vertex}!Engine\+::\+Wave\+Front\+Loader@{Engine\+::\+Wave\+Front\+Loader}}
+\subsubsection[{write\+Vertex(\+Wave\+Front\+State\+Store $\ast$store)}]{\setlength{\rightskip}{0pt plus 5cm}void Wave\+Front\+Loader\+::write\+Vertex (
+\begin{DoxyParamCaption}
+\item[{{\bf Wave\+Front\+State\+Store} $\ast$}]{store}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1WaveFrontLoader_a2b952f66cfe5d54b5527ea73c63c1e76}
+
+
+write\+Vertex 
+
+Write Vertex Data 
+\begin{DoxyParams}{Parameters}
+{\em store} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+File\+Loader/wavefrontloader.\+h\item 
+Engine/\+File\+Loader/Wave\+Front\+Loader.\+cpp\end{DoxyCompactItemize}

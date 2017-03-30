@@ -1,0 +1,336 @@
+\hypertarget{classEngine_1_1Camera}{}\section{Engine\+:\+:Camera Class Reference}
+\label{classEngine_1_1Camera}\index{Engine\+::\+Camera@{Engine\+::\+Camera}}
+
+
+The \hyperlink{classEngine_1_1Camera}{Camera} class.  
+
+
+
+
+{\ttfamily \#include $<$camera.\+h$>$}
+
+Inheritance diagram for Engine\+:\+:Camera\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classEngine_1_1Camera}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classEngine_1_1Camera_a54aed52433cefef871f5d0b294b7e87b}{Direction} \{ {\bfseries F\+O\+R\+W\+A\+R\+D}, 
+{\bfseries B\+A\+C\+K\+W\+A\+R\+D}, 
+{\bfseries L\+E\+F\+T}, 
+{\bfseries R\+I\+G\+H\+T}
+ \}\begin{DoxyCompactList}\small\item\em The Direction enum. \end{DoxyCompactList}
+\item 
+\hypertarget{classEngine_1_1Camera_a4362ae70fbe23d07e449fdfef964c36c}{}enum {\bfseries Camera\+Mode} \{ {\bfseries F\+L\+Y\+\_\+\+M\+O\+D\+E}, 
+{\bfseries E\+G\+O\+\_\+\+M\+O\+D\+E}
+ \}\label{classEngine_1_1Camera_a4362ae70fbe23d07e449fdfef964c36c}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classEngine_1_1Camera_a5c68f1ee8348320a6c47419ae2d724fb}{Camera} (void)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classEngine_1_1Camera}{Camera}. \end{DoxyCompactList}\item 
+\hyperlink{classEngine_1_1Camera_afdc243ad39091e737778367b9925091d}{Camera} (const std\+::string \&camera\+\_\+name)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classEngine_1_1Camera}{Camera}. \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1Camera_a1d5813e53c9c0eac322b079c211eb7a8}{set\+Scissor\+View} (\hyperlink{classVector4}{Vector4f} sci)
+\begin{DoxyCompactList}\small\item\em set\+View \end{DoxyCompactList}\item 
+\hypertarget{classEngine_1_1Camera_a863693ca42f6a9e5f0d1983af4c55b04}{}void {\bfseries set\+Scissor\+View} (int x, int y, int width, int height)\label{classEngine_1_1Camera_a863693ca42f6a9e5f0d1983af4c55b04}
+
+\item 
+void \hyperlink{classEngine_1_1Camera_a6af03781efc6da99e021a5165634627f}{set\+Name} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em set\+Name \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1Camera_a2de0f59bf133c8c242423a5812399166}{set\+Mode} (Camera\+Mode mode)
+\begin{DoxyCompactList}\small\item\em set\+Mode \end{DoxyCompactList}\item 
+\hypertarget{classEngine_1_1Camera_a83c9aa8c07f1b67b179e0708cfe427a6}{}void {\bfseries invert\+Pitch} (void)\label{classEngine_1_1Camera_a83c9aa8c07f1b67b179e0708cfe427a6}
+
+\item 
+\hypertarget{classEngine_1_1Camera_ab9ad7d4d0158ab8f3580f50244d5e67e}{}void {\bfseries invert\+Yaw} (void)\label{classEngine_1_1Camera_ab9ad7d4d0158ab8f3580f50244d5e67e}
+
+\item 
+\hyperlink{classVector4}{Vector4f} \hyperlink{classEngine_1_1Camera_a433f03de6ad715da69536f8e521dd8c7}{get\+View} (void)
+\begin{DoxyCompactList}\small\item\em get\+View \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classEngine_1_1Camera_a1ac6dd58e8986f523dabcf4e91e04a26}{get\+Name} (void)
+\begin{DoxyCompactList}\small\item\em get\+Name \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1Camera_a13c461546b6141eb6baabb54419e6476}{Auto\+Rotation} (\hyperlink{classEngine_1_1Position}{Position} $\ast$object)
+\begin{DoxyCompactList}\small\item\em follow \end{DoxyCompactList}\item 
+\hypertarget{classEngine_1_1Camera_a000392f7de2ae12bed38baed2449872d}{}void {\bfseries Auto\+Rotation\+Reset} (void)\label{classEngine_1_1Camera_a000392f7de2ae12bed38baed2449872d}
+
+\item 
+void \hyperlink{classEngine_1_1Camera_a3261c7dbede2662496927861f19dbd92}{move} (\hyperlink{classEngine_1_1Camera_a54aed52433cefef871f5d0b294b7e87b}{Direction} dir, float speed)
+\begin{DoxyCompactList}\small\item\em move \end{DoxyCompactList}\item 
+\hypertarget{classEngine_1_1Camera_a9ab2ad1245b516e2a51f6007c2b2d9c3}{}void {\bfseries move\+\_\+ex} (\hyperlink{classEngine_1_1Camera_a54aed52433cefef871f5d0b294b7e87b}{Camera\+::\+Direction} dir, float distance, \hyperlink{classEngine_1_1Position}{Position} $\ast$object)\label{classEngine_1_1Camera_a9ab2ad1245b516e2a51f6007c2b2d9c3}
+
+\item 
+float \hyperlink{classEngine_1_1Camera_ab71919b625658e16ea5664609d4fe30f}{get\+Pitch} (void)
+\begin{DoxyCompactList}\small\item\em get\+Pitch \end{DoxyCompactList}\item 
+float \hyperlink{classEngine_1_1Camera_a9c53dd61301fd51e532d5ba77c5e14dd}{get\+Yaw} (void)
+\begin{DoxyCompactList}\small\item\em get\+Yaw \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1Camera_ae37c21a512277b455ac79f57cc573be4}{transform} (void)
+\begin{DoxyCompactList}\small\item\em transform \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1Camera_a6d2bbb5124335a8cb3e7e871b4f5216b}{set\+Pitch} (float value)
+\begin{DoxyCompactList}\small\item\em set\+Pitch \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1Camera_aecaf00e8167268dec5f1745d3db06fd0}{set\+Yaw} (float value)
+\begin{DoxyCompactList}\small\item\em set\+Yaw \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classEngine_1_1Camera_a2d6b55fc92f272ab3e53833e8d069d7a}{get\+Radian} (float angle)
+\begin{DoxyCompactList}\small\item\em get\+Radian \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classEngine_1_1Camera}{Camera} class. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classEngine_1_1Camera_a54aed52433cefef871f5d0b294b7e87b}{}\index{Engine\+::\+Camera@{Engine\+::\+Camera}!Direction@{Direction}}
+\index{Direction@{Direction}!Engine\+::\+Camera@{Engine\+::\+Camera}}
+\subsubsection[{Direction}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Engine\+::\+Camera\+::\+Direction}}\label{classEngine_1_1Camera_a54aed52433cefef871f5d0b294b7e87b}
+
+
+The Direction enum. 
+
+Movement directions 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classEngine_1_1Camera_a5c68f1ee8348320a6c47419ae2d724fb}{}\index{Engine\+::\+Camera@{Engine\+::\+Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!Engine\+::\+Camera@{Engine\+::\+Camera}}
+\subsubsection[{Camera(void)}]{\setlength{\rightskip}{0pt plus 5cm}Camera\+::\+Camera (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\label{classEngine_1_1Camera_a5c68f1ee8348320a6c47419ae2d724fb}
+
+
+\hyperlink{classEngine_1_1Camera}{Camera}. 
+
+Create Default \hyperlink{classEngine_1_1Camera}{Camera} ( aka Main ) \hypertarget{classEngine_1_1Camera_afdc243ad39091e737778367b9925091d}{}\index{Engine\+::\+Camera@{Engine\+::\+Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!Engine\+::\+Camera@{Engine\+::\+Camera}}
+\subsubsection[{Camera(const std\+::string \&camera\+\_\+name)}]{\setlength{\rightskip}{0pt plus 5cm}Engine\+::\+Camera\+::\+Camera (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{camera\+\_\+name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\label{classEngine_1_1Camera_afdc243ad39091e737778367b9925091d}
+
+
+\hyperlink{classEngine_1_1Camera}{Camera}. 
+
+Create S\+C\+I\+S\+S\+O\+R \hyperlink{classEngine_1_1Camera}{Camera} 
+\begin{DoxyParams}{Parameters}
+{\em camera\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classEngine_1_1Camera_a13c461546b6141eb6baabb54419e6476}{}\index{Engine\+::\+Camera@{Engine\+::\+Camera}!Auto\+Rotation@{Auto\+Rotation}}
+\index{Auto\+Rotation@{Auto\+Rotation}!Engine\+::\+Camera@{Engine\+::\+Camera}}
+\subsubsection[{Auto\+Rotation(\+Position $\ast$object)}]{\setlength{\rightskip}{0pt plus 5cm}void Camera\+::\+Auto\+Rotation (
+\begin{DoxyParamCaption}
+\item[{{\bf Position} $\ast$}]{object}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Camera_a13c461546b6141eb6baabb54419e6476}
+
+
+follow 
+
+\hyperlink{classEngine_1_1Camera}{Camera} follow a Object 
+\begin{DoxyParams}{Parameters}
+{\em object} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1Camera_a1ac6dd58e8986f523dabcf4e91e04a26}{}\index{Engine\+::\+Camera@{Engine\+::\+Camera}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!Engine\+::\+Camera@{Engine\+::\+Camera}}
+\subsubsection[{get\+Name(void)}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Camera\+::get\+Name (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Camera_a1ac6dd58e8986f523dabcf4e91e04a26}
+
+
+get\+Name 
+
+Return \hyperlink{classEngine_1_1Camera}{Camera} Name \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1Camera_ab71919b625658e16ea5664609d4fe30f}{}\index{Engine\+::\+Camera@{Engine\+::\+Camera}!get\+Pitch@{get\+Pitch}}
+\index{get\+Pitch@{get\+Pitch}!Engine\+::\+Camera@{Engine\+::\+Camera}}
+\subsubsection[{get\+Pitch(void)}]{\setlength{\rightskip}{0pt plus 5cm}float Camera\+::get\+Pitch (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Camera_ab71919b625658e16ea5664609d4fe30f}
+
+
+get\+Pitch 
+
+Return Pitch value \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1Camera_a2d6b55fc92f272ab3e53833e8d069d7a}{}\index{Engine\+::\+Camera@{Engine\+::\+Camera}!get\+Radian@{get\+Radian}}
+\index{get\+Radian@{get\+Radian}!Engine\+::\+Camera@{Engine\+::\+Camera}}
+\subsubsection[{get\+Radian(float angle)}]{\setlength{\rightskip}{0pt plus 5cm}float Camera\+::get\+Radian (
+\begin{DoxyParamCaption}
+\item[{float}]{angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classEngine_1_1Camera_a2d6b55fc92f272ab3e53833e8d069d7a}
+
+
+get\+Radian 
+
+Calc Angle to Radian 
+\begin{DoxyParams}{Parameters}
+{\em angle} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1Camera_a433f03de6ad715da69536f8e521dd8c7}{}\index{Engine\+::\+Camera@{Engine\+::\+Camera}!get\+View@{get\+View}}
+\index{get\+View@{get\+View}!Engine\+::\+Camera@{Engine\+::\+Camera}}
+\subsubsection[{get\+View(void)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector4f} Camera\+::get\+View (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Camera_a433f03de6ad715da69536f8e521dd8c7}
+
+
+get\+View 
+
+Return Scissor Values \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1Camera_a9c53dd61301fd51e532d5ba77c5e14dd}{}\index{Engine\+::\+Camera@{Engine\+::\+Camera}!get\+Yaw@{get\+Yaw}}
+\index{get\+Yaw@{get\+Yaw}!Engine\+::\+Camera@{Engine\+::\+Camera}}
+\subsubsection[{get\+Yaw(void)}]{\setlength{\rightskip}{0pt plus 5cm}float Camera\+::get\+Yaw (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Camera_a9c53dd61301fd51e532d5ba77c5e14dd}
+
+
+get\+Yaw 
+
+Return Yaw Value \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1Camera_a3261c7dbede2662496927861f19dbd92}{}\index{Engine\+::\+Camera@{Engine\+::\+Camera}!move@{move}}
+\index{move@{move}!Engine\+::\+Camera@{Engine\+::\+Camera}}
+\subsubsection[{move(\+Direction dir, float speed)}]{\setlength{\rightskip}{0pt plus 5cm}void Camera\+::move (
+\begin{DoxyParamCaption}
+\item[{{\bf Camera\+::\+Direction}}]{dir, }
+\item[{float}]{speed}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Camera_a3261c7dbede2662496927861f19dbd92}
+
+
+move 
+
+Move \hyperlink{classEngine_1_1Camera}{Camera} to direction with speed 
+\begin{DoxyParams}{Parameters}
+{\em dir} & \+: Direction ( F\+O\+R\+W\+A\+R\+D...) \\
+\hline
+{\em speed} & \+: Speed \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1Camera_a2de0f59bf133c8c242423a5812399166}{}\index{Engine\+::\+Camera@{Engine\+::\+Camera}!set\+Mode@{set\+Mode}}
+\index{set\+Mode@{set\+Mode}!Engine\+::\+Camera@{Engine\+::\+Camera}}
+\subsubsection[{set\+Mode(\+Camera\+Mode mode)}]{\setlength{\rightskip}{0pt plus 5cm}void Camera\+::set\+Mode (
+\begin{DoxyParamCaption}
+\item[{Camera\+Mode}]{mode}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Camera_a2de0f59bf133c8c242423a5812399166}
+
+
+set\+Mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1Camera_a6af03781efc6da99e021a5165634627f}{}\index{Engine\+::\+Camera@{Engine\+::\+Camera}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!Engine\+::\+Camera@{Engine\+::\+Camera}}
+\subsubsection[{set\+Name(const std\+::string \&name)}]{\setlength{\rightskip}{0pt plus 5cm}void Camera\+::set\+Name (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Camera_a6af03781efc6da99e021a5165634627f}
+
+
+set\+Name 
+
+Set \hyperlink{classEngine_1_1Camera}{Camera} Name 
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1Camera_a6d2bbb5124335a8cb3e7e871b4f5216b}{}\index{Engine\+::\+Camera@{Engine\+::\+Camera}!set\+Pitch@{set\+Pitch}}
+\index{set\+Pitch@{set\+Pitch}!Engine\+::\+Camera@{Engine\+::\+Camera}}
+\subsubsection[{set\+Pitch(float value)}]{\setlength{\rightskip}{0pt plus 5cm}void Camera\+::set\+Pitch (
+\begin{DoxyParamCaption}
+\item[{float}]{value}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Camera_a6d2bbb5124335a8cb3e7e871b4f5216b}
+
+
+set\+Pitch 
+
+Set Pitch value \hypertarget{classEngine_1_1Camera_a1d5813e53c9c0eac322b079c211eb7a8}{}\index{Engine\+::\+Camera@{Engine\+::\+Camera}!set\+Scissor\+View@{set\+Scissor\+View}}
+\index{set\+Scissor\+View@{set\+Scissor\+View}!Engine\+::\+Camera@{Engine\+::\+Camera}}
+\subsubsection[{set\+Scissor\+View(\+Vector4f sci)}]{\setlength{\rightskip}{0pt plus 5cm}void Camera\+::set\+Scissor\+View (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector4f}}]{sci}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Camera_a1d5813e53c9c0eac322b079c211eb7a8}
+
+
+set\+View 
+
+Set View\+Port Values for S\+C\+I\+S\+S\+O\+R \hyperlink{classEngine_1_1Camera}{Camera} 
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em with} & \\
+\hline
+{\em height} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1Camera_aecaf00e8167268dec5f1745d3db06fd0}{}\index{Engine\+::\+Camera@{Engine\+::\+Camera}!set\+Yaw@{set\+Yaw}}
+\index{set\+Yaw@{set\+Yaw}!Engine\+::\+Camera@{Engine\+::\+Camera}}
+\subsubsection[{set\+Yaw(float value)}]{\setlength{\rightskip}{0pt plus 5cm}void Camera\+::set\+Yaw (
+\begin{DoxyParamCaption}
+\item[{float}]{value}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Camera_aecaf00e8167268dec5f1745d3db06fd0}
+
+
+set\+Yaw 
+
+Set Yaw value 
+\begin{DoxyParams}{Parameters}
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1Camera_ae37c21a512277b455ac79f57cc573be4}{}\index{Engine\+::\+Camera@{Engine\+::\+Camera}!transform@{transform}}
+\index{transform@{transform}!Engine\+::\+Camera@{Engine\+::\+Camera}}
+\subsubsection[{transform(void)}]{\setlength{\rightskip}{0pt plus 5cm}void Camera\+::transform (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Camera_ae37c21a512277b455ac79f57cc573be4}
+
+
+transform 
+
+\hyperlink{classEngine_1_1Camera}{Camera} transformation 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Container/camera.\+h\item 
+Container/Camera.\+cpp\end{DoxyCompactItemize}

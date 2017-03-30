@@ -1,0 +1,239 @@
+\hypertarget{classEngine_1_1AnimationManager}{}\section{Engine\+:\+:Animation\+Manager Class Reference}
+\label{classEngine_1_1AnimationManager}\index{Engine\+::\+Animation\+Manager@{Engine\+::\+Animation\+Manager}}
+
+
+The \hyperlink{classEngine_1_1AnimationManager}{Animation\+Manager} controlled Animations.  
+
+
+
+
+{\ttfamily \#include $<$animationmanager.\+h$>$}
+
+Inheritance diagram for Engine\+:\+:Animation\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classEngine_1_1AnimationManager}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEngine_1_1AnimationManager_a3625098c28199094ef82056c22414205}{}using {\bfseries Animation\+Map} = std\+::map$<$ uint, \hyperlink{classEngine_1_1Animation}{Animation} $\ast$ $>$\label{classEngine_1_1AnimationManager_a3625098c28199094ef82056c22414205}
+
+\item 
+\hypertarget{classEngine_1_1AnimationManager_a97a8ac1d418ab00715d47d2278e608ab}{}using {\bfseries Anim\+Loader\+List} = std\+::list$<$ \hyperlink{classEngine_1_1AnimationLoader}{Animation\+Loader} $\ast$ $>$\label{classEngine_1_1AnimationManager_a97a8ac1d418ab00715d47d2278e608ab}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classEngine_1_1AnimationManager_a4d2622e81e065e7d55fe0c127b26ad33}{prepare\+V\+B\+O} (\hyperlink{classEngine_1_1Animation}{Animation} $\ast$anim, \hyperlink{classEngine_1_1Mesh}{Mesh} $\ast$mesh)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classEngine_1_1AnimationManager_a4d2622e81e065e7d55fe0c127b26ad33}{Animation\+Manager\+::prepare\+V\+B\+O}. \end{DoxyCompactList}\item 
+\hypertarget{classEngine_1_1AnimationManager_a62d0a57ab543057eaf245d37b486a752}{}void {\bfseries Add\+Transformations} (\hyperlink{classEngine_1_1Animation}{Animation} $\ast$anim, \hyperlink{classEngine_1_1Mesh}{Mesh} $\ast$mesh)\label{classEngine_1_1AnimationManager_a62d0a57ab543057eaf245d37b486a752}
+
+\item 
+\hyperlink{classEngine_1_1Animation}{Animation} $\ast$ \hyperlink{classEngine_1_1AnimationManager_a9bfe9218d60ae4d9ea5c0911813f7f8d}{create\+Animation} (const std\+::string \&animation\+\_\+name, const std\+::string \&motion\+\_\+file, \hyperlink{classEngine_1_1Mesh}{Mesh} $\ast$mesh)  throw ( std\+::runtime\+\_\+error )
+\begin{DoxyCompactList}\small\item\em create\+Animation \end{DoxyCompactList}\item 
+\hypertarget{classEngine_1_1AnimationManager_acb671d94e2ddf41b9e0e2e0ee07d51f2}{}void {\bfseries Create\+Bones} (\hyperlink{classEngine_1_1Animation}{Animation} $\ast$animation, const std\+::string \&motion\+\_\+file)\label{classEngine_1_1AnimationManager_acb671d94e2ddf41b9e0e2e0ee07d51f2}
+
+\item 
+\hyperlink{classEngine_1_1Animation}{Animation} $\ast$ \hyperlink{classEngine_1_1AnimationManager_aa22f9a6d3b41f702da6c6c2ec5414acc}{get\+Animation} (uint component\+\_\+id)
+\begin{DoxyCompactList}\small\item\em get\+Animation \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1AnimationManager_ac5aa9b68314681e6b1cc449d259ee277}{destroy} (uint component\+\_\+id)
+\begin{DoxyCompactList}\small\item\em remove \end{DoxyCompactList}\item 
+const \hyperlink{classEngine_1_1NodeAnimScene}{Node\+Anim\+Scene} $\ast$ \hyperlink{classEngine_1_1AnimationManager_a0314d0b13a86da7ea893333dbb69d833}{Read\+File} (const std\+::string \&motion\+\_\+file, unsigned int flags)
+\begin{DoxyCompactList}\small\item\em Read\+File. \end{DoxyCompactList}\item 
+bool \hyperlink{classEngine_1_1AnimationManager_a3248d132cea1fdf69d96c2c7d1ffda08}{Is\+Extension\+Supported} (const std\+::string \&extension)
+\begin{DoxyCompactList}\small\item\em Is\+Extension\+Supported. \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1AnimationManager_a5d5c62435011bb70e8b344700e1a6829}{register\+Loader} (\hyperlink{classEngine_1_1AnimationLoader}{Animation\+Loader} $\ast$loader)
+\begin{DoxyCompactList}\small\item\em register\+Loader \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classEngine_1_1AnimationManager_a697b862a65f681654d92b5ea529fd9f4}{add\+Extension\+Support} (const std\+::string \&extension)
+\begin{DoxyCompactList}\small\item\em add\+Extension\+Support \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1AnimationManager_a5b150fa34470c4221baea6fc94ef2007}{prepare\+Animation} (\hyperlink{classEngine_1_1Animation}{Animation} $\ast$anim, \hyperlink{classEngine_1_1Mesh}{Mesh} $\ast$mesh)
+\begin{DoxyCompactList}\small\item\em create\+Bone\+Index \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classEngine_1_1AnimationManager}{Animation\+Manager} controlled Animations. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classEngine_1_1AnimationManager_a697b862a65f681654d92b5ea529fd9f4}{}\index{Engine\+::\+Animation\+Manager@{Engine\+::\+Animation\+Manager}!add\+Extension\+Support@{add\+Extension\+Support}}
+\index{add\+Extension\+Support@{add\+Extension\+Support}!Engine\+::\+Animation\+Manager@{Engine\+::\+Animation\+Manager}}
+\subsubsection[{add\+Extension\+Support(const std\+::string \&extension)}]{\setlength{\rightskip}{0pt plus 5cm}void Animation\+Manager\+::add\+Extension\+Support (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{extension}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classEngine_1_1AnimationManager_a697b862a65f681654d92b5ea529fd9f4}
+
+
+add\+Extension\+Support 
+
+Add new Extension 
+\begin{DoxyParams}{Parameters}
+{\em extension} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1AnimationManager_a9bfe9218d60ae4d9ea5c0911813f7f8d}{}\index{Engine\+::\+Animation\+Manager@{Engine\+::\+Animation\+Manager}!create\+Animation@{create\+Animation}}
+\index{create\+Animation@{create\+Animation}!Engine\+::\+Animation\+Manager@{Engine\+::\+Animation\+Manager}}
+\subsubsection[{create\+Animation(const std\+::string \&animation\+\_\+name, const std\+::string \&motion\+\_\+file, Mesh $\ast$mesh)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Animation} $\ast$ Animation\+Manager\+::create\+Animation (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{animation\+\_\+name, }
+\item[{const std\+::string \&}]{motion\+\_\+file, }
+\item[{{\bf Mesh} $\ast$}]{mesh}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) }\label{classEngine_1_1AnimationManager_a9bfe9218d60ae4d9ea5c0911813f7f8d}
+
+
+create\+Animation 
+
+Create a New \hyperlink{classEngine_1_1Animation}{Animation} with \hyperlink{classEngine_1_1Animation}{Animation} Name \& \hyperlink{classEngine_1_1Animation}{Animation} Motion file
+
+
+\begin{DoxyParams}{Parameters}
+{\em animation\+\_\+name} & \\
+\hline
+{\em motion\+\_\+file} & \+: (./resource/animation.bvh) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1AnimationManager_ac5aa9b68314681e6b1cc449d259ee277}{}\index{Engine\+::\+Animation\+Manager@{Engine\+::\+Animation\+Manager}!destroy@{destroy}}
+\index{destroy@{destroy}!Engine\+::\+Animation\+Manager@{Engine\+::\+Animation\+Manager}}
+\subsubsection[{destroy(uint component\+\_\+id)}]{\setlength{\rightskip}{0pt plus 5cm}void Animation\+Manager\+::destroy (
+\begin{DoxyParamCaption}
+\item[{uint}]{component\+\_\+id}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1AnimationManager_ac5aa9b68314681e6b1cc449d259ee277}
+
+
+remove 
+
+Destroy \hyperlink{classEngine_1_1Animation}{Animation} 
+\begin{DoxyParams}{Parameters}
+{\em component\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1AnimationManager_aa22f9a6d3b41f702da6c6c2ec5414acc}{}\index{Engine\+::\+Animation\+Manager@{Engine\+::\+Animation\+Manager}!get\+Animation@{get\+Animation}}
+\index{get\+Animation@{get\+Animation}!Engine\+::\+Animation\+Manager@{Engine\+::\+Animation\+Manager}}
+\subsubsection[{get\+Animation(uint component\+\_\+id)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Animation} $\ast$ Animation\+Manager\+::get\+Animation (
+\begin{DoxyParamCaption}
+\item[{uint}]{component\+\_\+id}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1AnimationManager_aa22f9a6d3b41f702da6c6c2ec5414acc}
+
+
+get\+Animation 
+
+Return \hyperlink{classEngine_1_1Animation}{Animation} by Component I\+D 
+\begin{DoxyParams}{Parameters}
+{\em component\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1AnimationManager_a3248d132cea1fdf69d96c2c7d1ffda08}{}\index{Engine\+::\+Animation\+Manager@{Engine\+::\+Animation\+Manager}!Is\+Extension\+Supported@{Is\+Extension\+Supported}}
+\index{Is\+Extension\+Supported@{Is\+Extension\+Supported}!Engine\+::\+Animation\+Manager@{Engine\+::\+Animation\+Manager}}
+\subsubsection[{Is\+Extension\+Supported(const std\+::string \&extension)}]{\setlength{\rightskip}{0pt plus 5cm}bool Animation\+Manager\+::\+Is\+Extension\+Supported (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{extension}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1AnimationManager_a3248d132cea1fdf69d96c2c7d1ffda08}
+
+
+Is\+Extension\+Supported. 
+
+Is Extension Supported then return true otherwise is false 
+\begin{DoxyParams}{Parameters}
+{\em extension} & \+: \char`\"{}.\+bvh\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1AnimationManager_a5b150fa34470c4221baea6fc94ef2007}{}\index{Engine\+::\+Animation\+Manager@{Engine\+::\+Animation\+Manager}!prepare\+Animation@{prepare\+Animation}}
+\index{prepare\+Animation@{prepare\+Animation}!Engine\+::\+Animation\+Manager@{Engine\+::\+Animation\+Manager}}
+\subsubsection[{prepare\+Animation(\+Animation $\ast$anim, Mesh $\ast$mesh)}]{\setlength{\rightskip}{0pt plus 5cm}void Animation\+Manager\+::prepare\+Animation (
+\begin{DoxyParamCaption}
+\item[{{\bf Animation} $\ast$}]{anim, }
+\item[{{\bf Mesh} $\ast$}]{mesh}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classEngine_1_1AnimationManager_a5b150fa34470c4221baea6fc94ef2007}
+
+
+create\+Bone\+Index 
+
+Create a \hyperlink{classEngine_1_1Bone}{Bone} Index for the \hyperlink{classEngine_1_1Animation}{Animation} \hyperlink{classEngine_1_1Shader}{Shader} 
+\begin{DoxyParams}{Parameters}
+{\em anim} & \\
+\hline
+{\em mesh} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1AnimationManager_a4d2622e81e065e7d55fe0c127b26ad33}{}\index{Engine\+::\+Animation\+Manager@{Engine\+::\+Animation\+Manager}!prepare\+V\+B\+O@{prepare\+V\+B\+O}}
+\index{prepare\+V\+B\+O@{prepare\+V\+B\+O}!Engine\+::\+Animation\+Manager@{Engine\+::\+Animation\+Manager}}
+\subsubsection[{prepare\+V\+B\+O(\+Animation $\ast$anim, Mesh $\ast$mesh)}]{\setlength{\rightskip}{0pt plus 5cm}void Animation\+Manager\+::prepare\+V\+B\+O (
+\begin{DoxyParamCaption}
+\item[{{\bf Animation} $\ast$}]{anim, }
+\item[{{\bf Mesh} $\ast$}]{mesh}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1AnimationManager_a4d2622e81e065e7d55fe0c127b26ad33}
+
+
+\hyperlink{classEngine_1_1AnimationManager_a4d2622e81e065e7d55fe0c127b26ad33}{Animation\+Manager\+::prepare\+V\+B\+O}. 
+
+Update Shadow V\+B\+O -\/ C\+P\+U Skinning 
+\begin{DoxyParams}{Parameters}
+{\em anim} & \\
+\hline
+{\em mesh} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1AnimationManager_a0314d0b13a86da7ea893333dbb69d833}{}\index{Engine\+::\+Animation\+Manager@{Engine\+::\+Animation\+Manager}!Read\+File@{Read\+File}}
+\index{Read\+File@{Read\+File}!Engine\+::\+Animation\+Manager@{Engine\+::\+Animation\+Manager}}
+\subsubsection[{Read\+File(const std\+::string \&motion\+\_\+file, unsigned int flags)}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Node\+Anim\+Scene} $\ast$ Animation\+Manager\+::\+Read\+File (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{motion\+\_\+file, }
+\item[{unsigned int}]{flags}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1AnimationManager_a0314d0b13a86da7ea893333dbb69d833}
+
+
+Read\+File. 
+
+Read \hyperlink{classEngine_1_1Animation}{Animation} File 
+\begin{DoxyParams}{Parameters}
+{\em motion\+\_\+file} & \\
+\hline
+{\em flags} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classEngine_1_1NodeAnimScene}{Node\+Anim\+Scene} 
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1AnimationManager_a5d5c62435011bb70e8b344700e1a6829}{}\index{Engine\+::\+Animation\+Manager@{Engine\+::\+Animation\+Manager}!register\+Loader@{register\+Loader}}
+\index{register\+Loader@{register\+Loader}!Engine\+::\+Animation\+Manager@{Engine\+::\+Animation\+Manager}}
+\subsubsection[{register\+Loader(\+Animation\+Loader $\ast$loader)}]{\setlength{\rightskip}{0pt plus 5cm}void Animation\+Manager\+::register\+Loader (
+\begin{DoxyParamCaption}
+\item[{{\bf Animation\+Loader} $\ast$}]{loader}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1AnimationManager_a5d5c62435011bb70e8b344700e1a6829}
+
+
+register\+Loader 
+
+Register new \hyperlink{classEngine_1_1AnimationLoader}{Animation\+Loader} 
+\begin{DoxyParams}{Parameters}
+{\em loader} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Manager/animationmanager.\+h\item 
+Engine/\+Manager/Animation\+Manager.\+cpp\end{DoxyCompactItemize}

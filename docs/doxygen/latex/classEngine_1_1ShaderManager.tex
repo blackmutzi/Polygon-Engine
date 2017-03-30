@@ -1,0 +1,144 @@
+\hypertarget{classEngine_1_1ShaderManager}{}\section{Engine\+:\+:Shader\+Manager Class Reference}
+\label{classEngine_1_1ShaderManager}\index{Engine\+::\+Shader\+Manager@{Engine\+::\+Shader\+Manager}}
+
+
+The \hyperlink{classEngine_1_1ShaderManager}{Shader\+Manager} controlled \hyperlink{classEngine_1_1IShader}{I\+Shader} ( \hyperlink{classEngine_1_1Shader}{Shader} , \hyperlink{classEngine_1_1ShaderARB}{Shader\+A\+R\+B} )  
+
+
+
+
+{\ttfamily \#include $<$shadermanager.\+h$>$}
+
+Inheritance diagram for Engine\+:\+:Shader\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classEngine_1_1ShaderManager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classEngine_1_1IShader}{I\+Shader} $\ast$ \hyperlink{classEngine_1_1ShaderManager_a04436b2e5d1450b5d4828f121ad62b59}{create\+Shader} (const std\+::string \&shader\+\_\+name)
+\begin{DoxyCompactList}\small\item\em create\+Shader \end{DoxyCompactList}\item 
+\hypertarget{classEngine_1_1ShaderManager_aff321723a3ee2895d14efa5f9a1fb970}{}\hyperlink{classEngine_1_1IShader}{I\+Shader} $\ast$ {\bfseries create\+Shader\+A\+R\+B} (const std\+::string \&shader\+\_\+name)\label{classEngine_1_1ShaderManager_aff321723a3ee2895d14efa5f9a1fb970}
+
+\item 
+void \hyperlink{classEngine_1_1ShaderManager_a840d6840451cb9b191a4f0c0ad84854f}{add\+Source} (\hyperlink{classEngine_1_1IShader}{I\+Shader} $\ast$shader, const std\+::string \&shader\+\_\+file, uint shader\+\_\+types)
+\begin{DoxyCompactList}\small\item\em add\+Source \end{DoxyCompactList}\item 
+\hypertarget{classEngine_1_1ShaderManager_aef42d44027ae53273a6fcae937793630}{}void {\bfseries add\+Source\+A\+R\+B} (\hyperlink{classEngine_1_1IShader}{I\+Shader} $\ast$shader, const std\+::string \&shader\+\_\+file, uint shader\+\_\+types)\label{classEngine_1_1ShaderManager_aef42d44027ae53273a6fcae937793630}
+
+\item 
+\hypertarget{classEngine_1_1ShaderManager_a37df04871c43bca6c2899d0e6ae9b509}{}void {\bfseries add\+Embedded\+Source} (\hyperlink{classEngine_1_1IShader}{I\+Shader} $\ast$shader, const std\+::string \&name, const std\+::string \&source, uint shader\+\_\+types)\label{classEngine_1_1ShaderManager_a37df04871c43bca6c2899d0e6ae9b509}
+
+\item 
+\hyperlink{classEngine_1_1IShader}{I\+Shader} $\ast$ \hyperlink{classEngine_1_1ShaderManager_a5248b6515e8a50eb89375985289baf64}{get\+Shader} (uint container\+\_\+id)
+\begin{DoxyCompactList}\small\item\em get\+Shader \end{DoxyCompactList}\item 
+\hypertarget{classEngine_1_1ShaderManager_a64641685923c88f3356da1cd1e8f9d20}{}void {\bfseries destroy} (uint container\+\_\+id)\label{classEngine_1_1ShaderManager_a64641685923c88f3356da1cd1e8f9d20}
+
+\item 
+\hypertarget{classEngine_1_1ShaderManager_af80799a6e091b951195979300ef331d3}{}void {\bfseries get\+Program\+Error\+A\+R\+B} (uint program, const std\+::string \&information)\label{classEngine_1_1ShaderManager_af80799a6e091b951195979300ef331d3}
+
+\item 
+\hypertarget{classEngine_1_1ShaderManager_ac1ee62e48600af2bf3873f1fa0d4dc0a}{}void {\bfseries get\+Program\+Error} (uint program, const std\+::string \&information)\label{classEngine_1_1ShaderManager_ac1ee62e48600af2bf3873f1fa0d4dc0a}
+
+\item 
+\hypertarget{classEngine_1_1ShaderManager_a9f601072a850635d25c33ef0b724c876}{}void {\bfseries get\+Shader\+Error} (uint shader, const std\+::string \&information)\label{classEngine_1_1ShaderManager_a9f601072a850635d25c33ef0b724c876}
+
+\item 
+\hypertarget{classEngine_1_1ShaderManager_a1ff6cadd12a4d63624baf15aa4c2ab7f}{}std\+::string {\bfseries Load\+Shader} (const string \&file\+Name)\label{classEngine_1_1ShaderManager_a1ff6cadd12a4d63624baf15aa4c2ab7f}
+
+\item 
+\hypertarget{classEngine_1_1ShaderManager_a488ee4fd5e8e12130b0f39ac14b34747}{}uint {\bfseries Create\+Shader} (const std\+::string \&name, const string \&text, uint type)\label{classEngine_1_1ShaderManager_a488ee4fd5e8e12130b0f39ac14b34747}
+
+\item 
+\hypertarget{classEngine_1_1ShaderManager_a9eafba65e127c7c0f13135e3a36a9504}{}uint {\bfseries Create\+Shader\+A\+R\+B} (const std\+::string \&name, const string \&text, uint type)\label{classEngine_1_1ShaderManager_a9eafba65e127c7c0f13135e3a36a9504}
+
+\item 
+\hypertarget{classEngine_1_1ShaderManager_a907eb8f7b29905794d45747b8e4c5fbe}{}uint {\bfseries create\+Shader\+Type} (const string \&shader\+\_\+file, const string extension, uint shader\+\_\+type)\label{classEngine_1_1ShaderManager_a907eb8f7b29905794d45747b8e4c5fbe}
+
+\item 
+\hypertarget{classEngine_1_1ShaderManager_ac3cfdfc83bf97698d70fb51b5b1e0252}{}uint {\bfseries create\+Shader\+Type\+A\+R\+B} (const string \&shader\+\_\+file, const string extension, uint shader\+\_\+type)\label{classEngine_1_1ShaderManager_ac3cfdfc83bf97698d70fb51b5b1e0252}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classEngine_1_1ShaderManager}{Shader\+Manager} controlled \hyperlink{classEngine_1_1IShader}{I\+Shader} ( \hyperlink{classEngine_1_1Shader}{Shader} , \hyperlink{classEngine_1_1ShaderARB}{Shader\+A\+R\+B} ) 
+
+Management of Shaders
+
+
+\begin{DoxyItemize}
+\item support only Open\+G\+L \hyperlink{classEngine_1_1Shader}{Shader} ( G\+L\+S\+L )
+\item create \hyperlink{classEngine_1_1Shader}{Shader} with \hyperlink{classEngine_1_1Attribute}{Attribute} Locations 
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\hypertarget{classEngine_1_1ShaderManager_a840d6840451cb9b191a4f0c0ad84854f}{}\index{Engine\+::\+Shader\+Manager@{Engine\+::\+Shader\+Manager}!add\+Source@{add\+Source}}
+\index{add\+Source@{add\+Source}!Engine\+::\+Shader\+Manager@{Engine\+::\+Shader\+Manager}}
+\subsubsection[{add\+Source(\+I\+Shader $\ast$shader, const std\+::string \&shader\+\_\+file, uint shader\+\_\+types)}]{\setlength{\rightskip}{0pt plus 5cm}void Shader\+Manager\+::add\+Source (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Shader} $\ast$}]{shader, }
+\item[{const std\+::string \&}]{shader\+\_\+file, }
+\item[{uint}]{shader\+\_\+types}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1ShaderManager_a840d6840451cb9b191a4f0c0ad84854f}
+
+
+add\+Source 
+
+Add Source to \hyperlink{classEngine_1_1Shader}{Shader} 
+\begin{DoxyParams}{Parameters}
+{\em empty\+\_\+shader} & \+: empty \hyperlink{classEngine_1_1Shader}{Shader} ptr \\
+\hline
+{\em shader\+\_\+file} & \+: shader\+\_\+file ( source ) \\
+\hline
+{\em shader\+\_\+name} & \+: shader\+\_\+ \\
+\hline
+{\em flags} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1ShaderManager_a04436b2e5d1450b5d4828f121ad62b59}{}\index{Engine\+::\+Shader\+Manager@{Engine\+::\+Shader\+Manager}!create\+Shader@{create\+Shader}}
+\index{create\+Shader@{create\+Shader}!Engine\+::\+Shader\+Manager@{Engine\+::\+Shader\+Manager}}
+\subsubsection[{create\+Shader(const std\+::string \&shader\+\_\+name)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Shader} $\ast$ Shader\+Manager\+::create\+Shader (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{shader\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1ShaderManager_a04436b2e5d1450b5d4828f121ad62b59}
+
+
+create\+Shader 
+
+Create a \hyperlink{classEngine_1_1Shader}{Shader} 
+\begin{DoxyParams}{Parameters}
+{\em shader\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1ShaderManager_a5248b6515e8a50eb89375985289baf64}{}\index{Engine\+::\+Shader\+Manager@{Engine\+::\+Shader\+Manager}!get\+Shader@{get\+Shader}}
+\index{get\+Shader@{get\+Shader}!Engine\+::\+Shader\+Manager@{Engine\+::\+Shader\+Manager}}
+\subsubsection[{get\+Shader(uint container\+\_\+id)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Shader} $\ast$ Shader\+Manager\+::get\+Shader (
+\begin{DoxyParamCaption}
+\item[{uint}]{container\+\_\+id}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1ShaderManager_a5248b6515e8a50eb89375985289baf64}
+
+
+get\+Shader 
+
+Return \hyperlink{classEngine_1_1Shader}{Shader} Object by component id or shader name 
+\begin{DoxyParams}{Parameters}
+{\em component\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Manager/shadermanager.\+h\item 
+Engine/\+Manager/Shader\+Manager.\+cpp\end{DoxyCompactItemize}

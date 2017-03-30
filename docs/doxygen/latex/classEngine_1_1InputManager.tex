@@ -1,0 +1,199 @@
+\hypertarget{classEngine_1_1InputManager}{}\section{Engine\+:\+:Input\+Manager Class Reference}
+\label{classEngine_1_1InputManager}\index{Engine\+::\+Input\+Manager@{Engine\+::\+Input\+Manager}}
+
+
+The \hyperlink{classEngine_1_1InputManager}{Input\+Manager} controlled \hyperlink{classEngine_1_1InputListener}{Input\+Listener}.  
+
+
+
+
+{\ttfamily \#include $<$input.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEngine_1_1InputManager_aad9dc1be66eb9e4aa297f05d6f52796f}{}void {\bfseries Poll\+Events} (G\+L\+F\+Wwindow $\ast$window)\label{classEngine_1_1InputManager_aad9dc1be66eb9e4aa297f05d6f52796f}
+
+\item 
+void \hyperlink{classEngine_1_1InputManager_a2173a6568e83a87457dea29d6a2cbcfa}{add\+Input\+Listener} (\hyperlink{classEngine_1_1InputListener}{Input\+Listener} $\ast$listener)
+\begin{DoxyCompactList}\small\item\em add\+Input\+Listener \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1InputManager_afa38a27cafb58cdaf0b961b62a4ccb5a}{remove\+Listener} (\hyperlink{classEngine_1_1InputListener}{Input\+Listener} $\ast$listener)
+\begin{DoxyCompactList}\small\item\em remove\+Listener \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1InputManager_a831f77f0da50898510e384b6551c7526}{capture} (int mouse\+X, int mouse\+Y)
+\begin{DoxyCompactList}\small\item\em capture \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1InputManager_a519d703bd33f1bb168e758f7938279dd}{create\+Key\+Board\+Event} (int key, int scancode, int action, int mods)
+\begin{DoxyCompactList}\small\item\em create\+Key\+Board\+Event \end{DoxyCompactList}\item 
+\hypertarget{classEngine_1_1InputManager_aa58b9b680a69eac6c3fd26ef6a480110}{}void {\bfseries create\+Key\+List\+Event} (std\+::list$<$ int $>$ keys)\label{classEngine_1_1InputManager_aa58b9b680a69eac6c3fd26ef6a480110}
+
+\item 
+void \hyperlink{classEngine_1_1InputManager_a62aab81c0b4c43dad82ad84feb32487c}{create\+Mouse\+Event} (int button, int action, int mods)
+\begin{DoxyCompactList}\small\item\em create\+Mouse\+Event \end{DoxyCompactList}\item 
+\hyperlink{classVector2}{Vector2f} \& \hyperlink{classEngine_1_1InputManager_a398d43ff9c84e95767523ca74de12ed9}{get\+Mouse\+Position} (void)
+\begin{DoxyCompactList}\small\item\em get\+Mouse\+Position \end{DoxyCompactList}\item 
+I\+Listener\+List \& \hyperlink{classEngine_1_1InputManager_a34f49a2a02ab0f7d44ee404978836711}{get\+Listener} ()
+\begin{DoxyCompactList}\small\item\em get\+Listener \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classEngine_1_1InputManager}{Input\+Manager} $\ast$ \hyperlink{classEngine_1_1InputManager_a2cdade9d1d20018f8ad556b5a571beda}{get\+Singleton\+Ptr} (void)
+\begin{DoxyCompactList}\small\item\em get\+Singleton\+Ptr \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classEngine_1_1InputManager}{Input\+Manager} controlled \hyperlink{classEngine_1_1InputListener}{Input\+Listener}. 
+
+Management of Input Devices
+
+
+\begin{DoxyItemize}
+\item create Keyboard Event
+\item create Mouse Event 
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\hypertarget{classEngine_1_1InputManager_a2173a6568e83a87457dea29d6a2cbcfa}{}\index{Engine\+::\+Input\+Manager@{Engine\+::\+Input\+Manager}!add\+Input\+Listener@{add\+Input\+Listener}}
+\index{add\+Input\+Listener@{add\+Input\+Listener}!Engine\+::\+Input\+Manager@{Engine\+::\+Input\+Manager}}
+\subsubsection[{add\+Input\+Listener(\+Input\+Listener $\ast$listener)}]{\setlength{\rightskip}{0pt plus 5cm}void Input\+Manager\+::add\+Input\+Listener (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\+Listener} $\ast$}]{listener}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1InputManager_a2173a6568e83a87457dea29d6a2cbcfa}
+
+
+add\+Input\+Listener 
+
+Add Input Listener 
+\begin{DoxyParams}{Parameters}
+{\em listener} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1InputManager_a831f77f0da50898510e384b6551c7526}{}\index{Engine\+::\+Input\+Manager@{Engine\+::\+Input\+Manager}!capture@{capture}}
+\index{capture@{capture}!Engine\+::\+Input\+Manager@{Engine\+::\+Input\+Manager}}
+\subsubsection[{capture(int mouse\+X, int mouse\+Y)}]{\setlength{\rightskip}{0pt plus 5cm}void Input\+Manager\+::capture (
+\begin{DoxyParamCaption}
+\item[{int}]{mouse\+X, }
+\item[{int}]{mouse\+Y}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1InputManager_a831f77f0da50898510e384b6551c7526}
+
+
+capture 
+
+Capture Mouse and Save x,y data 
+\begin{DoxyParams}{Parameters}
+{\em mouse\+X} & \\
+\hline
+{\em mouse\+Y} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1InputManager_a519d703bd33f1bb168e758f7938279dd}{}\index{Engine\+::\+Input\+Manager@{Engine\+::\+Input\+Manager}!create\+Key\+Board\+Event@{create\+Key\+Board\+Event}}
+\index{create\+Key\+Board\+Event@{create\+Key\+Board\+Event}!Engine\+::\+Input\+Manager@{Engine\+::\+Input\+Manager}}
+\subsubsection[{create\+Key\+Board\+Event(int key, int scancode, int action, int mods)}]{\setlength{\rightskip}{0pt plus 5cm}void Input\+Manager\+::create\+Key\+Board\+Event (
+\begin{DoxyParamCaption}
+\item[{int}]{key, }
+\item[{int}]{scancode, }
+\item[{int}]{action, }
+\item[{int}]{mods}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1InputManager_a519d703bd33f1bb168e758f7938279dd}
+
+
+create\+Key\+Board\+Event 
+
+Create a Keyboard Event 
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+{\em scancode} & \\
+\hline
+{\em action} & \\
+\hline
+{\em mods} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1InputManager_a62aab81c0b4c43dad82ad84feb32487c}{}\index{Engine\+::\+Input\+Manager@{Engine\+::\+Input\+Manager}!create\+Mouse\+Event@{create\+Mouse\+Event}}
+\index{create\+Mouse\+Event@{create\+Mouse\+Event}!Engine\+::\+Input\+Manager@{Engine\+::\+Input\+Manager}}
+\subsubsection[{create\+Mouse\+Event(int button, int action, int mods)}]{\setlength{\rightskip}{0pt plus 5cm}void Input\+Manager\+::create\+Mouse\+Event (
+\begin{DoxyParamCaption}
+\item[{int}]{button, }
+\item[{int}]{action, }
+\item[{int}]{mods}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1InputManager_a62aab81c0b4c43dad82ad84feb32487c}
+
+
+create\+Mouse\+Event 
+
+Create a Mouse Event 
+\begin{DoxyParams}{Parameters}
+{\em button} & \\
+\hline
+{\em action} & \\
+\hline
+{\em mods} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1InputManager_a34f49a2a02ab0f7d44ee404978836711}{}\index{Engine\+::\+Input\+Manager@{Engine\+::\+Input\+Manager}!get\+Listener@{get\+Listener}}
+\index{get\+Listener@{get\+Listener}!Engine\+::\+Input\+Manager@{Engine\+::\+Input\+Manager}}
+\subsubsection[{get\+Listener()}]{\setlength{\rightskip}{0pt plus 5cm}I\+Listener\+List \& Input\+Manager\+::get\+Listener (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1InputManager_a34f49a2a02ab0f7d44ee404978836711}
+
+
+get\+Listener 
+
+Return all Listener \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1InputManager_a398d43ff9c84e95767523ca74de12ed9}{}\index{Engine\+::\+Input\+Manager@{Engine\+::\+Input\+Manager}!get\+Mouse\+Position@{get\+Mouse\+Position}}
+\index{get\+Mouse\+Position@{get\+Mouse\+Position}!Engine\+::\+Input\+Manager@{Engine\+::\+Input\+Manager}}
+\subsubsection[{get\+Mouse\+Position(void)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2f} \& Input\+Manager\+::get\+Mouse\+Position (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1InputManager_a398d43ff9c84e95767523ca74de12ed9}
+
+
+get\+Mouse\+Position 
+
+Return Mouse \hyperlink{classEngine_1_1Position}{Position} \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1InputManager_a2cdade9d1d20018f8ad556b5a571beda}{}\index{Engine\+::\+Input\+Manager@{Engine\+::\+Input\+Manager}!get\+Singleton\+Ptr@{get\+Singleton\+Ptr}}
+\index{get\+Singleton\+Ptr@{get\+Singleton\+Ptr}!Engine\+::\+Input\+Manager@{Engine\+::\+Input\+Manager}}
+\subsubsection[{get\+Singleton\+Ptr(void)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Input\+Manager} $\ast$ Input\+Manager\+::get\+Singleton\+Ptr (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classEngine_1_1InputManager_a2cdade9d1d20018f8ad556b5a571beda}
+
+
+get\+Singleton\+Ptr 
+
+Return \hyperlink{classEngine_1_1InputManager}{Input\+Manager} Instance \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1InputManager_afa38a27cafb58cdaf0b961b62a4ccb5a}{}\index{Engine\+::\+Input\+Manager@{Engine\+::\+Input\+Manager}!remove\+Listener@{remove\+Listener}}
+\index{remove\+Listener@{remove\+Listener}!Engine\+::\+Input\+Manager@{Engine\+::\+Input\+Manager}}
+\subsubsection[{remove\+Listener(\+Input\+Listener $\ast$listener)}]{\setlength{\rightskip}{0pt plus 5cm}void Input\+Manager\+::remove\+Listener (
+\begin{DoxyParamCaption}
+\item[{{\bf Input\+Listener} $\ast$}]{listener}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1InputManager_afa38a27cafb58cdaf0b961b62a4ccb5a}
+
+
+remove\+Listener 
+
+Remove Input Listener 
+\begin{DoxyParams}{Parameters}
+{\em listener} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Container/input.\+h\item 
+Engine/\+Manager/Input\+Manager.\+cpp\end{DoxyCompactItemize}

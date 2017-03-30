@@ -1,0 +1,97 @@
+\hypertarget{classEngine_1_1GLFeedbackDoubleBuffer}{}\section{Engine\+:\+:G\+L\+Feedback\+Double\+Buffer Class Reference}
+\label{classEngine_1_1GLFeedbackDoubleBuffer}\index{Engine\+::\+G\+L\+Feedback\+Double\+Buffer@{Engine\+::\+G\+L\+Feedback\+Double\+Buffer}}
+
+
+The \hyperlink{classEngine_1_1GLFeedbackDoubleBuffer}{G\+L\+Feedback\+Double\+Buffer} class.  
+
+
+
+
+{\ttfamily \#include $<$glfeedbackdoublebuffer.\+h$>$}
+
+Inheritance diagram for Engine\+:\+:G\+L\+Feedback\+Double\+Buffer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classEngine_1_1GLFeedbackDoubleBuffer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classEngine_1_1GLFeedbackDoubleBuffer_a093faa032cd6f229c6a0e6b18fca11b6}{create} (\hyperlink{classEngine_1_1IGBuffer}{I\+G\+Buffer} $\ast$front, \hyperlink{classEngine_1_1IGBuffer}{I\+G\+Buffer} $\ast$back, int size\+\_\+data)
+\begin{DoxyCompactList}\small\item\em create \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1GLFeedbackDoubleBuffer_a94805048c8b23cb2bf83d40ace22c9cd}{update} (int offset, int size\+\_\+data, void $\ast$data)
+\begin{DoxyCompactList}\small\item\em update \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1GLFeedbackDoubleBuffer_aee224416eeeaa26f4c1eb0158cde1f68}{Swap\+Buffers} (void)
+\begin{DoxyCompactList}\small\item\em Swap\+Buffers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classEngine_1_1GLFeedbackDoubleBuffer}{G\+L\+Feedback\+Double\+Buffer} class. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classEngine_1_1GLFeedbackDoubleBuffer_a093faa032cd6f229c6a0e6b18fca11b6}{}\index{Engine\+::\+G\+L\+Feedback\+Double\+Buffer@{Engine\+::\+G\+L\+Feedback\+Double\+Buffer}!create@{create}}
+\index{create@{create}!Engine\+::\+G\+L\+Feedback\+Double\+Buffer@{Engine\+::\+G\+L\+Feedback\+Double\+Buffer}}
+\subsubsection[{create(\+I\+G\+Buffer $\ast$front, I\+G\+Buffer $\ast$back, int size\+\_\+data)}]{\setlength{\rightskip}{0pt plus 5cm}void G\+L\+Feedback\+Double\+Buffer\+::create (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+G\+Buffer} $\ast$}]{front, }
+\item[{{\bf I\+G\+Buffer} $\ast$}]{back, }
+\item[{int}]{size\+\_\+data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classEngine_1_1GLFeedbackDoubleBuffer_a093faa032cd6f229c6a0e6b18fca11b6}
+
+
+create 
+
+Create Front and Back Buffer 
+
+Implements \hyperlink{classEngine_1_1IGDoubleBuffer_a094e87543bb24956ec1fd3835b4ca413}{Engine\+::\+I\+G\+Double\+Buffer}.
+
+\hypertarget{classEngine_1_1GLFeedbackDoubleBuffer_aee224416eeeaa26f4c1eb0158cde1f68}{}\index{Engine\+::\+G\+L\+Feedback\+Double\+Buffer@{Engine\+::\+G\+L\+Feedback\+Double\+Buffer}!Swap\+Buffers@{Swap\+Buffers}}
+\index{Swap\+Buffers@{Swap\+Buffers}!Engine\+::\+G\+L\+Feedback\+Double\+Buffer@{Engine\+::\+G\+L\+Feedback\+Double\+Buffer}}
+\subsubsection[{Swap\+Buffers(void)}]{\setlength{\rightskip}{0pt plus 5cm}void G\+L\+Feedback\+Double\+Buffer\+::\+Swap\+Buffers (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classEngine_1_1GLFeedbackDoubleBuffer_aee224416eeeaa26f4c1eb0158cde1f68}
+
+
+Swap\+Buffers. 
+
+Copy Back buffer data into Front buffer 
+
+Implements \hyperlink{classEngine_1_1IGDoubleBuffer_ade7c5ce0b5883c55f5e66588dd8b14da}{Engine\+::\+I\+G\+Double\+Buffer}.
+
+\hypertarget{classEngine_1_1GLFeedbackDoubleBuffer_a94805048c8b23cb2bf83d40ace22c9cd}{}\index{Engine\+::\+G\+L\+Feedback\+Double\+Buffer@{Engine\+::\+G\+L\+Feedback\+Double\+Buffer}!update@{update}}
+\index{update@{update}!Engine\+::\+G\+L\+Feedback\+Double\+Buffer@{Engine\+::\+G\+L\+Feedback\+Double\+Buffer}}
+\subsubsection[{update(int offset, int size\+\_\+data, void $\ast$data)}]{\setlength{\rightskip}{0pt plus 5cm}void G\+L\+Feedback\+Double\+Buffer\+::update (
+\begin{DoxyParamCaption}
+\item[{int}]{offset, }
+\item[{int}]{size\+\_\+data, }
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classEngine_1_1GLFeedbackDoubleBuffer_a94805048c8b23cb2bf83d40ace22c9cd}
+
+
+update 
+
+Update Back Buffer 
+\begin{DoxyParams}{Parameters}
+{\em offset} & \\
+\hline
+{\em size\+\_\+data} & \\
+\hline
+{\em data} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classEngine_1_1IGDoubleBuffer_a39b0608ee6f5ddbf14dbea9030b881d8}{Engine\+::\+I\+G\+Double\+Buffer}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+G\+P\+U/glfeedbackdoublebuffer.\+h\item 
+Engine/\+G\+P\+U/G\+L\+Feedback\+Double\+Buffer.\+cpp\end{DoxyCompactItemize}

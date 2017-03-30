@@ -1,0 +1,71 @@
+\hypertarget{classEngine_1_1ParticleEffect}{}\section{Engine\+:\+:Particle\+Effect Class Reference}
+\label{classEngine_1_1ParticleEffect}\index{Engine\+::\+Particle\+Effect@{Engine\+::\+Particle\+Effect}}
+
+
+The \hyperlink{classEngine_1_1ParticleEffect}{Particle\+Effect} -\/ abstract class.  
+
+
+
+
+{\ttfamily \#include $<$particleeffect.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEngine_1_1ParticleEffect_aa55c9b01da59def9254a66fe802b0e9c}{}{\bfseries Particle\+Effect} (const std\+::string \&effect\+\_\+name)\label{classEngine_1_1ParticleEffect_aa55c9b01da59def9254a66fe802b0e9c}
+
+\item 
+\hypertarget{classEngine_1_1ParticleEffect_a63cbc0e15ade08c85b5988d04b5747aa}{}virtual void {\bfseries create} (int particle\+\_\+count)\label{classEngine_1_1ParticleEffect_a63cbc0e15ade08c85b5988d04b5747aa}
+
+\item 
+\hypertarget{classEngine_1_1ParticleEffect_aaef45570f2cd8d0968730c796464723e}{}virtual void {\bfseries simulate} (float delta)=0\label{classEngine_1_1ParticleEffect_aaef45570f2cd8d0968730c796464723e}
+
+\item 
+\hypertarget{classEngine_1_1ParticleEffect_a336fe1c2e155b31790141356e310338f}{}void {\bfseries create\+Particle\+Data} (void)\label{classEngine_1_1ParticleEffect_a336fe1c2e155b31790141356e310338f}
+
+\item 
+\hypertarget{classEngine_1_1ParticleEffect_a1f599788b9ee5cfd88e05ef3de16b298}{}int {\bfseries get\+Particle\+Size} (void)\label{classEngine_1_1ParticleEffect_a1f599788b9ee5cfd88e05ef3de16b298}
+
+\item 
+\hypertarget{classEngine_1_1ParticleEffect_a8e768de548d405cdbf45fba904c87a02}{}std\+::vector$<$ float $>$ {\bfseries get\+Particle\+Vertex\+Data} ()\label{classEngine_1_1ParticleEffect_a8e768de548d405cdbf45fba904c87a02}
+
+\item 
+\hypertarget{classEngine_1_1ParticleEffect_a89ceac8e16ec44ca1862c0d07531a5ec}{}std\+::vector$<$ \hyperlink{classVector4}{Vector4f} $>$ {\bfseries get\+Particle\+T\+B\+O\+Data} ()\label{classEngine_1_1ParticleEffect_a89ceac8e16ec44ca1862c0d07531a5ec}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEngine_1_1ParticleEffect_a14c53c1a0dfdea8458e378772f623450}{}std\+::string {\bfseries m\+\_\+effect\+\_\+name}\label{classEngine_1_1ParticleEffect_a14c53c1a0dfdea8458e378772f623450}
+
+\item 
+\hypertarget{classEngine_1_1ParticleEffect_a34a180c3a58b998dc4ed6baf556396a4}{}std\+::vector$<$ float $>$ {\bfseries m\+\_\+particle\+\_\+vertex\+\_\+data}\label{classEngine_1_1ParticleEffect_a34a180c3a58b998dc4ed6baf556396a4}
+
+\item 
+\hypertarget{classEngine_1_1ParticleEffect_a34154c94b6eb3ee05dc4348624c2f928}{}std\+::vector$<$ \hyperlink{classVector4}{Vector4f} $>$ {\bfseries m\+\_\+particle\+\_\+tbo\+\_\+data}\label{classEngine_1_1ParticleEffect_a34154c94b6eb3ee05dc4348624c2f928}
+
+\item 
+\hypertarget{classEngine_1_1ParticleEffect_a7fe7b66f9e625e306cb7d2eb77962e4f}{}\hyperlink{classVector3}{Vector3f} {\bfseries m\+\_\+position}\label{classEngine_1_1ParticleEffect_a7fe7b66f9e625e306cb7d2eb77962e4f}
+
+\item 
+\hypertarget{classEngine_1_1ParticleEffect_a952bd22ed428ad0ac72540a2e276387c}{}Particles {\bfseries m\+\_\+particles}\label{classEngine_1_1ParticleEffect_a952bd22ed428ad0ac72540a2e276387c}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEngine_1_1ParticleEffect_a904cc8b18338c02f864ab20daef05c56}{}class {\bfseries Particle\+Effect\+Manager}\label{classEngine_1_1ParticleEffect_a904cc8b18338c02f864ab20daef05c56}
+
+\item 
+\hypertarget{classEngine_1_1ParticleEffect_aabcb8951071e20a007cb9a19bda2c4d3}{}class {\bfseries Particle\+Manager}\label{classEngine_1_1ParticleEffect_aabcb8951071e20a007cb9a19bda2c4d3}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classEngine_1_1ParticleEffect}{Particle\+Effect} -\/ abstract class. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Container/particleeffect.\+h\item 
+Container/Particle\+Effect.\+cpp\end{DoxyCompactItemize}

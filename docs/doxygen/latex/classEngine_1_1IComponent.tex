@@ -1,0 +1,217 @@
+\hypertarget{classEngine_1_1IComponent}{}\section{Engine\+:\+:I\+Component$<$ Sender $>$ Class Template Reference}
+\label{classEngine_1_1IComponent}\index{Engine\+::\+I\+Component$<$ Sender $>$@{Engine\+::\+I\+Component$<$ Sender $>$}}
+
+
+The \hyperlink{classEngine_1_1IComponent}{I\+Component} class.  
+
+
+
+
+{\ttfamily \#include $<$I\+Component.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classEngine_1_1IComponent_aade5c1f3aa7ac594acc104861fc761c4}{I\+Component\+List} = std\+::list$<$ \hyperlink{classEngine_1_1IComponent}{I\+Component}$<$ Sender $>$ $\ast$ $>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classEngine_1_1IComponent_a7b5acbdb4786c772e6c83735cf5a2ad6}{I\+Component} (const std\+::string \&component\+\_\+name)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classEngine_1_1IComponent}{I\+Component}. \end{DoxyCompactList}\item 
+const std\+::string \& \hyperlink{classEngine_1_1IComponent_addee40bd0de98ebcf4566d8b95968e05}{get\+Name} (void) const 
+\begin{DoxyCompactList}\small\item\em message \end{DoxyCompactList}\item 
+uint \hyperlink{classEngine_1_1IComponent_af35ea9d64e2151e4641f73500ec8d19b}{get\+I\+D} (void) const 
+\begin{DoxyCompactList}\small\item\em get\+I\+D \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1IComponent_aad832773ebaaefc426394d7d5b3fb5e7}{add\+Component} (\hyperlink{classEngine_1_1IComponent}{I\+Component}$<$ Sender $>$ $\ast$component)
+\begin{DoxyCompactList}\small\item\em add\+Component \end{DoxyCompactList}\item 
+bool \hyperlink{classEngine_1_1IComponent_ab6ff658b9114391269ffa3d9f1d57e10}{has\+Component} (const std\+::string \&component\+\_\+name)
+\begin{DoxyCompactList}\small\item\em has\+Component \end{DoxyCompactList}\item 
+\hyperlink{classEngine_1_1IComponent}{I\+Component}$<$ Sender $>$ $\ast$ \hyperlink{classEngine_1_1IComponent_ac33863a371723db7aef928986ff942e1}{get\+Component} (const std\+::string \&component\+\_\+name)
+\begin{DoxyCompactList}\small\item\em get\+Component \end{DoxyCompactList}\item 
+\hyperlink{classEngine_1_1IComponent_aade5c1f3aa7ac594acc104861fc761c4}{I\+Component\+List} \hyperlink{classEngine_1_1IComponent_a30089eee0f95d222bed42c59e6615f05}{get\+Components} (const std\+::string \&component\+\_\+name)
+\begin{DoxyCompactList}\small\item\em get\+Components \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1IComponent_ae1ebe49fd115e2776a250ff11e94caf4}{remove} (\hyperlink{classEngine_1_1IComponent}{I\+Component}$<$ Sender $>$ $\ast$component)
+\begin{DoxyCompactList}\small\item\em remove \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEngine_1_1IComponent_aec9a0ccb4f8e2df57615c2e26822cc43}{}uint {\bfseries m\+Component\+Id}\label{classEngine_1_1IComponent_aec9a0ccb4f8e2df57615c2e26822cc43}
+
+\item 
+\hypertarget{classEngine_1_1IComponent_a5eb3918b4b630214ba60af5d205c3515}{}\hyperlink{classEngine_1_1IComponent_aade5c1f3aa7ac594acc104861fc761c4}{I\+Component\+List} {\bfseries m\+Component\+List}\label{classEngine_1_1IComponent_a5eb3918b4b630214ba60af5d205c3515}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEngine_1_1IComponent_a4542618ef05fbb881e9783ae3755240a}{}class {\bfseries Component\+Manager}\label{classEngine_1_1IComponent_a4542618ef05fbb881e9783ae3755240a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Sender$>$class Engine\+::\+I\+Component$<$ Sender $>$}
+
+The \hyperlink{classEngine_1_1IComponent}{I\+Component} class. 
+
+Component Template Class 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classEngine_1_1IComponent_aade5c1f3aa7ac594acc104861fc761c4}{}\index{Engine\+::\+I\+Component@{Engine\+::\+I\+Component}!I\+Component\+List@{I\+Component\+List}}
+\index{I\+Component\+List@{I\+Component\+List}!Engine\+::\+I\+Component@{Engine\+::\+I\+Component}}
+\subsubsection[{I\+Component\+List}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Sender$>$ using {\bf Engine\+::\+I\+Component}$<$ Sender $>$\+::{\bf I\+Component\+List} =  std\+::list$<$ {\bf I\+Component}$<$Sender$>$ $\ast$ $>$}\label{classEngine_1_1IComponent_aade5c1f3aa7ac594acc104861fc761c4}
+Component List 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classEngine_1_1IComponent_a7b5acbdb4786c772e6c83735cf5a2ad6}{}\index{Engine\+::\+I\+Component@{Engine\+::\+I\+Component}!I\+Component@{I\+Component}}
+\index{I\+Component@{I\+Component}!Engine\+::\+I\+Component@{Engine\+::\+I\+Component}}
+\subsubsection[{I\+Component(const std\+::string \&component\+\_\+name)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Sender$>$ {\bf Engine\+::\+I\+Component}$<$ Sender $>$\+::{\bf I\+Component} (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{component\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1IComponent_a7b5acbdb4786c772e6c83735cf5a2ad6}
+
+
+\hyperlink{classEngine_1_1IComponent}{I\+Component}. 
+
+Default Constructor with Component Name 
+\begin{DoxyParams}{Parameters}
+{\em component\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classEngine_1_1IComponent_aad832773ebaaefc426394d7d5b3fb5e7}{}\index{Engine\+::\+I\+Component@{Engine\+::\+I\+Component}!add\+Component@{add\+Component}}
+\index{add\+Component@{add\+Component}!Engine\+::\+I\+Component@{Engine\+::\+I\+Component}}
+\subsubsection[{add\+Component(\+I\+Component$<$ Sender $>$ $\ast$component)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Sender $>$ void {\bf Engine\+::\+I\+Component}$<$ Sender $>$\+::add\+Component (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Component}$<$ Sender $>$ $\ast$}]{component}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1IComponent_aad832773ebaaefc426394d7d5b3fb5e7}
+
+
+add\+Component 
+
+Add Component 
+\begin{DoxyParams}{Parameters}
+{\em component} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1IComponent_ac33863a371723db7aef928986ff942e1}{}\index{Engine\+::\+I\+Component@{Engine\+::\+I\+Component}!get\+Component@{get\+Component}}
+\index{get\+Component@{get\+Component}!Engine\+::\+I\+Component@{Engine\+::\+I\+Component}}
+\subsubsection[{get\+Component(const std\+::string \&component\+\_\+name)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Sender $>$ {\bf I\+Component}$<$ Sender $>$ $\ast$ {\bf Engine\+::\+I\+Component}$<$ Sender $>$\+::get\+Component (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{component\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1IComponent_ac33863a371723db7aef928986ff942e1}
+
+
+get\+Component 
+
+Return one Component by Component Name 
+\begin{DoxyParams}{Parameters}
+{\em component\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1IComponent_a30089eee0f95d222bed42c59e6615f05}{}\index{Engine\+::\+I\+Component@{Engine\+::\+I\+Component}!get\+Components@{get\+Components}}
+\index{get\+Components@{get\+Components}!Engine\+::\+I\+Component@{Engine\+::\+I\+Component}}
+\subsubsection[{get\+Components(const std\+::string \&component\+\_\+name)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Sender $>$ std\+::list$<$ {\bf I\+Component}$<$ Sender $>$ $\ast$ $>$ {\bf Engine\+::\+I\+Component}$<$ Sender $>$\+::get\+Components (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{component\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1IComponent_a30089eee0f95d222bed42c59e6615f05}
+
+
+get\+Components 
+
+Return more Component by Component Name 
+\begin{DoxyParams}{Parameters}
+{\em component\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1IComponent_af35ea9d64e2151e4641f73500ec8d19b}{}\index{Engine\+::\+I\+Component@{Engine\+::\+I\+Component}!get\+I\+D@{get\+I\+D}}
+\index{get\+I\+D@{get\+I\+D}!Engine\+::\+I\+Component@{Engine\+::\+I\+Component}}
+\subsubsection[{get\+I\+D(void) const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Sender $>$ uint {\bf Engine\+::\+I\+Component}$<$ Sender $>$\+::get\+I\+D (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classEngine_1_1IComponent_af35ea9d64e2151e4641f73500ec8d19b}
+
+
+get\+I\+D 
+
+Return Component I\+D \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1IComponent_addee40bd0de98ebcf4566d8b95968e05}{}\index{Engine\+::\+I\+Component@{Engine\+::\+I\+Component}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!Engine\+::\+I\+Component@{Engine\+::\+I\+Component}}
+\subsubsection[{get\+Name(void) const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Sender $>$ const std\+::string \& {\bf Engine\+::\+I\+Component}$<$ Sender $>$\+::get\+Name (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classEngine_1_1IComponent_addee40bd0de98ebcf4566d8b95968e05}
+
+
+message 
+
+Received a Message from another Sender ( aka. Component ) 
+\begin{DoxyParams}{Parameters}
+{\em sender} & \\
+\hline
+{\em msg} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Return Component Name get\+Name \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1IComponent_ab6ff658b9114391269ffa3d9f1d57e10}{}\index{Engine\+::\+I\+Component@{Engine\+::\+I\+Component}!has\+Component@{has\+Component}}
+\index{has\+Component@{has\+Component}!Engine\+::\+I\+Component@{Engine\+::\+I\+Component}}
+\subsubsection[{has\+Component(const std\+::string \&component\+\_\+name)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Sender $>$ bool {\bf Engine\+::\+I\+Component}$<$ Sender $>$\+::has\+Component (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{component\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1IComponent_ab6ff658b9114391269ffa3d9f1d57e10}
+
+
+has\+Component 
+
+Return true if component exists 
+\begin{DoxyParams}{Parameters}
+{\em component\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1IComponent_ae1ebe49fd115e2776a250ff11e94caf4}{}\index{Engine\+::\+I\+Component@{Engine\+::\+I\+Component}!remove@{remove}}
+\index{remove@{remove}!Engine\+::\+I\+Component@{Engine\+::\+I\+Component}}
+\subsubsection[{remove(\+I\+Component$<$ Sender $>$ $\ast$component)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Sender $>$ void {\bf Engine\+::\+I\+Component}$<$ Sender $>$\+::remove (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Component}$<$ Sender $>$ $\ast$}]{component}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1IComponent_ae1ebe49fd115e2776a250ff11e94caf4}
+
+
+remove 
+
+Destroy one any Component 
+\begin{DoxyParams}{Parameters}
+{\em component} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/I\+Component.\+h\end{DoxyCompactItemize}

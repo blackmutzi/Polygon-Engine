@@ -1,0 +1,57 @@
+\hypertarget{structEngine_1_1BvhLoader_1_1StoreState}{}\section{Engine\+:\+:Bvh\+Loader\+:\+:Store\+State Struct Reference}
+\label{structEngine_1_1BvhLoader_1_1StoreState}\index{Engine\+::\+Bvh\+Loader\+::\+Store\+State@{Engine\+::\+Bvh\+Loader\+::\+Store\+State}}
+
+
+The \hyperlink{structEngine_1_1BvhLoader_1_1StoreState}{Store\+State} struct.  
+
+
+
+
+{\ttfamily \#include $<$bvhloader.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classEngine_1_1NodeAnim}{Node\+Anim} $\ast$ \hyperlink{structEngine_1_1BvhLoader_1_1StoreState_ac01f720a48885dc6e03901b9765b2db2}{root}
+\item 
+\hyperlink{classEngine_1_1NodeAnim}{Node\+Anim} $\ast$ \hyperlink{structEngine_1_1BvhLoader_1_1StoreState_ad83062579f793a9de2dcb408bbd9546b}{current}
+\item 
+std\+::vector$<$ \hyperlink{classEngine_1_1NodeAnim}{Node\+Anim} $\ast$ $>$ \hyperlink{structEngine_1_1BvhLoader_1_1StoreState_a778ff6ec18f3ccb194bdbd0a8342d3f6}{stack}
+\item 
+std\+::string \hyperlink{structEngine_1_1BvhLoader_1_1StoreState_acaeea33c2fb2172627c6fb2aef5acc79}{line}
+\item 
+bool \hyperlink{structEngine_1_1BvhLoader_1_1StoreState_a67e2ab4804024f0200dfbb335cb33d78}{ignore}
+\item 
+bool \hyperlink{structEngine_1_1BvhLoader_1_1StoreState_a9c8556dfae21548e31f532976c6e8ce3}{end\+\_\+site}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{structEngine_1_1BvhLoader_1_1StoreState}{Store\+State} struct. 
+
+Save States for Hierachy \& Motion 
+
+\subsection{Member Data Documentation}
+\hypertarget{structEngine_1_1BvhLoader_1_1StoreState_ad83062579f793a9de2dcb408bbd9546b}{}\index{Engine\+::\+Bvh\+Loader\+::\+Store\+State@{Engine\+::\+Bvh\+Loader\+::\+Store\+State}!current@{current}}
+\index{current@{current}!Engine\+::\+Bvh\+Loader\+::\+Store\+State@{Engine\+::\+Bvh\+Loader\+::\+Store\+State}}
+\subsubsection[{current}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Anim}$\ast$ Engine\+::\+Bvh\+Loader\+::\+Store\+State\+::current}\label{structEngine_1_1BvhLoader_1_1StoreState_ad83062579f793a9de2dcb408bbd9546b}
+current node \hypertarget{structEngine_1_1BvhLoader_1_1StoreState_a9c8556dfae21548e31f532976c6e8ce3}{}\index{Engine\+::\+Bvh\+Loader\+::\+Store\+State@{Engine\+::\+Bvh\+Loader\+::\+Store\+State}!end\+\_\+site@{end\+\_\+site}}
+\index{end\+\_\+site@{end\+\_\+site}!Engine\+::\+Bvh\+Loader\+::\+Store\+State@{Engine\+::\+Bvh\+Loader\+::\+Store\+State}}
+\subsubsection[{end\+\_\+site}]{\setlength{\rightskip}{0pt plus 5cm}bool Engine\+::\+Bvh\+Loader\+::\+Store\+State\+::end\+\_\+site}\label{structEngine_1_1BvhLoader_1_1StoreState_a9c8556dfae21548e31f532976c6e8ce3}
+if end\+\_\+site state active / inactive \hypertarget{structEngine_1_1BvhLoader_1_1StoreState_a67e2ab4804024f0200dfbb335cb33d78}{}\index{Engine\+::\+Bvh\+Loader\+::\+Store\+State@{Engine\+::\+Bvh\+Loader\+::\+Store\+State}!ignore@{ignore}}
+\index{ignore@{ignore}!Engine\+::\+Bvh\+Loader\+::\+Store\+State@{Engine\+::\+Bvh\+Loader\+::\+Store\+State}}
+\subsubsection[{ignore}]{\setlength{\rightskip}{0pt plus 5cm}bool Engine\+::\+Bvh\+Loader\+::\+Store\+State\+::ignore}\label{structEngine_1_1BvhLoader_1_1StoreState_a67e2ab4804024f0200dfbb335cb33d78}
+line ignore mode \hypertarget{structEngine_1_1BvhLoader_1_1StoreState_acaeea33c2fb2172627c6fb2aef5acc79}{}\index{Engine\+::\+Bvh\+Loader\+::\+Store\+State@{Engine\+::\+Bvh\+Loader\+::\+Store\+State}!line@{line}}
+\index{line@{line}!Engine\+::\+Bvh\+Loader\+::\+Store\+State@{Engine\+::\+Bvh\+Loader\+::\+Store\+State}}
+\subsubsection[{line}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Engine\+::\+Bvh\+Loader\+::\+Store\+State\+::line}\label{structEngine_1_1BvhLoader_1_1StoreState_acaeea33c2fb2172627c6fb2aef5acc79}
+actually line \hypertarget{structEngine_1_1BvhLoader_1_1StoreState_ac01f720a48885dc6e03901b9765b2db2}{}\index{Engine\+::\+Bvh\+Loader\+::\+Store\+State@{Engine\+::\+Bvh\+Loader\+::\+Store\+State}!root@{root}}
+\index{root@{root}!Engine\+::\+Bvh\+Loader\+::\+Store\+State@{Engine\+::\+Bvh\+Loader\+::\+Store\+State}}
+\subsubsection[{root}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Anim}$\ast$ Engine\+::\+Bvh\+Loader\+::\+Store\+State\+::root}\label{structEngine_1_1BvhLoader_1_1StoreState_ac01f720a48885dc6e03901b9765b2db2}
+root node \hypertarget{structEngine_1_1BvhLoader_1_1StoreState_a778ff6ec18f3ccb194bdbd0a8342d3f6}{}\index{Engine\+::\+Bvh\+Loader\+::\+Store\+State@{Engine\+::\+Bvh\+Loader\+::\+Store\+State}!stack@{stack}}
+\index{stack@{stack}!Engine\+::\+Bvh\+Loader\+::\+Store\+State@{Engine\+::\+Bvh\+Loader\+::\+Store\+State}}
+\subsubsection[{stack}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Node\+Anim} $\ast$ $>$ Engine\+::\+Bvh\+Loader\+::\+Store\+State\+::stack}\label{structEngine_1_1BvhLoader_1_1StoreState_a778ff6ec18f3ccb194bdbd0a8342d3f6}
+save nodes 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+File\+Loader/bvhloader.\+h\end{DoxyCompactItemize}

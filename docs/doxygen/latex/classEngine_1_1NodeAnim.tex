@@ -1,0 +1,269 @@
+\hypertarget{classEngine_1_1NodeAnim}{}\section{Engine\+:\+:Node\+Anim Class Reference}
+\label{classEngine_1_1NodeAnim}\index{Engine\+::\+Node\+Anim@{Engine\+::\+Node\+Anim}}
+
+
+The \hyperlink{classEngine_1_1NodeAnim}{Node\+Anim} class.  
+
+
+
+
+{\ttfamily \#include $<$nodeanim.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEngine_1_1NodeAnim_a8cfaab7c17ad0c7212904838e8730e5b}{}{\bfseries Node\+Anim} (const std\+::string \&node\+\_\+name)\label{classEngine_1_1NodeAnim_a8cfaab7c17ad0c7212904838e8730e5b}
+
+\item 
+void \hyperlink{classEngine_1_1NodeAnim_a02d79743ef4d9d737a2f290b78d765f8}{set\+Rotations} (Vector3fv rotations)
+\begin{DoxyCompactList}\small\item\em set\+Rotations \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1NodeAnim_a064b09fb930a538fb036fef21ff2f664}{set\+Quanternions} (Vector4fv quats)
+\begin{DoxyCompactList}\small\item\em set\+Quanternions \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1NodeAnim_a3dfddcefed0d6a2b11349ae5ea23b64f}{set\+Position} (const \hyperlink{classVector3}{Vector3f} \&position)
+\begin{DoxyCompactList}\small\item\em set\+Position \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1NodeAnim_acdf7bba9515196eec89dca3b3555d13c}{set\+Node\+Name} (const std\+::string \&node\+\_\+name)
+\begin{DoxyCompactList}\small\item\em set\+Node\+Name \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1NodeAnim_a9a1a94bf9e53180a3810f90685998688}{set\+Node} (\hyperlink{classEngine_1_1NodeAnim}{Node\+Anim} $\ast$node)
+\begin{DoxyCompactList}\small\item\em set\+Node \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1NodeAnim_aa9fb2456baafae8281c6ea64a45f1176}{add\+Quanternion} (const \hyperlink{classVector4}{Vector4f} \&quat)
+\begin{DoxyCompactList}\small\item\em add\+Quanternion \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1NodeAnim_ab2ca08d0111650591bd5ddbf0244e460}{add\+Rotation} (const \hyperlink{classVector3}{Vector3f} \&rotation)
+\begin{DoxyCompactList}\small\item\em add\+Rotation \end{DoxyCompactList}\item 
+const Vector4fv \hyperlink{classEngine_1_1NodeAnim_a5271f3a9ae728cff69911c15b2697ed5}{get\+Quanternions} (void) const 
+\begin{DoxyCompactList}\small\item\em get\+Quanternions \end{DoxyCompactList}\item 
+const Vector3fv \hyperlink{classEngine_1_1NodeAnim_a92a5f6cb255cf632cfec5f503d5a15d2}{get\+Rotations} (void) const 
+\begin{DoxyCompactList}\small\item\em get\+Rotations \end{DoxyCompactList}\item 
+const \hyperlink{classVector3}{Vector3f} \& \hyperlink{classEngine_1_1NodeAnim_a17413937ec2344aec8c5c13306f6bdad}{get\+Position} (void) const 
+\begin{DoxyCompactList}\small\item\em get\+Position \end{DoxyCompactList}\item 
+const std\+::string \& \hyperlink{classEngine_1_1NodeAnim_a8e343fd13892a06a7e894176f37755cd}{get\+Node\+Name} (void) const 
+\begin{DoxyCompactList}\small\item\em get\+Node\+Name \end{DoxyCompactList}\item 
+\hyperlink{classEngine_1_1NodeAnim}{Node\+Anim} $\ast$ \hyperlink{classEngine_1_1NodeAnim_ab2b8660cf74433045cfbaf9e9c2e8cdc}{get\+Parent\+Node} ()
+\begin{DoxyCompactList}\small\item\em get\+Parent\+Node \end{DoxyCompactList}\item 
+const \hyperlink{classEngine_1_1NodeAnim}{Node\+Anim} $\ast$ \hyperlink{classEngine_1_1NodeAnim_aee5b3b5484ac623393a8e241c7bf8428}{get\+Const\+Parent\+Node} (void) const 
+\begin{DoxyCompactList}\small\item\em get\+Const\+Parent\+Node \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1NodeAnim_a71b9b346eb551284dffb86f2dab4a68d}{clear} (void)
+\begin{DoxyCompactList}\small\item\em clear \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classEngine_1_1NodeAnim}{Node\+Anim} class. 
+
+Save Node Data ( aka. \hyperlink{classEngine_1_1Bone}{Bone} Data )
+\begin{DoxyItemize}
+\item only for custom Loader 
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\hypertarget{classEngine_1_1NodeAnim_aa9fb2456baafae8281c6ea64a45f1176}{}\index{Engine\+::\+Node\+Anim@{Engine\+::\+Node\+Anim}!add\+Quanternion@{add\+Quanternion}}
+\index{add\+Quanternion@{add\+Quanternion}!Engine\+::\+Node\+Anim@{Engine\+::\+Node\+Anim}}
+\subsubsection[{add\+Quanternion(const Vector4f \&quat)}]{\setlength{\rightskip}{0pt plus 5cm}void Node\+Anim\+::add\+Quanternion (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector4f} \&}]{quat}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1NodeAnim_aa9fb2456baafae8281c6ea64a45f1176}
+
+
+add\+Quanternion 
+
+Add a Quanternion 
+\begin{DoxyParams}{Parameters}
+{\em quat} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1NodeAnim_ab2ca08d0111650591bd5ddbf0244e460}{}\index{Engine\+::\+Node\+Anim@{Engine\+::\+Node\+Anim}!add\+Rotation@{add\+Rotation}}
+\index{add\+Rotation@{add\+Rotation}!Engine\+::\+Node\+Anim@{Engine\+::\+Node\+Anim}}
+\subsubsection[{add\+Rotation(const Vector3f \&rotation)}]{\setlength{\rightskip}{0pt plus 5cm}void Node\+Anim\+::add\+Rotation (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3f} \&}]{rotation}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1NodeAnim_ab2ca08d0111650591bd5ddbf0244e460}
+
+
+add\+Rotation 
+
+Add Rotation 
+\begin{DoxyParams}{Parameters}
+{\em rotation} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1NodeAnim_a71b9b346eb551284dffb86f2dab4a68d}{}\index{Engine\+::\+Node\+Anim@{Engine\+::\+Node\+Anim}!clear@{clear}}
+\index{clear@{clear}!Engine\+::\+Node\+Anim@{Engine\+::\+Node\+Anim}}
+\subsubsection[{clear(void)}]{\setlength{\rightskip}{0pt plus 5cm}void Node\+Anim\+::clear (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1NodeAnim_a71b9b346eb551284dffb86f2dab4a68d}
+
+
+clear 
+
+clear lists \hypertarget{classEngine_1_1NodeAnim_aee5b3b5484ac623393a8e241c7bf8428}{}\index{Engine\+::\+Node\+Anim@{Engine\+::\+Node\+Anim}!get\+Const\+Parent\+Node@{get\+Const\+Parent\+Node}}
+\index{get\+Const\+Parent\+Node@{get\+Const\+Parent\+Node}!Engine\+::\+Node\+Anim@{Engine\+::\+Node\+Anim}}
+\subsubsection[{get\+Const\+Parent\+Node(void) const }]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Node\+Anim} $\ast$ Node\+Anim\+::get\+Const\+Parent\+Node (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classEngine_1_1NodeAnim_aee5b3b5484ac623393a8e241c7bf8428}
+
+
+get\+Const\+Parent\+Node 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1NodeAnim_a8e343fd13892a06a7e894176f37755cd}{}\index{Engine\+::\+Node\+Anim@{Engine\+::\+Node\+Anim}!get\+Node\+Name@{get\+Node\+Name}}
+\index{get\+Node\+Name@{get\+Node\+Name}!Engine\+::\+Node\+Anim@{Engine\+::\+Node\+Anim}}
+\subsubsection[{get\+Node\+Name(void) const }]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string \& Node\+Anim\+::get\+Node\+Name (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classEngine_1_1NodeAnim_a8e343fd13892a06a7e894176f37755cd}
+
+
+get\+Node\+Name 
+
+Return Node Name \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1NodeAnim_ab2b8660cf74433045cfbaf9e9c2e8cdc}{}\index{Engine\+::\+Node\+Anim@{Engine\+::\+Node\+Anim}!get\+Parent\+Node@{get\+Parent\+Node}}
+\index{get\+Parent\+Node@{get\+Parent\+Node}!Engine\+::\+Node\+Anim@{Engine\+::\+Node\+Anim}}
+\subsubsection[{get\+Parent\+Node()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Anim} $\ast$ Node\+Anim\+::get\+Parent\+Node (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1NodeAnim_ab2b8660cf74433045cfbaf9e9c2e8cdc}
+
+
+get\+Parent\+Node 
+
+Return Parent Node \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1NodeAnim_a17413937ec2344aec8c5c13306f6bdad}{}\index{Engine\+::\+Node\+Anim@{Engine\+::\+Node\+Anim}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!Engine\+::\+Node\+Anim@{Engine\+::\+Node\+Anim}}
+\subsubsection[{get\+Position(void) const }]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Vector3f} \& Node\+Anim\+::get\+Position (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classEngine_1_1NodeAnim_a17413937ec2344aec8c5c13306f6bdad}
+
+
+get\+Position 
+
+Return Offset \hyperlink{classEngine_1_1Position}{Position} \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1NodeAnim_a5271f3a9ae728cff69911c15b2697ed5}{}\index{Engine\+::\+Node\+Anim@{Engine\+::\+Node\+Anim}!get\+Quanternions@{get\+Quanternions}}
+\index{get\+Quanternions@{get\+Quanternions}!Engine\+::\+Node\+Anim@{Engine\+::\+Node\+Anim}}
+\subsubsection[{get\+Quanternions(void) const }]{\setlength{\rightskip}{0pt plus 5cm}const Vector4fv Node\+Anim\+::get\+Quanternions (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classEngine_1_1NodeAnim_a5271f3a9ae728cff69911c15b2697ed5}
+
+
+get\+Quanternions 
+
+Return Quanternion Array \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1NodeAnim_a92a5f6cb255cf632cfec5f503d5a15d2}{}\index{Engine\+::\+Node\+Anim@{Engine\+::\+Node\+Anim}!get\+Rotations@{get\+Rotations}}
+\index{get\+Rotations@{get\+Rotations}!Engine\+::\+Node\+Anim@{Engine\+::\+Node\+Anim}}
+\subsubsection[{get\+Rotations(void) const }]{\setlength{\rightskip}{0pt plus 5cm}const Vector3fv Node\+Anim\+::get\+Rotations (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classEngine_1_1NodeAnim_a92a5f6cb255cf632cfec5f503d5a15d2}
+
+
+get\+Rotations 
+
+Return Rotations \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1NodeAnim_a9a1a94bf9e53180a3810f90685998688}{}\index{Engine\+::\+Node\+Anim@{Engine\+::\+Node\+Anim}!set\+Node@{set\+Node}}
+\index{set\+Node@{set\+Node}!Engine\+::\+Node\+Anim@{Engine\+::\+Node\+Anim}}
+\subsubsection[{set\+Node(\+Node\+Anim $\ast$node)}]{\setlength{\rightskip}{0pt plus 5cm}void Node\+Anim\+::set\+Node (
+\begin{DoxyParamCaption}
+\item[{{\bf Node\+Anim} $\ast$}]{node}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1NodeAnim_a9a1a94bf9e53180a3810f90685998688}
+
+
+set\+Node 
+
+set parent node 
+\begin{DoxyParams}{Parameters}
+{\em node} & \+: parent bone \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1NodeAnim_acdf7bba9515196eec89dca3b3555d13c}{}\index{Engine\+::\+Node\+Anim@{Engine\+::\+Node\+Anim}!set\+Node\+Name@{set\+Node\+Name}}
+\index{set\+Node\+Name@{set\+Node\+Name}!Engine\+::\+Node\+Anim@{Engine\+::\+Node\+Anim}}
+\subsubsection[{set\+Node\+Name(const std\+::string \&node\+\_\+name)}]{\setlength{\rightskip}{0pt plus 5cm}void Node\+Anim\+::set\+Node\+Name (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{node\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1NodeAnim_acdf7bba9515196eec89dca3b3555d13c}
+
+
+set\+Node\+Name 
+
+set node name 
+\begin{DoxyParams}{Parameters}
+{\em node\+\_\+name} & \+: node name or bone name \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1NodeAnim_a3dfddcefed0d6a2b11349ae5ea23b64f}{}\index{Engine\+::\+Node\+Anim@{Engine\+::\+Node\+Anim}!set\+Position@{set\+Position}}
+\index{set\+Position@{set\+Position}!Engine\+::\+Node\+Anim@{Engine\+::\+Node\+Anim}}
+\subsubsection[{set\+Position(const Vector3f \&position)}]{\setlength{\rightskip}{0pt plus 5cm}void Node\+Anim\+::set\+Position (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3f} \&}]{position}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1NodeAnim_a3dfddcefed0d6a2b11349ae5ea23b64f}
+
+
+set\+Position 
+
+Set offset position 
+\begin{DoxyParams}{Parameters}
+{\em position} & \+: offset position or bone position \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1NodeAnim_a064b09fb930a538fb036fef21ff2f664}{}\index{Engine\+::\+Node\+Anim@{Engine\+::\+Node\+Anim}!set\+Quanternions@{set\+Quanternions}}
+\index{set\+Quanternions@{set\+Quanternions}!Engine\+::\+Node\+Anim@{Engine\+::\+Node\+Anim}}
+\subsubsection[{set\+Quanternions(\+Vector4fv quats)}]{\setlength{\rightskip}{0pt plus 5cm}void Node\+Anim\+::set\+Quanternions (
+\begin{DoxyParamCaption}
+\item[{Vector4fv}]{quats}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1NodeAnim_a064b09fb930a538fb036fef21ff2f664}
+
+
+set\+Quanternions 
+
+Set Quanternions like a Vector4f( x , y , z , w ) 
+\begin{DoxyParams}{Parameters}
+{\em quats} & \+: Vector4f array \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1NodeAnim_a02d79743ef4d9d737a2f290b78d765f8}{}\index{Engine\+::\+Node\+Anim@{Engine\+::\+Node\+Anim}!set\+Rotations@{set\+Rotations}}
+\index{set\+Rotations@{set\+Rotations}!Engine\+::\+Node\+Anim@{Engine\+::\+Node\+Anim}}
+\subsubsection[{set\+Rotations(\+Vector3fv rotations)}]{\setlength{\rightskip}{0pt plus 5cm}void Node\+Anim\+::set\+Rotations (
+\begin{DoxyParamCaption}
+\item[{Vector3fv}]{rotations}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1NodeAnim_a02d79743ef4d9d737a2f290b78d765f8}
+
+
+set\+Rotations 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rotations} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Container/nodeanim.\+h\item 
+Container/Node\+Anim.\+cpp\end{DoxyCompactItemize}

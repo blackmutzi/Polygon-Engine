@@ -1,0 +1,157 @@
+\hypertarget{classEngine_1_1LightManager}{}\section{Engine\+:\+:Light\+Manager Class Reference}
+\label{classEngine_1_1LightManager}\index{Engine\+::\+Light\+Manager@{Engine\+::\+Light\+Manager}}
+
+
+The \hyperlink{classEngine_1_1LightManager}{Light\+Manager} class.  
+
+
+
+
+{\ttfamily \#include $<$lightmanager.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEngine_1_1LightManager_ac886d9357ad312c625066e95d3cfd14e}{}void {\bfseries set\+Bias\+\_\+\+Test} (float value)\label{classEngine_1_1LightManager_ac886d9357ad312c625066e95d3cfd14e}
+
+\item 
+\hypertarget{classEngine_1_1LightManager_a8fd0da62e739ab9d4931c008a7c16475}{}float {\bfseries get\+Bias\+\_\+\+Test} (void)\label{classEngine_1_1LightManager_a8fd0da62e739ab9d4931c008a7c16475}
+
+\item 
+\hyperlink{classEngine_1_1Light}{Light} $\ast$ \hyperlink{classEngine_1_1LightManager_a1fc44ab503b283155ca0541e033380bd}{create\+Light} (const string \&light\+\_\+name)
+\begin{DoxyCompactList}\small\item\em create\+Light \end{DoxyCompactList}\item 
+\hypertarget{classEngine_1_1LightManager_a3900dcd2b60f42d1028ab18b1d50fad6}{}\hyperlink{classEngine_1_1SpotLight}{Spot\+Light} $\ast$ {\bfseries create\+Spot\+Light} (const string \&light\+\_\+name)\label{classEngine_1_1LightManager_a3900dcd2b60f42d1028ab18b1d50fad6}
+
+\item 
+void \hyperlink{classEngine_1_1LightManager_a410c2c0a2b518dc89be34788bdc9d22c}{remove} (const string \&light\+\_\+name)
+\begin{DoxyCompactList}\small\item\em remove \end{DoxyCompactList}\item 
+\hyperlink{classEngine_1_1Light}{Light} $\ast$ \hyperlink{classEngine_1_1LightManager_ab516482393ea525e57a24b6ccfa2b32f}{get\+Light} (const std\+::string \&light\+\_\+name)
+\begin{DoxyCompactList}\small\item\em get\+Light \end{DoxyCompactList}\item 
+\hypertarget{classEngine_1_1LightManager_a64c342a479210b8f4211aa2880aa05c6}{}\hyperlink{classEngine_1_1SpotLight}{Spot\+Light} $\ast$ {\bfseries get\+Spot\+Light} (const std\+::string \&spotlight\+\_\+name)\label{classEngine_1_1LightManager_a64c342a479210b8f4211aa2880aa05c6}
+
+\item 
+Lights \hyperlink{classEngine_1_1LightManager_af8b211420f10d9b29d72114a69ce5175}{get\+Lights} (void)
+\begin{DoxyCompactList}\small\item\em get\+Lights \end{DoxyCompactList}\item 
+Spot\+Lights \hyperlink{classEngine_1_1LightManager_a3e0b088762961ea2f94d56f78ed2ee8c}{get\+Spot\+Lights} (void)
+\begin{DoxyCompactList}\small\item\em get\+Spot\+Lights \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classEngine_1_1LightManager}{Light\+Manager} $\ast$ \hyperlink{classEngine_1_1LightManager_a875c588f08141aca1aff38ae0a1c1b1e}{get\+Singleton\+Ptr} (void)
+\begin{DoxyCompactList}\small\item\em get\+Singleton\+Ptr \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classEngine_1_1LightManager}{Light\+Manager} class. 
+
+Management of Lights
+
+
+\begin{DoxyItemize}
+\item create \hyperlink{classEngine_1_1Light}{Light} objects
+\item delete \hyperlink{classEngine_1_1Light}{Light} objects 
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\hypertarget{classEngine_1_1LightManager_a1fc44ab503b283155ca0541e033380bd}{}\index{Engine\+::\+Light\+Manager@{Engine\+::\+Light\+Manager}!create\+Light@{create\+Light}}
+\index{create\+Light@{create\+Light}!Engine\+::\+Light\+Manager@{Engine\+::\+Light\+Manager}}
+\subsubsection[{create\+Light(const string \&light\+\_\+name)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Light} $\ast$ Light\+Manager\+::create\+Light (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{light\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1LightManager_a1fc44ab503b283155ca0541e033380bd}
+
+
+create\+Light 
+
+Create a new \hyperlink{classEngine_1_1Light}{Light} with Name 
+\begin{DoxyParams}{Parameters}
+{\em light\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1LightManager_ab516482393ea525e57a24b6ccfa2b32f}{}\index{Engine\+::\+Light\+Manager@{Engine\+::\+Light\+Manager}!get\+Light@{get\+Light}}
+\index{get\+Light@{get\+Light}!Engine\+::\+Light\+Manager@{Engine\+::\+Light\+Manager}}
+\subsubsection[{get\+Light(const std\+::string \&light\+\_\+name)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Light} $\ast$ Light\+Manager\+::get\+Light (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{light\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1LightManager_ab516482393ea525e57a24b6ccfa2b32f}
+
+
+get\+Light 
+
+Return \hyperlink{classEngine_1_1Light}{Light} object by Name 
+\begin{DoxyParams}{Parameters}
+{\em light\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1LightManager_af8b211420f10d9b29d72114a69ce5175}{}\index{Engine\+::\+Light\+Manager@{Engine\+::\+Light\+Manager}!get\+Lights@{get\+Lights}}
+\index{get\+Lights@{get\+Lights}!Engine\+::\+Light\+Manager@{Engine\+::\+Light\+Manager}}
+\subsubsection[{get\+Lights(void)}]{\setlength{\rightskip}{0pt plus 5cm}Lights Light\+Manager\+::get\+Lights (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1LightManager_af8b211420f10d9b29d72114a69ce5175}
+
+
+get\+Lights 
+
+Return a List of Lights \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1LightManager_a875c588f08141aca1aff38ae0a1c1b1e}{}\index{Engine\+::\+Light\+Manager@{Engine\+::\+Light\+Manager}!get\+Singleton\+Ptr@{get\+Singleton\+Ptr}}
+\index{get\+Singleton\+Ptr@{get\+Singleton\+Ptr}!Engine\+::\+Light\+Manager@{Engine\+::\+Light\+Manager}}
+\subsubsection[{get\+Singleton\+Ptr(void)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Light\+Manager} $\ast$ Light\+Manager\+::get\+Singleton\+Ptr (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classEngine_1_1LightManager_a875c588f08141aca1aff38ae0a1c1b1e}
+
+
+get\+Singleton\+Ptr 
+
+Return \hyperlink{classEngine_1_1LightManager}{Light\+Manager} Instance \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1LightManager_a3e0b088762961ea2f94d56f78ed2ee8c}{}\index{Engine\+::\+Light\+Manager@{Engine\+::\+Light\+Manager}!get\+Spot\+Lights@{get\+Spot\+Lights}}
+\index{get\+Spot\+Lights@{get\+Spot\+Lights}!Engine\+::\+Light\+Manager@{Engine\+::\+Light\+Manager}}
+\subsubsection[{get\+Spot\+Lights(void)}]{\setlength{\rightskip}{0pt plus 5cm}Spot\+Lights Light\+Manager\+::get\+Spot\+Lights (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1LightManager_a3e0b088762961ea2f94d56f78ed2ee8c}
+
+
+get\+Spot\+Lights 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1LightManager_a410c2c0a2b518dc89be34788bdc9d22c}{}\index{Engine\+::\+Light\+Manager@{Engine\+::\+Light\+Manager}!remove@{remove}}
+\index{remove@{remove}!Engine\+::\+Light\+Manager@{Engine\+::\+Light\+Manager}}
+\subsubsection[{remove(const string \&light\+\_\+name)}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Manager\+::remove (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{light\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1LightManager_a410c2c0a2b518dc89be34788bdc9d22c}
+
+
+remove 
+
+Remove \hyperlink{classEngine_1_1Light}{Light} object by Name 
+\begin{DoxyParams}{Parameters}
+{\em light\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Manager/lightmanager.\+h\item 
+Engine/\+Manager/Light\+Manager.\+cpp\end{DoxyCompactItemize}

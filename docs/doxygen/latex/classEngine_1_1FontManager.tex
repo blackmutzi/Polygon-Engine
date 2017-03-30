@@ -1,0 +1,165 @@
+\hypertarget{classEngine_1_1FontManager}{}\section{Engine\+:\+:Font\+Manager Class Reference}
+\label{classEngine_1_1FontManager}\index{Engine\+::\+Font\+Manager@{Engine\+::\+Font\+Manager}}
+
+
+The \hyperlink{classEngine_1_1FontManager}{Font\+Manager} managed the Fonts.  
+
+
+
+
+{\ttfamily \#include $<$fontmanager.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classEngine_1_1FontManager_aba32832f74f13b0bec53d5132f78bcc3}{Char\+Mapping} = std\+::map$<$ char, \hyperlink{classEngine_1_1Texture}{Texture} $\ast$ $>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEngine_1_1FontManager_aef1290f13e68f6c22fe5a9341bf04de9}{}void {\bfseries finish} (void)\label{classEngine_1_1FontManager_aef1290f13e68f6c22fe5a9341bf04de9}
+
+\item 
+\hypertarget{classEngine_1_1FontManager_ab6edb246a77230f5ef25ea065ce9bd8f}{}\hyperlink{structEngine_1_1FontAtlas}{Font\+Atlas} {\bfseries create\+Font\+Atlas} (const std\+::string \&ttf\+\_\+file)\label{classEngine_1_1FontManager_ab6edb246a77230f5ef25ea065ce9bd8f}
+
+\item 
+F\+T\+\_\+\+Face \hyperlink{classEngine_1_1FontManager_a6e6afb29d8dde70cfd44a9a062a70e5b}{create\+Font\+Face} (const std\+::string \&ttf\+\_\+file)
+\begin{DoxyCompactList}\small\item\em create\+Font\+Face \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1FontManager_a25e57a935eaa136bdca2aa477d6f0bbf}{load} (F\+T\+\_\+\+Face face, const std\+::string \&asci)
+\begin{DoxyCompactList}\small\item\em load \end{DoxyCompactList}\item 
+\hypertarget{classEngine_1_1FontManager_abef4ff92e3d53fc92785680af0e017b4}{}void {\bfseries unload} (void)\label{classEngine_1_1FontManager_abef4ff92e3d53fc92785680af0e017b4}
+
+\item 
+\hyperlink{classEngine_1_1Texture}{Texture} $\ast$ \hyperlink{classEngine_1_1FontManager_a4ae277341d1f3b33dfab74ab2f175587}{get\+Char\+Texture} (char c)  throw ( std\+::runtime\+\_\+error )
+\begin{DoxyCompactList}\small\item\em get\+Char\+Texture \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1FontManager_aa036cdf0c0646b46069eb18732d81f00}{Char\+Register} (char c, \hyperlink{classEngine_1_1Texture}{Texture} $\ast$buffer)
+\begin{DoxyCompactList}\small\item\em Char\+Register. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classEngine_1_1FontManager}{Font\+Manager} $\ast$ \hyperlink{classEngine_1_1FontManager_a5af489a1003b2d1db331ae72e560de3f}{get\+Singleton\+Ptr} (void)
+\begin{DoxyCompactList}\small\item\em get\+Singleton\+Ptr \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEngine_1_1FontManager_a051c7bda65ef456de8638acc30073c41}{}\hyperlink{classVector2}{Vector2f} {\bfseries get\+Atlas\+Vector} (F\+T\+\_\+\+Face font)\label{classEngine_1_1FontManager_a051c7bda65ef456de8638acc30073c41}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classEngine_1_1FontManager}{Font\+Manager} managed the Fonts. 
+
+Managemant of Fonts
+
+
+\begin{DoxyItemize}
+\item using Free\+Type library
+\item Create char Textures 
+\end{DoxyItemize}
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classEngine_1_1FontManager_aba32832f74f13b0bec53d5132f78bcc3}{}\index{Engine\+::\+Font\+Manager@{Engine\+::\+Font\+Manager}!Char\+Mapping@{Char\+Mapping}}
+\index{Char\+Mapping@{Char\+Mapping}!Engine\+::\+Font\+Manager@{Engine\+::\+Font\+Manager}}
+\subsubsection[{Char\+Mapping}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf Engine\+::\+Font\+Manager\+::\+Char\+Mapping} =  std\+::map$<$ char , {\bf Texture} $\ast$ $>$}\label{classEngine_1_1FontManager_aba32832f74f13b0bec53d5132f78bcc3}
+Save Char Textures 
+
+\subsection{Member Function Documentation}
+\hypertarget{classEngine_1_1FontManager_aa036cdf0c0646b46069eb18732d81f00}{}\index{Engine\+::\+Font\+Manager@{Engine\+::\+Font\+Manager}!Char\+Register@{Char\+Register}}
+\index{Char\+Register@{Char\+Register}!Engine\+::\+Font\+Manager@{Engine\+::\+Font\+Manager}}
+\subsubsection[{Char\+Register(char c, Texture $\ast$buffer)}]{\setlength{\rightskip}{0pt plus 5cm}void Font\+Manager\+::\+Char\+Register (
+\begin{DoxyParamCaption}
+\item[{char}]{c, }
+\item[{{\bf Texture} $\ast$}]{buffer}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1FontManager_aa036cdf0c0646b46069eb18732d81f00}
+
+
+Char\+Register. 
+
+Save a char with Pixeldata ( aka. \hyperlink{classEngine_1_1Texture}{Texture} ) 
+\begin{DoxyParams}{Parameters}
+{\em c} & \\
+\hline
+{\em buffer} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1FontManager_a6e6afb29d8dde70cfd44a9a062a70e5b}{}\index{Engine\+::\+Font\+Manager@{Engine\+::\+Font\+Manager}!create\+Font\+Face@{create\+Font\+Face}}
+\index{create\+Font\+Face@{create\+Font\+Face}!Engine\+::\+Font\+Manager@{Engine\+::\+Font\+Manager}}
+\subsubsection[{create\+Font\+Face(const std\+::string \&ttf\+\_\+file)}]{\setlength{\rightskip}{0pt plus 5cm}F\+T\+\_\+\+Face Font\+Manager\+::create\+Font\+Face (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{ttf\+\_\+file}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1FontManager_a6e6afb29d8dde70cfd44a9a062a70e5b}
+
+
+create\+Font\+Face 
+
+Create Font from .ttf file 
+\begin{DoxyParams}{Parameters}
+{\em ttf\+\_\+file} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1FontManager_a4ae277341d1f3b33dfab74ab2f175587}{}\index{Engine\+::\+Font\+Manager@{Engine\+::\+Font\+Manager}!get\+Char\+Texture@{get\+Char\+Texture}}
+\index{get\+Char\+Texture@{get\+Char\+Texture}!Engine\+::\+Font\+Manager@{Engine\+::\+Font\+Manager}}
+\subsubsection[{get\+Char\+Texture(char c)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Texture} $\ast$ Font\+Manager\+::get\+Char\+Texture (
+\begin{DoxyParamCaption}
+\item[{char}]{c}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) }\label{classEngine_1_1FontManager_a4ae277341d1f3b33dfab74ab2f175587}
+
+
+get\+Char\+Texture 
+
+Return \hyperlink{classEngine_1_1Texture}{Texture} by char 
+\begin{DoxyParams}{Parameters}
+{\em c} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1FontManager_a5af489a1003b2d1db331ae72e560de3f}{}\index{Engine\+::\+Font\+Manager@{Engine\+::\+Font\+Manager}!get\+Singleton\+Ptr@{get\+Singleton\+Ptr}}
+\index{get\+Singleton\+Ptr@{get\+Singleton\+Ptr}!Engine\+::\+Font\+Manager@{Engine\+::\+Font\+Manager}}
+\subsubsection[{get\+Singleton\+Ptr(void)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Font\+Manager} $\ast$ Font\+Manager\+::get\+Singleton\+Ptr (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classEngine_1_1FontManager_a5af489a1003b2d1db331ae72e560de3f}
+
+
+get\+Singleton\+Ptr 
+
+Return \hyperlink{classEngine_1_1FontManager}{Font\+Manager} Instance \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1FontManager_a25e57a935eaa136bdca2aa477d6f0bbf}{}\index{Engine\+::\+Font\+Manager@{Engine\+::\+Font\+Manager}!load@{load}}
+\index{load@{load}!Engine\+::\+Font\+Manager@{Engine\+::\+Font\+Manager}}
+\subsubsection[{load(\+F\+T\+\_\+\+Face face, const std\+::string \&asci)}]{\setlength{\rightskip}{0pt plus 5cm}void Font\+Manager\+::load (
+\begin{DoxyParamCaption}
+\item[{F\+T\+\_\+\+Face}]{face, }
+\item[{const std\+::string \&}]{asci}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1FontManager_a25e57a935eaa136bdca2aa477d6f0bbf}
+
+
+load 
+
+Load Font\+Face and create Char Textures
+
+
+\begin{DoxyParams}{Parameters}
+{\em face} & \\
+\hline
+{\em asci} & \+: !\#\$\%\&\textquotesingle{}()$\ast$+,-\/./0123456789\+:;$<$=$>$?\mbox{[}\textbackslash{}\mbox{]}$^\wedge$\+\_\+`abcdefghijklmnopqrstuvwxyz\{$\vert$\}$\sim$ \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Manager/fontmanager.\+h\item 
+Engine/\+Manager/Font\+Manager.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,121 @@
+\hypertarget{classEngine_1_1GLFeedbackBuffer}{}\section{Engine\+:\+:G\+L\+Feedback\+Buffer Class Reference}
+\label{classEngine_1_1GLFeedbackBuffer}\index{Engine\+::\+G\+L\+Feedback\+Buffer@{Engine\+::\+G\+L\+Feedback\+Buffer}}
+
+
+The \hyperlink{classEngine_1_1GLFeedbackBuffer}{G\+L\+Feedback\+Buffer} class.  
+
+
+
+
+{\ttfamily \#include $<$glfeedbackbuffer.\+h$>$}
+
+Inheritance diagram for Engine\+:\+:G\+L\+Feedback\+Buffer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classEngine_1_1GLFeedbackBuffer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint \hyperlink{classEngine_1_1GLFeedbackBuffer_af07b1ef217ec8a8c77412fe417564428}{create} (int size\+\_\+data, void $\ast$data)
+\begin{DoxyCompactList}\small\item\em create \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1GLFeedbackBuffer_ae1d18bd14a843d4fcd030998498128c6}{attach} (uint vao\+\_\+id)
+\begin{DoxyCompactList}\small\item\em attach \end{DoxyCompactList}\item 
+\hypertarget{classEngine_1_1GLFeedbackBuffer_ac37c720e82875e06707e0d4c5c2dc3c0}{}void {\bfseries update} (int offset, int size\+\_\+data, void $\ast$data)\label{classEngine_1_1GLFeedbackBuffer_ac37c720e82875e06707e0d4c5c2dc3c0}
+
+\item 
+void \hyperlink{classEngine_1_1GLFeedbackBuffer_a8c4b82243c6652f377d7511ade32e7b5}{get\+Data} (int offset, void $\ast$data)
+\begin{DoxyCompactList}\small\item\em get\+Data \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1GLFeedbackBuffer_a278dd1fdb1b2fe62a30b7711ea1090a2}{close} (void)
+\begin{DoxyCompactList}\small\item\em close \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classEngine_1_1GLFeedbackBuffer}{G\+L\+Feedback\+Buffer} class. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classEngine_1_1GLFeedbackBuffer_ae1d18bd14a843d4fcd030998498128c6}{}\index{Engine\+::\+G\+L\+Feedback\+Buffer@{Engine\+::\+G\+L\+Feedback\+Buffer}!attach@{attach}}
+\index{attach@{attach}!Engine\+::\+G\+L\+Feedback\+Buffer@{Engine\+::\+G\+L\+Feedback\+Buffer}}
+\subsubsection[{attach(uint vao\+\_\+id)}]{\setlength{\rightskip}{0pt plus 5cm}void G\+L\+Feedback\+Buffer\+::attach (
+\begin{DoxyParamCaption}
+\item[{uint}]{vao\+\_\+id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classEngine_1_1GLFeedbackBuffer_ae1d18bd14a843d4fcd030998498128c6}
+
+
+attach 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vao\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classEngine_1_1IGBuffer_a4d4186068930b5d161a52d2fa8afad02}{Engine\+::\+I\+G\+Buffer}.
+
+\hypertarget{classEngine_1_1GLFeedbackBuffer_a278dd1fdb1b2fe62a30b7711ea1090a2}{}\index{Engine\+::\+G\+L\+Feedback\+Buffer@{Engine\+::\+G\+L\+Feedback\+Buffer}!close@{close}}
+\index{close@{close}!Engine\+::\+G\+L\+Feedback\+Buffer@{Engine\+::\+G\+L\+Feedback\+Buffer}}
+\subsubsection[{close(void)}]{\setlength{\rightskip}{0pt plus 5cm}void G\+L\+Feedback\+Buffer\+::close (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classEngine_1_1GLFeedbackBuffer_a278dd1fdb1b2fe62a30b7711ea1090a2}
+
+
+close 
+
+Unbind G\+P\+U Buffer 
+
+Implements \hyperlink{classEngine_1_1IGBuffer_a8473523f8cf850708f54859848f4234e}{Engine\+::\+I\+G\+Buffer}.
+
+\hypertarget{classEngine_1_1GLFeedbackBuffer_af07b1ef217ec8a8c77412fe417564428}{}\index{Engine\+::\+G\+L\+Feedback\+Buffer@{Engine\+::\+G\+L\+Feedback\+Buffer}!create@{create}}
+\index{create@{create}!Engine\+::\+G\+L\+Feedback\+Buffer@{Engine\+::\+G\+L\+Feedback\+Buffer}}
+\subsubsection[{create(int size\+\_\+data, void $\ast$data)}]{\setlength{\rightskip}{0pt plus 5cm}uint G\+L\+Feedback\+Buffer\+::create (
+\begin{DoxyParamCaption}
+\item[{int}]{size\+\_\+data, }
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classEngine_1_1GLFeedbackBuffer_af07b1ef217ec8a8c77412fe417564428}
+
+
+create 
+
+Create a new G\+P\+U Buffer 
+
+Implements \hyperlink{classEngine_1_1IGBuffer_a6afbd1651d2c92fcec584e8d3ef1c32b}{Engine\+::\+I\+G\+Buffer}.
+
+\hypertarget{classEngine_1_1GLFeedbackBuffer_a8c4b82243c6652f377d7511ade32e7b5}{}\index{Engine\+::\+G\+L\+Feedback\+Buffer@{Engine\+::\+G\+L\+Feedback\+Buffer}!get\+Data@{get\+Data}}
+\index{get\+Data@{get\+Data}!Engine\+::\+G\+L\+Feedback\+Buffer@{Engine\+::\+G\+L\+Feedback\+Buffer}}
+\subsubsection[{get\+Data(int offset, void $\ast$data)}]{\setlength{\rightskip}{0pt plus 5cm}void G\+L\+Feedback\+Buffer\+::get\+Data (
+\begin{DoxyParamCaption}
+\item[{int}]{offset, }
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classEngine_1_1GLFeedbackBuffer_a8c4b82243c6652f377d7511ade32e7b5}
+
+
+get\+Data 
+
+Get Data from Buffer 
+\begin{DoxyParams}{Parameters}
+{\em offset} & \\
+\hline
+{\em size\+\_\+data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classEngine_1_1IGBuffer_a8ad52dc670797d72aabf99033d20b220}{Engine\+::\+I\+G\+Buffer}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+G\+P\+U/glfeedbackbuffer.\+h\item 
+Engine/\+G\+P\+U/G\+L\+Feedback\+Buffer.\+cpp\end{DoxyCompactItemize}

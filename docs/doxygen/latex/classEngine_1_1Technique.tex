@@ -1,0 +1,97 @@
+\hypertarget{classEngine_1_1Technique}{}\section{Engine\+:\+:Technique Class Reference}
+\label{classEngine_1_1Technique}\index{Engine\+::\+Technique@{Engine\+::\+Technique}}
+
+
+The \hyperlink{classEngine_1_1Technique}{Technique} -\/ abstract / interface class.  
+
+
+
+
+{\ttfamily \#include $<$technique.\+h$>$}
+
+Inheritance diagram for Engine\+:\+:Technique\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classEngine_1_1Technique}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEngine_1_1Technique_a20fd05c572fd43916b29444ee25dec3a}{}{\bfseries Technique} (const std\+::string \&name)\label{classEngine_1_1Technique_a20fd05c572fd43916b29444ee25dec3a}
+
+\item 
+\hypertarget{classEngine_1_1Technique_ab8e9a9bfb27736109af5d47d52194815}{}virtual void {\bfseries Create} (void)=0\label{classEngine_1_1Technique_ab8e9a9bfb27736109af5d47d52194815}
+
+\item 
+\hypertarget{classEngine_1_1Technique_a2c54d34073fc450fcf181558fca8c368}{}virtual void {\bfseries Prepare} (void)=0\label{classEngine_1_1Technique_a2c54d34073fc450fcf181558fca8c368}
+
+\item 
+\hypertarget{classEngine_1_1Technique_a1c141e8cbfe8598f20b38737bfe04b9e}{}virtual void {\bfseries Update} (void)=0\label{classEngine_1_1Technique_a1c141e8cbfe8598f20b38737bfe04b9e}
+
+\item 
+\hypertarget{classEngine_1_1Technique_a8a86b9995a456223764657f391170441}{}virtual void {\bfseries Render} (\hyperlink{classEngine_1_1Texture}{Texture} $\ast$basic)=0\label{classEngine_1_1Technique_a8a86b9995a456223764657f391170441}
+
+\item 
+\hypertarget{classEngine_1_1Technique_ac8b3e18c697ca7f61a4af85c54ea8b9c}{}void {\bfseries set\+Render\+Modul\+Manager} (\hyperlink{classEngine_1_1RenderModulManager}{Render\+Modul\+Manager} $\ast$render\+\_\+module\+\_\+manager)\label{classEngine_1_1Technique_ac8b3e18c697ca7f61a4af85c54ea8b9c}
+
+\item 
+\hypertarget{classEngine_1_1Technique_a8111fabffbbcc520463ad58e4fd299fd}{}void {\bfseries set\+Screen\+Position} (\hyperlink{classEngine_1_1Position}{Position} $\ast$position)\label{classEngine_1_1Technique_a8111fabffbbcc520463ad58e4fd299fd}
+
+\item 
+\hypertarget{classEngine_1_1Technique_a18b88a7031b81b1db2df3f39d798c7a0}{}void {\bfseries set\+Screen} (\hyperlink{classEngine_1_1Mesh}{Mesh} $\ast$mesh)\label{classEngine_1_1Technique_a18b88a7031b81b1db2df3f39d798c7a0}
+
+\item 
+\hypertarget{classEngine_1_1Technique_a021b8878960351e7c95ba7a274960d7d}{}void {\bfseries set\+Active\+System} (\hyperlink{classEngine_1_1RenderSystem}{Render\+System} $\ast$system)\label{classEngine_1_1Technique_a021b8878960351e7c95ba7a274960d7d}
+
+\item 
+\hypertarget{classEngine_1_1Technique_a42bad8582b7d05e0fa7aeb76bf0f15d0}{}void {\bfseries set\+Frame\+Buffer} (\hyperlink{classEngine_1_1FrameBuffer}{Frame\+Buffer} $\ast$fbo)\label{classEngine_1_1Technique_a42bad8582b7d05e0fa7aeb76bf0f15d0}
+
+\item 
+\hypertarget{classEngine_1_1Technique_aee86644b3fd3c3b0da1f55c91090704b}{}bool {\bfseries is\+Actived} (void)\label{classEngine_1_1Technique_aee86644b3fd3c3b0da1f55c91090704b}
+
+\item 
+\hypertarget{classEngine_1_1Technique_af5db0b4643c7f1b5f55d876a6a090a60}{}void {\bfseries set\+Status} (bool status)\label{classEngine_1_1Technique_af5db0b4643c7f1b5f55d876a6a090a60}
+
+\item 
+\hypertarget{classEngine_1_1Technique_a6b17a10cfe87cd69dcbc3ddd7925efe9}{}std\+::string {\bfseries get\+Name} (void)\label{classEngine_1_1Technique_a6b17a10cfe87cd69dcbc3ddd7925efe9}
+
+\item 
+\hypertarget{classEngine_1_1Technique_a6d45c19323de359f1adf358640bd94a2}{}\hyperlink{classEngine_1_1FrameBuffer}{Frame\+Buffer} $\ast$ {\bfseries get\+Frame\+Buffer} (void)\label{classEngine_1_1Technique_a6d45c19323de359f1adf358640bd94a2}
+
+\item 
+\hypertarget{classEngine_1_1Technique_aee5fd074fd24f670c199895a3b9533e6}{}\hyperlink{classEngine_1_1RenderModulManager}{Render\+Modul\+Manager} $\ast$ {\bfseries get\+Render\+Modul\+Manager} (void)\label{classEngine_1_1Technique_aee5fd074fd24f670c199895a3b9533e6}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEngine_1_1Technique_ac83891d14aa00c0636d53316158c980f}{}std\+::string {\bfseries m\+\_\+name}\label{classEngine_1_1Technique_ac83891d14aa00c0636d53316158c980f}
+
+\item 
+\hypertarget{classEngine_1_1Technique_ac712baa8ee14f99aa7a19218f1af87d9}{}\hyperlink{classEngine_1_1RenderSystem}{Render\+System} $\ast$ {\bfseries m\+\_\+system}\label{classEngine_1_1Technique_ac712baa8ee14f99aa7a19218f1af87d9}
+
+\item 
+\hypertarget{classEngine_1_1Technique_aeac923581d27aee95fcad3f40e7c5399}{}\hyperlink{classEngine_1_1FrameBuffer}{Frame\+Buffer} $\ast$ {\bfseries m\+\_\+fbo}\label{classEngine_1_1Technique_aeac923581d27aee95fcad3f40e7c5399}
+
+\item 
+\hypertarget{classEngine_1_1Technique_a7ca4b5cd6773cb5eed21823faa98d1ff}{}\hyperlink{classEngine_1_1Mesh}{Mesh} $\ast$ {\bfseries m\+\_\+screen}\label{classEngine_1_1Technique_a7ca4b5cd6773cb5eed21823faa98d1ff}
+
+\item 
+\hypertarget{classEngine_1_1Technique_a17b435b3a0ff3d78c48a1fbf3b8f85ae}{}\hyperlink{classEngine_1_1Position}{Position} $\ast$ {\bfseries m\+\_\+screen\+\_\+position}\label{classEngine_1_1Technique_a17b435b3a0ff3d78c48a1fbf3b8f85ae}
+
+\item 
+\hypertarget{classEngine_1_1Technique_a2dbd2de9b6d39660385d35abca410241}{}\hyperlink{classEngine_1_1RenderModulManager}{Render\+Modul\+Manager} $\ast$ {\bfseries m\+\_\+render\+\_\+modul\+\_\+manager}\label{classEngine_1_1Technique_a2dbd2de9b6d39660385d35abca410241}
+
+\item 
+\hypertarget{classEngine_1_1Technique_a64e6cea6714979585f7a3ccd42998f35}{}bool {\bfseries m\+\_\+active}\label{classEngine_1_1Technique_a64e6cea6714979585f7a3ccd42998f35}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classEngine_1_1Technique}{Technique} -\/ abstract / interface class. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Interface/technique.\+h\end{DoxyCompactItemize}

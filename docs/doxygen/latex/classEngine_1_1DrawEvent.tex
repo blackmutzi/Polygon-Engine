@@ -1,0 +1,182 @@
+\hypertarget{classEngine_1_1DrawEvent}{}\section{Engine\+:\+:Draw\+Event Class Reference}
+\label{classEngine_1_1DrawEvent}\index{Engine\+::\+Draw\+Event@{Engine\+::\+Draw\+Event}}
+
+
+The \hyperlink{classEngine_1_1DrawEvent}{Draw\+Event} -\/ event class.  
+
+
+
+
+{\ttfamily \#include $<$drawevent.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEngine_1_1DrawEvent_ae318662b3a1237df5fab4d791e6fbe3b}{}enum {\bfseries M\+A\+T\+R\+I\+C\+E\+N} \{ {\bfseries P\+R\+O\+\_\+\+O\+R\+T\+H\+O}, 
+{\bfseries P\+R\+O\+\_\+\+P\+R\+O\+J\+E\+C\+T\+I\+O\+N}, 
+{\bfseries P\+R\+O\+\_\+\+U\+N\+K\+N\+O\+W\+N}
+ \}\label{classEngine_1_1DrawEvent_ae318662b3a1237df5fab4d791e6fbe3b}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEngine_1_1DrawEvent_ac70cac77946442fa4f79f74097c3c1fb}{}void {\bfseries set\+Clip\+Distance} (const \hyperlink{classVector4}{Vector4f} \&clip\+\_\+distance)\label{classEngine_1_1DrawEvent_ac70cac77946442fa4f79f74097c3c1fb}
+
+\item 
+void \hyperlink{classEngine_1_1DrawEvent_adfcef67906c6b67390dfa83b92394d1a}{set\+Projection} (const glm\+::mat4 \&matrix, M\+A\+T\+R\+I\+C\+E\+N mode)
+\begin{DoxyCompactList}\small\item\em set\+Projection \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1DrawEvent_a59cf1065d97426947dcb92f4499b8c59}{set\+World\+View} (const glm\+::mat4 \&matrix)
+\begin{DoxyCompactList}\small\item\em set\+World\+View \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1DrawEvent_a4f6c4ed1ddda804cf905be74cbac909b}{set\+Model\+Matrix} (const glm\+::mat4 \&matrix)
+\begin{DoxyCompactList}\small\item\em set\+Model\+View \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1DrawEvent_a4fc992cab407a9e77ba4ad2ea85614d7}{set\+Texture} (const glm\+::mat4 \&matrix)
+\begin{DoxyCompactList}\small\item\em set\+Texture \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1DrawEvent_a496fa555d7762b2d0e6501fd5df6ecb5}{set\+Shadow} (const \hyperlink{classEngine_1_1ShadowEvent}{Shadow\+Event} \&event)
+\begin{DoxyCompactList}\small\item\em set\+Shadow \end{DoxyCompactList}\item 
+M\+A\+T\+R\+I\+C\+E\+N \hyperlink{classEngine_1_1DrawEvent_aeb66407c993f03211d133a5ddbd5ad6b}{get\+Projection\+Mode} (void) const 
+\begin{DoxyCompactList}\small\item\em get\+Projection\+Mode \end{DoxyCompactList}\item 
+\hypertarget{classEngine_1_1DrawEvent_aaaaa58ede3268870fb5542e35afb0b52}{}bool {\bfseries has\+Projection} (void) const \label{classEngine_1_1DrawEvent_aaaaa58ede3268870fb5542e35afb0b52}
+
+\item 
+\hypertarget{classEngine_1_1DrawEvent_a4c447f0dfeeb19b3f169811049d9ba58}{}bool {\bfseries has\+World\+View} (void) const \label{classEngine_1_1DrawEvent_a4c447f0dfeeb19b3f169811049d9ba58}
+
+\item 
+\hypertarget{classEngine_1_1DrawEvent_ae975d9472c0d02e6731ecd01a1327c09}{}bool {\bfseries has\+Model} (void) const \label{classEngine_1_1DrawEvent_ae975d9472c0d02e6731ecd01a1327c09}
+
+\item 
+\hypertarget{classEngine_1_1DrawEvent_a884ca99c31d79d5cd765a85bff3794b8}{}bool {\bfseries has\+Texture} (void) const \label{classEngine_1_1DrawEvent_a884ca99c31d79d5cd765a85bff3794b8}
+
+\item 
+\hypertarget{classEngine_1_1DrawEvent_a007fe111c202dae108bc562496e4ac16}{}bool {\bfseries has\+Shadow\+Event} (void) const \label{classEngine_1_1DrawEvent_a007fe111c202dae108bc562496e4ac16}
+
+\item 
+\hypertarget{classEngine_1_1DrawEvent_afc81c272b1e7e6c1adf3d5d3ee6adb63}{}glm\+::mat4 {\bfseries get\+Projection} (void) const \label{classEngine_1_1DrawEvent_afc81c272b1e7e6c1adf3d5d3ee6adb63}
+
+\item 
+\hypertarget{classEngine_1_1DrawEvent_a3d65f9a9295f26adf94ffc003de97212}{}glm\+::mat4 {\bfseries get\+World\+View} (void) const \label{classEngine_1_1DrawEvent_a3d65f9a9295f26adf94ffc003de97212}
+
+\item 
+\hypertarget{classEngine_1_1DrawEvent_a523c4294c0e1508221bbb5764632c84f}{}glm\+::mat4 {\bfseries get\+Model\+Matrix} (void) const \label{classEngine_1_1DrawEvent_a523c4294c0e1508221bbb5764632c84f}
+
+\item 
+\hypertarget{classEngine_1_1DrawEvent_af8d338da327a48180c5e03de0d938db6}{}glm\+::mat4 {\bfseries get\+Texture\+Matrix} (void) const \label{classEngine_1_1DrawEvent_af8d338da327a48180c5e03de0d938db6}
+
+\item 
+\hypertarget{classEngine_1_1DrawEvent_a7e677deb5c6903be0501da7bbee21dd2}{}const \hyperlink{classEngine_1_1ShadowEvent}{Shadow\+Event} {\bfseries get\+Shadow\+Event} (void) const \label{classEngine_1_1DrawEvent_a7e677deb5c6903be0501da7bbee21dd2}
+
+\item 
+\hypertarget{classEngine_1_1DrawEvent_adb6ff5576ad0b323cfe6fb6931ffa96d}{}const \hyperlink{classVector4}{Vector4f} {\bfseries get\+Clip\+Distance} (void) const \label{classEngine_1_1DrawEvent_adb6ff5576ad0b323cfe6fb6931ffa96d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classEngine_1_1DrawEvent}{Draw\+Event} -\/ event class. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classEngine_1_1DrawEvent_aeb66407c993f03211d133a5ddbd5ad6b}{}\index{Engine\+::\+Draw\+Event@{Engine\+::\+Draw\+Event}!get\+Projection\+Mode@{get\+Projection\+Mode}}
+\index{get\+Projection\+Mode@{get\+Projection\+Mode}!Engine\+::\+Draw\+Event@{Engine\+::\+Draw\+Event}}
+\subsubsection[{get\+Projection\+Mode(void) const }]{\setlength{\rightskip}{0pt plus 5cm}Draw\+Event\+::\+M\+A\+T\+R\+I\+C\+E\+N Draw\+Event\+::get\+Projection\+Mode (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classEngine_1_1DrawEvent_aeb66407c993f03211d133a5ddbd5ad6b}
+
+
+get\+Projection\+Mode 
+
+Return the current Projection Mode if Projection Matrix is set \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1DrawEvent_a4f6c4ed1ddda804cf905be74cbac909b}{}\index{Engine\+::\+Draw\+Event@{Engine\+::\+Draw\+Event}!set\+Model\+Matrix@{set\+Model\+Matrix}}
+\index{set\+Model\+Matrix@{set\+Model\+Matrix}!Engine\+::\+Draw\+Event@{Engine\+::\+Draw\+Event}}
+\subsubsection[{set\+Model\+Matrix(const glm\+::mat4 \&matrix)}]{\setlength{\rightskip}{0pt plus 5cm}void Draw\+Event\+::set\+Model\+Matrix (
+\begin{DoxyParamCaption}
+\item[{const glm\+::mat4 \&}]{matrix}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1DrawEvent_a4f6c4ed1ddda804cf905be74cbac909b}
+
+
+set\+Model\+View 
+
+Model\+Matrix -\/$>$ Model\+Matrix is a Object Matrix ( example\+: light matrix ) 
+\begin{DoxyParams}{Parameters}
+{\em matrix} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1DrawEvent_adfcef67906c6b67390dfa83b92394d1a}{}\index{Engine\+::\+Draw\+Event@{Engine\+::\+Draw\+Event}!set\+Projection@{set\+Projection}}
+\index{set\+Projection@{set\+Projection}!Engine\+::\+Draw\+Event@{Engine\+::\+Draw\+Event}}
+\subsubsection[{set\+Projection(const glm\+::mat4 \&matrix, M\+A\+T\+R\+I\+C\+E\+N mode)}]{\setlength{\rightskip}{0pt plus 5cm}void Draw\+Event\+::set\+Projection (
+\begin{DoxyParamCaption}
+\item[{const glm\+::mat4 \&}]{matrix, }
+\item[{M\+A\+T\+R\+I\+C\+E\+N}]{mode}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1DrawEvent_adfcef67906c6b67390dfa83b92394d1a}
+
+
+set\+Projection 
+
+Projection Matrix -\/ -\/$>$ ortho(2\+D) or projection(3\+D) 
+\begin{DoxyParams}{Parameters}
+{\em matrix} & \\
+\hline
+{\em mode} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1DrawEvent_a496fa555d7762b2d0e6501fd5df6ecb5}{}\index{Engine\+::\+Draw\+Event@{Engine\+::\+Draw\+Event}!set\+Shadow@{set\+Shadow}}
+\index{set\+Shadow@{set\+Shadow}!Engine\+::\+Draw\+Event@{Engine\+::\+Draw\+Event}}
+\subsubsection[{set\+Shadow(const Shadow\+Event \&event)}]{\setlength{\rightskip}{0pt plus 5cm}void Draw\+Event\+::set\+Shadow (
+\begin{DoxyParamCaption}
+\item[{const {\bf Shadow\+Event} \&}]{event}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1DrawEvent_a496fa555d7762b2d0e6501fd5df6ecb5}
+
+
+set\+Shadow 
+
+Set new Shadow Event 
+\begin{DoxyParams}{Parameters}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1DrawEvent_a4fc992cab407a9e77ba4ad2ea85614d7}{}\index{Engine\+::\+Draw\+Event@{Engine\+::\+Draw\+Event}!set\+Texture@{set\+Texture}}
+\index{set\+Texture@{set\+Texture}!Engine\+::\+Draw\+Event@{Engine\+::\+Draw\+Event}}
+\subsubsection[{set\+Texture(const glm\+::mat4 \&matrix)}]{\setlength{\rightskip}{0pt plus 5cm}void Draw\+Event\+::set\+Texture (
+\begin{DoxyParamCaption}
+\item[{const glm\+::mat4 \&}]{matrix}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1DrawEvent_a4fc992cab407a9e77ba4ad2ea85614d7}
+
+
+set\+Texture 
+
+\hyperlink{classEngine_1_1Texture}{Texture} Matrix -\/ for \hyperlink{classEngine_1_1Texture}{Texture} Rotation $\vert$ Scaling
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1DrawEvent_a59cf1065d97426947dcb92f4499b8c59}{}\index{Engine\+::\+Draw\+Event@{Engine\+::\+Draw\+Event}!set\+World\+View@{set\+World\+View}}
+\index{set\+World\+View@{set\+World\+View}!Engine\+::\+Draw\+Event@{Engine\+::\+Draw\+Event}}
+\subsubsection[{set\+World\+View(const glm\+::mat4 \&matrix)}]{\setlength{\rightskip}{0pt plus 5cm}void Draw\+Event\+::set\+World\+View (
+\begin{DoxyParamCaption}
+\item[{const glm\+::mat4 \&}]{matrix}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1DrawEvent_a59cf1065d97426947dcb92f4499b8c59}
+
+
+set\+World\+View 
+
+World\+View Matrix is the Camera\+Matrix or View\+Matrix 
+\begin{DoxyParams}{Parameters}
+{\em matrix} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Container/drawevent.\+h\item 
+Container/Draw\+Event.\+cpp\end{DoxyCompactItemize}

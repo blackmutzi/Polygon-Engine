@@ -1,0 +1,288 @@
+\hypertarget{classEngine_1_1VertexGroup}{}\section{Engine\+:\+:Vertex\+Group Class Reference}
+\label{classEngine_1_1VertexGroup}\index{Engine\+::\+Vertex\+Group@{Engine\+::\+Vertex\+Group}}
+
+
+The \hyperlink{classEngine_1_1VertexGroup}{Vertex\+Group} class.  
+
+
+
+
+{\ttfamily \#include $<$vertexgroup.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classEngine_1_1VertexGroup_ab757c5820148459b98a753eb439e711d}{get\+Name} (void)
+\begin{DoxyCompactList}\small\item\em get\+Name \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1VertexGroup_a73afbdae31214fa9699c92dc30f4423e}{set\+Id} (int id)
+\begin{DoxyCompactList}\small\item\em set\+Id \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1VertexGroup_a0e28f3e7a8d2ebb624a1ff4bfa3165a7}{set\+Name} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em set\+Name \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1VertexGroup_a8152e85dfcfb5db18a18159dc8548928}{set\+Vertices} (Vector3fv vertices)
+\begin{DoxyCompactList}\small\item\em set\+Vertices \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1VertexGroup_a035c2e4205c903083e5627c1712097c0}{set\+Indices} (Indices indices)
+\begin{DoxyCompactList}\small\item\em set\+Indices \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1VertexGroup_a0bdfb58046771e1897931539fee1c742}{add\+Index} (int index)
+\begin{DoxyCompactList}\small\item\em add\+Index \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1VertexGroup_aa679b6ec6ed7fc5b9feb81792fa6f201}{add\+Vertex} (const \hyperlink{classVector3}{Vector3f} \&offset)
+\begin{DoxyCompactList}\small\item\em add\+Vertex \end{DoxyCompactList}\item 
+Vector3fv \hyperlink{classEngine_1_1VertexGroup_a669ec661e426d21e9dae5a9e0a1de1b4}{get\+Vertices} (void)
+\begin{DoxyCompactList}\small\item\em get\+Vertices \end{DoxyCompactList}\item 
+Indices \hyperlink{classEngine_1_1VertexGroup_a4d75c5c0821c43294e054be73631da9e}{get\+Indices} (void)
+\begin{DoxyCompactList}\small\item\em get\+Indices \end{DoxyCompactList}\item 
+bool \hyperlink{classEngine_1_1VertexGroup_a032c2a0325a15b285456ec06acdbc22e}{has\+Index} (int index)
+\begin{DoxyCompactList}\small\item\em has\+Index \end{DoxyCompactList}\item 
+bool \hyperlink{classEngine_1_1VertexGroup_ae64ce50723304561928e83b7cca33f13}{has\+Vertex} (const \hyperlink{classVector3}{Vector3f} \&offset)
+\begin{DoxyCompactList}\small\item\em has\+Vertex \end{DoxyCompactList}\item 
+Vertex\+Groups \hyperlink{classEngine_1_1VertexGroup_a691df31aac04304267849f6d43a764bc}{get\+Groups\+By\+Index} (Vertex\+Groups group\+\_\+list, int index)
+\begin{DoxyCompactList}\small\item\em get\+Groups\+By\+Index \end{DoxyCompactList}\item 
+int \hyperlink{classEngine_1_1VertexGroup_a6c0d40d10387249cd17dfaee82db2449}{get\+Id} (void)
+\begin{DoxyCompactList}\small\item\em get\+Id \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEngine_1_1VertexGroup_ae5b15fc57a70a68166562c0909db0f95}{}{\bfseries Vertex\+Group} (const std\+::string \&name)\label{classEngine_1_1VertexGroup_ae5b15fc57a70a68166562c0909db0f95}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Vector3fv \hyperlink{classEngine_1_1VertexGroup_aaac98ddabec44449cf49a936b6197a8d}{m\+Vertices}
+\item 
+Indices \hyperlink{classEngine_1_1VertexGroup_a861305426038488e7fdf3bc4ad3f0003}{m\+Indices}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classEngine_1_1VertexGroup}{Vertex\+Group} class. 
+
+Save Verticen \& Indicen with Name 
+
+\subsection{Member Function Documentation}
+\hypertarget{classEngine_1_1VertexGroup_a0bdfb58046771e1897931539fee1c742}{}\index{Engine\+::\+Vertex\+Group@{Engine\+::\+Vertex\+Group}!add\+Index@{add\+Index}}
+\index{add\+Index@{add\+Index}!Engine\+::\+Vertex\+Group@{Engine\+::\+Vertex\+Group}}
+\subsubsection[{add\+Index(int index)}]{\setlength{\rightskip}{0pt plus 5cm}void Vertex\+Group\+::add\+Index (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1VertexGroup_a0bdfb58046771e1897931539fee1c742}
+
+
+add\+Index 
+
+Add Vertex Index Number 
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1VertexGroup_aa679b6ec6ed7fc5b9feb81792fa6f201}{}\index{Engine\+::\+Vertex\+Group@{Engine\+::\+Vertex\+Group}!add\+Vertex@{add\+Vertex}}
+\index{add\+Vertex@{add\+Vertex}!Engine\+::\+Vertex\+Group@{Engine\+::\+Vertex\+Group}}
+\subsubsection[{add\+Vertex(const Vector3f \&offset)}]{\setlength{\rightskip}{0pt plus 5cm}void Vertex\+Group\+::add\+Vertex (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3f} \&}]{offset}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1VertexGroup_aa679b6ec6ed7fc5b9feb81792fa6f201}
+
+
+add\+Vertex 
+
+Add Vertex 
+\begin{DoxyParams}{Parameters}
+{\em offset} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1VertexGroup_a691df31aac04304267849f6d43a764bc}{}\index{Engine\+::\+Vertex\+Group@{Engine\+::\+Vertex\+Group}!get\+Groups\+By\+Index@{get\+Groups\+By\+Index}}
+\index{get\+Groups\+By\+Index@{get\+Groups\+By\+Index}!Engine\+::\+Vertex\+Group@{Engine\+::\+Vertex\+Group}}
+\subsubsection[{get\+Groups\+By\+Index(\+Vertex\+Groups group\+\_\+list, int index)}]{\setlength{\rightskip}{0pt plus 5cm}Vertex\+Groups Vertex\+Group\+::get\+Groups\+By\+Index (
+\begin{DoxyParamCaption}
+\item[{Vertex\+Groups}]{group\+\_\+list, }
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1VertexGroup_a691df31aac04304267849f6d43a764bc}
+
+
+get\+Groups\+By\+Index 
+
+Return Groups by Index 
+\begin{DoxyParams}{Parameters}
+{\em group\+\_\+list} & \\
+\hline
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1VertexGroup_a6c0d40d10387249cd17dfaee82db2449}{}\index{Engine\+::\+Vertex\+Group@{Engine\+::\+Vertex\+Group}!get\+Id@{get\+Id}}
+\index{get\+Id@{get\+Id}!Engine\+::\+Vertex\+Group@{Engine\+::\+Vertex\+Group}}
+\subsubsection[{get\+Id(void)}]{\setlength{\rightskip}{0pt plus 5cm}int Vertex\+Group\+::get\+Id (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1VertexGroup_a6c0d40d10387249cd17dfaee82db2449}
+
+
+get\+Id 
+
+Get Group Id \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1VertexGroup_a4d75c5c0821c43294e054be73631da9e}{}\index{Engine\+::\+Vertex\+Group@{Engine\+::\+Vertex\+Group}!get\+Indices@{get\+Indices}}
+\index{get\+Indices@{get\+Indices}!Engine\+::\+Vertex\+Group@{Engine\+::\+Vertex\+Group}}
+\subsubsection[{get\+Indices(void)}]{\setlength{\rightskip}{0pt plus 5cm}Indices Vertex\+Group\+::get\+Indices (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1VertexGroup_a4d75c5c0821c43294e054be73631da9e}
+
+
+get\+Indices 
+
+Return Indices \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1VertexGroup_ab757c5820148459b98a753eb439e711d}{}\index{Engine\+::\+Vertex\+Group@{Engine\+::\+Vertex\+Group}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!Engine\+::\+Vertex\+Group@{Engine\+::\+Vertex\+Group}}
+\subsubsection[{get\+Name(void)}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Vertex\+Group\+::get\+Name (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1VertexGroup_ab757c5820148459b98a753eb439e711d}
+
+
+get\+Name 
+
+Return \hyperlink{classEngine_1_1Bone}{Bone} $\vert$ \hyperlink{classEngine_1_1VertexGroup}{Vertex\+Group} Name \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1VertexGroup_a669ec661e426d21e9dae5a9e0a1de1b4}{}\index{Engine\+::\+Vertex\+Group@{Engine\+::\+Vertex\+Group}!get\+Vertices@{get\+Vertices}}
+\index{get\+Vertices@{get\+Vertices}!Engine\+::\+Vertex\+Group@{Engine\+::\+Vertex\+Group}}
+\subsubsection[{get\+Vertices(void)}]{\setlength{\rightskip}{0pt plus 5cm}Vector3fv Vertex\+Group\+::get\+Vertices (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1VertexGroup_a669ec661e426d21e9dae5a9e0a1de1b4}
+
+
+get\+Vertices 
+
+Return Verticen \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1VertexGroup_a032c2a0325a15b285456ec06acdbc22e}{}\index{Engine\+::\+Vertex\+Group@{Engine\+::\+Vertex\+Group}!has\+Index@{has\+Index}}
+\index{has\+Index@{has\+Index}!Engine\+::\+Vertex\+Group@{Engine\+::\+Vertex\+Group}}
+\subsubsection[{has\+Index(int index)}]{\setlength{\rightskip}{0pt plus 5cm}bool Vertex\+Group\+::has\+Index (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1VertexGroup_a032c2a0325a15b285456ec06acdbc22e}
+
+
+has\+Index 
+
+Return true, if index has 
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1VertexGroup_ae64ce50723304561928e83b7cca33f13}{}\index{Engine\+::\+Vertex\+Group@{Engine\+::\+Vertex\+Group}!has\+Vertex@{has\+Vertex}}
+\index{has\+Vertex@{has\+Vertex}!Engine\+::\+Vertex\+Group@{Engine\+::\+Vertex\+Group}}
+\subsubsection[{has\+Vertex(const Vector3f \&offset)}]{\setlength{\rightskip}{0pt plus 5cm}bool Vertex\+Group\+::has\+Vertex (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3f} \&}]{offset}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1VertexGroup_ae64ce50723304561928e83b7cca33f13}
+
+
+has\+Vertex 
+
+Return true , if vertex has 
+\begin{DoxyParams}{Parameters}
+{\em offset} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1VertexGroup_a73afbdae31214fa9699c92dc30f4423e}{}\index{Engine\+::\+Vertex\+Group@{Engine\+::\+Vertex\+Group}!set\+Id@{set\+Id}}
+\index{set\+Id@{set\+Id}!Engine\+::\+Vertex\+Group@{Engine\+::\+Vertex\+Group}}
+\subsubsection[{set\+Id(int id)}]{\setlength{\rightskip}{0pt plus 5cm}void Vertex\+Group\+::set\+Id (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1VertexGroup_a73afbdae31214fa9699c92dc30f4423e}
+
+
+set\+Id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1VertexGroup_a035c2e4205c903083e5627c1712097c0}{}\index{Engine\+::\+Vertex\+Group@{Engine\+::\+Vertex\+Group}!set\+Indices@{set\+Indices}}
+\index{set\+Indices@{set\+Indices}!Engine\+::\+Vertex\+Group@{Engine\+::\+Vertex\+Group}}
+\subsubsection[{set\+Indices(\+Indices indices)}]{\setlength{\rightskip}{0pt plus 5cm}void Vertex\+Group\+::set\+Indices (
+\begin{DoxyParamCaption}
+\item[{Indices}]{indices}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1VertexGroup_a035c2e4205c903083e5627c1712097c0}
+
+
+set\+Indices 
+
+Set Indices 
+\begin{DoxyParams}{Parameters}
+{\em indices} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1VertexGroup_a0e28f3e7a8d2ebb624a1ff4bfa3165a7}{}\index{Engine\+::\+Vertex\+Group@{Engine\+::\+Vertex\+Group}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!Engine\+::\+Vertex\+Group@{Engine\+::\+Vertex\+Group}}
+\subsubsection[{set\+Name(const std\+::string \&name)}]{\setlength{\rightskip}{0pt plus 5cm}void Vertex\+Group\+::set\+Name (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1VertexGroup_a0e28f3e7a8d2ebb624a1ff4bfa3165a7}
+
+
+set\+Name 
+
+Set \hyperlink{classEngine_1_1Bone}{Bone} $\vert$ \hyperlink{classEngine_1_1VertexGroup}{Vertex\+Group} Name 
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1VertexGroup_a8152e85dfcfb5db18a18159dc8548928}{}\index{Engine\+::\+Vertex\+Group@{Engine\+::\+Vertex\+Group}!set\+Vertices@{set\+Vertices}}
+\index{set\+Vertices@{set\+Vertices}!Engine\+::\+Vertex\+Group@{Engine\+::\+Vertex\+Group}}
+\subsubsection[{set\+Vertices(\+Vector3fv vertices)}]{\setlength{\rightskip}{0pt plus 5cm}void Vertex\+Group\+::set\+Vertices (
+\begin{DoxyParamCaption}
+\item[{Vector3fv}]{vertices}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1VertexGroup_a8152e85dfcfb5db18a18159dc8548928}
+
+
+set\+Vertices 
+
+Set Vertices 
+\begin{DoxyParams}{Parameters}
+{\em vertices} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classEngine_1_1VertexGroup_a861305426038488e7fdf3bc4ad3f0003}{}\index{Engine\+::\+Vertex\+Group@{Engine\+::\+Vertex\+Group}!m\+Indices@{m\+Indices}}
+\index{m\+Indices@{m\+Indices}!Engine\+::\+Vertex\+Group@{Engine\+::\+Vertex\+Group}}
+\subsubsection[{m\+Indices}]{\setlength{\rightskip}{0pt plus 5cm}Indices Engine\+::\+Vertex\+Group\+::m\+Indices\hspace{0.3cm}{\ttfamily [protected]}}\label{classEngine_1_1VertexGroup_a861305426038488e7fdf3bc4ad3f0003}
+Verticen \hypertarget{classEngine_1_1VertexGroup_aaac98ddabec44449cf49a936b6197a8d}{}\index{Engine\+::\+Vertex\+Group@{Engine\+::\+Vertex\+Group}!m\+Vertices@{m\+Vertices}}
+\index{m\+Vertices@{m\+Vertices}!Engine\+::\+Vertex\+Group@{Engine\+::\+Vertex\+Group}}
+\subsubsection[{m\+Vertices}]{\setlength{\rightskip}{0pt plus 5cm}Vector3fv Engine\+::\+Vertex\+Group\+::m\+Vertices\hspace{0.3cm}{\ttfamily [protected]}}\label{classEngine_1_1VertexGroup_aaac98ddabec44449cf49a936b6197a8d}
+Indicen 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Container/vertexgroup.\+h\item 
+Container/Vertex\+Group.\+cpp\end{DoxyCompactItemize}

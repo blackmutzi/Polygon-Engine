@@ -1,0 +1,109 @@
+\hypertarget{classEngine_1_1IShader}{}\section{Engine\+:\+:I\+Shader Class Reference}
+\label{classEngine_1_1IShader}\index{Engine\+::\+I\+Shader@{Engine\+::\+I\+Shader}}
+
+
+The \hyperlink{classEngine_1_1IShader}{I\+Shader} -\/ abstract / interface class.  
+
+
+
+
+{\ttfamily \#include $<$I\+Shader.\+h$>$}
+
+Inheritance diagram for Engine\+:\+:I\+Shader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classEngine_1_1IShader}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEngine_1_1IShader_a5b790df387d044b86556bcc9f61953ea}{}virtual void {\bfseries Use\+Program} (void)=0\label{classEngine_1_1IShader_a5b790df387d044b86556bcc9f61953ea}
+
+\item 
+\hypertarget{classEngine_1_1IShader_a979b8b793e0431d5f25421778c8f8fcf}{}virtual void {\bfseries Unused} (void)=0\label{classEngine_1_1IShader_a979b8b793e0431d5f25421778c8f8fcf}
+
+\item 
+\hypertarget{classEngine_1_1IShader_a40cd920be17e3bb211f22ee3c71560f6}{}virtual void {\bfseries Link\+Program} (void)=0\label{classEngine_1_1IShader_a40cd920be17e3bb211f22ee3c71560f6}
+
+\item 
+\hypertarget{classEngine_1_1IShader_a36e24542bc551a7ce2d5d60f7c23e304}{}virtual void {\bfseries Attach\+Shader} (uint shader)=0\label{classEngine_1_1IShader_a36e24542bc551a7ce2d5d60f7c23e304}
+
+\item 
+\hypertarget{classEngine_1_1IShader_a8999bac5bb0d4dc4a0a4e950be9b1262}{}virtual void {\bfseries Bind\+Uniform1i} (const char $\ast$location, int number)=0\label{classEngine_1_1IShader_a8999bac5bb0d4dc4a0a4e950be9b1262}
+
+\item 
+\hypertarget{classEngine_1_1IShader_a6b5824382ab0c62691c9b656b09d105d}{}virtual void {\bfseries Bind\+Uniform1f} (const char $\ast$location, float number)=0\label{classEngine_1_1IShader_a6b5824382ab0c62691c9b656b09d105d}
+
+\item 
+\hypertarget{classEngine_1_1IShader_aab732a9285162e51cb06bc722af5aa61}{}virtual void {\bfseries Bind\+Matrix} (const char $\ast$location, glm\+::mat4 matrix)=0\label{classEngine_1_1IShader_aab732a9285162e51cb06bc722af5aa61}
+
+\item 
+\hypertarget{classEngine_1_1IShader_aa61545153ee0887922e41de4d884a238}{}virtual void {\bfseries Bind\+Vec3i} (const char $\ast$location, const \hyperlink{classVector3}{Vector3i} \&vector)=0\label{classEngine_1_1IShader_aa61545153ee0887922e41de4d884a238}
+
+\item 
+\hypertarget{classEngine_1_1IShader_a14a8cadb90c6fc388151696ac1ebeddc}{}virtual void {\bfseries Bind\+Vec3f} (const char $\ast$location, const \hyperlink{classVector3}{Vector3f} \&vector)=0\label{classEngine_1_1IShader_a14a8cadb90c6fc388151696ac1ebeddc}
+
+\item 
+\hypertarget{classEngine_1_1IShader_ae89d7b6e3645ec29de4aca13e5e1f804}{}virtual void {\bfseries Bind\+Vec4i} (const char $\ast$location, const \hyperlink{classVector4}{Vector4i} \&vector)=0\label{classEngine_1_1IShader_ae89d7b6e3645ec29de4aca13e5e1f804}
+
+\item 
+\hypertarget{classEngine_1_1IShader_a8ce7543b1ba4bc008656fd74fecdfef2}{}virtual void {\bfseries Bind\+Vec4f} (const char $\ast$location, const \hyperlink{classVector4}{Vector4f} \&vector)=0\label{classEngine_1_1IShader_a8ce7543b1ba4bc008656fd74fecdfef2}
+
+\item 
+\hypertarget{classEngine_1_1IShader_a907a1a7a4b8c5c8b77e624a8bee5d478}{}virtual void {\bfseries Bind\+Texture} (\hyperlink{classEngine_1_1Texture}{Texture} $\ast$texture, const char $\ast$location, int texture\+\_\+unit)=0\label{classEngine_1_1IShader_a907a1a7a4b8c5c8b77e624a8bee5d478}
+
+\item 
+\hypertarget{classEngine_1_1IShader_a5af3bbe28c3347215fc23b95bb7700d8}{}virtual void {\bfseries Bind\+Frag\+Data} (const char $\ast$location, int frag\+\_\+position)=0\label{classEngine_1_1IShader_a5af3bbe28c3347215fc23b95bb7700d8}
+
+\item 
+\hypertarget{classEngine_1_1IShader_a3130202482a59d635328874b3b2b0d27}{}virtual void {\bfseries Bind\+Attribute\+Location} (const char $\ast$location, int attribute\+\_\+id)=0\label{classEngine_1_1IShader_a3130202482a59d635328874b3b2b0d27}
+
+\item 
+\hypertarget{classEngine_1_1IShader_a062e75d0707ff374417c3fe93c12168d}{}bool {\bfseries is\+Using} (void)\label{classEngine_1_1IShader_a062e75d0707ff374417c3fe93c12168d}
+
+\item 
+\hypertarget{classEngine_1_1IShader_a763243affdfa7f8b2aa90ecb37f40819}{}void {\bfseries set\+Using} (bool state)\label{classEngine_1_1IShader_a763243affdfa7f8b2aa90ecb37f40819}
+
+\item 
+\hypertarget{classEngine_1_1IShader_a0cff6b110c3b1d5788da38d006cd1043}{}void {\bfseries set\+Linked} (bool state)\label{classEngine_1_1IShader_a0cff6b110c3b1d5788da38d006cd1043}
+
+\item 
+\hypertarget{classEngine_1_1IShader_ab736c917289026225631c7c8bcc2b48b}{}void {\bfseries set\+Source} (bool state)\label{classEngine_1_1IShader_ab736c917289026225631c7c8bcc2b48b}
+
+\item 
+\hypertarget{classEngine_1_1IShader_afc547c25eed06f96e5a23be6bc3936bd}{}uint {\bfseries get\+Program} (void)\label{classEngine_1_1IShader_afc547c25eed06f96e5a23be6bc3936bd}
+
+\item 
+\hypertarget{classEngine_1_1IShader_a9bdb56da0500f9fd59992a2387c42a0f}{}bool {\bfseries has\+Source} (void)\label{classEngine_1_1IShader_a9bdb56da0500f9fd59992a2387c42a0f}
+
+\item 
+\hypertarget{classEngine_1_1IShader_a1ecc3647c399159ea439e7773c791a6a}{}bool {\bfseries has\+Linked} (void)\label{classEngine_1_1IShader_a1ecc3647c399159ea439e7773c791a6a}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEngine_1_1IShader_a14e21db4751c0d77b6bac90e33037c59}{}bool {\bfseries m\+Using}\label{classEngine_1_1IShader_a14e21db4751c0d77b6bac90e33037c59}
+
+\item 
+\hypertarget{classEngine_1_1IShader_a26ff459a120edb2590d36d5c1863a477}{}bool {\bfseries m\+Source}\label{classEngine_1_1IShader_a26ff459a120edb2590d36d5c1863a477}
+
+\item 
+\hypertarget{classEngine_1_1IShader_a71e21b1cd50b4b2f4c3db0f42fd84d60}{}bool {\bfseries m\+Link}\label{classEngine_1_1IShader_a71e21b1cd50b4b2f4c3db0f42fd84d60}
+
+\item 
+\hypertarget{classEngine_1_1IShader_a4978a68473ec11b0b959504bfb9149d7}{}uint {\bfseries m\+Program}\label{classEngine_1_1IShader_a4978a68473ec11b0b959504bfb9149d7}
+
+\item 
+\hypertarget{classEngine_1_1IShader_a89861339c0a3a57bff92b2e33432d448}{}std\+::vector$<$ uint $>$ {\bfseries m\+Shaders}\label{classEngine_1_1IShader_a89861339c0a3a57bff92b2e33432d448}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classEngine_1_1IShader}{I\+Shader} -\/ abstract / interface class. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Interface/I\+Shader.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,83 @@
+\hypertarget{classEngine_1_1RenderSystem}{}\section{Engine\+:\+:Render\+System Class Reference}
+\label{classEngine_1_1RenderSystem}\index{Engine\+::\+Render\+System@{Engine\+::\+Render\+System}}
+
+
+The \hyperlink{classEngine_1_1RenderSystem}{Render\+System} -\/ abstract / interface class.  
+
+
+
+
+{\ttfamily \#include $<$rendersystem.\+h$>$}
+
+Inheritance diagram for Engine\+:\+:Render\+System\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classEngine_1_1RenderSystem}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEngine_1_1RenderSystem_a053d7789d0341adb6598fc9a96fd0d65}{}{\bfseries Render\+System} (const std\+::string \&system\+\_\+name)\label{classEngine_1_1RenderSystem_a053d7789d0341adb6598fc9a96fd0d65}
+
+\item 
+\hypertarget{classEngine_1_1RenderSystem_ab469fe67089be47101aede4cd8bd921f}{}virtual void {\bfseries initialize} (\hyperlink{classEngine_1_1OpenPolygonDisplay}{Open\+Polygon\+Display} $\ast$display)\label{classEngine_1_1RenderSystem_ab469fe67089be47101aede4cd8bd921f}
+
+\item 
+\hypertarget{classEngine_1_1RenderSystem_a13f2af110456c3bc78e26a9ebaf1cf49}{}virtual void {\bfseries Render\+Frame} (void)=0\label{classEngine_1_1RenderSystem_a13f2af110456c3bc78e26a9ebaf1cf49}
+
+\item 
+\hypertarget{classEngine_1_1RenderSystem_a2606351d12604c0a4c0ae93b71914234}{}virtual void {\bfseries Resize} (void)=0\label{classEngine_1_1RenderSystem_a2606351d12604c0a4c0ae93b71914234}
+
+\item 
+\hypertarget{classEngine_1_1RenderSystem_a7ad5563108b0d0cf20136e6f1adf6505}{}bool {\bfseries is\+Initialized} (void)\label{classEngine_1_1RenderSystem_a7ad5563108b0d0cf20136e6f1adf6505}
+
+\item 
+\hypertarget{classEngine_1_1RenderSystem_a846943fe6a49f2c5a5263020f10e1c87}{}void {\bfseries add\+Technique} (\hyperlink{classEngine_1_1Technique}{Technique} $\ast$technique)\label{classEngine_1_1RenderSystem_a846943fe6a49f2c5a5263020f10e1c87}
+
+\item 
+\hypertarget{classEngine_1_1RenderSystem_afbbcc6ff7c42f703f2f5296e9b424dd5}{}void {\bfseries set\+Render\+Process\+Manager} (\hyperlink{classEngine_1_1RenderProcessManager}{Render\+Process\+Manager} $\ast$manager)\label{classEngine_1_1RenderSystem_afbbcc6ff7c42f703f2f5296e9b424dd5}
+
+\item 
+\hypertarget{classEngine_1_1RenderSystem_abc8659466eadafd5d86408734f9ced56}{}\hyperlink{classEngine_1_1RenderProcessManager}{Render\+Process\+Manager} $\ast$ {\bfseries get\+Render\+Process\+Manager} (void)\label{classEngine_1_1RenderSystem_abc8659466eadafd5d86408734f9ced56}
+
+\item 
+\hypertarget{classEngine_1_1RenderSystem_ac20e2eac202e428d88b700ac25c4bdd5}{}\hyperlink{classEngine_1_1OpenPolygonDisplay}{Open\+Polygon\+Display} $\ast$ {\bfseries get\+Display} (void)\label{classEngine_1_1RenderSystem_ac20e2eac202e428d88b700ac25c4bdd5}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEngine_1_1RenderSystem_a69ecd8ab14e787d10dc32b53e1e21868}{}std\+::string {\bfseries m\+\_\+system\+\_\+name}\label{classEngine_1_1RenderSystem_a69ecd8ab14e787d10dc32b53e1e21868}
+
+\item 
+\hypertarget{classEngine_1_1RenderSystem_a45ae3752714b7333b2ad3e1497e7eb7a}{}glm\+::mat4 {\bfseries m\+\_\+projection}\label{classEngine_1_1RenderSystem_a45ae3752714b7333b2ad3e1497e7eb7a}
+
+\item 
+\hypertarget{classEngine_1_1RenderSystem_ab653743d56979f0e52f2b7a05285695f}{}glm\+::mat4 {\bfseries m\+\_\+ortho}\label{classEngine_1_1RenderSystem_ab653743d56979f0e52f2b7a05285695f}
+
+\item 
+\hypertarget{classEngine_1_1RenderSystem_afee785d4940eafb81af24cde5d611a0a}{}bool {\bfseries m\+\_\+init}\label{classEngine_1_1RenderSystem_afee785d4940eafb81af24cde5d611a0a}
+
+\item 
+\hypertarget{classEngine_1_1RenderSystem_ac45b3777921d3be67415b49e84e1a016}{}\hyperlink{classEngine_1_1OpenPolygonDisplay}{Open\+Polygon\+Display} $\ast$ {\bfseries m\+\_\+display}\label{classEngine_1_1RenderSystem_ac45b3777921d3be67415b49e84e1a016}
+
+\item 
+\hypertarget{classEngine_1_1RenderSystem_ac94142989e64db062909010d63e36ff8}{}\hyperlink{classEngine_1_1Camera}{Camera} $\ast$ {\bfseries m\+\_\+camera}\label{classEngine_1_1RenderSystem_ac94142989e64db062909010d63e36ff8}
+
+\item 
+\hypertarget{classEngine_1_1RenderSystem_a806926442339c805a0a277382c09602c}{}\hyperlink{classEngine_1_1RenderProcessManager}{Render\+Process\+Manager} $\ast$ {\bfseries m\+\_\+render\+\_\+process\+\_\+manager}\label{classEngine_1_1RenderSystem_a806926442339c805a0a277382c09602c}
+
+\item 
+\hypertarget{classEngine_1_1RenderSystem_a5617269e8b9b814bf6e92b3fc3374258}{}Techniques {\bfseries m\+\_\+techniques}\label{classEngine_1_1RenderSystem_a5617269e8b9b814bf6e92b3fc3374258}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classEngine_1_1RenderSystem}{Render\+System} -\/ abstract / interface class. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Render/rendersystem.\+h\item 
+Engine/\+Render/Render\+System.\+cpp\end{DoxyCompactItemize}

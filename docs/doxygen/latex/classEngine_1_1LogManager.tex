@@ -1,0 +1,111 @@
+\hypertarget{classEngine_1_1LogManager}{}\section{Engine\+:\+:Log\+Manager Class Reference}
+\label{classEngine_1_1LogManager}\index{Engine\+::\+Log\+Manager@{Engine\+::\+Log\+Manager}}
+
+
+The \hyperlink{classEngine_1_1LogManager}{Log\+Manager} class.  
+
+
+
+
+{\ttfamily \#include $<$logmanager.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEngine_1_1LogManager_a540739bc2fa1ac620163c76ebda2c9fe}{}enum {\bfseries Level} \{ \\*
+{\bfseries L\+O\+G\+\_\+\+I\+N\+F\+O}, 
+{\bfseries L\+O\+G\+\_\+\+W\+A\+R\+N\+I\+N\+G}, 
+{\bfseries L\+O\+G\+\_\+\+E\+R\+R\+O\+R}, 
+{\bfseries L\+O\+G\+\_\+\+D\+E\+B\+U\+G}, 
+\\*
+{\bfseries L\+O\+G\+\_\+\+E\+X\+C\+E\+P\+T\+I\+O\+N}
+ \}\label{classEngine_1_1LogManager_a540739bc2fa1ac620163c76ebda2c9fe}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classEngine_1_1LogManager}{Log\+Manager} $\ast$ \hyperlink{classEngine_1_1LogManager_a5ab655fd02bb6c0ae2cde3be4794375f}{get\+Singleton\+Ptr} (void)
+\begin{DoxyCompactList}\small\item\em get\+Singleton\+Ptr \end{DoxyCompactList}\item 
+static void \hyperlink{classEngine_1_1LogManager_acdc0eb4baacb4f3b018698665d398c6a}{log} (Level level, stringstream \&message)  throw ( std\+::runtime\+\_\+error )
+\begin{DoxyCompactList}\small\item\em log \end{DoxyCompactList}\item 
+\hypertarget{classEngine_1_1LogManager_ab3977fc0bd8b1df870e96588b082afa8}{}static void {\bfseries log} (Level level, const std\+::string \&message)  throw ( std\+::runtime\+\_\+error )\label{classEngine_1_1LogManager_ab3977fc0bd8b1df870e96588b082afa8}
+
+\item 
+\hypertarget{classEngine_1_1LogManager_a17b9d4159c82a218d4db38430490d492}{}static void {\bfseries Frame\+Buffer\+Check\+Status} (const std\+::string \&information)\label{classEngine_1_1LogManager_a17b9d4159c82a218d4db38430490d492}
+
+\item 
+static void \hyperlink{classEngine_1_1LogManager_a00096d95e37109861617033fd26a9e91}{get\+Error} (const std\+::string \&information)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classEngine_1_1LogManager_a00096d95e37109861617033fd26a9e91}{Log\+Manager\+::get\+Error}. \end{DoxyCompactList}\item 
+\hypertarget{classEngine_1_1LogManager_a2c386f3ab894bbd5c1c337197fcfb6d9}{}static void {\bfseries print\+Array} (float $\ast$pointer, int size)\label{classEngine_1_1LogManager_a2c386f3ab894bbd5c1c337197fcfb6d9}
+
+\item 
+\hypertarget{classEngine_1_1LogManager_a0f64948d2f9f79627fbbfcfeb1e1527f}{}static void {\bfseries print\+Pointer} (void $\ast$pointer)\label{classEngine_1_1LogManager_a0f64948d2f9f79627fbbfcfeb1e1527f}
+
+\item 
+\hypertarget{classEngine_1_1LogManager_ae1d7f155f7c9a06330e8d4f712333a95}{}static void {\bfseries print\+To\+File} (const std\+::string \&file\+\_\+name, const std\+::string \&message)\label{classEngine_1_1LogManager_ae1d7f155f7c9a06330e8d4f712333a95}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classEngine_1_1LogManager}{Log\+Manager} class. 
+
+Logger -\/ Print Log\+Message into Console 
+
+\subsection{Member Function Documentation}
+\hypertarget{classEngine_1_1LogManager_a00096d95e37109861617033fd26a9e91}{}\index{Engine\+::\+Log\+Manager@{Engine\+::\+Log\+Manager}!get\+Error@{get\+Error}}
+\index{get\+Error@{get\+Error}!Engine\+::\+Log\+Manager@{Engine\+::\+Log\+Manager}}
+\subsubsection[{get\+Error(const std\+::string \&information)}]{\setlength{\rightskip}{0pt plus 5cm}void Log\+Manager\+::get\+Error (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{info}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classEngine_1_1LogManager_a00096d95e37109861617033fd26a9e91}
+
+
+\hyperlink{classEngine_1_1LogManager_a00096d95e37109861617033fd26a9e91}{Log\+Manager\+::get\+Error}. 
+
+Check Open\+G\+L Errors 
+\begin{DoxyParams}{Parameters}
+{\em info} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1LogManager_a5ab655fd02bb6c0ae2cde3be4794375f}{}\index{Engine\+::\+Log\+Manager@{Engine\+::\+Log\+Manager}!get\+Singleton\+Ptr@{get\+Singleton\+Ptr}}
+\index{get\+Singleton\+Ptr@{get\+Singleton\+Ptr}!Engine\+::\+Log\+Manager@{Engine\+::\+Log\+Manager}}
+\subsubsection[{get\+Singleton\+Ptr(void)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Log\+Manager} $\ast$ Log\+Manager\+::get\+Singleton\+Ptr (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classEngine_1_1LogManager_a5ab655fd02bb6c0ae2cde3be4794375f}
+
+
+get\+Singleton\+Ptr 
+
+Return \hyperlink{classEngine_1_1LogManager}{Log\+Manager} Instance \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1LogManager_acdc0eb4baacb4f3b018698665d398c6a}{}\index{Engine\+::\+Log\+Manager@{Engine\+::\+Log\+Manager}!log@{log}}
+\index{log@{log}!Engine\+::\+Log\+Manager@{Engine\+::\+Log\+Manager}}
+\subsubsection[{log(\+Level level, stringstream \&message)}]{\setlength{\rightskip}{0pt plus 5cm}void Log\+Manager\+::log (
+\begin{DoxyParamCaption}
+\item[{Level}]{level, }
+\item[{stringstream \&}]{message}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) \hspace{0.3cm}{\ttfamily [static]}}\label{classEngine_1_1LogManager_acdc0eb4baacb4f3b018698665d398c6a}
+
+
+log 
+
+Print Log Message 
+\begin{DoxyParams}{Parameters}
+{\em level} & \\
+\hline
+{\em message} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Manager/logmanager.\+h\item 
+Engine/\+Manager/Log\+Manager.\+cpp\end{DoxyCompactItemize}

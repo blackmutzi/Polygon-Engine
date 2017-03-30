@@ -1,0 +1,613 @@
+\hypertarget{classEngine_1_1TextureManager}{}\section{Engine\+:\+:Texture\+Manager Class Reference}
+\label{classEngine_1_1TextureManager}\index{Engine\+::\+Texture\+Manager@{Engine\+::\+Texture\+Manager}}
+
+
+The \hyperlink{classEngine_1_1TextureManager}{Texture\+Manager} class.  
+
+
+
+
+{\ttfamily \#include $<$texturemanager.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classEngine_1_1TextureManager_aa68378b5b12bd19c721f56d9e9a9ccab}{finish} (void)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classEngine_1_1TextureManager_aa68378b5b12bd19c721f56d9e9a9ccab}{Texture\+Manager\+::finish}. \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1TextureManager_a48d5c9b6613be6bd97bce4d5eb2078c4}{get\+Pixel\+Data} (\hyperlink{classEngine_1_1Texture}{Texture} $\ast$texture)
+\begin{DoxyCompactList}\small\item\em Texture\+Manager\+::get\+Tex\+Image. \end{DoxyCompactList}\item 
+\hypertarget{classEngine_1_1TextureManager_a4de63cf80197ed191633ea88ae5aee51}{}void {\bfseries get\+Pixel\+Depth\+Data} (\hyperlink{classEngine_1_1Texture}{Texture} $\ast$texture)\label{classEngine_1_1TextureManager_a4de63cf80197ed191633ea88ae5aee51}
+
+\item 
+\hyperlink{classEngine_1_1Texture}{Texture} $\ast$ \hyperlink{classEngine_1_1TextureManager_a42dfca28c769d9d3e03c5de414c6d99d}{create\+T\+B\+Oand\+Bind\+V\+B\+O} (uint vbo\+\_\+id)
+\begin{DoxyCompactList}\small\item\em create\+T\+B\+Oand\+Bind\+V\+B\+O \end{DoxyCompactList}\item 
+\hyperlink{classEngine_1_1Texture}{Texture} $\ast$ \hyperlink{classEngine_1_1TextureManager_a5025fa398f4277cfe8aa59ad80ae7290}{create\+Texture\+Array} (const std\+::string \&texture\+\_\+name, int width, int height, int size)
+\begin{DoxyCompactList}\small\item\em create\+Texture\+Array \end{DoxyCompactList}\item 
+\hyperlink{classEngine_1_1Texture}{Texture} $\ast$ \hyperlink{classEngine_1_1TextureManager_afa8421ea8c6067e4ceb911300c49b3a0}{create\+Storage} (\hyperlink{classEngine_1_1Texture}{Texture} $\ast$texture\+\_\+array, G\+Lint format)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classEngine_1_1TextureManager_afa8421ea8c6067e4ceb911300c49b3a0}{Texture\+Manager\+::create\+Storage}. \end{DoxyCompactList}\item 
+\hypertarget{classEngine_1_1TextureManager_aeddae2dc468dc44874ca15d0da67e70e}{}void {\bfseries add\+Texture\+To\+Array} (\hyperlink{classEngine_1_1Texture}{Texture} $\ast$array, \hyperlink{classEngine_1_1Texture}{Texture} $\ast$texture, int layer)\label{classEngine_1_1TextureManager_aeddae2dc468dc44874ca15d0da67e70e}
+
+\item 
+\hyperlink{classEngine_1_1Texture}{Texture} $\ast$ \hyperlink{classEngine_1_1TextureManager_a387192344a16b4dc8b0a5d4c9dd5b4fb}{create\+Texture} (const std\+::string \&resource\+\_\+path)
+\begin{DoxyCompactList}\small\item\em create\+Texture \end{DoxyCompactList}\item 
+\hyperlink{classEngine_1_1Texture}{Texture} $\ast$ \hyperlink{classEngine_1_1TextureManager_a695c76f467b345eb86f2a35005c1f1af}{create\+Texture} (\hyperlink{classEngine_1_1Texture}{Texture} $\ast$texture, F\+I\+B\+I\+T\+M\+A\+P $\ast$bitmap)
+\begin{DoxyCompactList}\small\item\em create\+Texture \end{DoxyCompactList}\item 
+\hyperlink{classEngine_1_1Texture}{Texture} $\ast$ \hyperlink{classEngine_1_1TextureManager_a53cc1695a0f80e4c1acb7cc22b9d26ee}{create\+Texture} (int width, int height, uchar $\ast$pixeldata)
+\begin{DoxyCompactList}\small\item\em create\+Texture \end{DoxyCompactList}\item 
+\hyperlink{classEngine_1_1Texture}{Texture} $\ast$ \hyperlink{classEngine_1_1TextureManager_ad31fe2089025a755538d512cbdb5c570}{create\+Float\+Texture} (int width, int height, float $\ast$data)
+\begin{DoxyCompactList}\small\item\em create\+Float\+Texture \end{DoxyCompactList}\item 
+\hyperlink{classEngine_1_1Texture}{Texture} $\ast$ \hyperlink{classEngine_1_1TextureManager_abc2875cbca8ff89ae318a052176f4e5e}{add\+Matrix\+To\+Texture} (\hyperlink{classEngine_1_1Texture}{Texture} $\ast$float\+\_\+texture, G\+Lintptr offset, glm\+::mat4 matrix)
+\begin{DoxyCompactList}\small\item\em add\+Matrix\+To\+Texture \end{DoxyCompactList}\item 
+\hypertarget{classEngine_1_1TextureManager_a12c031ba2f44951b75e06a5509721a7e}{}\hyperlink{classEngine_1_1Texture}{Texture} $\ast$ {\bfseries add\+Vec4\+To\+Texture} (\hyperlink{classEngine_1_1Texture}{Texture} $\ast$float\+\_\+texture, G\+Lintptr offset, glm\+::vec4 vector)\label{classEngine_1_1TextureManager_a12c031ba2f44951b75e06a5509721a7e}
+
+\item 
+\hyperlink{classEngine_1_1Texture}{Texture} $\ast$ \hyperlink{classEngine_1_1TextureManager_ac161cf8a39794adffec5603fd22f816e}{add\+Char\+Texture\+To\+Array} (\hyperlink{classEngine_1_1Texture}{Texture} $\ast$array\+\_\+texture, \hyperlink{classEngine_1_1Texture}{Texture} $\ast$add\+\_\+texture, int layer)
+\begin{DoxyCompactList}\small\item\em add\+Char\+Texture\+To\+Array \end{DoxyCompactList}\item 
+\hyperlink{classEngine_1_1Texture}{Texture} $\ast$ \hyperlink{classEngine_1_1TextureManager_a5495d82a7d2026303a66c2e59fd1d9c1}{create\+Char\+Texture} (int width, int height, int depth, uchar $\ast$pixeldata)
+\begin{DoxyCompactList}\small\item\em create\+Char\+Texture \end{DoxyCompactList}\item 
+\hyperlink{classEngine_1_1Texture}{Texture} $\ast$ \hyperlink{classEngine_1_1TextureManager_a134fed8b1ab42e6771890f1e76df6b93}{create\+Cubemapping} (Textures six\+\_\+textures, const std\+::string \&texture\+\_\+name)
+\begin{DoxyCompactList}\small\item\em create\+Cubemapping \end{DoxyCompactList}\item 
+\hyperlink{classEngine_1_1Texture}{Texture} $\ast$ \hyperlink{classEngine_1_1TextureManager_a814fec11a416cad470bb0a011585ccf6}{create\+Frame\+Buffer\+Texture} (int width, int height, G\+Lint format, G\+Lenum output\+\_\+format)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classEngine_1_1TextureManager_a814fec11a416cad470bb0a011585ccf6}{Texture\+Manager\+::create\+Frame\+Buffer\+Texture}. \end{DoxyCompactList}\item 
+\hyperlink{classEngine_1_1Texture}{Texture} $\ast$ \hyperlink{classEngine_1_1TextureManager_a671ef89f2160ed77fdeec25fd55a3593}{create\+Render\+Buffer} (int render\+\_\+width, int render\+\_\+height, G\+Lenum format)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classEngine_1_1TextureManager_a671ef89f2160ed77fdeec25fd55a3593}{Texture\+Manager\+::create\+Render\+Buffer}. \end{DoxyCompactList}\item 
+\hyperlink{classEngine_1_1Texture}{Texture} $\ast$ \hyperlink{classEngine_1_1TextureManager_a70c993b45da42485bc6ed9fe261717ad}{create\+Empty\+Texture} (void)
+\begin{DoxyCompactList}\small\item\em create\+Empty\+Texture \end{DoxyCompactList}\item 
+bool \hyperlink{classEngine_1_1TextureManager_ac237a6ee36c75961f4d53f8b7e4674d7}{load\+Texture} (\hyperlink{classEngine_1_1Texture}{Texture} $\ast$texture, bool mipmapping)
+\begin{DoxyCompactList}\small\item\em load\+Texture \end{DoxyCompactList}\item 
+\hypertarget{classEngine_1_1TextureManager_ab256c020a7297e0bd03b2af12141eb3f}{}bool {\bfseries load\+Float\+Texture} (\hyperlink{classEngine_1_1Texture}{Texture} $\ast$texture)\label{classEngine_1_1TextureManager_ab256c020a7297e0bd03b2af12141eb3f}
+
+\item 
+\hypertarget{classEngine_1_1TextureManager_af5db219c01b0f273eb8490df026f8084}{}bool {\bfseries load\+Float\+Texture1\+D} (\hyperlink{classEngine_1_1Texture}{Texture} $\ast$texture)\label{classEngine_1_1TextureManager_af5db219c01b0f273eb8490df026f8084}
+
+\item 
+void \hyperlink{classEngine_1_1TextureManager_a6f1dc84a25351f97e4f52ad3b083be32}{destroy} (\hyperlink{classEngine_1_1Texture}{Texture} $\ast$texture)
+\begin{DoxyCompactList}\small\item\em destroy \end{DoxyCompactList}\item 
+\hyperlink{classEngine_1_1Texture}{Texture} $\ast$ \hyperlink{classEngine_1_1TextureManager_a7f74a36a7e4829c559357a7444927124}{get\+Texture} (const std\+::string \&texture\+\_\+name)
+\begin{DoxyCompactList}\small\item\em get\+Texture \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classEngine_1_1TextureManager}{Texture\+Manager} $\ast$ \hyperlink{classEngine_1_1TextureManager_ad657072ff2e6da88ea9916dd0d13e9d6}{get\+Singleton\+Ptr} (void)
+\begin{DoxyCompactList}\small\item\em get\+Singleton\+Ptr \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classEngine_1_1TextureManager}{Texture\+Manager} class. 
+
+Managemant of Textures
+
+
+\begin{DoxyItemize}
+\item create Textures
+\item delete Textures
+\item create Empty Textue
+\item create \hyperlink{classEngine_1_1Texture}{Texture} from resource\+\_\+path ( using Free\+Image )
+\item create Framebuffer Textures
+\item create \hyperlink{classEngine_1_1CubeMapping}{Cube\+Mapping} \hyperlink{classEngine_1_1Texture}{Texture}
+\item load \hyperlink{classEngine_1_1Texture}{Texture} into G\+P\+U Memory 
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\hypertarget{classEngine_1_1TextureManager_ac161cf8a39794adffec5603fd22f816e}{}\index{Engine\+::\+Texture\+Manager@{Engine\+::\+Texture\+Manager}!add\+Char\+Texture\+To\+Array@{add\+Char\+Texture\+To\+Array}}
+\index{add\+Char\+Texture\+To\+Array@{add\+Char\+Texture\+To\+Array}!Engine\+::\+Texture\+Manager@{Engine\+::\+Texture\+Manager}}
+\subsubsection[{add\+Char\+Texture\+To\+Array(\+Texture $\ast$array\+\_\+texture, Texture $\ast$add\+\_\+texture, int layer)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Texture} $\ast$ Texture\+Manager\+::add\+Char\+Texture\+To\+Array (
+\begin{DoxyParamCaption}
+\item[{{\bf Texture} $\ast$}]{array\+\_\+texture, }
+\item[{{\bf Texture} $\ast$}]{add\+\_\+texture, }
+\item[{int}]{layer}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1TextureManager_ac161cf8a39794adffec5603fd22f816e}
+
+
+add\+Char\+Texture\+To\+Array 
+
+Fill a Char \hyperlink{classEngine_1_1Texture}{Texture} Array
+
+
+\begin{DoxyParams}{Parameters}
+{\em array\+\_\+texture} & \\
+\hline
+{\em add\+\_\+texture} & \\
+\hline
+{\em layer} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classEngine_1_1Texture}{Texture} Array 
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1TextureManager_abc2875cbca8ff89ae318a052176f4e5e}{}\index{Engine\+::\+Texture\+Manager@{Engine\+::\+Texture\+Manager}!add\+Matrix\+To\+Texture@{add\+Matrix\+To\+Texture}}
+\index{add\+Matrix\+To\+Texture@{add\+Matrix\+To\+Texture}!Engine\+::\+Texture\+Manager@{Engine\+::\+Texture\+Manager}}
+\subsubsection[{add\+Matrix\+To\+Texture(\+Texture $\ast$float\+\_\+texture, G\+Lintptr offset, glm\+::mat4 matrix)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Texture} $\ast$ Texture\+Manager\+::add\+Matrix\+To\+Texture (
+\begin{DoxyParamCaption}
+\item[{{\bf Texture} $\ast$}]{float\+\_\+texture, }
+\item[{G\+Lintptr}]{offset, }
+\item[{glm\+::mat4}]{matrix}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1TextureManager_abc2875cbca8ff89ae318a052176f4e5e}
+
+
+add\+Matrix\+To\+Texture 
+
+Write Matrix Data into the Float \hyperlink{classEngine_1_1Texture}{Texture} 
+\begin{DoxyParams}{Parameters}
+{\em float\+\_\+texture} & \\
+\hline
+{\em offset} & \\
+\hline
+{\em matrix} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1TextureManager_a5495d82a7d2026303a66c2e59fd1d9c1}{}\index{Engine\+::\+Texture\+Manager@{Engine\+::\+Texture\+Manager}!create\+Char\+Texture@{create\+Char\+Texture}}
+\index{create\+Char\+Texture@{create\+Char\+Texture}!Engine\+::\+Texture\+Manager@{Engine\+::\+Texture\+Manager}}
+\subsubsection[{create\+Char\+Texture(int width, int height, int depth, uchar $\ast$pixeldata)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Texture} $\ast$ Texture\+Manager\+::create\+Char\+Texture (
+\begin{DoxyParamCaption}
+\item[{int}]{width, }
+\item[{int}]{height, }
+\item[{int}]{depth, }
+\item[{uchar $\ast$}]{pixeldata}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1TextureManager_a5495d82a7d2026303a66c2e59fd1d9c1}
+
+
+create\+Char\+Texture 
+
+\hyperlink{classEngine_1_1TextureManager_a5495d82a7d2026303a66c2e59fd1d9c1}{Texture\+Manager\+::create\+Char\+Texture}.
+
+Create Char \hyperlink{classEngine_1_1Texture}{Texture} for Font 
+\begin{DoxyParams}{Parameters}
+{\em width} & \\
+\hline
+{\em height} & \\
+\hline
+{\em depth} & \\
+\hline
+{\em pixeldata} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Create a Character \hyperlink{classEngine_1_1Texture}{Texture} by Fonts
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & \+: \hyperlink{classEngine_1_1Texture}{Texture} Width \\
+\hline
+{\em height} & \+: \hyperlink{classEngine_1_1Texture}{Texture} Height \\
+\hline
+{\em depth} & \+: default(1) \\
+\hline
+{\em pixeldata} & \+: Character Pixel Data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1TextureManager_a134fed8b1ab42e6771890f1e76df6b93}{}\index{Engine\+::\+Texture\+Manager@{Engine\+::\+Texture\+Manager}!create\+Cubemapping@{create\+Cubemapping}}
+\index{create\+Cubemapping@{create\+Cubemapping}!Engine\+::\+Texture\+Manager@{Engine\+::\+Texture\+Manager}}
+\subsubsection[{create\+Cubemapping(\+Textures six\+\_\+textures, const std\+::string \&texture\+\_\+name)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Texture} $\ast$ Texture\+Manager\+::create\+Cubemapping (
+\begin{DoxyParamCaption}
+\item[{Textures}]{six\+\_\+textures, }
+\item[{const std\+::string \&}]{texture\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1TextureManager_a134fed8b1ab42e6771890f1e76df6b93}
+
+
+create\+Cubemapping 
+
+Create Cubemapping \hyperlink{classEngine_1_1Texture}{Texture} -\/ with six Textures 
+\begin{DoxyParams}{Parameters}
+{\em six\+\_\+textures} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1TextureManager_a70c993b45da42485bc6ed9fe261717ad}{}\index{Engine\+::\+Texture\+Manager@{Engine\+::\+Texture\+Manager}!create\+Empty\+Texture@{create\+Empty\+Texture}}
+\index{create\+Empty\+Texture@{create\+Empty\+Texture}!Engine\+::\+Texture\+Manager@{Engine\+::\+Texture\+Manager}}
+\subsubsection[{create\+Empty\+Texture(void)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Texture} $\ast$ Texture\+Manager\+::create\+Empty\+Texture (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1TextureManager_a70c993b45da42485bc6ed9fe261717ad}
+
+
+create\+Empty\+Texture 
+
+Create a Empty \hyperlink{classEngine_1_1Texture}{Texture} with id
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1TextureManager_ad31fe2089025a755538d512cbdb5c570}{}\index{Engine\+::\+Texture\+Manager@{Engine\+::\+Texture\+Manager}!create\+Float\+Texture@{create\+Float\+Texture}}
+\index{create\+Float\+Texture@{create\+Float\+Texture}!Engine\+::\+Texture\+Manager@{Engine\+::\+Texture\+Manager}}
+\subsubsection[{create\+Float\+Texture(int width, int height, float $\ast$data)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Texture} $\ast$ Texture\+Manager\+::create\+Float\+Texture (
+\begin{DoxyParamCaption}
+\item[{int}]{width, }
+\item[{int}]{height, }
+\item[{float $\ast$}]{data}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1TextureManager_ad31fe2089025a755538d512cbdb5c570}
+
+
+create\+Float\+Texture 
+
+Create float \hyperlink{classEngine_1_1Texture}{Texture} ( R\+G\+B\+A32\+F ) load with \+: load\+Float\+Texture( texture ) Methode
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & \\
+\hline
+{\em height} & \\
+\hline
+{\em data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1TextureManager_a814fec11a416cad470bb0a011585ccf6}{}\index{Engine\+::\+Texture\+Manager@{Engine\+::\+Texture\+Manager}!create\+Frame\+Buffer\+Texture@{create\+Frame\+Buffer\+Texture}}
+\index{create\+Frame\+Buffer\+Texture@{create\+Frame\+Buffer\+Texture}!Engine\+::\+Texture\+Manager@{Engine\+::\+Texture\+Manager}}
+\subsubsection[{create\+Frame\+Buffer\+Texture(int width, int height, G\+Lint format, G\+Lenum output\+\_\+format)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Texture} $\ast$ Texture\+Manager\+::create\+Frame\+Buffer\+Texture (
+\begin{DoxyParamCaption}
+\item[{int}]{texture\+\_\+width, }
+\item[{int}]{texture\+\_\+height, }
+\item[{G\+Lint}]{format, }
+\item[{G\+Lenum}]{output\+\_\+format}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1TextureManager_a814fec11a416cad470bb0a011585ccf6}
+
+
+\hyperlink{classEngine_1_1TextureManager_a814fec11a416cad470bb0a011585ccf6}{Texture\+Manager\+::create\+Frame\+Buffer\+Texture}. 
+
+Create \hyperlink{classEngine_1_1FrameBuffer}{Frame\+Buffer} \hyperlink{classEngine_1_1Texture}{Texture}
+
+\hyperlink{classEngine_1_1FrameBuffer}{Frame\+Buffer} Resolution Width \hyperlink{classEngine_1_1FrameBuffer}{Frame\+Buffer} Resolution Height
+
+Format\+:
+
+-\/$>$ diffuse format\+: G\+L\+\_\+\+R\+G\+B\+A -\/$>$ position format\+: G\+L\+\_\+\+R\+G\+B\+A32\+F -\/$>$ normals format\+: G\+L\+\_\+\+R\+G\+B\+A16\+F -\/$>$ depth format\+: G\+L\+\_\+\+D\+E\+P\+T\+H\+\_\+\+C\+O\+M\+P\+O\+N\+E\+N\+T24
+
+Output Format\+:
+
+-\/$>$ diffuse G\+L\+\_\+\+B\+G\+R\+A -\/$>$ position G\+L\+\_\+\+B\+G\+R\+A -\/$>$ normals G\+L\+\_\+\+B\+G\+R\+A -\/$>$ depth G\+L\+\_\+\+D\+E\+P\+T\+H\+\_\+\+C\+O\+M\+P\+O\+N\+E\+N\+T
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture\+\_\+width} & \+: Image Width \\
+\hline
+{\em texture\+\_\+height} & \+: Image Height \\
+\hline
+{\em format} & \+: G\+L\+\_\+\+R\+G\+B\+A , G\+L\+\_\+\+R\+G\+B\+A32\+F , G\+L\+\_\+\+R\+G\+B\+A16\+F , G\+L\+\_\+\+D\+E\+P\+T\+H\+\_\+\+C\+O\+M\+P\+O\+N\+E\+N\+T24 \\
+\hline
+{\em output\+\_\+format} & \+: G\+L\+\_\+\+B\+G\+R\+A , G\+L\+\_\+\+D\+E\+P\+T\+H\+\_\+\+C\+O\+M\+P\+O\+N\+E\+N\+T \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Create \hyperlink{classEngine_1_1FrameBuffer}{Frame\+Buffer} \hyperlink{classEngine_1_1Texture}{Texture}
+
+\hyperlink{classEngine_1_1FrameBuffer}{Frame\+Buffer} Width \hyperlink{classEngine_1_1FrameBuffer}{Frame\+Buffer} Height
+
+-\/$>$ diffuse format\+: G\+L\+\_\+\+R\+G\+B\+A -\/$>$ position format\+: G\+L\+\_\+\+R\+G\+B\+A32\+F -\/$>$ normals format\+: G\+L\+\_\+\+R\+G\+B\+A16\+F
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture\+\_\+width} & \\
+\hline
+{\em texture\+\_\+height} & \\
+\hline
+{\em format} & \\
+\hline
+{\em output\+\_\+format} & \+: Default =$>$ G\+L\+\_\+\+B\+G\+R\+A , Depth =$>$ G\+L\+\_\+\+D\+E\+P\+T\+H\+\_\+\+C\+O\+M\+P\+O\+N\+E\+N\+T \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1TextureManager_a671ef89f2160ed77fdeec25fd55a3593}{}\index{Engine\+::\+Texture\+Manager@{Engine\+::\+Texture\+Manager}!create\+Render\+Buffer@{create\+Render\+Buffer}}
+\index{create\+Render\+Buffer@{create\+Render\+Buffer}!Engine\+::\+Texture\+Manager@{Engine\+::\+Texture\+Manager}}
+\subsubsection[{create\+Render\+Buffer(int render\+\_\+width, int render\+\_\+height, G\+Lenum format)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Texture} $\ast$ Texture\+Manager\+::create\+Render\+Buffer (
+\begin{DoxyParamCaption}
+\item[{int}]{render\+\_\+width, }
+\item[{int}]{render\+\_\+height, }
+\item[{G\+Lenum}]{format}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1TextureManager_a671ef89f2160ed77fdeec25fd55a3593}
+
+
+\hyperlink{classEngine_1_1TextureManager_a671ef89f2160ed77fdeec25fd55a3593}{Texture\+Manager\+::create\+Render\+Buffer}. 
+
+Create Render\+Buffer for \hyperlink{classEngine_1_1FrameBuffer}{Frame\+Buffer} (F\+B\+O)
+
+-\/$>$ diffuse format\+: G\+L\+\_\+\+R\+G\+B\+A -\/$>$ position format\+: G\+L\+\_\+\+R\+G\+B\+A32\+F -\/$>$ normals format\+: G\+L\+\_\+\+R\+G\+B\+A16\+F -\/$>$ depth format\+: G\+L\+\_\+\+D\+E\+P\+T\+H\+\_\+\+C\+O\+M\+P\+O\+N\+E\+N\+T24
+
+
+\begin{DoxyParams}{Parameters}
+{\em render\+\_\+width} & \\
+\hline
+{\em render\+\_\+height} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1TextureManager_afa8421ea8c6067e4ceb911300c49b3a0}{}\index{Engine\+::\+Texture\+Manager@{Engine\+::\+Texture\+Manager}!create\+Storage@{create\+Storage}}
+\index{create\+Storage@{create\+Storage}!Engine\+::\+Texture\+Manager@{Engine\+::\+Texture\+Manager}}
+\subsubsection[{create\+Storage(\+Texture $\ast$texture\+\_\+array, G\+Lint format)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Texture} $\ast$ Texture\+Manager\+::create\+Storage (
+\begin{DoxyParamCaption}
+\item[{{\bf Texture} $\ast$}]{array\+\_\+texture, }
+\item[{G\+Lint}]{format}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1TextureManager_afa8421ea8c6067e4ceb911300c49b3a0}
+
+
+\hyperlink{classEngine_1_1TextureManager_afa8421ea8c6067e4ceb911300c49b3a0}{Texture\+Manager\+::create\+Storage}. 
+
+Create \hyperlink{classEngine_1_1Texture}{Texture} Array Storage
+
+-\/$>$ \hyperlink{classEngine_1_1Texture}{Texture} Target\+: G\+L\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+2\+D\+\_\+\+A\+R\+R\+A\+Y -\/$>$ Output Format \+: G\+L\+\_\+\+B\+G\+R\+A -\/$>$ Output Type \+: G\+L\+\_\+\+U\+N\+S\+I\+G\+N\+E\+D\+\_\+\+B\+Y\+T\+E
+
+
+\begin{DoxyParams}{Parameters}
+{\em array\+\_\+texture} & \+: \hyperlink{classEngine_1_1Texture}{Texture} Array \\
+\hline
+{\em format} & \+: G\+L\+\_\+\+R\+G\+B\+A32f \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1TextureManager_a42dfca28c769d9d3e03c5de414c6d99d}{}\index{Engine\+::\+Texture\+Manager@{Engine\+::\+Texture\+Manager}!create\+T\+B\+Oand\+Bind\+V\+B\+O@{create\+T\+B\+Oand\+Bind\+V\+B\+O}}
+\index{create\+T\+B\+Oand\+Bind\+V\+B\+O@{create\+T\+B\+Oand\+Bind\+V\+B\+O}!Engine\+::\+Texture\+Manager@{Engine\+::\+Texture\+Manager}}
+\subsubsection[{create\+T\+B\+Oand\+Bind\+V\+B\+O(uint vbo\+\_\+id)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Texture} $\ast$ Texture\+Manager\+::create\+T\+B\+Oand\+Bind\+V\+B\+O (
+\begin{DoxyParamCaption}
+\item[{uint}]{vbo\+\_\+id}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1TextureManager_a42dfca28c769d9d3e03c5de414c6d99d}
+
+
+create\+T\+B\+Oand\+Bind\+V\+B\+O 
+
+\hyperlink{classEngine_1_1TextureManager_a42dfca28c769d9d3e03c5de414c6d99d}{Texture\+Manager\+::create\+T\+B\+Oand\+Bind\+V\+B\+O}.
+
+Create Vertex Buffer Object and Bind with a V\+B\+O ( aka. Vertex Buffer )
+
+
+\begin{DoxyParams}{Parameters}
+{\em vbo\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Create \hyperlink{classEngine_1_1Texture}{Texture} Buffer Object and Bind it with a V\+B\+O ( aka. Vertex Buffer )
+
+
+\begin{DoxyParams}{Parameters}
+{\em vbo\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1TextureManager_a387192344a16b4dc8b0a5d4c9dd5b4fb}{}\index{Engine\+::\+Texture\+Manager@{Engine\+::\+Texture\+Manager}!create\+Texture@{create\+Texture}}
+\index{create\+Texture@{create\+Texture}!Engine\+::\+Texture\+Manager@{Engine\+::\+Texture\+Manager}}
+\subsubsection[{create\+Texture(const std\+::string \&resource\+\_\+path)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Texture} $\ast$ Texture\+Manager\+::create\+Texture (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{resource\+\_\+path}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1TextureManager_a387192344a16b4dc8b0a5d4c9dd5b4fb}
+
+
+create\+Texture 
+
+Create \hyperlink{classEngine_1_1Texture}{Texture} from a resource 
+\begin{DoxyParams}{Parameters}
+{\em resource\+\_\+path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1TextureManager_a695c76f467b345eb86f2a35005c1f1af}{}\index{Engine\+::\+Texture\+Manager@{Engine\+::\+Texture\+Manager}!create\+Texture@{create\+Texture}}
+\index{create\+Texture@{create\+Texture}!Engine\+::\+Texture\+Manager@{Engine\+::\+Texture\+Manager}}
+\subsubsection[{create\+Texture(\+Texture $\ast$texture, F\+I\+B\+I\+T\+M\+A\+P $\ast$bitmap)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Texture} $\ast$ Texture\+Manager\+::create\+Texture (
+\begin{DoxyParamCaption}
+\item[{{\bf Texture} $\ast$}]{texture, }
+\item[{F\+I\+B\+I\+T\+M\+A\+P $\ast$}]{bitmap}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1TextureManager_a695c76f467b345eb86f2a35005c1f1af}
+
+
+create\+Texture 
+
+Create a \hyperlink{classEngine_1_1Texture}{Texture} from Free\+Image Bitmap 
+\begin{DoxyParams}{Parameters}
+{\em texture} & \+: empty texture ( with generated id ) \\
+\hline
+{\em bitmap} & \+: Free\+Image Bitmap \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1TextureManager_a53cc1695a0f80e4c1acb7cc22b9d26ee}{}\index{Engine\+::\+Texture\+Manager@{Engine\+::\+Texture\+Manager}!create\+Texture@{create\+Texture}}
+\index{create\+Texture@{create\+Texture}!Engine\+::\+Texture\+Manager@{Engine\+::\+Texture\+Manager}}
+\subsubsection[{create\+Texture(int width, int height, uchar $\ast$pixeldata)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Texture} $\ast$ Texture\+Manager\+::create\+Texture (
+\begin{DoxyParamCaption}
+\item[{int}]{width, }
+\item[{int}]{height, }
+\item[{uchar $\ast$}]{pixeldata}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1TextureManager_a53cc1695a0f80e4c1acb7cc22b9d26ee}
+
+
+create\+Texture 
+
+Create a Custom \hyperlink{classEngine_1_1Texture}{Texture} with Pixel Data 
+\begin{DoxyParams}{Parameters}
+{\em width} & \\
+\hline
+{\em height} & \\
+\hline
+{\em pixeldata} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1TextureManager_a5025fa398f4277cfe8aa59ad80ae7290}{}\index{Engine\+::\+Texture\+Manager@{Engine\+::\+Texture\+Manager}!create\+Texture\+Array@{create\+Texture\+Array}}
+\index{create\+Texture\+Array@{create\+Texture\+Array}!Engine\+::\+Texture\+Manager@{Engine\+::\+Texture\+Manager}}
+\subsubsection[{create\+Texture\+Array(const std\+::string \&texture\+\_\+name, int width, int height, int size)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Texture} $\ast$ Texture\+Manager\+::create\+Texture\+Array (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{texture\+\_\+name, }
+\item[{int}]{width, }
+\item[{int}]{height, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1TextureManager_a5025fa398f4277cfe8aa59ad80ae7290}
+
+
+create\+Texture\+Array 
+
+Create \hyperlink{classEngine_1_1Texture}{Texture} Array
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture\+\_\+name} & \+: \hyperlink{classEngine_1_1Texture}{Texture} Array Name \\
+\hline
+{\em width} & \+: Image Width \\
+\hline
+{\em height} & \+: Image Height \\
+\hline
+{\em size} & \+: Layer amounts \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1TextureManager_a6f1dc84a25351f97e4f52ad3b083be32}{}\index{Engine\+::\+Texture\+Manager@{Engine\+::\+Texture\+Manager}!destroy@{destroy}}
+\index{destroy@{destroy}!Engine\+::\+Texture\+Manager@{Engine\+::\+Texture\+Manager}}
+\subsubsection[{destroy(\+Texture $\ast$texture)}]{\setlength{\rightskip}{0pt plus 5cm}void Texture\+Manager\+::destroy (
+\begin{DoxyParamCaption}
+\item[{{\bf Texture} $\ast$}]{texture}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1TextureManager_a6f1dc84a25351f97e4f52ad3b083be32}
+
+
+destroy 
+
+\hyperlink{classEngine_1_1TextureManager_a6f1dc84a25351f97e4f52ad3b083be32}{Texture\+Manager\+::destroy}.
+
+Destroy \hyperlink{classEngine_1_1Texture}{Texture} 
+\begin{DoxyParams}{Parameters}
+{\em texture} & Destroy only a \hyperlink{classEngine_1_1Texture}{Texture} \\
+\hline
+{\em texture} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1TextureManager_aa68378b5b12bd19c721f56d9e9a9ccab}{}\index{Engine\+::\+Texture\+Manager@{Engine\+::\+Texture\+Manager}!finish@{finish}}
+\index{finish@{finish}!Engine\+::\+Texture\+Manager@{Engine\+::\+Texture\+Manager}}
+\subsubsection[{finish(void)}]{\setlength{\rightskip}{0pt plus 5cm}void Texture\+Manager\+::finish (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1TextureManager_aa68378b5b12bd19c721f56d9e9a9ccab}
+
+
+\hyperlink{classEngine_1_1TextureManager_aa68378b5b12bd19c721f56d9e9a9ccab}{Texture\+Manager\+::finish}. 
+
+Destroy all. \hyperlink{classEngine_1_1TextureManager}{Texture\+Manager} \& Textures \hypertarget{classEngine_1_1TextureManager_a48d5c9b6613be6bd97bce4d5eb2078c4}{}\index{Engine\+::\+Texture\+Manager@{Engine\+::\+Texture\+Manager}!get\+Pixel\+Data@{get\+Pixel\+Data}}
+\index{get\+Pixel\+Data@{get\+Pixel\+Data}!Engine\+::\+Texture\+Manager@{Engine\+::\+Texture\+Manager}}
+\subsubsection[{get\+Pixel\+Data(\+Texture $\ast$texture)}]{\setlength{\rightskip}{0pt plus 5cm}void Texture\+Manager\+::get\+Pixel\+Data (
+\begin{DoxyParamCaption}
+\item[{{\bf Texture} $\ast$}]{texture}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1TextureManager_a48d5c9b6613be6bd97bce4d5eb2078c4}
+
+
+Texture\+Manager\+::get\+Tex\+Image. 
+
+Read Pixel Data from Memory and write into \hyperlink{classEngine_1_1Texture}{Texture} Container.
+
+\+:\+: Return Pixel Data \+:\+: uchar $\ast$ pixels = texture-\/$>$\hyperlink{classEngine_1_1TextureManager_a48d5c9b6613be6bd97bce4d5eb2078c4}{get\+Pixel\+Data()};
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1TextureManager_ad657072ff2e6da88ea9916dd0d13e9d6}{}\index{Engine\+::\+Texture\+Manager@{Engine\+::\+Texture\+Manager}!get\+Singleton\+Ptr@{get\+Singleton\+Ptr}}
+\index{get\+Singleton\+Ptr@{get\+Singleton\+Ptr}!Engine\+::\+Texture\+Manager@{Engine\+::\+Texture\+Manager}}
+\subsubsection[{get\+Singleton\+Ptr(void)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Texture\+Manager} $\ast$ Texture\+Manager\+::get\+Singleton\+Ptr (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classEngine_1_1TextureManager_ad657072ff2e6da88ea9916dd0d13e9d6}
+
+
+get\+Singleton\+Ptr 
+
+Return \hyperlink{classEngine_1_1Texture}{Texture} Manager Instance \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1TextureManager_a7f74a36a7e4829c559357a7444927124}{}\index{Engine\+::\+Texture\+Manager@{Engine\+::\+Texture\+Manager}!get\+Texture@{get\+Texture}}
+\index{get\+Texture@{get\+Texture}!Engine\+::\+Texture\+Manager@{Engine\+::\+Texture\+Manager}}
+\subsubsection[{get\+Texture(const std\+::string \&texture\+\_\+name)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Texture} $\ast$ Texture\+Manager\+::get\+Texture (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{texture\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1TextureManager_a7f74a36a7e4829c559357a7444927124}
+
+
+get\+Texture 
+
+Return \hyperlink{classEngine_1_1Texture}{Texture} Object by Name 
+\begin{DoxyParams}{Parameters}
+{\em texture\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1TextureManager_ac237a6ee36c75961f4d53f8b7e4674d7}{}\index{Engine\+::\+Texture\+Manager@{Engine\+::\+Texture\+Manager}!load\+Texture@{load\+Texture}}
+\index{load\+Texture@{load\+Texture}!Engine\+::\+Texture\+Manager@{Engine\+::\+Texture\+Manager}}
+\subsubsection[{load\+Texture(\+Texture $\ast$texture, bool mipmapping)}]{\setlength{\rightskip}{0pt plus 5cm}bool Texture\+Manager\+::load\+Texture (
+\begin{DoxyParamCaption}
+\item[{{\bf Texture} $\ast$}]{texture, }
+\item[{bool}]{mipmapping}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1TextureManager_ac237a6ee36c75961f4d53f8b7e4674d7}
+
+
+load\+Texture 
+
+Load \hyperlink{classEngine_1_1Texture}{Texture} into G\+P\+U Memory with or without mipmapping
+
+
+\begin{DoxyItemize}
+\item default Mipmapping ( 3 )
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & \\
+\hline
+{\em mipmapping} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Manager/texturemanager.\+h\item 
+Engine/\+Manager/Texture\+Manager.\+cpp\end{DoxyCompactItemize}

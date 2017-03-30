@@ -1,0 +1,127 @@
+\hypertarget{classEngine_1_1GLElementBuffer}{}\section{Engine\+:\+:G\+L\+Element\+Buffer Class Reference}
+\label{classEngine_1_1GLElementBuffer}\index{Engine\+::\+G\+L\+Element\+Buffer@{Engine\+::\+G\+L\+Element\+Buffer}}
+
+
+The \hyperlink{classEngine_1_1GLElementBuffer}{G\+L\+Element\+Buffer} class.  
+
+
+
+
+{\ttfamily \#include $<$glelementbuffer.\+h$>$}
+
+Inheritance diagram for Engine\+:\+:G\+L\+Element\+Buffer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classEngine_1_1GLElementBuffer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint \hyperlink{classEngine_1_1GLElementBuffer_a36ddf0be23d19af69b60b0a1502768c5}{create} (int size\+\_\+data, void $\ast$data)
+\begin{DoxyCompactList}\small\item\em create \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1GLElementBuffer_a12e74567261194e53b9b58b52ff91da4}{attach} (uint vao\+\_\+id)
+\begin{DoxyCompactList}\small\item\em attach \end{DoxyCompactList}\item 
+\hypertarget{classEngine_1_1GLElementBuffer_a1128832938db430f2cb97e3e18d66cac}{}void {\bfseries update} (int offset, int size\+\_\+data, void $\ast$data)\label{classEngine_1_1GLElementBuffer_a1128832938db430f2cb97e3e18d66cac}
+
+\item 
+void \hyperlink{classEngine_1_1GLElementBuffer_a78842b1b2910f198665096b72186a1be}{get\+Data} (int offset, void $\ast$data)
+\begin{DoxyCompactList}\small\item\em get\+Data \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1GLElementBuffer_a8d46099a8a43d1ac1217e765863997ea}{close} (void)
+\begin{DoxyCompactList}\small\item\em close \end{DoxyCompactList}\item 
+\hypertarget{classEngine_1_1GLElementBuffer_a24aea14bff4e6ac3d34d06d2132d34f2}{}int {\bfseries get\+Float\+Count} (void)\label{classEngine_1_1GLElementBuffer_a24aea14bff4e6ac3d34d06d2132d34f2}
+
+\item 
+\hypertarget{classEngine_1_1GLElementBuffer_aa864f1bbd2aba4cd327b0e8a485fceb5}{}void {\bfseries set\+Float\+Count} (int amount)\label{classEngine_1_1GLElementBuffer_aa864f1bbd2aba4cd327b0e8a485fceb5}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classEngine_1_1GLElementBuffer}{G\+L\+Element\+Buffer} class. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classEngine_1_1GLElementBuffer_a12e74567261194e53b9b58b52ff91da4}{}\index{Engine\+::\+G\+L\+Element\+Buffer@{Engine\+::\+G\+L\+Element\+Buffer}!attach@{attach}}
+\index{attach@{attach}!Engine\+::\+G\+L\+Element\+Buffer@{Engine\+::\+G\+L\+Element\+Buffer}}
+\subsubsection[{attach(uint vao\+\_\+id)}]{\setlength{\rightskip}{0pt plus 5cm}void G\+L\+Element\+Buffer\+::attach (
+\begin{DoxyParamCaption}
+\item[{uint}]{vao\+\_\+id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classEngine_1_1GLElementBuffer_a12e74567261194e53b9b58b52ff91da4}
+
+
+attach 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vao\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classEngine_1_1IGBuffer_a4d4186068930b5d161a52d2fa8afad02}{Engine\+::\+I\+G\+Buffer}.
+
+\hypertarget{classEngine_1_1GLElementBuffer_a8d46099a8a43d1ac1217e765863997ea}{}\index{Engine\+::\+G\+L\+Element\+Buffer@{Engine\+::\+G\+L\+Element\+Buffer}!close@{close}}
+\index{close@{close}!Engine\+::\+G\+L\+Element\+Buffer@{Engine\+::\+G\+L\+Element\+Buffer}}
+\subsubsection[{close(void)}]{\setlength{\rightskip}{0pt plus 5cm}void G\+L\+Element\+Buffer\+::close (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classEngine_1_1GLElementBuffer_a8d46099a8a43d1ac1217e765863997ea}
+
+
+close 
+
+Unbind G\+P\+U Buffer 
+
+Implements \hyperlink{classEngine_1_1IGBuffer_a8473523f8cf850708f54859848f4234e}{Engine\+::\+I\+G\+Buffer}.
+
+\hypertarget{classEngine_1_1GLElementBuffer_a36ddf0be23d19af69b60b0a1502768c5}{}\index{Engine\+::\+G\+L\+Element\+Buffer@{Engine\+::\+G\+L\+Element\+Buffer}!create@{create}}
+\index{create@{create}!Engine\+::\+G\+L\+Element\+Buffer@{Engine\+::\+G\+L\+Element\+Buffer}}
+\subsubsection[{create(int size\+\_\+data, void $\ast$data)}]{\setlength{\rightskip}{0pt plus 5cm}uint G\+L\+Element\+Buffer\+::create (
+\begin{DoxyParamCaption}
+\item[{int}]{size\+\_\+data, }
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classEngine_1_1GLElementBuffer_a36ddf0be23d19af69b60b0a1502768c5}
+
+
+create 
+
+Create a new G\+P\+U Buffer 
+
+Implements \hyperlink{classEngine_1_1IGBuffer_a6afbd1651d2c92fcec584e8d3ef1c32b}{Engine\+::\+I\+G\+Buffer}.
+
+\hypertarget{classEngine_1_1GLElementBuffer_a78842b1b2910f198665096b72186a1be}{}\index{Engine\+::\+G\+L\+Element\+Buffer@{Engine\+::\+G\+L\+Element\+Buffer}!get\+Data@{get\+Data}}
+\index{get\+Data@{get\+Data}!Engine\+::\+G\+L\+Element\+Buffer@{Engine\+::\+G\+L\+Element\+Buffer}}
+\subsubsection[{get\+Data(int offset, void $\ast$data)}]{\setlength{\rightskip}{0pt plus 5cm}void G\+L\+Element\+Buffer\+::get\+Data (
+\begin{DoxyParamCaption}
+\item[{int}]{offset, }
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classEngine_1_1GLElementBuffer_a78842b1b2910f198665096b72186a1be}
+
+
+get\+Data 
+
+Get Data from Buffer 
+\begin{DoxyParams}{Parameters}
+{\em offset} & \\
+\hline
+{\em size\+\_\+data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classEngine_1_1IGBuffer_a8ad52dc670797d72aabf99033d20b220}{Engine\+::\+I\+G\+Buffer}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+G\+P\+U/glelementbuffer.\+h\item 
+Engine/\+G\+P\+U/G\+L\+Element\+Buffer.\+cpp\end{DoxyCompactItemize}

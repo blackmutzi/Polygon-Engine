@@ -1,0 +1,343 @@
+\hypertarget{classEngine_1_1Texture}{}\section{Engine\+:\+:Texture Class Reference}
+\label{classEngine_1_1Texture}\index{Engine\+::\+Texture@{Engine\+::\+Texture}}
+
+
+The \hyperlink{classEngine_1_1Texture}{Texture} class.  
+
+
+
+
+{\ttfamily \#include $<$texture.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEngine_1_1Texture_a9611740317327e13a551a3fba5d9ca11}{}enum \{ {\bfseries M\+I\+P\+M\+A\+P\+P\+I\+N\+G} = 0x1, 
+{\bfseries R\+E\+N\+D\+E\+R\+B\+U\+F\+F\+E\+R} = 0x2, 
+{\bfseries L\+O\+A\+D\+E\+D} = 0x4
+ \}\label{classEngine_1_1Texture_a9611740317327e13a551a3fba5d9ca11}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classEngine_1_1Texture_a935c4a83e0c4bcb4ff6bf3e73a2fcab8}{set\+Name} (const std\+::string \&texture\+\_\+name)
+\begin{DoxyCompactList}\small\item\em set\+Name \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1Texture_ad3dc7efa69aa3de1991eb5ee356b7eab}{set\+Target} (uint target)
+\begin{DoxyCompactList}\small\item\em set\+Target \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1Texture_acd3ea5dad0279a8bab6154de6588a2e4}{set\+Id} (uint id)
+\begin{DoxyCompactList}\small\item\em set\+Id \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1Texture_a52ea6825bd24b11875a37f0715e7b883}{set\+Width} (int width)
+\begin{DoxyCompactList}\small\item\em set\+Width \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1Texture_a1945ff1d8c22a3760dadada8b95d065d}{set\+Height} (int height)
+\begin{DoxyCompactList}\small\item\em set\+Height \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1Texture_aae0867e9f935f805f6bcb1c19327ce20}{set\+Depth} (int depth)
+\begin{DoxyCompactList}\small\item\em set\+Depth \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1Texture_a0a9392153530f674eae2cfd7590458f1}{set\+Pixel\+Data} (uchar $\ast$data)
+\begin{DoxyCompactList}\small\item\em set\+Pixel\+Data \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1Texture_acf386fc4ead9d178e3c433c01f888c7d}{set\+Float\+Pixel\+Data} (float $\ast$data)
+\begin{DoxyCompactList}\small\item\em set\+Float\+Pixel\+Data \end{DoxyCompactList}\item 
+G\+Lenum \hyperlink{classEngine_1_1Texture_a263bb4f34e2457707111a4b87d9dfc0a}{get\+Target} (void) const 
+\begin{DoxyCompactList}\small\item\em get\+Target \end{DoxyCompactList}\item 
+bool \hyperlink{classEngine_1_1Texture_a67cc53240823f5bdd79d3dbbe3fd5af2}{has\+State} (uint state) const 
+\begin{DoxyCompactList}\small\item\em has\+State \end{DoxyCompactList}\item 
+\hypertarget{classEngine_1_1Texture_a7c0151dc9ccbc2d355acc76ec887dd0f}{}void {\bfseries add\+State} (uint state)\label{classEngine_1_1Texture_a7c0151dc9ccbc2d355acc76ec887dd0f}
+
+\item 
+const std\+::string \& \hyperlink{classEngine_1_1Texture_aad08aa5baa793d1912ba2503b96d6443}{get\+Name} (void) const 
+\begin{DoxyCompactList}\small\item\em get\+Name \end{DoxyCompactList}\item 
+const uint \& \hyperlink{classEngine_1_1Texture_a984928afb50d7b18e4220c70cae35d14}{get\+I\+D} (void) const 
+\begin{DoxyCompactList}\small\item\em get\+I\+D \end{DoxyCompactList}\item 
+int \hyperlink{classEngine_1_1Texture_a34521538335b3d644a16890be2727b65}{get\+Width} (void) const 
+\begin{DoxyCompactList}\small\item\em get\+Width \end{DoxyCompactList}\item 
+int \hyperlink{classEngine_1_1Texture_affa04ff498245c4d52800c2c3f114c74}{get\+Height} (void) const 
+\begin{DoxyCompactList}\small\item\em get\+Height \end{DoxyCompactList}\item 
+int \hyperlink{classEngine_1_1Texture_ab81e2d2bd373d31e6de2db6e371d748e}{get\+Depth} (void) const 
+\begin{DoxyCompactList}\small\item\em get\+Depth \end{DoxyCompactList}\item 
+uchar $\ast$ \hyperlink{classEngine_1_1Texture_a12e50ab269a49a5f87df19f87a40f4e0}{get\+Pixel\+Data} (void) const 
+\begin{DoxyCompactList}\small\item\em get\+Pixel\+Data \end{DoxyCompactList}\item 
+\hypertarget{classEngine_1_1Texture_abe9be33c19028eb35ab18ad912f94f98}{}float $\ast$ {\bfseries get\+Float\+Pixel\+Data} (void) const \label{classEngine_1_1Texture_abe9be33c19028eb35ab18ad912f94f98}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classEngine_1_1Texture}{Texture} class. 
+
+Save \hyperlink{classEngine_1_1Texture}{Texture} Data
+
+
+\begin{DoxyItemize}
+\item Id
+\item Pixel\+Data
+\item Width
+\item Height
+\item Depth 
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\hypertarget{classEngine_1_1Texture_ab81e2d2bd373d31e6de2db6e371d748e}{}\index{Engine\+::\+Texture@{Engine\+::\+Texture}!get\+Depth@{get\+Depth}}
+\index{get\+Depth@{get\+Depth}!Engine\+::\+Texture@{Engine\+::\+Texture}}
+\subsubsection[{get\+Depth(void) const }]{\setlength{\rightskip}{0pt plus 5cm}int Texture\+::get\+Depth (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classEngine_1_1Texture_ab81e2d2bd373d31e6de2db6e371d748e}
+
+
+get\+Depth 
+
+Return \hyperlink{classEngine_1_1Texture}{Texture} depth size \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1Texture_affa04ff498245c4d52800c2c3f114c74}{}\index{Engine\+::\+Texture@{Engine\+::\+Texture}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!Engine\+::\+Texture@{Engine\+::\+Texture}}
+\subsubsection[{get\+Height(void) const }]{\setlength{\rightskip}{0pt plus 5cm}int Texture\+::get\+Height (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classEngine_1_1Texture_affa04ff498245c4d52800c2c3f114c74}
+
+
+get\+Height 
+
+Return \hyperlink{classEngine_1_1Texture}{Texture} height size \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1Texture_a984928afb50d7b18e4220c70cae35d14}{}\index{Engine\+::\+Texture@{Engine\+::\+Texture}!get\+I\+D@{get\+I\+D}}
+\index{get\+I\+D@{get\+I\+D}!Engine\+::\+Texture@{Engine\+::\+Texture}}
+\subsubsection[{get\+I\+D(void) const }]{\setlength{\rightskip}{0pt plus 5cm}const uint \& Texture\+::get\+I\+D (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classEngine_1_1Texture_a984928afb50d7b18e4220c70cae35d14}
+
+
+get\+I\+D 
+
+Return \hyperlink{classEngine_1_1Texture}{Texture} Id \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1Texture_aad08aa5baa793d1912ba2503b96d6443}{}\index{Engine\+::\+Texture@{Engine\+::\+Texture}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!Engine\+::\+Texture@{Engine\+::\+Texture}}
+\subsubsection[{get\+Name(void) const }]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string \& Texture\+::get\+Name (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classEngine_1_1Texture_aad08aa5baa793d1912ba2503b96d6443}
+
+
+get\+Name 
+
+Return \hyperlink{classEngine_1_1Texture}{Texture} Name \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1Texture_a12e50ab269a49a5f87df19f87a40f4e0}{}\index{Engine\+::\+Texture@{Engine\+::\+Texture}!get\+Pixel\+Data@{get\+Pixel\+Data}}
+\index{get\+Pixel\+Data@{get\+Pixel\+Data}!Engine\+::\+Texture@{Engine\+::\+Texture}}
+\subsubsection[{get\+Pixel\+Data(void) const }]{\setlength{\rightskip}{0pt plus 5cm}uchar $\ast$ Texture\+::get\+Pixel\+Data (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classEngine_1_1Texture_a12e50ab269a49a5f87df19f87a40f4e0}
+
+
+get\+Pixel\+Data 
+
+Return Pixel Data
+\begin{DoxyItemize}
+\item type \+: unsigned char
+\item format\+: rgba
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1Texture_a263bb4f34e2457707111a4b87d9dfc0a}{}\index{Engine\+::\+Texture@{Engine\+::\+Texture}!get\+Target@{get\+Target}}
+\index{get\+Target@{get\+Target}!Engine\+::\+Texture@{Engine\+::\+Texture}}
+\subsubsection[{get\+Target(void) const }]{\setlength{\rightskip}{0pt plus 5cm}G\+Lenum Texture\+::get\+Target (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classEngine_1_1Texture_a263bb4f34e2457707111a4b87d9dfc0a}
+
+
+get\+Target 
+
+Return Open\+G\+L \hyperlink{classEngine_1_1Texture}{Texture} Target \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1Texture_a34521538335b3d644a16890be2727b65}{}\index{Engine\+::\+Texture@{Engine\+::\+Texture}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!Engine\+::\+Texture@{Engine\+::\+Texture}}
+\subsubsection[{get\+Width(void) const }]{\setlength{\rightskip}{0pt plus 5cm}int Texture\+::get\+Width (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\label{classEngine_1_1Texture_a34521538335b3d644a16890be2727b65}
+
+
+get\+Width 
+
+Return \hyperlink{classEngine_1_1Texture}{Texture} width size \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1Texture_a67cc53240823f5bdd79d3dbbe3fd5af2}{}\index{Engine\+::\+Texture@{Engine\+::\+Texture}!has\+State@{has\+State}}
+\index{has\+State@{has\+State}!Engine\+::\+Texture@{Engine\+::\+Texture}}
+\subsubsection[{has\+State(uint state) const }]{\setlength{\rightskip}{0pt plus 5cm}bool Texture\+::has\+State (
+\begin{DoxyParamCaption}
+\item[{uint}]{state}
+\end{DoxyParamCaption}
+) const}\label{classEngine_1_1Texture_a67cc53240823f5bdd79d3dbbe3fd5af2}
+
+
+has\+State 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1Texture_aae0867e9f935f805f6bcb1c19327ce20}{}\index{Engine\+::\+Texture@{Engine\+::\+Texture}!set\+Depth@{set\+Depth}}
+\index{set\+Depth@{set\+Depth}!Engine\+::\+Texture@{Engine\+::\+Texture}}
+\subsubsection[{set\+Depth(int depth)}]{\setlength{\rightskip}{0pt plus 5cm}void Texture\+::set\+Depth (
+\begin{DoxyParamCaption}
+\item[{int}]{depth}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Texture_aae0867e9f935f805f6bcb1c19327ce20}
+
+
+set\+Depth 
+
+Set \hyperlink{classEngine_1_1Texture}{Texture} Depth 
+\begin{DoxyParams}{Parameters}
+{\em depth} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1Texture_acf386fc4ead9d178e3c433c01f888c7d}{}\index{Engine\+::\+Texture@{Engine\+::\+Texture}!set\+Float\+Pixel\+Data@{set\+Float\+Pixel\+Data}}
+\index{set\+Float\+Pixel\+Data@{set\+Float\+Pixel\+Data}!Engine\+::\+Texture@{Engine\+::\+Texture}}
+\subsubsection[{set\+Float\+Pixel\+Data(float $\ast$data)}]{\setlength{\rightskip}{0pt plus 5cm}void Texture\+::set\+Float\+Pixel\+Data (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{data}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Texture_acf386fc4ead9d178e3c433c01f888c7d}
+
+
+set\+Float\+Pixel\+Data 
+
+Set Float Data 
+\begin{DoxyParams}{Parameters}
+{\em data} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1Texture_a1945ff1d8c22a3760dadada8b95d065d}{}\index{Engine\+::\+Texture@{Engine\+::\+Texture}!set\+Height@{set\+Height}}
+\index{set\+Height@{set\+Height}!Engine\+::\+Texture@{Engine\+::\+Texture}}
+\subsubsection[{set\+Height(int height)}]{\setlength{\rightskip}{0pt plus 5cm}void Texture\+::set\+Height (
+\begin{DoxyParamCaption}
+\item[{int}]{height}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Texture_a1945ff1d8c22a3760dadada8b95d065d}
+
+
+set\+Height 
+
+Set \hyperlink{classEngine_1_1Texture}{Texture} Height 
+\begin{DoxyParams}{Parameters}
+{\em height} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1Texture_acd3ea5dad0279a8bab6154de6588a2e4}{}\index{Engine\+::\+Texture@{Engine\+::\+Texture}!set\+Id@{set\+Id}}
+\index{set\+Id@{set\+Id}!Engine\+::\+Texture@{Engine\+::\+Texture}}
+\subsubsection[{set\+Id(uint id)}]{\setlength{\rightskip}{0pt plus 5cm}void Texture\+::set\+Id (
+\begin{DoxyParamCaption}
+\item[{uint}]{id}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Texture_acd3ea5dad0279a8bab6154de6588a2e4}
+
+
+set\+Id 
+
+Set Generated \hyperlink{classEngine_1_1Texture}{Texture} Id 
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1Texture_a935c4a83e0c4bcb4ff6bf3e73a2fcab8}{}\index{Engine\+::\+Texture@{Engine\+::\+Texture}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!Engine\+::\+Texture@{Engine\+::\+Texture}}
+\subsubsection[{set\+Name(const std\+::string \&texture\+\_\+name)}]{\setlength{\rightskip}{0pt plus 5cm}void Texture\+::set\+Name (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{texture\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Texture_a935c4a83e0c4bcb4ff6bf3e73a2fcab8}
+
+
+set\+Name 
+
+Set \hyperlink{classEngine_1_1Texture}{Texture} Name 
+\begin{DoxyParams}{Parameters}
+{\em texture\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1Texture_a0a9392153530f674eae2cfd7590458f1}{}\index{Engine\+::\+Texture@{Engine\+::\+Texture}!set\+Pixel\+Data@{set\+Pixel\+Data}}
+\index{set\+Pixel\+Data@{set\+Pixel\+Data}!Engine\+::\+Texture@{Engine\+::\+Texture}}
+\subsubsection[{set\+Pixel\+Data(uchar $\ast$data)}]{\setlength{\rightskip}{0pt plus 5cm}void Texture\+::set\+Pixel\+Data (
+\begin{DoxyParamCaption}
+\item[{uchar $\ast$}]{data}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Texture_a0a9392153530f674eae2cfd7590458f1}
+
+
+set\+Pixel\+Data 
+
+Set Pixel Data
+
+
+\begin{DoxyItemize}
+\item type \+: usigned char
+\item format\+: rgba -\/ 1 pixel
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1Texture_ad3dc7efa69aa3de1991eb5ee356b7eab}{}\index{Engine\+::\+Texture@{Engine\+::\+Texture}!set\+Target@{set\+Target}}
+\index{set\+Target@{set\+Target}!Engine\+::\+Texture@{Engine\+::\+Texture}}
+\subsubsection[{set\+Target(uint target)}]{\setlength{\rightskip}{0pt plus 5cm}void Texture\+::set\+Target (
+\begin{DoxyParamCaption}
+\item[{uint}]{target}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Texture_ad3dc7efa69aa3de1991eb5ee356b7eab}
+
+
+set\+Target 
+
+set Open\+G\+L Target for bind\+Texture( target , .. ) 
+\begin{DoxyParams}{Parameters}
+{\em target} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1Texture_a52ea6825bd24b11875a37f0715e7b883}{}\index{Engine\+::\+Texture@{Engine\+::\+Texture}!set\+Width@{set\+Width}}
+\index{set\+Width@{set\+Width}!Engine\+::\+Texture@{Engine\+::\+Texture}}
+\subsubsection[{set\+Width(int width)}]{\setlength{\rightskip}{0pt plus 5cm}void Texture\+::set\+Width (
+\begin{DoxyParamCaption}
+\item[{int}]{width}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Texture_a52ea6825bd24b11875a37f0715e7b883}
+
+
+set\+Width 
+
+Set \hyperlink{classEngine_1_1Texture}{Texture} Width 
+\begin{DoxyParams}{Parameters}
+{\em width} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Container/texture.\+h\item 
+Container/Texture.\+cpp\end{DoxyCompactItemize}

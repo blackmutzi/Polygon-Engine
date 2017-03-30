@@ -1,0 +1,235 @@
+\hypertarget{classEngine_1_1CameraManager}{}\section{Engine\+:\+:Camera\+Manager Class Reference}
+\label{classEngine_1_1CameraManager}\index{Engine\+::\+Camera\+Manager@{Engine\+::\+Camera\+Manager}}
+
+
+The \hyperlink{classEngine_1_1CameraManager}{Camera\+Manager} controlled Cameras.  
+
+
+
+
+{\ttfamily \#include $<$cameramanager.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classEngine_1_1CameraManager_aadc529c6b245d7b6f57774bba20f1c21}{Cameras} = std\+::list$<$ \hyperlink{classEngine_1_1Camera}{Camera} $\ast$ $>$
+\item 
+using \hyperlink{classEngine_1_1CameraManager_a9ec0ae8ac0232b41f018af98f57c1f6b}{Camera\+Map} = std\+::map$<$ uint, \hyperlink{classEngine_1_1Camera}{Camera} $\ast$ $>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEngine_1_1CameraManager_ada4e1659dc34f63e8feb300a5425ab33}{}void {\bfseries finish} (void)\label{classEngine_1_1CameraManager_ada4e1659dc34f63e8feb300a5425ab33}
+
+\item 
+\hyperlink{classEngine_1_1Camera}{Camera} $\ast$ \hyperlink{classEngine_1_1CameraManager_a1ba4fff2c27f8e71b42db9df1411c87b}{create\+Camera} (void)
+\begin{DoxyCompactList}\small\item\em create\+Camera \end{DoxyCompactList}\item 
+\hyperlink{classEngine_1_1Camera}{Camera} $\ast$ \hyperlink{classEngine_1_1CameraManager_ab5ca3c3c1d5e47197c77359c406caf80}{create\+Camera} (const std\+::string \&camera\+\_\+name, const \hyperlink{classVector4}{Vector4f} \&scissor\+\_\+values)
+\begin{DoxyCompactList}\small\item\em Render\+Manager\+::create\+Camera. \end{DoxyCompactList}\item 
+\hyperlink{classEngine_1_1Camera}{Camera} $\ast$ \hyperlink{classEngine_1_1CameraManager_a1944ff084f6aa681f1d04baf26880fde}{get\+Camera} (const std\+::string \&camera\+\_\+name)
+\begin{DoxyCompactList}\small\item\em get\+Camera \end{DoxyCompactList}\item 
+\hyperlink{classEngine_1_1Camera}{Camera} $\ast$ \hyperlink{classEngine_1_1CameraManager_acc64e137d415f4a79b704a4abc506c1e}{get\+Camera} (uint component\+\_\+id)
+\begin{DoxyCompactList}\small\item\em get\+Camera \end{DoxyCompactList}\item 
+\hyperlink{classEngine_1_1CameraManager_aadc529c6b245d7b6f57774bba20f1c21}{Cameras} \hyperlink{classEngine_1_1CameraManager_ad0d91631c2ac9451a7d92e353f266740}{get\+Cameras} (void)
+\begin{DoxyCompactList}\small\item\em get\+Cameras \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1CameraManager_a684eae9f1a8ad86d55be797c7531739a}{add\+Camera} (\hyperlink{classEngine_1_1Camera}{Camera} $\ast$camera)
+\begin{DoxyCompactList}\small\item\em add\+Camera \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1CameraManager_a7b3d0de66044139377679bc5791a887e}{Bind\+Camera} (uint component\+\_\+id, \hyperlink{classEngine_1_1Camera}{Camera} $\ast$camera)
+\begin{DoxyCompactList}\small\item\em Bind\+Camera. \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1CameraManager_a6d55a74104cd4a15a4522bef410ee53e}{remove} (\hyperlink{classEngine_1_1Camera}{Camera} $\ast$camera)
+\begin{DoxyCompactList}\small\item\em remove \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classEngine_1_1CameraManager}{Camera\+Manager} $\ast$ \hyperlink{classEngine_1_1CameraManager_af980601c66f5441cfdd7cf3affe156f5}{get\+Singleton\+Ptr} (void)
+\begin{DoxyCompactList}\small\item\em get\+Singleton\+Ptr \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classEngine_1_1CameraManager}{Camera\+Manager} controlled Cameras. 
+
+Management of Cameras
+
+
+\begin{DoxyItemize}
+\item create Cameras
+\item delete Cameras
+\item Main \hyperlink{classEngine_1_1Camera}{Camera} \& Scissor Cameras 
+\end{DoxyItemize}
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classEngine_1_1CameraManager_a9ec0ae8ac0232b41f018af98f57c1f6b}{}\index{Engine\+::\+Camera\+Manager@{Engine\+::\+Camera\+Manager}!Camera\+Map@{Camera\+Map}}
+\index{Camera\+Map@{Camera\+Map}!Engine\+::\+Camera\+Manager@{Engine\+::\+Camera\+Manager}}
+\subsubsection[{Camera\+Map}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf Engine\+::\+Camera\+Manager\+::\+Camera\+Map} =  std\+::map$<$ uint , {\bf Camera} $\ast$ $>$}\label{classEngine_1_1CameraManager_a9ec0ae8ac0232b41f018af98f57c1f6b}
+Map of Cameras with Component I\+Ds \hypertarget{classEngine_1_1CameraManager_aadc529c6b245d7b6f57774bba20f1c21}{}\index{Engine\+::\+Camera\+Manager@{Engine\+::\+Camera\+Manager}!Cameras@{Cameras}}
+\index{Cameras@{Cameras}!Engine\+::\+Camera\+Manager@{Engine\+::\+Camera\+Manager}}
+\subsubsection[{Cameras}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf Engine\+::\+Camera\+Manager\+::\+Cameras} =  std\+::list$<$ {\bf Camera} $\ast$ $>$}\label{classEngine_1_1CameraManager_aadc529c6b245d7b6f57774bba20f1c21}
+List of Cameras 
+
+\subsection{Member Function Documentation}
+\hypertarget{classEngine_1_1CameraManager_a684eae9f1a8ad86d55be797c7531739a}{}\index{Engine\+::\+Camera\+Manager@{Engine\+::\+Camera\+Manager}!add\+Camera@{add\+Camera}}
+\index{add\+Camera@{add\+Camera}!Engine\+::\+Camera\+Manager@{Engine\+::\+Camera\+Manager}}
+\subsubsection[{add\+Camera(\+Camera $\ast$camera)}]{\setlength{\rightskip}{0pt plus 5cm}void Camera\+Manager\+::add\+Camera (
+\begin{DoxyParamCaption}
+\item[{{\bf Camera} $\ast$}]{camera}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1CameraManager_a684eae9f1a8ad86d55be797c7531739a}
+
+
+add\+Camera 
+
+Save \hyperlink{classEngine_1_1Camera}{Camera} 
+\begin{DoxyParams}{Parameters}
+{\em camera} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1CameraManager_a7b3d0de66044139377679bc5791a887e}{}\index{Engine\+::\+Camera\+Manager@{Engine\+::\+Camera\+Manager}!Bind\+Camera@{Bind\+Camera}}
+\index{Bind\+Camera@{Bind\+Camera}!Engine\+::\+Camera\+Manager@{Engine\+::\+Camera\+Manager}}
+\subsubsection[{Bind\+Camera(uint component\+\_\+id, Camera $\ast$camera)}]{\setlength{\rightskip}{0pt plus 5cm}void Camera\+Manager\+::\+Bind\+Camera (
+\begin{DoxyParamCaption}
+\item[{uint}]{component\+\_\+id, }
+\item[{{\bf Camera} $\ast$}]{camera}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1CameraManager_a7b3d0de66044139377679bc5791a887e}
+
+
+Bind\+Camera. 
+
+Bind a \hyperlink{classEngine_1_1Camera}{Camera} with a Component 
+\begin{DoxyParams}{Parameters}
+{\em component\+\_\+id} & \\
+\hline
+{\em camera} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1CameraManager_a1ba4fff2c27f8e71b42db9df1411c87b}{}\index{Engine\+::\+Camera\+Manager@{Engine\+::\+Camera\+Manager}!create\+Camera@{create\+Camera}}
+\index{create\+Camera@{create\+Camera}!Engine\+::\+Camera\+Manager@{Engine\+::\+Camera\+Manager}}
+\subsubsection[{create\+Camera(void)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camera} $\ast$ Camera\+Manager\+::create\+Camera (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1CameraManager_a1ba4fff2c27f8e71b42db9df1411c87b}
+
+
+create\+Camera 
+
+Create a Main \hyperlink{classEngine_1_1Camera}{Camera} 
+\begin{DoxyParams}{Parameters}
+{\em camera\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1CameraManager_ab5ca3c3c1d5e47197c77359c406caf80}{}\index{Engine\+::\+Camera\+Manager@{Engine\+::\+Camera\+Manager}!create\+Camera@{create\+Camera}}
+\index{create\+Camera@{create\+Camera}!Engine\+::\+Camera\+Manager@{Engine\+::\+Camera\+Manager}}
+\subsubsection[{create\+Camera(const std\+::string \&camera\+\_\+name, const Vector4f \&scissor\+\_\+values)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camera} $\ast$ Camera\+Manager\+::create\+Camera (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{camera\+\_\+name, }
+\item[{const {\bf Vector4f} \&}]{scissor\+\_\+values}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1CameraManager_ab5ca3c3c1d5e47197c77359c406caf80}
+
+
+Render\+Manager\+::create\+Camera. 
+
+Create Scissor \hyperlink{classEngine_1_1Camera}{Camera} --- for Minimaps or otherwise
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera\+\_\+name} & \\
+\hline
+{\em scissor\+\_\+values} & ( x , y , width , height ) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1CameraManager_a1944ff084f6aa681f1d04baf26880fde}{}\index{Engine\+::\+Camera\+Manager@{Engine\+::\+Camera\+Manager}!get\+Camera@{get\+Camera}}
+\index{get\+Camera@{get\+Camera}!Engine\+::\+Camera\+Manager@{Engine\+::\+Camera\+Manager}}
+\subsubsection[{get\+Camera(const std\+::string \&camera\+\_\+name)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camera} $\ast$ Camera\+Manager\+::get\+Camera (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{camera\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1CameraManager_a1944ff084f6aa681f1d04baf26880fde}
+
+
+get\+Camera 
+
+Return \hyperlink{classEngine_1_1Camera}{Camera} by Name 
+\begin{DoxyParams}{Parameters}
+{\em camera\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1CameraManager_acc64e137d415f4a79b704a4abc506c1e}{}\index{Engine\+::\+Camera\+Manager@{Engine\+::\+Camera\+Manager}!get\+Camera@{get\+Camera}}
+\index{get\+Camera@{get\+Camera}!Engine\+::\+Camera\+Manager@{Engine\+::\+Camera\+Manager}}
+\subsubsection[{get\+Camera(uint component\+\_\+id)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camera} $\ast$ Camera\+Manager\+::get\+Camera (
+\begin{DoxyParamCaption}
+\item[{uint}]{component\+\_\+id}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1CameraManager_acc64e137d415f4a79b704a4abc506c1e}
+
+
+get\+Camera 
+
+Return \hyperlink{classEngine_1_1Camera}{Camera} by Component Id 
+\begin{DoxyParams}{Parameters}
+{\em component\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1CameraManager_ad0d91631c2ac9451a7d92e353f266740}{}\index{Engine\+::\+Camera\+Manager@{Engine\+::\+Camera\+Manager}!get\+Cameras@{get\+Cameras}}
+\index{get\+Cameras@{get\+Cameras}!Engine\+::\+Camera\+Manager@{Engine\+::\+Camera\+Manager}}
+\subsubsection[{get\+Cameras(void)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cameras} Engine\+::\+Camera\+Manager\+::get\+Cameras (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1CameraManager_ad0d91631c2ac9451a7d92e353f266740}
+
+
+get\+Cameras 
+
+Return Cameras \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1CameraManager_af980601c66f5441cfdd7cf3affe156f5}{}\index{Engine\+::\+Camera\+Manager@{Engine\+::\+Camera\+Manager}!get\+Singleton\+Ptr@{get\+Singleton\+Ptr}}
+\index{get\+Singleton\+Ptr@{get\+Singleton\+Ptr}!Engine\+::\+Camera\+Manager@{Engine\+::\+Camera\+Manager}}
+\subsubsection[{get\+Singleton\+Ptr(void)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camera\+Manager} $\ast$ Camera\+Manager\+::get\+Singleton\+Ptr (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classEngine_1_1CameraManager_af980601c66f5441cfdd7cf3affe156f5}
+
+
+get\+Singleton\+Ptr 
+
+Return \hyperlink{classEngine_1_1Camera}{Camera} Manager Instance \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1CameraManager_a6d55a74104cd4a15a4522bef410ee53e}{}\index{Engine\+::\+Camera\+Manager@{Engine\+::\+Camera\+Manager}!remove@{remove}}
+\index{remove@{remove}!Engine\+::\+Camera\+Manager@{Engine\+::\+Camera\+Manager}}
+\subsubsection[{remove(\+Camera $\ast$camera)}]{\setlength{\rightskip}{0pt plus 5cm}void Camera\+Manager\+::remove (
+\begin{DoxyParamCaption}
+\item[{{\bf Camera} $\ast$}]{camera}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1CameraManager_a6d55a74104cd4a15a4522bef410ee53e}
+
+
+remove 
+
+Remove \hyperlink{classEngine_1_1Camera}{Camera} from list and destroy it 
+\begin{DoxyParams}{Parameters}
+{\em camera} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Manager/cameramanager.\+h\item 
+Engine/\+Manager/Camera\+Manager.\+cpp\end{DoxyCompactItemize}

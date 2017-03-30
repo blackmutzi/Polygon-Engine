@@ -1,0 +1,144 @@
+\hypertarget{classEngine_1_1OverlayManager}{}\section{Engine\+:\+:Overlay\+Manager Class Reference}
+\label{classEngine_1_1OverlayManager}\index{Engine\+::\+Overlay\+Manager@{Engine\+::\+Overlay\+Manager}}
+
+
+The \hyperlink{classEngine_1_1OverlayManager}{Overlay\+Manager} class.  
+
+
+
+
+{\ttfamily \#include $<$overlaymanager.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEngine_1_1OverlayManager_a4031a3daa9c8ecafceaf3b3b842f32fa}{}void {\bfseries finish} (void)\label{classEngine_1_1OverlayManager_a4031a3daa9c8ecafceaf3b3b842f32fa}
+
+\item 
+\hyperlink{classEngine_1_1Overlay}{Overlay} $\ast$ \hyperlink{classEngine_1_1OverlayManager_a7bba3a6a67c5d5a6f80486b9775c22b7}{create\+Overlay} (const std\+::string \&overlay\+\_\+name)
+\begin{DoxyCompactList}\small\item\em create\+Overlay \end{DoxyCompactList}\item 
+\hyperlink{classEngine_1_1Overlay}{Overlay} $\ast$ \hyperlink{classEngine_1_1OverlayManager_afee61b9ea8bb3771231d56b0c0a6817c}{get\+Overlay} (const std\+::string \&overlay\+\_\+name)  throw ( std\+::runtime\+\_\+error)
+\begin{DoxyCompactList}\small\item\em get\+Overlay \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1OverlayManager_a7e8cca44ab6be17f579b4e06152acb50}{remove\+Overlay} (const std\+::string \&overlay\+\_\+name)  throw ( std\+::runtime\+\_\+error)
+\begin{DoxyCompactList}\small\item\em remove\+Overlay \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1OverlayManager_a9a4a550f2e053b6909d1642d32f877a8}{remove\+Overlay} (\hyperlink{classEngine_1_1Overlay}{Overlay} $\ast$overlay)
+\begin{DoxyCompactList}\small\item\em remove\+Overlay \end{DoxyCompactList}\item 
+Overlays \hyperlink{classEngine_1_1OverlayManager_ae46ff201f2f790e3fe0c06b563b54e3e}{get\+Overlays} (void)
+\begin{DoxyCompactList}\small\item\em get\+Overlays \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classEngine_1_1OverlayManager}{Overlay\+Manager} $\ast$ \hyperlink{classEngine_1_1OverlayManager_ae36c20030628af22c3be86280afc32ab}{get\+Singleton\+Ptr} (void)
+\begin{DoxyCompactList}\small\item\em get\+Singleton\+Ptr \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classEngine_1_1OverlayManager}{Overlay\+Manager} class. 
+
+Management of Overlays 
+
+\subsection{Member Function Documentation}
+\hypertarget{classEngine_1_1OverlayManager_a7bba3a6a67c5d5a6f80486b9775c22b7}{}\index{Engine\+::\+Overlay\+Manager@{Engine\+::\+Overlay\+Manager}!create\+Overlay@{create\+Overlay}}
+\index{create\+Overlay@{create\+Overlay}!Engine\+::\+Overlay\+Manager@{Engine\+::\+Overlay\+Manager}}
+\subsubsection[{create\+Overlay(const std\+::string \&overlay\+\_\+name)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Overlay} $\ast$ Overlay\+Manager\+::create\+Overlay (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{overlay\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1OverlayManager_a7bba3a6a67c5d5a6f80486b9775c22b7}
+
+
+create\+Overlay 
+
+Create \hyperlink{classEngine_1_1Overlay}{Overlay} with name 
+\begin{DoxyParams}{Parameters}
+{\em overlay\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1OverlayManager_afee61b9ea8bb3771231d56b0c0a6817c}{}\index{Engine\+::\+Overlay\+Manager@{Engine\+::\+Overlay\+Manager}!get\+Overlay@{get\+Overlay}}
+\index{get\+Overlay@{get\+Overlay}!Engine\+::\+Overlay\+Manager@{Engine\+::\+Overlay\+Manager}}
+\subsubsection[{get\+Overlay(const std\+::string \&overlay\+\_\+name)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Overlay} $\ast$ Overlay\+Manager\+::get\+Overlay (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{overlay\+\_\+name}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) }\label{classEngine_1_1OverlayManager_afee61b9ea8bb3771231d56b0c0a6817c}
+
+
+get\+Overlay 
+
+Return \hyperlink{classEngine_1_1Overlay}{Overlay} Object by overlay\+\_\+name 
+\begin{DoxyParams}{Parameters}
+{\em overlay\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1OverlayManager_ae46ff201f2f790e3fe0c06b563b54e3e}{}\index{Engine\+::\+Overlay\+Manager@{Engine\+::\+Overlay\+Manager}!get\+Overlays@{get\+Overlays}}
+\index{get\+Overlays@{get\+Overlays}!Engine\+::\+Overlay\+Manager@{Engine\+::\+Overlay\+Manager}}
+\subsubsection[{get\+Overlays(void)}]{\setlength{\rightskip}{0pt plus 5cm}Overlays Overlay\+Manager\+::get\+Overlays (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1OverlayManager_ae46ff201f2f790e3fe0c06b563b54e3e}
+
+
+get\+Overlays 
+
+Return all Overlays \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1OverlayManager_ae36c20030628af22c3be86280afc32ab}{}\index{Engine\+::\+Overlay\+Manager@{Engine\+::\+Overlay\+Manager}!get\+Singleton\+Ptr@{get\+Singleton\+Ptr}}
+\index{get\+Singleton\+Ptr@{get\+Singleton\+Ptr}!Engine\+::\+Overlay\+Manager@{Engine\+::\+Overlay\+Manager}}
+\subsubsection[{get\+Singleton\+Ptr(void)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Overlay\+Manager} $\ast$ Overlay\+Manager\+::get\+Singleton\+Ptr (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classEngine_1_1OverlayManager_ae36c20030628af22c3be86280afc32ab}
+
+
+get\+Singleton\+Ptr 
+
+Return \hyperlink{classEngine_1_1OverlayManager}{Overlay\+Manager} \hyperlink{classEngine_1_1Singleton}{Singleton} Instance \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1OverlayManager_a7e8cca44ab6be17f579b4e06152acb50}{}\index{Engine\+::\+Overlay\+Manager@{Engine\+::\+Overlay\+Manager}!remove\+Overlay@{remove\+Overlay}}
+\index{remove\+Overlay@{remove\+Overlay}!Engine\+::\+Overlay\+Manager@{Engine\+::\+Overlay\+Manager}}
+\subsubsection[{remove\+Overlay(const std\+::string \&overlay\+\_\+name)}]{\setlength{\rightskip}{0pt plus 5cm}void Engine\+::\+Overlay\+Manager\+::remove\+Overlay (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{overlay\+\_\+name}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) }\label{classEngine_1_1OverlayManager_a7e8cca44ab6be17f579b4e06152acb50}
+
+
+remove\+Overlay 
+
+Remove a \hyperlink{classEngine_1_1Overlay}{Overlay} Object by Name 
+\begin{DoxyParams}{Parameters}
+{\em overlay\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1OverlayManager_a9a4a550f2e053b6909d1642d32f877a8}{}\index{Engine\+::\+Overlay\+Manager@{Engine\+::\+Overlay\+Manager}!remove\+Overlay@{remove\+Overlay}}
+\index{remove\+Overlay@{remove\+Overlay}!Engine\+::\+Overlay\+Manager@{Engine\+::\+Overlay\+Manager}}
+\subsubsection[{remove\+Overlay(\+Overlay $\ast$overlay)}]{\setlength{\rightskip}{0pt plus 5cm}void Overlay\+Manager\+::remove\+Overlay (
+\begin{DoxyParamCaption}
+\item[{{\bf Overlay} $\ast$}]{overlay}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1OverlayManager_a9a4a550f2e053b6909d1642d32f877a8}
+
+
+remove\+Overlay 
+
+Remove a \hyperlink{classEngine_1_1Overlay}{Overlay} Object 
+\begin{DoxyParams}{Parameters}
+{\em overlay} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Manager/overlaymanager.\+h\item 
+Engine/\+Manager/Overlay\+Manager.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,83 @@
+\hypertarget{classEngine_1_1Thread}{}\section{Engine\+:\+:Thread Class Reference}
+\label{classEngine_1_1Thread}\index{Engine\+::\+Thread@{Engine\+::\+Thread}}
+
+
+The \hyperlink{classEngine_1_1Thread}{Thread} class.  
+
+
+
+
+{\ttfamily \#include $<$threadmanager.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classEngine_1_1Thread_a1f53ee62bd30a7924186ef26150ce262}{start} ()
+\begin{DoxyCompactList}\small\item\em start \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1Thread_a4d9d788e98388a3217831a9046709deb}{join} ()
+\begin{DoxyCompactList}\small\item\em join \end{DoxyCompactList}\item 
+virtual void \hyperlink{classEngine_1_1Thread_a27923d6eaf13fff1a08e0d62af70db58}{process} (void)=0
+\begin{DoxyCompactList}\small\item\em process \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1Thread_acc7bcb314637d5de9dc378572e8ba55e}{remove\+Thread\+Ptr} (void)
+\begin{DoxyCompactList}\small\item\em remove\+Thread\+Ptr \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classEngine_1_1Thread}{Thread} class. 
+
+\hyperlink{classEngine_1_1Thread}{Thread} a Basis Class 
+
+\subsection{Member Function Documentation}
+\hypertarget{classEngine_1_1Thread_a4d9d788e98388a3217831a9046709deb}{}\index{Engine\+::\+Thread@{Engine\+::\+Thread}!join@{join}}
+\index{join@{join}!Engine\+::\+Thread@{Engine\+::\+Thread}}
+\subsubsection[{join()}]{\setlength{\rightskip}{0pt plus 5cm}void Thread\+::join (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Thread_a4d9d788e98388a3217831a9046709deb}
+
+
+join 
+
+Wait until this Process \hyperlink{classEngine_1_1Thread}{Thread} is finish then return to main process (Sync) \hypertarget{classEngine_1_1Thread_a27923d6eaf13fff1a08e0d62af70db58}{}\index{Engine\+::\+Thread@{Engine\+::\+Thread}!process@{process}}
+\index{process@{process}!Engine\+::\+Thread@{Engine\+::\+Thread}}
+\subsubsection[{process(void)=0}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Engine\+::\+Thread\+::process (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classEngine_1_1Thread_a27923d6eaf13fff1a08e0d62af70db58}
+
+
+process 
+
+\hyperlink{classEngine_1_1Thread}{Thread} Process \hypertarget{classEngine_1_1Thread_acc7bcb314637d5de9dc378572e8ba55e}{}\index{Engine\+::\+Thread@{Engine\+::\+Thread}!remove\+Thread\+Ptr@{remove\+Thread\+Ptr}}
+\index{remove\+Thread\+Ptr@{remove\+Thread\+Ptr}!Engine\+::\+Thread@{Engine\+::\+Thread}}
+\subsubsection[{remove\+Thread\+Ptr(void)}]{\setlength{\rightskip}{0pt plus 5cm}void Thread\+::remove\+Thread\+Ptr (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Thread_acc7bcb314637d5de9dc378572e8ba55e}
+
+
+remove\+Thread\+Ptr 
+
+Remove the pointer from Memory only
+\begin{DoxyItemize}
+\item dont destroy the thread process 
+\end{DoxyItemize}\hypertarget{classEngine_1_1Thread_a1f53ee62bd30a7924186ef26150ce262}{}\index{Engine\+::\+Thread@{Engine\+::\+Thread}!start@{start}}
+\index{start@{start}!Engine\+::\+Thread@{Engine\+::\+Thread}}
+\subsubsection[{start()}]{\setlength{\rightskip}{0pt plus 5cm}void Thread\+::start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Thread_a1f53ee62bd30a7924186ef26150ce262}
+
+
+start 
+
+Start \hyperlink{classEngine_1_1Thread}{Thread} 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Manager/threadmanager.\+h\item 
+Engine/\+Manager/Thread\+Manager.\+cpp\end{DoxyCompactItemize}

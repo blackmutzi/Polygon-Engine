@@ -1,0 +1,146 @@
+\hypertarget{classEngine_1_1MeshManager}{}\section{Engine\+:\+:Mesh\+Manager Class Reference}
+\label{classEngine_1_1MeshManager}\index{Engine\+::\+Mesh\+Manager@{Engine\+::\+Mesh\+Manager}}
+
+
+The \hyperlink{classEngine_1_1MeshManager}{Mesh\+Manager} class.  
+
+
+
+
+{\ttfamily \#include $<$meshmanager.\+h$>$}
+
+Inheritance diagram for Engine\+:\+:Mesh\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classEngine_1_1MeshManager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classEngine_1_1GLVertexArrayObject}{G\+L\+Vertex\+Array\+Object} $\ast$ \hyperlink{classEngine_1_1MeshManager_a966a158ba75b202a073992c9a9e27fd0}{create\+Vertex\+Array\+Object} (const \hyperlink{classEngine_1_1MeshData}{Mesh\+Data} \&mesh\+\_\+data)
+\begin{DoxyCompactList}\small\item\em create\+Vertex\+Array\+Object \end{DoxyCompactList}\item 
+\hyperlink{classEngine_1_1Mesh}{Mesh} $\ast$ \hyperlink{classEngine_1_1MeshManager_a2a5c7a63ef5ecbbb3c754063a7ebc864}{create\+Mesh} (const std\+::string \&resource\+\_\+file)
+\begin{DoxyCompactList}\small\item\em create\+Mesh \end{DoxyCompactList}\item 
+\hypertarget{classEngine_1_1MeshManager_a05e3a4f93f6a01ced5d5e734ca698e78}{}\hyperlink{classEngine_1_1Mesh}{Mesh} $\ast$ {\bfseries create\+Mesh} (const std\+::string \&resource\+\_\+name, Vector3fv vertices)\label{classEngine_1_1MeshManager_a05e3a4f93f6a01ced5d5e734ca698e78}
+
+\item 
+\hypertarget{classEngine_1_1MeshManager_ac030e6b00ec5839d6b7cf01f897078e2}{}\hyperlink{classEngine_1_1Mesh}{Mesh} $\ast$ {\bfseries create\+Embedded\+Mesh} (const std\+::string \&source)\label{classEngine_1_1MeshManager_ac030e6b00ec5839d6b7cf01f897078e2}
+
+\item 
+\hyperlink{classEngine_1_1Mesh}{Mesh} $\ast$ \hyperlink{classEngine_1_1MeshManager_a0b273525c26e672a12c660a500f6d776}{get\+Mesh} (uint container\+\_\+id)
+\begin{DoxyCompactList}\small\item\em get\+Mesh \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1MeshManager_a42a66b67e3123ed190edbd5be5fac412}{destroy} (uint container\+\_\+id)
+\begin{DoxyCompactList}\small\item\em destroy \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1MeshManager_af9a57216dac74b11f0531058612a1954}{print\+Info\+Message} (const std\+::string \&resource\+\_\+name)
+\begin{DoxyCompactList}\small\item\em print\+Info\+Message \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classEngine_1_1MeshManager}{Mesh\+Manager} class. 
+
+Componentv2 Database ( \hyperlink{classEngine_1_1MeshManager}{Mesh\+Manager} )
+
+
+\begin{DoxyItemize}
+\item create \hyperlink{classEngine_1_1Mesh}{Mesh} Container from file.\+obj
+\item create \hyperlink{classEngine_1_1Mesh}{Mesh} Container from \char`\"{}object name\char`\"{} and \char`\"{}vertice list\char`\"{}
+\item destroy \hyperlink{classEngine_1_1Mesh}{Mesh} Container 
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\hypertarget{classEngine_1_1MeshManager_a2a5c7a63ef5ecbbb3c754063a7ebc864}{}\index{Engine\+::\+Mesh\+Manager@{Engine\+::\+Mesh\+Manager}!create\+Mesh@{create\+Mesh}}
+\index{create\+Mesh@{create\+Mesh}!Engine\+::\+Mesh\+Manager@{Engine\+::\+Mesh\+Manager}}
+\subsubsection[{create\+Mesh(const std\+::string \&resource\+\_\+file)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mesh}$\ast$ Engine\+::\+Mesh\+Manager\+::create\+Mesh (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{resource\+\_\+file}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1MeshManager_a2a5c7a63ef5ecbbb3c754063a7ebc864}
+
+
+create\+Mesh 
+
+Create New \hyperlink{classEngine_1_1Mesh}{Mesh} from resource\+\_\+file (aka. obj file ) 
+\begin{DoxyParams}{Parameters}
+{\em resource\+\_\+file} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1MeshManager_a966a158ba75b202a073992c9a9e27fd0}{}\index{Engine\+::\+Mesh\+Manager@{Engine\+::\+Mesh\+Manager}!create\+Vertex\+Array\+Object@{create\+Vertex\+Array\+Object}}
+\index{create\+Vertex\+Array\+Object@{create\+Vertex\+Array\+Object}!Engine\+::\+Mesh\+Manager@{Engine\+::\+Mesh\+Manager}}
+\subsubsection[{create\+Vertex\+Array\+Object(const Mesh\+Data \&mesh\+\_\+data)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+L\+Vertex\+Array\+Object} $\ast$ Mesh\+Manager\+::create\+Vertex\+Array\+Object (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mesh\+Data} \&}]{mesh\+\_\+data}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1MeshManager_a966a158ba75b202a073992c9a9e27fd0}
+
+
+create\+Vertex\+Array\+Object 
+
+Create G\+L Buffers 
+\begin{DoxyParams}{Parameters}
+{\em mesh\+\_\+data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1MeshManager_a42a66b67e3123ed190edbd5be5fac412}{}\index{Engine\+::\+Mesh\+Manager@{Engine\+::\+Mesh\+Manager}!destroy@{destroy}}
+\index{destroy@{destroy}!Engine\+::\+Mesh\+Manager@{Engine\+::\+Mesh\+Manager}}
+\subsubsection[{destroy(uint container\+\_\+id)}]{\setlength{\rightskip}{0pt plus 5cm}void Mesh\+Manager\+::destroy (
+\begin{DoxyParamCaption}
+\item[{uint}]{container\+\_\+id}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1MeshManager_a42a66b67e3123ed190edbd5be5fac412}
+
+
+destroy 
+
+Destroy a \hyperlink{classEngine_1_1Mesh}{Mesh} Ptr 
+\begin{DoxyParams}{Parameters}
+{\em container\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1MeshManager_a0b273525c26e672a12c660a500f6d776}{}\index{Engine\+::\+Mesh\+Manager@{Engine\+::\+Mesh\+Manager}!get\+Mesh@{get\+Mesh}}
+\index{get\+Mesh@{get\+Mesh}!Engine\+::\+Mesh\+Manager@{Engine\+::\+Mesh\+Manager}}
+\subsubsection[{get\+Mesh(uint container\+\_\+id)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mesh} $\ast$ Mesh\+Manager\+::get\+Mesh (
+\begin{DoxyParamCaption}
+\item[{uint}]{container\+\_\+id}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1MeshManager_a0b273525c26e672a12c660a500f6d776}
+
+
+get\+Mesh 
+
+Return \hyperlink{classEngine_1_1Mesh}{Mesh} by container\+\_\+id 
+\begin{DoxyParams}{Parameters}
+{\em container\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classEngine_1_1Mesh}{Mesh} Ptr 
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1MeshManager_af9a57216dac74b11f0531058612a1954}{}\index{Engine\+::\+Mesh\+Manager@{Engine\+::\+Mesh\+Manager}!print\+Info\+Message@{print\+Info\+Message}}
+\index{print\+Info\+Message@{print\+Info\+Message}!Engine\+::\+Mesh\+Manager@{Engine\+::\+Mesh\+Manager}}
+\subsubsection[{print\+Info\+Message(const std\+::string \&resource\+\_\+name)}]{\setlength{\rightskip}{0pt plus 5cm}void Mesh\+Manager\+::print\+Info\+Message (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{resource\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1MeshManager_af9a57216dac74b11f0531058612a1954}
+
+
+print\+Info\+Message 
+
+Print a Info Message 
+\begin{DoxyParams}{Parameters}
+{\em resource\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Manager/meshmanager.\+h\item 
+Engine/\+Manager/Mesh\+Manager.\+cpp\end{DoxyCompactItemize}

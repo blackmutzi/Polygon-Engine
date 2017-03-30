@@ -1,0 +1,75 @@
+#ifndef ICOMPONENT_TEMPLATE
+#define ICOMPONENT_TEMPLATE
+
+/* --- IComponent ---*/
+template< class Sender >
+IComponent< Sender >::IComponent(const string &component_name)
+    : mComponentName( component_name ) , mComponentId(0)
+{
+   // nothing to do ...
+}
+
+template< class Sender >
+const std::string & IComponent< Sender >::getName(void) const
+{
+    return mComponentName;
+}
+
+template< class Sender >
+uint IComponent< Sender >::getID(void) const
+{
+    return mComponentId;
+}
+
+template< class Sender >
+void IComponent< Sender >::addComponent( IComponent< Sender > * component )
+{
+    mComponentList.push_back( component );
+}
+
+template< class Sender >
+void IComponent< Sender >::remove( IComponent< Sender > * component )
+{
+    mComponentList.remove( component );
+}
+
+template< class Sender >
+bool IComponent< Sender>::hasComponent( const std::string & component_name )
+{
+    for( IComponent< Sender > * component : mComponentList )
+    {
+        if( component->getName() == component_name )
+             return true;
+    }
+
+    return false;
+}
+
+template< class Sender >
+IComponent< Sender > * IComponent< Sender >::getComponent( const std::string & component_name )
+{
+    for( IComponent < Sender > * component : mComponentList )
+    {
+        if( component->getName() == component_name )
+            return component;
+    }
+
+    return nullptr;
+}
+
+template< class Sender >
+std::list< IComponent< Sender > * > IComponent< Sender >::getComponents( const std::string & component_name )
+{
+    std::list< IComponent<Sender> * > _list;
+
+    for( IComponent < Sender > * component : mComponentList )
+    {
+        if( component->getName() == component_name )
+             _list.push_back( component );
+    }
+
+    return _list;
+}
+
+
+#endif // ICOMPONENT_TEMPLATE

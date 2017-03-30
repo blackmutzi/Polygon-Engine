@@ -1,0 +1,83 @@
+\hypertarget{classEngine_1_1FrameListener}{}\section{Engine\+:\+:Frame\+Listener Class Reference}
+\label{classEngine_1_1FrameListener}\index{Engine\+::\+Frame\+Listener@{Engine\+::\+Frame\+Listener}}
+
+
+The \hyperlink{classEngine_1_1FrameListener}{Frame\+Listener} -\/ Interface class.  
+
+
+
+
+{\ttfamily \#include $<$framelistener.\+h$>$}
+
+Inheritance diagram for Engine\+:\+:Frame\+Listener\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classEngine_1_1FrameListener}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classEngine_1_1FrameListener_abbe0d745faf156e01d2317b52f29bb48}{initialize} (\hyperlink{classEngine_1_1OpenPolygonDisplay}{Open\+Polygon\+Display} $\ast$display)=0
+\begin{DoxyCompactList}\small\item\em initialize \end{DoxyCompactList}\item 
+virtual void \hyperlink{classEngine_1_1FrameListener_a3e111a872dd6592c14e11d3280ce14c4}{Render\+Logic} (float time)=0
+\begin{DoxyCompactList}\small\item\em Render\+Logic. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classEngine_1_1FrameListener}{Frame\+Listener} -\/ Interface class. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classEngine_1_1FrameListener_abbe0d745faf156e01d2317b52f29bb48}{}\index{Engine\+::\+Frame\+Listener@{Engine\+::\+Frame\+Listener}!initialize@{initialize}}
+\index{initialize@{initialize}!Engine\+::\+Frame\+Listener@{Engine\+::\+Frame\+Listener}}
+\subsubsection[{initialize(\+Open\+Polygon\+Display $\ast$display)=0}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Engine\+::\+Frame\+Listener\+::initialize (
+\begin{DoxyParamCaption}
+\item[{{\bf Open\+Polygon\+Display} $\ast$}]{display}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classEngine_1_1FrameListener_abbe0d745faf156e01d2317b52f29bb48}
+
+
+initialize 
+
+Initialize Part
+
+
+\begin{DoxyItemize}
+\item create Elements or \hyperlink{classEngine_1_1Entity}{Entity} Objects
+\item create a Scene 
+\end{DoxyItemize}
+
+Implemented in \hyperlink{classEngine_1_1ConfigFrameListener_a792fe9af553206a358bc888fdc43f2be}{Engine\+::\+Config\+Frame\+Listener}.
+
+\hypertarget{classEngine_1_1FrameListener_a3e111a872dd6592c14e11d3280ce14c4}{}\index{Engine\+::\+Frame\+Listener@{Engine\+::\+Frame\+Listener}!Render\+Logic@{Render\+Logic}}
+\index{Render\+Logic@{Render\+Logic}!Engine\+::\+Frame\+Listener@{Engine\+::\+Frame\+Listener}}
+\subsubsection[{Render\+Logic(float time)=0}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Engine\+::\+Frame\+Listener\+::\+Render\+Logic (
+\begin{DoxyParamCaption}
+\item[{float}]{time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classEngine_1_1FrameListener_a3e111a872dd6592c14e11d3280ce14c4}
+
+
+Render\+Logic. 
+
+Logic Part
+
+
+\begin{DoxyItemize}
+\item modifier Elements or Entitys
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classEngine_1_1ConfigFrameListener_addb569607e5f870efda08a1a7de41544}{Engine\+::\+Config\+Frame\+Listener}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Interface/framelistener.\+h\end{DoxyCompactItemize}

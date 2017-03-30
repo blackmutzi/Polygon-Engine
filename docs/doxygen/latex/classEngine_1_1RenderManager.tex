@@ -1,0 +1,154 @@
+\hypertarget{classEngine_1_1RenderManager}{}\section{Engine\+:\+:Render\+Manager Class Reference}
+\label{classEngine_1_1RenderManager}\index{Engine\+::\+Render\+Manager@{Engine\+::\+Render\+Manager}}
+
+
+The \hyperlink{classEngine_1_1RenderManager}{Render\+Manager} class.  
+
+
+
+
+{\ttfamily \#include $<$rendermanager.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEngine_1_1RenderManager_ac5745c80a5cc840117c033b0c82ccd67}{}void {\bfseries finish} (void)\label{classEngine_1_1RenderManager_ac5745c80a5cc840117c033b0c82ccd67}
+
+\item 
+\hypertarget{classEngine_1_1RenderManager_ab23d62cd43a7aa5aa86b70beeae0ee47}{}void {\bfseries set\+System\+Manager} (\hyperlink{classEngine_1_1SystemManager}{System\+Manager} $\ast$systemmanager)\label{classEngine_1_1RenderManager_ab23d62cd43a7aa5aa86b70beeae0ee47}
+
+\item 
+\hypertarget{classEngine_1_1RenderManager_a2a6d4a0f4d1c2fd00e079c2e68a5e17c}{}void {\bfseries set\+Tick\+Manager} (\hyperlink{classEngine_1_1TickManager}{Tick\+Manager} $\ast$tickmanager)\label{classEngine_1_1RenderManager_a2a6d4a0f4d1c2fd00e079c2e68a5e17c}
+
+\item 
+\hypertarget{classEngine_1_1RenderManager_a9732b4ce4ca97ce147af30da42623460}{}\hyperlink{classEngine_1_1SystemManager}{System\+Manager} $\ast$ {\bfseries get\+System\+Manager} (void)\label{classEngine_1_1RenderManager_a9732b4ce4ca97ce147af30da42623460}
+
+\item 
+\hypertarget{classEngine_1_1RenderManager_ae78f85dd1f25126e5a2f3da414b2b114}{}\hyperlink{classEngine_1_1TickManager}{Tick\+Manager} $\ast$ {\bfseries get\+Tick\+Manager} (void)\label{classEngine_1_1RenderManager_ae78f85dd1f25126e5a2f3da414b2b114}
+
+\item 
+void \hyperlink{classEngine_1_1RenderManager_a463e244d820df2c2df726780cd02a994}{add\+Frame\+Listener} (\hyperlink{classEngine_1_1FrameListener}{Frame\+Listener} $\ast$frame\+\_\+listener)
+\begin{DoxyCompactList}\small\item\em add\+Frame\+Listener \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1RenderManager_ad7b499716987b670c03889145f31de5a}{remove} (\hyperlink{classEngine_1_1FrameListener}{Frame\+Listener} $\ast$listener)
+\begin{DoxyCompactList}\small\item\em remove \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1RenderManager_a5cab7b1cabe975c0da11ca84496cbef7}{init\+Frame\+Listeners} (\hyperlink{classEngine_1_1OpenPolygonDisplay}{Open\+Polygon\+Display} $\ast$display)
+\begin{DoxyCompactList}\small\item\em init\+Frame\+Listeners \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1RenderManager_a245010f7acbd72c4c8e5b8cf11c2ffff}{Render\+Logic} (float time)
+\begin{DoxyCompactList}\small\item\em Render\+Logic ( 1 / get\+L\+P\+S ) \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1RenderManager_ad387f88864c0fb6815e59fd884ea8541}{Render\+Frame} (\hyperlink{classEngine_1_1OpenPolygonDisplay}{Open\+Polygon\+Display} $\ast$display)
+\begin{DoxyCompactList}\small\item\em Render\+Frame. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classEngine_1_1RenderManager}{Render\+Manager} $\ast$ \hyperlink{classEngine_1_1RenderManager_adb380605afe276a5b9afec04deab1bac}{get\+Singleton\+Ptr} (void)
+\begin{DoxyCompactList}\small\item\em get\+Singleton\+Ptr \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classEngine_1_1RenderManager}{Render\+Manager} class. 
+
+Management of Render\+Systems
+
+
+\begin{DoxyItemize}
+\item using actually one \hyperlink{classEngine_1_1RenderSystem}{Render\+System}
+\item create one Display ( comming soon \hyperlink{classEngine_1_1DisplayManager}{Display\+Manager} )
+\item add \hyperlink{classEngine_1_1FrameListener}{Frame\+Listener}
+\item init \hyperlink{classEngine_1_1FrameListener}{Frame\+Listener}
+\item trigger Render Logic
+\item Render a single Frame
+\item Design\+: Event , \hyperlink{classEngine_1_1Singleton}{Singleton} , Bridge 
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\hypertarget{classEngine_1_1RenderManager_a463e244d820df2c2df726780cd02a994}{}\index{Engine\+::\+Render\+Manager@{Engine\+::\+Render\+Manager}!add\+Frame\+Listener@{add\+Frame\+Listener}}
+\index{add\+Frame\+Listener@{add\+Frame\+Listener}!Engine\+::\+Render\+Manager@{Engine\+::\+Render\+Manager}}
+\subsubsection[{add\+Frame\+Listener(\+Frame\+Listener $\ast$frame\+\_\+listener)}]{\setlength{\rightskip}{0pt plus 5cm}void Render\+Manager\+::add\+Frame\+Listener (
+\begin{DoxyParamCaption}
+\item[{{\bf Frame\+Listener} $\ast$}]{frame\+\_\+listener}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1RenderManager_a463e244d820df2c2df726780cd02a994}
+
+
+add\+Frame\+Listener 
+
+Add Logic $\vert$ Frame Listener 
+\begin{DoxyParams}{Parameters}
+{\em frame\+\_\+listener} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1RenderManager_adb380605afe276a5b9afec04deab1bac}{}\index{Engine\+::\+Render\+Manager@{Engine\+::\+Render\+Manager}!get\+Singleton\+Ptr@{get\+Singleton\+Ptr}}
+\index{get\+Singleton\+Ptr@{get\+Singleton\+Ptr}!Engine\+::\+Render\+Manager@{Engine\+::\+Render\+Manager}}
+\subsubsection[{get\+Singleton\+Ptr(void)}]{\setlength{\rightskip}{0pt plus 5cm}Render\+Manager\+::get\+Singleton\+Ptr (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classEngine_1_1RenderManager_adb380605afe276a5b9afec04deab1bac}
+
+
+get\+Singleton\+Ptr 
+
+Return \hyperlink{classEngine_1_1RenderManager}{Render\+Manager} Instance \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1RenderManager_a5cab7b1cabe975c0da11ca84496cbef7}{}\index{Engine\+::\+Render\+Manager@{Engine\+::\+Render\+Manager}!init\+Frame\+Listeners@{init\+Frame\+Listeners}}
+\index{init\+Frame\+Listeners@{init\+Frame\+Listeners}!Engine\+::\+Render\+Manager@{Engine\+::\+Render\+Manager}}
+\subsubsection[{init\+Frame\+Listeners(\+Open\+Polygon\+Display $\ast$display)}]{\setlength{\rightskip}{0pt plus 5cm}void Render\+Manager\+::init\+Frame\+Listeners (
+\begin{DoxyParamCaption}
+\item[{{\bf Open\+Polygon\+Display} $\ast$}]{display}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1RenderManager_a5cab7b1cabe975c0da11ca84496cbef7}
+
+
+init\+Frame\+Listeners 
+
+Init Frame Listeners \hypertarget{classEngine_1_1RenderManager_ad7b499716987b670c03889145f31de5a}{}\index{Engine\+::\+Render\+Manager@{Engine\+::\+Render\+Manager}!remove@{remove}}
+\index{remove@{remove}!Engine\+::\+Render\+Manager@{Engine\+::\+Render\+Manager}}
+\subsubsection[{remove(\+Frame\+Listener $\ast$listener)}]{\setlength{\rightskip}{0pt plus 5cm}void Render\+Manager\+::remove (
+\begin{DoxyParamCaption}
+\item[{{\bf Frame\+Listener} $\ast$}]{listener}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1RenderManager_ad7b499716987b670c03889145f31de5a}
+
+
+remove 
+
+Remove Listener 
+\begin{DoxyParams}{Parameters}
+{\em listener} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1RenderManager_ad387f88864c0fb6815e59fd884ea8541}{}\index{Engine\+::\+Render\+Manager@{Engine\+::\+Render\+Manager}!Render\+Frame@{Render\+Frame}}
+\index{Render\+Frame@{Render\+Frame}!Engine\+::\+Render\+Manager@{Engine\+::\+Render\+Manager}}
+\subsubsection[{Render\+Frame(\+Open\+Polygon\+Display $\ast$display)}]{\setlength{\rightskip}{0pt plus 5cm}void Render\+Manager\+::\+Render\+Frame (
+\begin{DoxyParamCaption}
+\item[{{\bf Open\+Polygon\+Display} $\ast$}]{display}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1RenderManager_ad387f88864c0fb6815e59fd884ea8541}
+
+
+Render\+Frame. 
+
+Render a single frame \hypertarget{classEngine_1_1RenderManager_a245010f7acbd72c4c8e5b8cf11c2ffff}{}\index{Engine\+::\+Render\+Manager@{Engine\+::\+Render\+Manager}!Render\+Logic@{Render\+Logic}}
+\index{Render\+Logic@{Render\+Logic}!Engine\+::\+Render\+Manager@{Engine\+::\+Render\+Manager}}
+\subsubsection[{Render\+Logic(float time)}]{\setlength{\rightskip}{0pt plus 5cm}void Render\+Manager\+::\+Render\+Logic (
+\begin{DoxyParamCaption}
+\item[{float}]{time}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1RenderManager_a245010f7acbd72c4c8e5b8cf11c2ffff}
+
+
+Render\+Logic ( 1 / get\+L\+P\+S ) 
+
+Render Logic 
+\begin{DoxyParams}{Parameters}
+{\em time} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Manager/rendermanager.\+h\item 
+Engine/\+Manager/Render\+Manager.\+cpp\item 
+main.\+cpp\end{DoxyCompactItemize}

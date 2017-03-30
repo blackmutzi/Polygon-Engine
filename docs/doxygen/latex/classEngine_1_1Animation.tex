@@ -1,0 +1,303 @@
+\hypertarget{classEngine_1_1Animation}{}\section{Engine\+:\+:Animation Class Reference}
+\label{classEngine_1_1Animation}\index{Engine\+::\+Animation@{Engine\+::\+Animation}}
+
+
+The \hyperlink{classEngine_1_1Animation}{Animation} class.  
+
+
+
+
+{\ttfamily \#include $<$animation.\+h$>$}
+
+Inheritance diagram for Engine\+:\+:Animation\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classEngine_1_1Animation}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classEngine_1_1Animation_a83f0a16cef7117f187ad596de38dd9d6}{Animation} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classEngine_1_1Animation}{Animation}. \end{DoxyCompactList}\item 
+\hyperlink{classEngine_1_1Animation_a9c3ef01682e55cb773bedbad9020a759}{Animation} (const std\+::string \&animation\+\_\+name)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classEngine_1_1Animation}{Animation}. \end{DoxyCompactList}\item 
+\hyperlink{classEngine_1_1Animation_a6462a15fd5a0d0c63ec829727d7c5c40}{$\sim$\+Animation} ()
+\item 
+void \hyperlink{classEngine_1_1Animation_a243fa7f2a9368bb2cdd22bbeff644ae5}{set\+Frames} (int frame\+\_\+amount)
+\begin{DoxyCompactList}\small\item\em set\+Frames \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1Animation_aa18bb6bbd6c91370795c45fb63c2a00d}{set\+Frame} (uint frame)
+\begin{DoxyCompactList}\small\item\em set\+Frame \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1Animation_a572210cbdff12025c70cd928a4aee407}{set\+Bones} (Bones bones)
+\begin{DoxyCompactList}\small\item\em set\+Bones \end{DoxyCompactList}\item 
+\hypertarget{classEngine_1_1Animation_ab291416fd8a47edcb2e6e34521b2a939}{}void {\bfseries set\+Data} (float $\ast$data, int size)\label{classEngine_1_1Animation_ab291416fd8a47edcb2e6e34521b2a939}
+
+\item 
+\hypertarget{classEngine_1_1Animation_a54a61c2c566a014acd9604e770bc81df}{}float $\ast$ {\bfseries get\+Data} (void)\label{classEngine_1_1Animation_a54a61c2c566a014acd9604e770bc81df}
+
+\item 
+\hypertarget{classEngine_1_1Animation_a2d915137bb1f8632baa2397b17f517b1}{}void {\bfseries create\+Data} (int size)\label{classEngine_1_1Animation_a2d915137bb1f8632baa2397b17f517b1}
+
+\item 
+void \hyperlink{classEngine_1_1Animation_a2678bd4ba646733c450eddea86580b2a}{add\+Bone} (\hyperlink{classEngine_1_1Bone}{Bone} $\ast$bone)
+\begin{DoxyCompactList}\small\item\em add\+Bone \end{DoxyCompactList}\item 
+int \hyperlink{classEngine_1_1Animation_ac07bf343bc9d9d4affaf521c7a45412e}{get\+Frames} (void)
+\begin{DoxyCompactList}\small\item\em get\+Frames \end{DoxyCompactList}\item 
+int \hyperlink{classEngine_1_1Animation_abc9b8ad81c5a08dd3248ad9e1126e51a}{get\+Frame} (void)
+\begin{DoxyCompactList}\small\item\em get\+Frame \end{DoxyCompactList}\item 
+\hyperlink{classEngine_1_1Bone}{Bone} $\ast$ \hyperlink{classEngine_1_1Animation_a733bedc14108ae1ba9b8334459e7e116}{get\+Bone} (const std\+::string \&bone\+\_\+name)
+\begin{DoxyCompactList}\small\item\em get\+Bone \end{DoxyCompactList}\item 
+Bones \hyperlink{classEngine_1_1Animation_a9976158328cae7a6b48cccee07dece5c}{get\+Bones} (void)
+\begin{DoxyCompactList}\small\item\em get\+Bones \end{DoxyCompactList}\item 
+int \hyperlink{classEngine_1_1Animation_aefee6093f48f082d0ab7a318a4ebb48f}{get\+Bone\+Index\+By\+Name} (const std\+::string \&bone\+\_\+name)
+\begin{DoxyCompactList}\small\item\em get\+Bone\+Index\+By\+Name \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1Animation_aecf4dcf209d4b66e9f53585c920b19cb}{Loop} (void)
+\begin{DoxyCompactList}\small\item\em Loop. \end{DoxyCompactList}\item 
+D\+E\+P\+R\+E\+C\+A\+T\+E\+D void \hyperlink{classEngine_1_1Animation_ab83074cf68569086283113b7b9f7e14b}{Bind\+Matricen} (\hyperlink{classEngine_1_1IShader}{I\+Shader} $\ast$shader)
+\begin{DoxyCompactList}\small\item\em send\+Matricen \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1Animation_a3a62559d6095b1526b1a8ba0880ef480}{set\+Transforms} (Transform\+Map map)
+\begin{DoxyCompactList}\small\item\em set\+Transforms \end{DoxyCompactList}\item 
+\hypertarget{classEngine_1_1Animation_a1085ad0d555b1a2b50142e74eeef1807}{}Transform\+Map {\bfseries get\+Transforms} (void)\label{classEngine_1_1Animation_a1085ad0d555b1a2b50142e74eeef1807}
+
+\item 
+\hypertarget{classEngine_1_1Animation_a436db3490f71fbb50244ab149b2b861e}{}void {\bfseries set\+Animation\+Name} (const std\+::string \&animation\+\_\+name)\label{classEngine_1_1Animation_a436db3490f71fbb50244ab149b2b861e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classEngine_1_1Animation}{Animation} class. 
+
+Save \hyperlink{classEngine_1_1Animation}{Animation} Data 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classEngine_1_1Animation_a83f0a16cef7117f187ad596de38dd9d6}{}\index{Engine\+::\+Animation@{Engine\+::\+Animation}!Animation@{Animation}}
+\index{Animation@{Animation}!Engine\+::\+Animation@{Engine\+::\+Animation}}
+\subsubsection[{Animation()}]{\setlength{\rightskip}{0pt plus 5cm}Animation\+::\+Animation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Animation_a83f0a16cef7117f187ad596de38dd9d6}
+
+
+\hyperlink{classEngine_1_1Animation}{Animation}. 
+
+Default \hyperlink{classEngine_1_1Animation}{Animation} Constructor \hypertarget{classEngine_1_1Animation_a9c3ef01682e55cb773bedbad9020a759}{}\index{Engine\+::\+Animation@{Engine\+::\+Animation}!Animation@{Animation}}
+\index{Animation@{Animation}!Engine\+::\+Animation@{Engine\+::\+Animation}}
+\subsubsection[{Animation(const std\+::string \&animation\+\_\+name)}]{\setlength{\rightskip}{0pt plus 5cm}Engine\+::\+Animation\+::\+Animation (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{animation\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Animation_a9c3ef01682e55cb773bedbad9020a759}
+
+
+\hyperlink{classEngine_1_1Animation}{Animation}. 
+
+\hyperlink{classEngine_1_1Animation}{Animation} Constructor with \hyperlink{classEngine_1_1Animation}{Animation} name 
+\begin{DoxyParams}{Parameters}
+{\em animation\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1Animation_a6462a15fd5a0d0c63ec829727d7c5c40}{}\index{Engine\+::\+Animation@{Engine\+::\+Animation}!````~Animation@{$\sim$\+Animation}}
+\index{````~Animation@{$\sim$\+Animation}!Engine\+::\+Animation@{Engine\+::\+Animation}}
+\subsubsection[{$\sim$\+Animation()}]{\setlength{\rightskip}{0pt plus 5cm}Engine\+::\+Animation\+::$\sim$\+Animation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classEngine_1_1Animation_a6462a15fd5a0d0c63ec829727d7c5c40}
+Default \hyperlink{classEngine_1_1Animation}{Animation} Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classEngine_1_1Animation_a2678bd4ba646733c450eddea86580b2a}{}\index{Engine\+::\+Animation@{Engine\+::\+Animation}!add\+Bone@{add\+Bone}}
+\index{add\+Bone@{add\+Bone}!Engine\+::\+Animation@{Engine\+::\+Animation}}
+\subsubsection[{add\+Bone(\+Bone $\ast$bone)}]{\setlength{\rightskip}{0pt plus 5cm}void Animation\+::add\+Bone (
+\begin{DoxyParamCaption}
+\item[{{\bf Bone} $\ast$}]{bone}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Animation_a2678bd4ba646733c450eddea86580b2a}
+
+
+add\+Bone 
+
+Add a \hyperlink{classEngine_1_1Bone}{Bone} 
+\begin{DoxyParams}{Parameters}
+{\em bone} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1Animation_ab83074cf68569086283113b7b9f7e14b}{}\index{Engine\+::\+Animation@{Engine\+::\+Animation}!Bind\+Matricen@{Bind\+Matricen}}
+\index{Bind\+Matricen@{Bind\+Matricen}!Engine\+::\+Animation@{Engine\+::\+Animation}}
+\subsubsection[{Bind\+Matricen(\+I\+Shader $\ast$shader)}]{\setlength{\rightskip}{0pt plus 5cm}void Animation\+::\+Bind\+Matricen (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Shader} $\ast$}]{shader}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Animation_ab83074cf68569086283113b7b9f7e14b}
+
+
+send\+Matricen 
+
+Bind \hyperlink{classEngine_1_1Animation}{Animation} Matricen to \hyperlink{classEngine_1_1Shader}{Shader} 
+\begin{DoxyParams}{Parameters}
+{\em shader} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1Animation_a733bedc14108ae1ba9b8334459e7e116}{}\index{Engine\+::\+Animation@{Engine\+::\+Animation}!get\+Bone@{get\+Bone}}
+\index{get\+Bone@{get\+Bone}!Engine\+::\+Animation@{Engine\+::\+Animation}}
+\subsubsection[{get\+Bone(const std\+::string \&bone\+\_\+name)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bone} $\ast$ Animation\+::get\+Bone (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{bone\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Animation_a733bedc14108ae1ba9b8334459e7e116}
+
+
+get\+Bone 
+
+Return a Single \hyperlink{classEngine_1_1Bone}{Bone} 
+\begin{DoxyParams}{Parameters}
+{\em bone\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1Animation_aefee6093f48f082d0ab7a318a4ebb48f}{}\index{Engine\+::\+Animation@{Engine\+::\+Animation}!get\+Bone\+Index\+By\+Name@{get\+Bone\+Index\+By\+Name}}
+\index{get\+Bone\+Index\+By\+Name@{get\+Bone\+Index\+By\+Name}!Engine\+::\+Animation@{Engine\+::\+Animation}}
+\subsubsection[{get\+Bone\+Index\+By\+Name(const std\+::string \&bone\+\_\+name)}]{\setlength{\rightskip}{0pt plus 5cm}int Animation\+::get\+Bone\+Index\+By\+Name (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{bone\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Animation_aefee6093f48f082d0ab7a318a4ebb48f}
+
+
+get\+Bone\+Index\+By\+Name 
+
+Return \hyperlink{classEngine_1_1Bone}{Bone} Index Number by Name 
+\begin{DoxyParams}{Parameters}
+{\em bone\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1Animation_a9976158328cae7a6b48cccee07dece5c}{}\index{Engine\+::\+Animation@{Engine\+::\+Animation}!get\+Bones@{get\+Bones}}
+\index{get\+Bones@{get\+Bones}!Engine\+::\+Animation@{Engine\+::\+Animation}}
+\subsubsection[{get\+Bones(void)}]{\setlength{\rightskip}{0pt plus 5cm}Bones Animation\+::get\+Bones (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Animation_a9976158328cae7a6b48cccee07dece5c}
+
+
+get\+Bones 
+
+Return all Bones \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1Animation_abc9b8ad81c5a08dd3248ad9e1126e51a}{}\index{Engine\+::\+Animation@{Engine\+::\+Animation}!get\+Frame@{get\+Frame}}
+\index{get\+Frame@{get\+Frame}!Engine\+::\+Animation@{Engine\+::\+Animation}}
+\subsubsection[{get\+Frame(void)}]{\setlength{\rightskip}{0pt plus 5cm}int Animation\+::get\+Frame (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Animation_abc9b8ad81c5a08dd3248ad9e1126e51a}
+
+
+get\+Frame 
+
+Return currently \hyperlink{classEngine_1_1Animation}{Animation} Frame Number \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1Animation_ac07bf343bc9d9d4affaf521c7a45412e}{}\index{Engine\+::\+Animation@{Engine\+::\+Animation}!get\+Frames@{get\+Frames}}
+\index{get\+Frames@{get\+Frames}!Engine\+::\+Animation@{Engine\+::\+Animation}}
+\subsubsection[{get\+Frames(void)}]{\setlength{\rightskip}{0pt plus 5cm}int Animation\+::get\+Frames (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Animation_ac07bf343bc9d9d4affaf521c7a45412e}
+
+
+get\+Frames 
+
+Return max. frames \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1Animation_aecf4dcf209d4b66e9f53585c920b19cb}{}\index{Engine\+::\+Animation@{Engine\+::\+Animation}!Loop@{Loop}}
+\index{Loop@{Loop}!Engine\+::\+Animation@{Engine\+::\+Animation}}
+\subsubsection[{Loop(void)}]{\setlength{\rightskip}{0pt plus 5cm}void Animation\+::\+Loop (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Animation_aecf4dcf209d4b66e9f53585c920b19cb}
+
+
+Loop. 
+
+\hyperlink{classEngine_1_1Animation}{Animation} Loop \hypertarget{classEngine_1_1Animation_a572210cbdff12025c70cd928a4aee407}{}\index{Engine\+::\+Animation@{Engine\+::\+Animation}!set\+Bones@{set\+Bones}}
+\index{set\+Bones@{set\+Bones}!Engine\+::\+Animation@{Engine\+::\+Animation}}
+\subsubsection[{set\+Bones(\+Bones bones)}]{\setlength{\rightskip}{0pt plus 5cm}void Animation\+::set\+Bones (
+\begin{DoxyParamCaption}
+\item[{Bones}]{bones}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Animation_a572210cbdff12025c70cd928a4aee407}
+
+
+set\+Bones 
+
+set Bones 
+\begin{DoxyParams}{Parameters}
+{\em bones} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1Animation_aa18bb6bbd6c91370795c45fb63c2a00d}{}\index{Engine\+::\+Animation@{Engine\+::\+Animation}!set\+Frame@{set\+Frame}}
+\index{set\+Frame@{set\+Frame}!Engine\+::\+Animation@{Engine\+::\+Animation}}
+\subsubsection[{set\+Frame(uint frame)}]{\setlength{\rightskip}{0pt plus 5cm}void Animation\+::set\+Frame (
+\begin{DoxyParamCaption}
+\item[{uint}]{frame}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Animation_aa18bb6bbd6c91370795c45fb63c2a00d}
+
+
+set\+Frame 
+
+Set currently \hyperlink{classEngine_1_1Animation}{Animation} Frame Number 
+\begin{DoxyParams}{Parameters}
+{\em frame} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1Animation_a243fa7f2a9368bb2cdd22bbeff644ae5}{}\index{Engine\+::\+Animation@{Engine\+::\+Animation}!set\+Frames@{set\+Frames}}
+\index{set\+Frames@{set\+Frames}!Engine\+::\+Animation@{Engine\+::\+Animation}}
+\subsubsection[{set\+Frames(int frame\+\_\+amount)}]{\setlength{\rightskip}{0pt plus 5cm}void Animation\+::set\+Frames (
+\begin{DoxyParamCaption}
+\item[{int}]{frame\+\_\+amount}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Animation_a243fa7f2a9368bb2cdd22bbeff644ae5}
+
+
+set\+Frames 
+
+Set max. Frames 
+\begin{DoxyParams}{Parameters}
+{\em frame\+\_\+amount} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1Animation_a3a62559d6095b1526b1a8ba0880ef480}{}\index{Engine\+::\+Animation@{Engine\+::\+Animation}!set\+Transforms@{set\+Transforms}}
+\index{set\+Transforms@{set\+Transforms}!Engine\+::\+Animation@{Engine\+::\+Animation}}
+\subsubsection[{set\+Transforms(\+Transform\+Map map)}]{\setlength{\rightskip}{0pt plus 5cm}void Animation\+::set\+Transforms (
+\begin{DoxyParamCaption}
+\item[{Transform\+Map}]{map}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1Animation_a3a62559d6095b1526b1a8ba0880ef480}
+
+
+set\+Transforms 
+
+Add Transformations 
+\begin{DoxyParams}{Parameters}
+{\em map} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Container/animation.\+h\item 
+Container/Animation.\+cpp\end{DoxyCompactItemize}

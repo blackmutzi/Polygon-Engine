@@ -1,0 +1,252 @@
+\hypertarget{classEngine_1_1DisplayManager}{}\section{Engine\+:\+:Display\+Manager Class Reference}
+\label{classEngine_1_1DisplayManager}\index{Engine\+::\+Display\+Manager@{Engine\+::\+Display\+Manager}}
+
+
+The \hyperlink{classEngine_1_1DisplayManager}{Display\+Manager} controlled the G\+L\+F\+W Display.  
+
+
+
+
+{\ttfamily \#include $<$displaymanager.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classEngine_1_1DisplayManager_a2034225de0736f0e744ea1505f64077f}{initialize} (\hyperlink{classEngine_1_1DisplayConfig}{Display\+Config} $\ast$config)
+\begin{DoxyCompactList}\small\item\em initialize \end{DoxyCompactList}\item 
+\hypertarget{classEngine_1_1DisplayManager_afad79bba02480072eaf9fdf88f7e0172}{}void {\bfseries finish} (void)\label{classEngine_1_1DisplayManager_afad79bba02480072eaf9fdf88f7e0172}
+
+\item 
+\hypertarget{classEngine_1_1DisplayManager_a1bc6ee2cd4083b18548bfaa33a95733f}{}\hyperlink{classEngine_1_1GLFWDisplay}{G\+L\+F\+W\+Display} $\ast$ {\bfseries get\+Display} (const std\+::string \&display\+\_\+name)\label{classEngine_1_1DisplayManager_a1bc6ee2cd4083b18548bfaa33a95733f}
+
+\item 
+\hyperlink{classEngine_1_1GLFWDisplay}{G\+L\+F\+W\+Display} $\ast$ \hyperlink{classEngine_1_1DisplayManager_ad305871cfad4010eac228d98336b4ebb}{create\+Display} (\hyperlink{classEngine_1_1DisplayConfig}{Display\+Config} $\ast$config)  throw ( std\+::runtime\+\_\+error )
+\begin{DoxyCompactList}\small\item\em create\+Main\+Display \end{DoxyCompactList}\item 
+\hyperlink{classEngine_1_1GLFWDisplay}{G\+L\+F\+W\+Display} $\ast$ \hyperlink{classEngine_1_1DisplayManager_a6e376561f7f70b69c5a31be76757f1ce}{create\+Display} (int width, int height, const char $\ast$window\+\_\+title, G\+L\+F\+Wwindow $\ast$share=N\+U\+L\+L)  throw ( std\+::runtime\+\_\+error )
+\begin{DoxyCompactList}\small\item\em create\+Display \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1DisplayManager_a1d91f6a00075812c852358d57670652a}{make\+Context} (\hyperlink{classEngine_1_1GLFWDisplay}{G\+L\+F\+W\+Display} $\ast$display)  throw ( std\+::runtime\+\_\+error )
+\begin{DoxyCompactList}\small\item\em create\+Hide\+Display \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1DisplayManager_ae8368c3ef80d8e19f793f2b7fecfe187}{Bind\+Callbacks\+To} (\hyperlink{classEngine_1_1GLFWDisplay}{G\+L\+F\+W\+Display} $\ast$display)  throw ( std\+::runtime\+\_\+error )
+\begin{DoxyCompactList}\small\item\em Bind\+Callbacks\+To. \end{DoxyCompactList}\item 
+Display\+List \hyperlink{classEngine_1_1DisplayManager_ae808617945e1a4245e7c8c12188f7f04}{get\+Display\+List} (void)
+\begin{DoxyCompactList}\small\item\em get\+Display\+List \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1DisplayManager_ad0315041a819d4866e55e2948980b925}{register\+Display} (\hyperlink{classEngine_1_1GLFWDisplay}{G\+L\+F\+W\+Display} $\ast$display)
+\begin{DoxyCompactList}\small\item\em register\+Display \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1DisplayManager_aea08e9c79832bc02db95950010d9af32}{unregister} (\hyperlink{classEngine_1_1GLFWDisplay}{G\+L\+F\+W\+Display} $\ast$display)
+\begin{DoxyCompactList}\small\item\em unregister \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1DisplayManager_a83ea413274fab221c8573ddaad077993}{destroy} (\hyperlink{classEngine_1_1GLFWDisplay}{G\+L\+F\+W\+Display} $\ast$display)
+\begin{DoxyCompactList}\small\item\em destroy \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEngine_1_1DisplayManager_ad459645eef8d2167c2aef8859333272d}{}static void {\bfseries Resize\+Callback} (G\+L\+F\+Wwindow $\ast$window, int width, int height)\label{classEngine_1_1DisplayManager_ad459645eef8d2167c2aef8859333272d}
+
+\item 
+\hypertarget{classEngine_1_1DisplayManager_a3585e07cfd3e567462413443ff56d1e7}{}static void {\bfseries Keyboard\+Callback} (G\+L\+F\+Wwindow $\ast$window, int key, int scancode, int action, int mods)\label{classEngine_1_1DisplayManager_a3585e07cfd3e567462413443ff56d1e7}
+
+\item 
+\hypertarget{classEngine_1_1DisplayManager_adc6a19826fcbc1e753fd9428e7025c03}{}static void {\bfseries Mouse\+Click\+Callback} (G\+L\+F\+Wwindow $\ast$window, int button, int action, int mods)\label{classEngine_1_1DisplayManager_adc6a19826fcbc1e753fd9428e7025c03}
+
+\item 
+\hypertarget{classEngine_1_1DisplayManager_a92ea0a3076a42c05c16f680ddbf53135}{}static void {\bfseries Cursor\+Callback} (G\+L\+F\+Wwindow $\ast$window, double x, double y)\label{classEngine_1_1DisplayManager_a92ea0a3076a42c05c16f680ddbf53135}
+
+\item 
+\hypertarget{classEngine_1_1DisplayManager_a013abbca377130d25261b5ce3a74e32c}{}static void {\bfseries Wheel\+Callback} (G\+L\+F\+Wwindow $\ast$window, double x, double y)\label{classEngine_1_1DisplayManager_a013abbca377130d25261b5ce3a74e32c}
+
+\item 
+static \hyperlink{classEngine_1_1DisplayManager}{Display\+Manager} $\ast$ \hyperlink{classEngine_1_1DisplayManager_ae8f1ed1758ca054854fd224496a80b29}{get\+Singleton\+Ptr} (void)
+\begin{DoxyCompactList}\small\item\em get\+Singleton\+Ptr \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classEngine_1_1DisplayManager}{Display\+Manager} controlled the G\+L\+F\+W Display. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classEngine_1_1DisplayManager_ae8368c3ef80d8e19f793f2b7fecfe187}{}\index{Engine\+::\+Display\+Manager@{Engine\+::\+Display\+Manager}!Bind\+Callbacks\+To@{Bind\+Callbacks\+To}}
+\index{Bind\+Callbacks\+To@{Bind\+Callbacks\+To}!Engine\+::\+Display\+Manager@{Engine\+::\+Display\+Manager}}
+\subsubsection[{Bind\+Callbacks\+To(\+G\+L\+F\+W\+Display $\ast$display)}]{\setlength{\rightskip}{0pt plus 5cm}void Display\+Manager\+::\+Bind\+Callbacks\+To (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+L\+F\+W\+Display} $\ast$}]{display}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) }\label{classEngine_1_1DisplayManager_ae8368c3ef80d8e19f793f2b7fecfe187}
+
+
+Bind\+Callbacks\+To. 
+
+Bind all Callbacks to Display 
+\begin{DoxyParams}{Parameters}
+{\em display} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1DisplayManager_ad305871cfad4010eac228d98336b4ebb}{}\index{Engine\+::\+Display\+Manager@{Engine\+::\+Display\+Manager}!create\+Display@{create\+Display}}
+\index{create\+Display@{create\+Display}!Engine\+::\+Display\+Manager@{Engine\+::\+Display\+Manager}}
+\subsubsection[{create\+Display(\+Display\+Config $\ast$config)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+L\+F\+W\+Display} $\ast$ Display\+Manager\+::create\+Display (
+\begin{DoxyParamCaption}
+\item[{{\bf Display\+Config} $\ast$}]{config}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) }\label{classEngine_1_1DisplayManager_ad305871cfad4010eac228d98336b4ebb}
+
+
+create\+Main\+Display 
+
+Create Display by \hyperlink{classEngine_1_1DisplayConfig}{Display\+Config} 
+\begin{DoxyParams}{Parameters}
+{\em width} & \\
+\hline
+{\em height} & \\
+\hline
+{\em title} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1DisplayManager_a6e376561f7f70b69c5a31be76757f1ce}{}\index{Engine\+::\+Display\+Manager@{Engine\+::\+Display\+Manager}!create\+Display@{create\+Display}}
+\index{create\+Display@{create\+Display}!Engine\+::\+Display\+Manager@{Engine\+::\+Display\+Manager}}
+\subsubsection[{create\+Display(int width, int height, const char $\ast$window\+\_\+title, G\+L\+F\+Wwindow $\ast$share=\+N\+U\+L\+L)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+L\+F\+W\+Display} $\ast$ Display\+Manager\+::create\+Display (
+\begin{DoxyParamCaption}
+\item[{int}]{width, }
+\item[{int}]{height, }
+\item[{const char $\ast$}]{window\+\_\+title, }
+\item[{G\+L\+F\+Wwindow $\ast$}]{share = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) }\label{classEngine_1_1DisplayManager_a6e376561f7f70b69c5a31be76757f1ce}
+
+
+create\+Display 
+
+Create G\+L\+F\+W Display 
+\begin{DoxyParams}{Parameters}
+{\em width} & \\
+\hline
+{\em height} & \\
+\hline
+{\em window\+\_\+title} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1DisplayManager_a83ea413274fab221c8573ddaad077993}{}\index{Engine\+::\+Display\+Manager@{Engine\+::\+Display\+Manager}!destroy@{destroy}}
+\index{destroy@{destroy}!Engine\+::\+Display\+Manager@{Engine\+::\+Display\+Manager}}
+\subsubsection[{destroy(\+G\+L\+F\+W\+Display $\ast$display)}]{\setlength{\rightskip}{0pt plus 5cm}void Display\+Manager\+::destroy (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+L\+F\+W\+Display} $\ast$}]{display}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1DisplayManager_a83ea413274fab221c8573ddaad077993}
+
+
+destroy 
+
+Destroy a Display 
+\begin{DoxyParams}{Parameters}
+{\em display} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1DisplayManager_ae808617945e1a4245e7c8c12188f7f04}{}\index{Engine\+::\+Display\+Manager@{Engine\+::\+Display\+Manager}!get\+Display\+List@{get\+Display\+List}}
+\index{get\+Display\+List@{get\+Display\+List}!Engine\+::\+Display\+Manager@{Engine\+::\+Display\+Manager}}
+\subsubsection[{get\+Display\+List(void)}]{\setlength{\rightskip}{0pt plus 5cm}Display\+List Display\+Manager\+::get\+Display\+List (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1DisplayManager_ae808617945e1a4245e7c8c12188f7f04}
+
+
+get\+Display\+List 
+
+Return all register displays \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1DisplayManager_ae8f1ed1758ca054854fd224496a80b29}{}\index{Engine\+::\+Display\+Manager@{Engine\+::\+Display\+Manager}!get\+Singleton\+Ptr@{get\+Singleton\+Ptr}}
+\index{get\+Singleton\+Ptr@{get\+Singleton\+Ptr}!Engine\+::\+Display\+Manager@{Engine\+::\+Display\+Manager}}
+\subsubsection[{get\+Singleton\+Ptr(void)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Display\+Manager} $\ast$ Display\+Manager\+::get\+Singleton\+Ptr (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classEngine_1_1DisplayManager_ae8f1ed1758ca054854fd224496a80b29}
+
+
+get\+Singleton\+Ptr 
+
+Return \hyperlink{classEngine_1_1Singleton}{Singleton} \hyperlink{classEngine_1_1DisplayManager}{Display\+Manager} Instance \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classEngine_1_1DisplayManager_a2034225de0736f0e744ea1505f64077f}{}\index{Engine\+::\+Display\+Manager@{Engine\+::\+Display\+Manager}!initialize@{initialize}}
+\index{initialize@{initialize}!Engine\+::\+Display\+Manager@{Engine\+::\+Display\+Manager}}
+\subsubsection[{initialize(\+Display\+Config $\ast$config)}]{\setlength{\rightskip}{0pt plus 5cm}void Display\+Manager\+::initialize (
+\begin{DoxyParamCaption}
+\item[{{\bf Display\+Config} $\ast$}]{config}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1DisplayManager_a2034225de0736f0e744ea1505f64077f}
+
+
+initialize 
+
+Initialize G\+L\+F\+W 
+\begin{DoxyParams}{Parameters}
+{\em main\+\_\+display} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1DisplayManager_a1d91f6a00075812c852358d57670652a}{}\index{Engine\+::\+Display\+Manager@{Engine\+::\+Display\+Manager}!make\+Context@{make\+Context}}
+\index{make\+Context@{make\+Context}!Engine\+::\+Display\+Manager@{Engine\+::\+Display\+Manager}}
+\subsubsection[{make\+Context(\+G\+L\+F\+W\+Display $\ast$display)}]{\setlength{\rightskip}{0pt plus 5cm}void Display\+Manager\+::make\+Context (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+L\+F\+W\+Display} $\ast$}]{display}
+\end{DoxyParamCaption}
+) throw  std\+::runtime\+\_\+error) }\label{classEngine_1_1DisplayManager_a1d91f6a00075812c852358d57670652a}
+
+
+create\+Hide\+Display 
+
+Create Hide G\+L\+F\+W Display \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+G\+L\+F\+W -\/ Make Context
+
+
+\begin{DoxyItemize}
+\item \hyperlink{classEngine_1_1Thread}{Thread} Safety
+\end{DoxyItemize}
+
+make\+Context 
+\begin{DoxyParams}{Parameters}
+{\em display} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1DisplayManager_ad0315041a819d4866e55e2948980b925}{}\index{Engine\+::\+Display\+Manager@{Engine\+::\+Display\+Manager}!register\+Display@{register\+Display}}
+\index{register\+Display@{register\+Display}!Engine\+::\+Display\+Manager@{Engine\+::\+Display\+Manager}}
+\subsubsection[{register\+Display(\+G\+L\+F\+W\+Display $\ast$display)}]{\setlength{\rightskip}{0pt plus 5cm}void Display\+Manager\+::register\+Display (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+L\+F\+W\+Display} $\ast$}]{display}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1DisplayManager_ad0315041a819d4866e55e2948980b925}
+
+
+register\+Display 
+
+register a display for more overview 
+\begin{DoxyParams}{Parameters}
+{\em display} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1DisplayManager_aea08e9c79832bc02db95950010d9af32}{}\index{Engine\+::\+Display\+Manager@{Engine\+::\+Display\+Manager}!unregister@{unregister}}
+\index{unregister@{unregister}!Engine\+::\+Display\+Manager@{Engine\+::\+Display\+Manager}}
+\subsubsection[{unregister(\+G\+L\+F\+W\+Display $\ast$display)}]{\setlength{\rightskip}{0pt plus 5cm}void Display\+Manager\+::unregister (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+L\+F\+W\+Display} $\ast$}]{display}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1DisplayManager_aea08e9c79832bc02db95950010d9af32}
+
+
+unregister 
+
+remove a display from the display list
+
+
+\begin{DoxyParams}{Parameters}
+{\em display} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Manager/displaymanager.\+h\item 
+Engine/\+Manager/Display\+Manager.\+cpp\end{DoxyCompactItemize}

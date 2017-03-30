@@ -1,0 +1,201 @@
+\hypertarget{classEngine_1_1TextElement}{}\section{Engine\+:\+:Text\+Element Class Reference}
+\label{classEngine_1_1TextElement}\index{Engine\+::\+Text\+Element@{Engine\+::\+Text\+Element}}
+
+
+The \hyperlink{classEngine_1_1TextElement}{Text\+Element} -\/ Text Objective class.  
+
+
+
+
+{\ttfamily \#include $<$textelement.\+h$>$}
+
+Inheritance diagram for Engine\+:\+:Text\+Element\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classEngine_1_1TextElement}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEngine_1_1TextElement_a307538b783641dfcf548c05ce81a4fb4}{}enum {\bfseries Panel\+Options} \{ {\bfseries P\+A\+N\+E\+L\+\_\+\+A\+C\+T\+I\+V\+E} = 0x2, 
+{\bfseries P\+A\+N\+E\+L\+\_\+\+S\+I\+Z\+E\+\_\+\+A\+U\+T\+O} = 0x4
+ \}\label{classEngine_1_1TextElement_a307538b783641dfcf548c05ce81a4fb4}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classEngine_1_1TextElement_afb1353dbbf71285acad8dc20bd473d6d}{create} (\hyperlink{classEngine_1_1OpenPolygonDisplay}{Open\+Polygon\+Display} $\ast$display)
+\begin{DoxyCompactList}\small\item\em create \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1TextElement_a9f63362e007bb1dc1ea84dc7370f4468}{draw} (const \hyperlink{classEngine_1_1DrawEvent}{Draw\+Event} \&event)
+\begin{DoxyCompactList}\small\item\em draw \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1TextElement_a644a809d0632165885c4e3b07fb2eb32}{set\+Colour} (const \hyperlink{classVector4}{Vector4f} \&colour)
+\begin{DoxyCompactList}\small\item\em set\+Colour \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1TextElement_a40cd3013655dea97bf719b70346d28be}{set\+Panel\+Colour} (const \hyperlink{classVector4}{Vector4f} \&colour)
+\begin{DoxyCompactList}\small\item\em set\+Panel\+Colour \end{DoxyCompactList}\item 
+\hypertarget{classEngine_1_1TextElement_adf59331b24200f9d364abe234d401a77}{}void {\bfseries set\+Panel\+Size} (const \hyperlink{classVector2}{Vector2f} \&size)\label{classEngine_1_1TextElement_adf59331b24200f9d364abe234d401a77}
+
+\item 
+\hypertarget{classEngine_1_1TextElement_a372ffe930cee10dcc1544b340eef6d38}{}void {\bfseries set\+Panel\+Options} (uint panel\+\_\+options)\label{classEngine_1_1TextElement_a372ffe930cee10dcc1544b340eef6d38}
+
+\item 
+void \hyperlink{classEngine_1_1TextElement_a5626e204bbd1eecf73697ee9267b6d5e}{set\+Caption} (string draw\+\_\+text)
+\begin{DoxyCompactList}\small\item\em set\+Caption \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1TextElement_a2a19554dbc2cb199242a97120808b150}{set\+Position} (const \hyperlink{classVector3}{Vector3f} \&position)
+\begin{DoxyCompactList}\small\item\em set\+Position \end{DoxyCompactList}\item 
+void \hyperlink{classEngine_1_1TextElement_a86f9de3aabf2cb0ee19afa81f58c5f62}{set\+Size} (const \hyperlink{classVector2}{Vector2f} \&size)
+\begin{DoxyCompactList}\small\item\em set\+Size \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEngine_1_1TextElement_ada161036ebe4ebccfd8eb0c01064351d}{}void {\bfseries Draw\+Text\+Indirect} (const \hyperlink{classEngine_1_1DrawEvent}{Draw\+Event} \&event)\label{classEngine_1_1TextElement_ada161036ebe4ebccfd8eb0c01064351d}
+
+\item 
+\hypertarget{classEngine_1_1TextElement_ae5e84512a2e616b467659405b0aebd0f}{}void {\bfseries create\+Indirect\+Data} (void)\label{classEngine_1_1TextElement_ae5e84512a2e616b467659405b0aebd0f}
+
+\item 
+\hypertarget{classEngine_1_1TextElement_a33fd994c8d6e6bc991d98ce5c6ce9068}{}void {\bfseries Draw\+Panel} (const \hyperlink{classEngine_1_1DrawEvent}{Draw\+Event} \&event)\label{classEngine_1_1TextElement_a33fd994c8d6e6bc991d98ce5c6ce9068}
+
+\item 
+\hypertarget{classEngine_1_1TextElement_a0707c71befbc96bcc937c76779037c62}{}\hyperlink{classVector2}{Vector2f} {\bfseries get\+Screen\+Pixel\+Vector} (void)\label{classEngine_1_1TextElement_a0707c71befbc96bcc937c76779037c62}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classEngine_1_1TextElement}{Text\+Element} -\/ Text Objective class. 
+
+Text \hyperlink{classEngine_1_1Element}{Element}
+
+
+\begin{DoxyItemize}
+\item draw char Textures 
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\hypertarget{classEngine_1_1TextElement_afb1353dbbf71285acad8dc20bd473d6d}{}\index{Engine\+::\+Text\+Element@{Engine\+::\+Text\+Element}!create@{create}}
+\index{create@{create}!Engine\+::\+Text\+Element@{Engine\+::\+Text\+Element}}
+\subsubsection[{create(\+Open\+Polygon\+Display $\ast$display)}]{\setlength{\rightskip}{0pt plus 5cm}void Text\+Element\+::create (
+\begin{DoxyParamCaption}
+\item[{{\bf Open\+Polygon\+Display} $\ast$}]{display}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classEngine_1_1TextElement_afb1353dbbf71285acad8dc20bd473d6d}
+
+
+create 
+
+Create Static Text 
+
+Implements \hyperlink{classEngine_1_1RenderInterface}{Engine\+::\+Render\+Interface}.
+
+\hypertarget{classEngine_1_1TextElement_a9f63362e007bb1dc1ea84dc7370f4468}{}\index{Engine\+::\+Text\+Element@{Engine\+::\+Text\+Element}!draw@{draw}}
+\index{draw@{draw}!Engine\+::\+Text\+Element@{Engine\+::\+Text\+Element}}
+\subsubsection[{draw(const Draw\+Event \&event)}]{\setlength{\rightskip}{0pt plus 5cm}void Text\+Element\+::draw (
+\begin{DoxyParamCaption}
+\item[{const {\bf Draw\+Event} \&}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classEngine_1_1TextElement_a9f63362e007bb1dc1ea84dc7370f4468}
+
+
+draw 
+
+Draw Static Text 
+\begin{DoxyParams}{Parameters}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classEngine_1_1RenderInterface}{Engine\+::\+Render\+Interface}.
+
+\hypertarget{classEngine_1_1TextElement_a5626e204bbd1eecf73697ee9267b6d5e}{}\index{Engine\+::\+Text\+Element@{Engine\+::\+Text\+Element}!set\+Caption@{set\+Caption}}
+\index{set\+Caption@{set\+Caption}!Engine\+::\+Text\+Element@{Engine\+::\+Text\+Element}}
+\subsubsection[{set\+Caption(string draw\+\_\+text)}]{\setlength{\rightskip}{0pt plus 5cm}void Text\+Element\+::set\+Caption (
+\begin{DoxyParamCaption}
+\item[{string}]{draw\+\_\+text}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1TextElement_a5626e204bbd1eecf73697ee9267b6d5e}
+
+
+set\+Caption 
+
+Set Text 
+\begin{DoxyParams}{Parameters}
+{\em draw\+\_\+text} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1TextElement_a644a809d0632165885c4e3b07fb2eb32}{}\index{Engine\+::\+Text\+Element@{Engine\+::\+Text\+Element}!set\+Colour@{set\+Colour}}
+\index{set\+Colour@{set\+Colour}!Engine\+::\+Text\+Element@{Engine\+::\+Text\+Element}}
+\subsubsection[{set\+Colour(const Vector4f \&colour)}]{\setlength{\rightskip}{0pt plus 5cm}void Text\+Element\+::set\+Colour (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector4f} \&}]{colour}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1TextElement_a644a809d0632165885c4e3b07fb2eb32}
+
+
+set\+Colour 
+
+Set Front Colour ( aka Text Colour ) 
+\begin{DoxyParams}{Parameters}
+{\em colour} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1TextElement_a40cd3013655dea97bf719b70346d28be}{}\index{Engine\+::\+Text\+Element@{Engine\+::\+Text\+Element}!set\+Panel\+Colour@{set\+Panel\+Colour}}
+\index{set\+Panel\+Colour@{set\+Panel\+Colour}!Engine\+::\+Text\+Element@{Engine\+::\+Text\+Element}}
+\subsubsection[{set\+Panel\+Colour(const Vector4f \&colour)}]{\setlength{\rightskip}{0pt plus 5cm}void Text\+Element\+::set\+Panel\+Colour (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector4f} \&}]{colour}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1TextElement_a40cd3013655dea97bf719b70346d28be}
+
+
+set\+Panel\+Colour 
+
+Set Back Color ( aka Panel Colour ) 
+\begin{DoxyParams}{Parameters}
+{\em colour} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1TextElement_a2a19554dbc2cb199242a97120808b150}{}\index{Engine\+::\+Text\+Element@{Engine\+::\+Text\+Element}!set\+Position@{set\+Position}}
+\index{set\+Position@{set\+Position}!Engine\+::\+Text\+Element@{Engine\+::\+Text\+Element}}
+\subsubsection[{set\+Position(const Vector3f \&position)}]{\setlength{\rightskip}{0pt plus 5cm}void Text\+Element\+::set\+Position (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector3f} \&}]{position}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1TextElement_a2a19554dbc2cb199242a97120808b150}
+
+
+set\+Position 
+
+Set \hyperlink{classEngine_1_1Element}{Element} \hyperlink{classEngine_1_1Position}{Position} 
+\begin{DoxyParams}{Parameters}
+{\em position} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classEngine_1_1TextElement_a86f9de3aabf2cb0ee19afa81f58c5f62}{}\index{Engine\+::\+Text\+Element@{Engine\+::\+Text\+Element}!set\+Size@{set\+Size}}
+\index{set\+Size@{set\+Size}!Engine\+::\+Text\+Element@{Engine\+::\+Text\+Element}}
+\subsubsection[{set\+Size(const Vector2f \&size)}]{\setlength{\rightskip}{0pt plus 5cm}void Text\+Element\+::set\+Size (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector2f} \&}]{size}
+\end{DoxyParamCaption}
+)}\label{classEngine_1_1TextElement_a86f9de3aabf2cb0ee19afa81f58c5f62}
+
+
+set\+Size 
+
+Set Pixel Size
+\begin{DoxyItemize}
+\item original size is 1,1 
+\begin{DoxyParams}{Parameters}
+{\em size} & \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/textelement.\+h\item 
+Objects/\+Element/Text\+Element.\+cpp\end{DoxyCompactItemize}
