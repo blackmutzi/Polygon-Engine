@@ -19,8 +19,9 @@ make && make install
 # default lib directory: /usr/lib/libpolygon.so
 # default include directory : /usr/include/polygon-engine/
 ```
-### doxygen docu
+### doxygen docu and github.io site
 [github.io Polygon-Site](https://blackmutzi.github.io/polygon-engine/index.html)
+
 [doxygen here](https://blackmutzi.github.io/Polygon-Engine/doxygen/html/index.html)
 
 ### lib dependencies
