@@ -5,7 +5,7 @@ is a little Rendering-Engine writted in c++ for fun and opengl learning
 ```sh
 # Download Polygon-Engine
 git clone https://github.com/blackmutzi/polygon-engine.git
-cd ./polygon-engine
+cd ./polygon-engine/src/
 
 # Makefile Generation
 ./autogen.sh
