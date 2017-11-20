@@ -1,13 +1,11 @@
 # Polygon-Engine
-OpenGL Tests - Linux - Library - Polygon Engine
-
+is a little Rendering-Engine writted in c++ for fun and opengl learning
 
 ### build & install 
-
 ```sh
 # Download Polygon-Engine
-git clone https://github.com/blackmutzi/Polygon-Engine/
-cd ./Polygon-Engine
+git clone https://github.com/blackmutzi/polygon-engine.git
+cd ./polygon-engine
 
 # Makefile Generation
 ./autogen.sh
@@ -26,13 +24,10 @@ make && make install
 
 ### lib dependencies
 
-* Polygon-Component 
-
-### other library dependencies
-
-* LZ4
-* GLFW
-* OpenGL (Mesa)
-* FreeType
-* FreeImage
-* Boost
+    * polygon-component 
+    * LZ4
+    * GLFW
+    * opengl ( mesa package )
+    * libfreetype
+    * libfreeimage
+    * libboost
